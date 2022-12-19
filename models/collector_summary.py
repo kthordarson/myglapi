@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class CollectorSummary(object):
     def __init__(self, id=None, node_id=None, node_details=None, last_seen=None, collector_version=None, active=None):
@@ -13,13 +13,9 @@ class CollectorSummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'id': 'str', 'node_id': 'str', 'node_details': 'object', 'last_seen': 'datetime', 'collector_version': 'str', 'active': 'bool'
-        }
+        self.swagger_types = {'id': 'str', 'node_id': 'str', 'node_details': 'object', 'last_seen': 'datetime', 'collector_version': 'str', 'active': 'bool'}
 
-        self.attribute_map = {
-            'id': 'id', 'node_id': 'node_id', 'node_details': 'node_details', 'last_seen': 'last_seen', 'collector_version': 'collector_version', 'active': 'active'
-        }
+        self.attribute_map = {'id': 'id', 'node_id': 'node_id', 'node_details': 'node_details', 'last_seen': 'last_seen', 'collector_version': 'collector_version', 'active': 'active'}
 
         self._id = id
         self._node_id = node_id
@@ -136,7 +132,7 @@ class CollectorSummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

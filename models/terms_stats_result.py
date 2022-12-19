@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class TermsStatsResult(object):
     def __init__(self, time=None, terms=None, built_query=None):
@@ -13,13 +13,9 @@ class TermsStatsResult(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'time': 'int', 'terms': 'list[object]', 'built_query': 'str'
-        }
+        self.swagger_types = {'time': 'int', 'terms': 'list[object]', 'built_query': 'str'}
 
-        self.attribute_map = {
-            'time': 'time', 'terms': 'terms', 'built_query': 'built_query'
-        }
+        self.attribute_map = {'time': 'time', 'terms': 'terms', 'built_query': 'built_query'}
 
         self._time = time
         self._terms = terms
@@ -82,7 +78,7 @@ class TermsStatsResult(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

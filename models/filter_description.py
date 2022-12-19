@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class FilterDescription(object):
     def __init__(self, creator_user_id=None, created_at=None, name=None, description=None, field_name=None, pattern=None, id=None):
@@ -13,13 +13,9 @@ class FilterDescription(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'creator_user_id': 'str', 'created_at': 'datetime', 'name': 'str', 'description': 'str', 'field_name': 'str', 'pattern': 'str', 'id': 'Any'
-        }
+        self.swagger_types = {'creator_user_id': 'str', 'created_at': 'datetime', 'name': 'str', 'description': 'str', 'field_name': 'str', 'pattern': 'str', 'id': 'Any'}
 
-        self.attribute_map = {
-            'creator_user_id': 'creator_user_id', 'created_at': 'created_at', 'name': 'name', 'description': 'description', 'field_name': 'field_name', 'pattern': 'pattern', 'id': 'id'
-        }
+        self.attribute_map = {'creator_user_id': 'creator_user_id', 'created_at': 'created_at', 'name': 'name', 'description': 'description', 'field_name': 'field_name', 'pattern': 'pattern', 'id': 'id'}
 
         self._creator_user_id = creator_user_id
         self._created_at = created_at
@@ -154,7 +150,7 @@ class FilterDescription(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

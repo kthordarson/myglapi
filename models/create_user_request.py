@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class CreateUserRequest(object):
     def __init__(self, username=None, password=None, email=None, full_name=None, permissions=None, timezone=None, session_timeout_ms=None, startpage=None, roles=None):
@@ -13,13 +13,9 @@ class CreateUserRequest(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'username': 'str', 'password': 'str', 'email': 'str', 'full_name': 'str', 'permissions': 'list[str]', 'timezone': 'str', 'session_timeout_ms': 'int', 'startpage': 'object', 'roles': 'list[str]'
-        }
+        self.swagger_types = {'username': 'str', 'password': 'str', 'email': 'str', 'full_name': 'str', 'permissions': 'list[str]', 'timezone': 'str', 'session_timeout_ms': 'int', 'startpage': 'object', 'roles': 'list[str]'}
 
-        self.attribute_map = {
-            'username': 'username', 'password': 'password', 'email': 'email', 'full_name': 'full_name', 'permissions': 'permissions', 'timezone': 'timezone', 'session_timeout_ms': 'session_timeout_ms', 'startpage': 'startpage', 'roles': 'roles'
-        }
+        self.attribute_map = {'username': 'username', 'password': 'password', 'email': 'email', 'full_name': 'full_name', 'permissions': 'permissions', 'timezone': 'timezone', 'session_timeout_ms': 'session_timeout_ms', 'startpage': 'startpage', 'roles': 'roles'}
 
         self._username = username
         self._password = password
@@ -190,7 +186,7 @@ class CreateUserRequest(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ExportBundle(object):
     def __init__(self, name=None, description=None, category=None, inputs=None, streams=None, outputs=None, dashboards=None, grok_patterns=None):
@@ -13,13 +13,9 @@ class ExportBundle(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'name': 'str', 'description': 'str', 'category': 'str', 'inputs': 'list[str]', 'streams': 'list[str]', 'outputs': 'list[str]', 'dashboards': 'list[str]', 'grok_patterns': 'list[str]'
-        }
+        self.swagger_types = {'name': 'str', 'description': 'str', 'category': 'str', 'inputs': 'list[str]', 'streams': 'list[str]', 'outputs': 'list[str]', 'dashboards': 'list[str]', 'grok_patterns': 'list[str]'}
 
-        self.attribute_map = {
-            'name': 'name', 'description': 'description', 'category': 'category', 'inputs': 'inputs', 'streams': 'streams', 'outputs': 'outputs', 'dashboards': 'dashboards', 'grok_patterns': 'grok_patterns'
-        }
+        self.attribute_map = {'name': 'name', 'description': 'description', 'category': 'category', 'inputs': 'inputs', 'streams': 'streams', 'outputs': 'outputs', 'dashboards': 'dashboards', 'grok_patterns': 'grok_patterns'}
 
         self._name = name
         self._description = description
@@ -172,7 +168,7 @@ class ExportBundle(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

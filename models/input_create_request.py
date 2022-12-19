@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class InputCreateRequest(object):
     def __init__(self, title=None, type=None, _global=None, configuration=None, node=None):
@@ -13,13 +13,9 @@ class InputCreateRequest(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'title': 'str', 'type': 'str', '_global': 'bool', 'configuration': 'object', 'node': 'str'
-        }
+        self.swagger_types = {'title': 'str', 'type': 'str', '_global': 'bool', 'configuration': 'object', 'node': 'str'}
 
-        self.attribute_map = {
-            'title': 'title', 'type': 'type', '_global': 'global', 'configuration': 'configuration', 'node': 'node'
-        }
+        self.attribute_map = {'title': 'title', 'type': 'type', '_global': 'global', 'configuration': 'configuration', 'node': 'node'}
 
         self._title = title
         self._type = type
@@ -118,7 +114,7 @@ class InputCreateRequest(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

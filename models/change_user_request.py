@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ChangeUserRequest(object):
     def __init__(self, email=None, full_name=None, permissions=None, timezone=None, startpage=None, session_timeout_ms=None, roles=None):
@@ -13,13 +13,9 @@ class ChangeUserRequest(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'email': 'str', 'full_name': 'str', 'permissions': 'list[str]', 'timezone': 'str', 'startpage': 'object', 'session_timeout_ms': 'int', 'roles': 'list[str]'
-        }
+        self.swagger_types = {'email': 'str', 'full_name': 'str', 'permissions': 'list[str]', 'timezone': 'str', 'startpage': 'object', 'session_timeout_ms': 'int', 'roles': 'list[str]'}
 
-        self.attribute_map = {
-            'email': 'email', 'full_name': 'full_name', 'permissions': 'permissions', 'timezone': 'timezone', 'startpage': 'startpage', 'session_timeout_ms': 'session_timeout_ms', 'roles': 'roles'
-        }
+        self.attribute_map = {'email': 'email', 'full_name': 'full_name', 'permissions': 'permissions', 'timezone': 'timezone', 'startpage': 'startpage', 'session_timeout_ms': 'session_timeout_ms', 'roles': 'roles'}
 
         self._email = email
         self._full_name = full_name
@@ -154,7 +150,7 @@ class ChangeUserRequest(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

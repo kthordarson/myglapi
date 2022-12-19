@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class IndexerOverview(object):
     def __init__(self, indexer_cluster=None, counts=None, indices=None, deflector=None):
@@ -13,13 +13,9 @@ class IndexerOverview(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'indexer_cluster': 'object', 'counts': 'object', 'indices': 'object', 'deflector': 'object'
-        }
+        self.swagger_types = {'indexer_cluster': 'object', 'counts': 'object', 'indices': 'object', 'deflector': 'object'}
 
-        self.attribute_map = {
-            'indexer_cluster': 'indexer_cluster', 'counts': 'counts', 'indices': 'indices', 'deflector': 'deflector'
-        }
+        self.attribute_map = {'indexer_cluster': 'indexer_cluster', 'counts': 'counts', 'indices': 'indices', 'deflector': 'deflector'}
 
         self._indexer_cluster = indexer_cluster
         self._counts = counts
@@ -100,7 +96,7 @@ class IndexerOverview(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class DecoratorImpl(object):
     def __init__(self, type=None, config=None, stream=None, order=None, id=None):
@@ -13,13 +13,9 @@ class DecoratorImpl(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'type': 'str', 'config': 'object', 'stream': 'str', 'order': 'int', 'id': 'str'
-        }
+        self.swagger_types = {'type': 'str', 'config': 'object', 'stream': 'str', 'order': 'int', 'id': 'str'}
 
-        self.attribute_map = {
-            'type': 'type', 'config': 'config', 'stream': 'stream', 'order': 'order', 'id': 'id'
-        }
+        self.attribute_map = {'type': 'type', 'config': 'config', 'stream': 'stream', 'order': 'order', 'id': 'id'}
 
         self._type = type
         self._config = config
@@ -118,7 +114,7 @@ class DecoratorImpl(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

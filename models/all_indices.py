@@ -1,5 +1,4 @@
 from pprint import pformat
-from six import iteritems
 import re
 
 class AllIndices(object):
@@ -12,13 +11,9 @@ class AllIndices(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'closed': 'object', 'reopened': 'object', 'all': 'object'
-        }
+        self.swagger_types = {'closed': 'object', 'reopened': 'object', 'all': 'object'}
 
-        self.attribute_map = {
-            'closed': 'closed', 'reopened': 'reopened', 'all': 'all'
-        }
+        self.attribute_map = {'closed': 'closed', 'reopened': 'reopened', 'all': 'all'}
 
         self._closed = closed
         self._reopened = reopened
@@ -81,7 +76,7 @@ class AllIndices(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

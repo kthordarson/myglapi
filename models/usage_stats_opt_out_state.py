@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class UsageStatsOptOutState(object):
     def __init__(self, opt_out=None):
@@ -13,13 +13,9 @@ class UsageStatsOptOutState(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'opt_out': 'bool'
-        }
+        self.swagger_types = {'opt_out': 'bool'}
 
-        self.attribute_map = {
-            'opt_out': 'opt_out'
-        }
+        self.attribute_map = {'opt_out': 'opt_out'}
 
         self._opt_out = opt_out
 
@@ -46,7 +42,7 @@ class UsageStatsOptOutState(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

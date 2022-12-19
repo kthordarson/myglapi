@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class RuleSource(object):
     def __init__(self, id=None, title=None, description=None, source=None, created_at=None, modified_at=None, errors=None):
@@ -13,13 +13,9 @@ class RuleSource(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'id': 'str', 'title': 'str', 'description': 'str', 'source': 'str', 'created_at': 'datetime', 'modified_at': 'datetime', 'errors': 'list[object]'
-        }
+        self.swagger_types = {'id': 'str', 'title': 'str', 'description': 'str', 'source': 'str', 'created_at': 'datetime', 'modified_at': 'datetime', 'errors': 'list[object]'}
 
-        self.attribute_map = {
-            'id': 'id', 'title': 'title', 'description': 'description', 'source': 'source', 'created_at': 'created_at', 'modified_at': 'modified_at', 'errors': 'errors'
-        }
+        self.attribute_map = {'id': 'id', 'title': 'title', 'description': 'description', 'source': 'source', 'created_at': 'created_at', 'modified_at': 'modified_at', 'errors': 'errors'}
 
         self._id = id
         self._title = title
@@ -154,7 +150,7 @@ class RuleSource(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

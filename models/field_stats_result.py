@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class FieldStatsResult(object):
     def __init__(self, sum_of_squares=None, count=None, min=None, max=None, time=None, sum=None, cardinality=None, mean=None, built_query=None, variance=None, std_deviation=None):
@@ -13,13 +13,9 @@ class FieldStatsResult(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'sum_of_squares': 'float', 'count': 'int', 'min': 'float', 'max': 'float', 'time': 'int', 'sum': 'float', 'cardinality': 'int', 'mean': 'float', 'built_query': 'str', 'variance': 'float', 'std_deviation': 'float'
-        }
+        self.swagger_types = {'sum_of_squares': 'float', 'count': 'int', 'min': 'float', 'max': 'float', 'time': 'int', 'sum': 'float', 'cardinality': 'int', 'mean': 'float', 'built_query': 'str', 'variance': 'float', 'std_deviation': 'float'}
 
-        self.attribute_map = {
-            'sum_of_squares': 'sum_of_squares', 'count': 'count', 'min': 'min', 'max': 'max', 'time': 'time', 'sum': 'sum', 'cardinality': 'cardinality', 'mean': 'mean', 'built_query': 'built_query', 'variance': 'variance', 'std_deviation': 'std_deviation'
-        }
+        self.attribute_map = {'sum_of_squares': 'sum_of_squares', 'count': 'count', 'min': 'min', 'max': 'max', 'time': 'time', 'sum': 'sum', 'cardinality': 'cardinality', 'mean': 'mean', 'built_query': 'built_query', 'variance': 'variance', 'std_deviation': 'std_deviation'}
 
         self._sum_of_squares = sum_of_squares
         self._count = count
@@ -226,7 +222,7 @@ class FieldStatsResult(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

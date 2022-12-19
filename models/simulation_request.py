@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class SimulationRequest(object):
     def __init__(self, stream_id=None, message=None, input_id=None):
@@ -13,13 +13,9 @@ class SimulationRequest(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'stream_id': 'str', 'message': 'object', 'input_id': 'str'
-        }
+        self.swagger_types = {'stream_id': 'str', 'message': 'object', 'input_id': 'str'}
 
-        self.attribute_map = {
-            'stream_id': 'stream_id', 'message': 'message', 'input_id': 'input_id'
-        }
+        self.attribute_map = {'stream_id': 'stream_id', 'message': 'message', 'input_id': 'input_id'}
 
         self._stream_id = stream_id
         self._message = message
@@ -82,7 +78,7 @@ class SimulationRequest(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

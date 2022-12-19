@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class DeflectorSummary(object):
     def __init__(self, is_up=None, current_target=None):
@@ -13,13 +13,9 @@ class DeflectorSummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'is_up': 'bool', 'current_target': 'str'
-        }
+        self.swagger_types = {'is_up': 'bool', 'current_target': 'str'}
 
-        self.attribute_map = {
-            'is_up': 'is_up', 'current_target': 'current_target'
-        }
+        self.attribute_map = {'is_up': 'is_up', 'current_target': 'current_target'}
 
         self._is_up = is_up
         self._current_target = current_target
@@ -64,7 +60,7 @@ class DeflectorSummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class InputTypeInfo(object):
     def __init__(self, type=None, name=None, is_exclusive=None, requested_configuration=None, link_to_docs=None):
@@ -13,13 +13,9 @@ class InputTypeInfo(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'type': 'str', 'name': 'str', 'is_exclusive': 'bool', 'requested_configuration': 'object', 'link_to_docs': 'str'
-        }
+        self.swagger_types = {'type': 'str', 'name': 'str', 'is_exclusive': 'bool', 'requested_configuration': 'object', 'link_to_docs': 'str'}
 
-        self.attribute_map = {
-            'type': 'type', 'name': 'name', 'is_exclusive': 'is_exclusive', 'requested_configuration': 'requested_configuration', 'link_to_docs': 'link_to_docs'
-        }
+        self.attribute_map = {'type': 'type', 'name': 'name', 'is_exclusive': 'is_exclusive', 'requested_configuration': 'requested_configuration', 'link_to_docs': 'link_to_docs'}
 
         self._type = type
         self._name = name
@@ -118,7 +114,7 @@ class InputTypeInfo(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

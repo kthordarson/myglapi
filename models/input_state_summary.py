@@ -1,7 +1,4 @@
-
-
 from pprint import pformat
-from six import iteritems
 import re
 class InputStateSummary(object):
     def __init__(self, id=None, state=None, started_at=None, detailed_message=None, message_input=None):
@@ -13,13 +10,8 @@ class InputStateSummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'id': 'str', 'state': 'str', 'started_at': 'datetime', 'detailed_message': 'str', 'message_input': 'object'
-        }
-
-        self.attribute_map = {
-            'id': 'id', 'state': 'state', 'started_at': 'started_at', 'detailed_message': 'detailed_message', 'message_input': 'message_input'
-        }
+        self.swagger_types = {'id': 'str', 'state': 'str', 'started_at': 'datetime', 'detailed_message': 'str', 'message_input': 'object'}
+        self.attribute_map = {'id': 'id', 'state': 'state', 'started_at': 'started_at', 'detailed_message': 'detailed_message', 'message_input': 'message_input'}
 
         self._id = id
         self._state = state
@@ -118,7 +110,7 @@ class InputStateSummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

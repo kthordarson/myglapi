@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class IndexRangeSummary(object):
     def __init__(self, index_name=None, begin=None, end=None, calculated_at=None, took_ms=None):
@@ -13,13 +13,9 @@ class IndexRangeSummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'index_name': 'str', 'begin': 'datetime', 'end': 'datetime', 'calculated_at': 'datetime', 'took_ms': 'int'
-        }
+        self.swagger_types = {'index_name': 'str', 'begin': 'datetime', 'end': 'datetime', 'calculated_at': 'datetime', 'took_ms': 'int'}
 
-        self.attribute_map = {
-            'index_name': 'index_name', 'begin': 'begin', 'end': 'end', 'calculated_at': 'calculated_at', 'took_ms': 'took_ms'
-        }
+        self.attribute_map = {'index_name': 'index_name', 'begin': 'begin', 'end': 'end', 'calculated_at': 'calculated_at', 'took_ms': 'took_ms'}
 
         self._index_name = index_name
         self._begin = begin
@@ -118,7 +114,7 @@ class IndexRangeSummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

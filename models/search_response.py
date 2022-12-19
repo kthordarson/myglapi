@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class SearchResponse(object):
     def __init__(self, to=None, fields=None, _from=None, time=None, query=None, messages=None, built_query=None, decoration_stats=None, total_results=None, used_indices=None):
@@ -13,13 +13,9 @@ class SearchResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'to': 'datetime', 'fields': 'list[str]', '_from': 'datetime', 'time': 'int', 'query': 'str', 'messages': 'list[object]', 'built_query': 'str', 'decoration_stats': 'object', 'total_results': 'int', 'used_indices': 'list[object]'
-        }
+        self.swagger_types = {'to': 'datetime', 'fields': 'list[str]', '_from': 'datetime', 'time': 'int', 'query': 'str', 'messages': 'list[object]', 'built_query': 'str', 'decoration_stats': 'object', 'total_results': 'int', 'used_indices': 'list[object]'}
 
-        self.attribute_map = {
-            'to': 'to', 'fields': 'fields', '_from': 'from', 'time': 'time', 'query': 'query', 'messages': 'messages', 'built_query': 'built_query', 'decoration_stats': 'decoration_stats', 'total_results': 'total_results', 'used_indices': 'used_indices'
-        }
+        self.attribute_map = {'to': 'to', 'fields': 'fields', '_from': 'from', 'time': 'time', 'query': 'query', 'messages': 'messages', 'built_query': 'built_query', 'decoration_stats': 'decoration_stats', 'total_results': 'total_results', 'used_indices': 'used_indices'}
 
         self._to = to
         self._fields = fields
@@ -208,7 +204,7 @@ class SearchResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

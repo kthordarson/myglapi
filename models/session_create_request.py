@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class SessionCreateRequest(object):
     def __init__(self, username=None, password=None, host=None):
@@ -13,13 +13,9 @@ class SessionCreateRequest(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'username': 'str', 'password': 'str', 'host': 'str'
-        }
+        self.swagger_types = {'username': 'str', 'password': 'str', 'host': 'str'}
 
-        self.attribute_map = {
-            'username': 'username', 'password': 'password', 'host': 'host'
-        }
+        self.attribute_map = {'username': 'username', 'password': 'password', 'host': 'host'}
 
         self._username = username
         self._password = password
@@ -82,7 +78,7 @@ class SessionCreateRequest(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

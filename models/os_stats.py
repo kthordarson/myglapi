@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class OsStats(object):
     def __init__(self, swap=None, processor=None, load_average=None, uptime=None, memory=None):
@@ -13,13 +13,9 @@ class OsStats(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'swap': 'object', 'processor': 'object', 'load_average': 'list[float]', 'uptime': 'int', 'memory': 'object'
-        }
+        self.swagger_types = {'swap': 'object', 'processor': 'object', 'load_average': 'list[float]', 'uptime': 'int', 'memory': 'object'}
 
-        self.attribute_map = {
-            'swap': 'swap', 'processor': 'processor', 'load_average': 'load_average', 'uptime': 'uptime', 'memory': 'memory'
-        }
+        self.attribute_map = {'swap': 'swap', 'processor': 'processor', 'load_average': 'load_average', 'uptime': 'uptime', 'memory': 'memory'}
 
         self._swap = swap
         self._processor = processor
@@ -118,7 +114,7 @@ class OsStats(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

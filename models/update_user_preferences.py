@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class UpdateUserPreferences(object):
     def __init__(self, preferences=None):
@@ -13,13 +13,9 @@ class UpdateUserPreferences(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'preferences': 'object'
-        }
+        self.swagger_types = {'preferences': 'object'}
 
-        self.attribute_map = {
-            'preferences': 'preferences'
-        }
+        self.attribute_map = {'preferences': 'preferences'}
 
         self._preferences = preferences
 
@@ -46,7 +42,7 @@ class UpdateUserPreferences(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

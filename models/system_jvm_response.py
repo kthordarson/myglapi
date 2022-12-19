@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class SystemJVMResponse(object):
     def __init__(self, free_memory=None, max_memory=None, total_memory=None, used_memory=None, node_id=None, pid=None, info=None):
@@ -13,13 +13,9 @@ class SystemJVMResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'free_memory': 'object', 'max_memory': 'object', 'total_memory': 'object', 'used_memory': 'object', 'node_id': 'str', 'pid': 'str', 'info': 'str'
-        }
+        self.swagger_types = {'free_memory': 'object', 'max_memory': 'object', 'total_memory': 'object', 'used_memory': 'object', 'node_id': 'str', 'pid': 'str', 'info': 'str'}
 
-        self.attribute_map = {
-            'free_memory': 'free_memory', 'max_memory': 'max_memory', 'total_memory': 'total_memory', 'used_memory': 'used_memory', 'node_id': 'node_id', 'pid': 'pid', 'info': 'info'
-        }
+        self.attribute_map = {'free_memory': 'free_memory', 'max_memory': 'max_memory', 'total_memory': 'total_memory', 'used_memory': 'used_memory', 'node_id': 'node_id', 'pid': 'pid', 'info': 'info'}
 
         self._free_memory = free_memory
         self._max_memory = max_memory
@@ -154,7 +150,7 @@ class SystemJVMResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

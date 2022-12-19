@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class MessageParseRequest(object):
     def __init__(self, message=None, codec=None, remote_address=None, configuration=None):
@@ -13,13 +13,9 @@ class MessageParseRequest(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'message': 'str', 'codec': 'str', 'remote_address': 'str', 'configuration': 'object'
-        }
+        self.swagger_types = {'message': 'str', 'codec': 'str', 'remote_address': 'str', 'configuration': 'object'}
 
-        self.attribute_map = {
-            'message': 'message', 'codec': 'codec', 'remote_address': 'remote_address', 'configuration': 'configuration'
-        }
+        self.attribute_map = {'message': 'message', 'codec': 'codec', 'remote_address': 'remote_address', 'configuration': 'configuration'}
 
         self._message = message
         self._codec = codec
@@ -100,7 +96,7 @@ class MessageParseRequest(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class SessionValidationResponse(object):
     def __init__(self, is_valid=None, session_id=None, username=None):
@@ -13,13 +13,9 @@ class SessionValidationResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'is_valid': 'bool', 'session_id': 'str', 'username': 'str'
-        }
+        self.swagger_types = {'is_valid': 'bool', 'session_id': 'str', 'username': 'str'}
 
-        self.attribute_map = {
-            'is_valid': 'is_valid', 'session_id': 'session_id', 'username': 'username'
-        }
+        self.attribute_map = {'is_valid': 'is_valid', 'session_id': 'session_id', 'username': 'username'}
 
         self._is_valid = is_valid
         self._session_id = session_id
@@ -82,7 +78,7 @@ class SessionValidationResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

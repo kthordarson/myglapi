@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class NodeDataSet(object):
     def __init__(self, jvm=None, timestamp=None, version=None, node_id=None, cluster_id=None, node_stats=None, node_info=None, report_interval_ms=None, host_info=None, host_stats=None):
@@ -13,13 +13,9 @@ class NodeDataSet(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'jvm': 'object', 'timestamp': 'int', 'version': 'str', 'node_id': 'str', 'cluster_id': 'str', 'node_stats': 'object', 'node_info': 'object', 'report_interval_ms': 'int', 'host_info': 'object', 'host_stats': 'object'
-        }
+        self.swagger_types = {'jvm': 'object', 'timestamp': 'int', 'version': 'str', 'node_id': 'str', 'cluster_id': 'str', 'node_stats': 'object', 'node_info': 'object', 'report_interval_ms': 'int', 'host_info': 'object', 'host_stats': 'object'}
 
-        self.attribute_map = {
-            'jvm': 'jvm', 'timestamp': 'timestamp', 'version': 'version', 'node_id': 'node_id', 'cluster_id': 'cluster_id', 'node_stats': 'node_stats', 'node_info': 'node_info', 'report_interval_ms': 'report_interval_ms', 'host_info': 'host_info', 'host_stats': 'host_stats'
-        }
+        self.attribute_map = {'jvm': 'jvm', 'timestamp': 'timestamp', 'version': 'version', 'node_id': 'node_id', 'cluster_id': 'cluster_id', 'node_stats': 'node_stats', 'node_info': 'node_info', 'report_interval_ms': 'report_interval_ms', 'host_info': 'host_info', 'host_stats': 'host_stats'}
 
         self._jvm = jvm
         self._timestamp = timestamp
@@ -208,7 +204,7 @@ class NodeDataSet(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

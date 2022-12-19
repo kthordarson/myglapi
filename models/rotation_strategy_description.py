@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class RotationStrategyDescription(object):
     def __init__(self, type=None, default_config=None, json_schema=None):
@@ -13,13 +13,9 @@ class RotationStrategyDescription(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'type': 'str', 'default_config': 'object', 'json_schema': 'object'
-        }
+        self.swagger_types = {'type': 'str', 'default_config': 'object', 'json_schema': 'object'}
 
-        self.attribute_map = {
-            'type': 'type', 'default_config': 'default_config', 'json_schema': 'json_schema'
-        }
+        self.attribute_map = {'type': 'type', 'default_config': 'default_config', 'json_schema': 'json_schema'}
 
         self._type = type
         self._default_config = default_config
@@ -82,7 +78,7 @@ class RotationStrategyDescription(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

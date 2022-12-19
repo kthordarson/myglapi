@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class MessageCountResponse(object):
     def __init__(self, events=None):
@@ -13,13 +13,9 @@ class MessageCountResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'events': 'int'
-        }
+        self.swagger_types = {'events': 'int'}
 
-        self.attribute_map = {
-            'events': 'events'
-        }
+        self.attribute_map = {'events': 'events'}
 
         self._events = events
 
@@ -46,7 +42,7 @@ class MessageCountResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class LdapTestConfigResponse(object):
     def __init__(self, connected=None, system_authenticated=None, login_authenticated=None, entry=None, groups=None, exception=None):
@@ -13,13 +13,9 @@ class LdapTestConfigResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'connected': 'bool', 'system_authenticated': 'bool', 'login_authenticated': 'bool', 'entry': 'object', 'groups': 'list[str]', 'exception': 'str'
-        }
+        self.swagger_types = {'connected': 'bool', 'system_authenticated': 'bool', 'login_authenticated': 'bool', 'entry': 'object', 'groups': 'list[str]', 'exception': 'str'}
 
-        self.attribute_map = {
-            'connected': 'connected', 'system_authenticated': 'system_authenticated', 'login_authenticated': 'login_authenticated', 'entry': 'entry', 'groups': 'groups', 'exception': 'exception'
-        }
+        self.attribute_map = {'connected': 'connected', 'system_authenticated': 'system_authenticated', 'login_authenticated': 'login_authenticated', 'entry': 'entry', 'groups': 'groups', 'exception': 'exception'}
 
         self._connected = connected
         self._system_authenticated = system_authenticated
@@ -136,7 +132,7 @@ class LdapTestConfigResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

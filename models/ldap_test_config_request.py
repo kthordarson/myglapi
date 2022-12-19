@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class LdapTestConfigRequest(object):
     def __init__(self, system_username=None, system_password=None, ldap_uri=None, use_start_tls=None, trust_all_certificates=None, active_directory=None, search_base=None, search_pattern=None, principal=None, password=None, test_connect_only=None, group_search_base=None, group_id_attribute=None, group_search_pattern=None):
@@ -13,13 +13,9 @@ class LdapTestConfigRequest(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'system_username': 'str', 'system_password': 'str', 'ldap_uri': 'str', 'use_start_tls': 'bool', 'trust_all_certificates': 'bool', 'active_directory': 'bool', 'search_base': 'str', 'search_pattern': 'str', 'principal': 'str', 'password': 'str', 'test_connect_only': 'bool', 'group_search_base': 'str', 'group_id_attribute': 'str', 'group_search_pattern': 'str'
-        }
+        self.swagger_types = {'system_username': 'str', 'system_password': 'str', 'ldap_uri': 'str', 'use_start_tls': 'bool', 'trust_all_certificates': 'bool', 'active_directory': 'bool', 'search_base': 'str', 'search_pattern': 'str', 'principal': 'str', 'password': 'str', 'test_connect_only': 'bool', 'group_search_base': 'str', 'group_id_attribute': 'str', 'group_search_pattern': 'str'}
 
-        self.attribute_map = {
-            'system_username': 'system_username', 'system_password': 'system_password', 'ldap_uri': 'ldap_uri', 'use_start_tls': 'use_start_tls', 'trust_all_certificates': 'trust_all_certificates', 'active_directory': 'active_directory', 'search_base': 'search_base', 'search_pattern': 'search_pattern', 'principal': 'principal', 'password': 'password', 'test_connect_only': 'test_connect_only', 'group_search_base': 'group_search_base', 'group_id_attribute': 'group_id_attribute', 'group_search_pattern': 'group_search_pattern'
-        }
+        self.attribute_map = {'system_username': 'system_username', 'system_password': 'system_password', 'ldap_uri': 'ldap_uri', 'use_start_tls': 'use_start_tls', 'trust_all_certificates': 'trust_all_certificates', 'active_directory': 'active_directory', 'search_base': 'search_base', 'search_pattern': 'search_pattern', 'principal': 'principal', 'password': 'password', 'test_connect_only': 'test_connect_only', 'group_search_base': 'group_search_base', 'group_id_attribute': 'group_id_attribute', 'group_search_pattern': 'group_search_pattern'}
 
         self._system_username = system_username
         self._system_password = system_password
@@ -280,7 +276,7 @@ class LdapTestConfigRequest(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

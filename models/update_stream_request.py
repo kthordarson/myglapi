@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class UpdateStreamRequest(object):
     def __init__(self, title=None, description=None, matching_type=None):
@@ -13,13 +13,9 @@ class UpdateStreamRequest(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'title': 'str', 'description': 'str', 'matching_type': 'str'
-        }
+        self.swagger_types = {'title': 'str', 'description': 'str', 'matching_type': 'str'}
 
-        self.attribute_map = {
-            'title': 'title', 'description': 'description', 'matching_type': 'matching_type'
-        }
+        self.attribute_map = {'title': 'title', 'description': 'description', 'matching_type': 'matching_type'}
 
         self._title = title
         self._description = description
@@ -82,7 +78,7 @@ class UpdateStreamRequest(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

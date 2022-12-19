@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class SystemJobSummary(object):
     def __init__(self, id=None, description=None, name=None, info=None, node_id=None, started_at=None, percent_complete=None, is_cancelable=None, provides_progress=None):
@@ -13,13 +13,9 @@ class SystemJobSummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'id': 'str', 'description': 'str', 'name': 'str', 'info': 'str', 'node_id': 'str', 'started_at': 'datetime', 'percent_complete': 'int', 'is_cancelable': 'bool', 'provides_progress': 'bool'
-        }
+        self.swagger_types = {'id': 'str', 'description': 'str', 'name': 'str', 'info': 'str', 'node_id': 'str', 'started_at': 'datetime', 'percent_complete': 'int', 'is_cancelable': 'bool', 'provides_progress': 'bool'}
 
-        self.attribute_map = {
-            'id': 'id', 'description': 'description', 'name': 'name', 'info': 'info', 'node_id': 'node_id', 'started_at': 'started_at', 'percent_complete': 'percent_complete', 'is_cancelable': 'is_cancelable', 'provides_progress': 'provides_progress'
-        }
+        self.attribute_map = {'id': 'id', 'description': 'description', 'name': 'name', 'info': 'info', 'node_id': 'node_id', 'started_at': 'started_at', 'percent_complete': 'percent_complete', 'is_cancelable': 'is_cancelable', 'provides_progress': 'provides_progress'}
 
         self._id = id
         self._description = description
@@ -190,7 +186,7 @@ class SystemJobSummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

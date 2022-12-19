@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class OpenIndicesInfo(object):
     def __init__(self, indices=None):
@@ -13,13 +13,9 @@ class OpenIndicesInfo(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'indices': 'object'
-        }
+        self.swagger_types = {'indices': 'object'}
 
-        self.attribute_map = {
-            'indices': 'indices'
-        }
+        self.attribute_map = {'indices': 'indices'}
 
         self._indices = indices
 
@@ -46,7 +42,7 @@ class OpenIndicesInfo(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

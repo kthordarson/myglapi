@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ProcessStats(object):
     def __init__(self, pid=None, cpu=None, open_file_descriptors=None, memory=None, max_file_descriptors=None):
@@ -13,13 +13,9 @@ class ProcessStats(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'pid': 'int', 'cpu': 'object', 'open_file_descriptors': 'int', 'memory': 'object', 'max_file_descriptors': 'int'
-        }
+        self.swagger_types = {'pid': 'int', 'cpu': 'object', 'open_file_descriptors': 'int', 'memory': 'object', 'max_file_descriptors': 'int'}
 
-        self.attribute_map = {
-            'pid': 'pid', 'cpu': 'cpu', 'open_file_descriptors': 'open_file_descriptors', 'memory': 'memory', 'max_file_descriptors': 'max_file_descriptors'
-        }
+        self.attribute_map = {'pid': 'pid', 'cpu': 'cpu', 'open_file_descriptors': 'open_file_descriptors', 'memory': 'memory', 'max_file_descriptors': 'max_file_descriptors'}
 
         self._pid = pid
         self._cpu = cpu
@@ -118,7 +114,7 @@ class ProcessStats(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

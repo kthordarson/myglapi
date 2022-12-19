@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ConfigurationBundle(object):
     def __init__(self, id=None, name=None, description=None, category=None, inputs=None, streams=None, outputs=None, dashboards=None, grok_patterns=None):
@@ -13,13 +13,9 @@ class ConfigurationBundle(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'id': 'str', 'name': 'str', 'description': 'str', 'category': 'str', 'inputs': 'list[object]', 'streams': 'list[object]', 'outputs': 'list[object]', 'dashboards': 'list[object]', 'grok_patterns': 'list[object]'
-        }
+        self.swagger_types = {'id': 'str', 'name': 'str', 'description': 'str', 'category': 'str', 'inputs': 'list[object]', 'streams': 'list[object]', 'outputs': 'list[object]', 'dashboards': 'list[object]', 'grok_patterns': 'list[object]'}
 
-        self.attribute_map = {
-            'id': 'id', 'name': 'name', 'description': 'description', 'category': 'category', 'inputs': 'inputs', 'streams': 'streams', 'outputs': 'outputs', 'dashboards': 'dashboards', 'grok_patterns': 'grok_patterns'
-        }
+        self.attribute_map = {'id': 'id', 'name': 'name', 'description': 'description', 'category': 'category', 'inputs': 'inputs', 'streams': 'streams', 'outputs': 'outputs', 'dashboards': 'dashboards', 'grok_patterns': 'grok_patterns'}
 
         self._id = id
         self._name = name
@@ -190,7 +186,7 @@ class ConfigurationBundle(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

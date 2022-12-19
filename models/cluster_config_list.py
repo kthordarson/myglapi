@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ClusterConfigList(object):
     def __init__(self, total=None, classes=None):
@@ -13,13 +13,9 @@ class ClusterConfigList(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'total': 'int', 'classes': 'list[str]'
-        }
+        self.swagger_types = {'total': 'int', 'classes': 'list[str]'}
 
-        self.attribute_map = {
-            'total': 'total', 'classes': 'classes'
-        }
+        self.attribute_map = {'total': 'total', 'classes': 'classes'}
 
         self._total = total
         self._classes = classes
@@ -64,7 +60,7 @@ class ClusterConfigList(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

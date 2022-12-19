@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ExposedConfiguration(object):
     def __init__(self, inputbuffer_processors=None, processbuffer_processors=None, outputbuffer_processors=None, processor_wait_strategy=None, inputbuffer_wait_strategy=None, inputbuffer_ring_size=None, ring_size=None, plugin_dir=None, node_id_file=None, allow_highlighting=None, allow_leading_wildcard_searches=None, elasticsearch_shards=None, elasticsearch_replicas=None, stream_processing_timeout=None, stream_processing_max_faults=None, output_module_timeout=None, stale_master_timeout=None, disable_index_optimization=None, index_optimization_max_num_segments=None, gc_warning_threshold=None):
@@ -13,13 +13,9 @@ class ExposedConfiguration(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'inputbuffer_processors': 'int', 'processbuffer_processors': 'int', 'outputbuffer_processors': 'int', 'processor_wait_strategy': 'str', 'inputbuffer_wait_strategy': 'str', 'inputbuffer_ring_size': 'int', 'ring_size': 'int', 'plugin_dir': 'str', 'node_id_file': 'str', 'allow_highlighting': 'bool', 'allow_leading_wildcard_searches': 'bool', 'elasticsearch_shards': 'int', 'elasticsearch_replicas': 'int', 'stream_processing_timeout': 'int', 'stream_processing_max_faults': 'int', 'output_module_timeout': 'int', 'stale_master_timeout': 'int', 'disable_index_optimization': 'bool', 'index_optimization_max_num_segments': 'int', 'gc_warning_threshold': 'str'
-        }
+        self.swagger_types = {'inputbuffer_processors': 'int', 'processbuffer_processors': 'int', 'outputbuffer_processors': 'int', 'processor_wait_strategy': 'str', 'inputbuffer_wait_strategy': 'str', 'inputbuffer_ring_size': 'int', 'ring_size': 'int', 'plugin_dir': 'str', 'node_id_file': 'str', 'allow_highlighting': 'bool', 'allow_leading_wildcard_searches': 'bool', 'elasticsearch_shards': 'int', 'elasticsearch_replicas': 'int', 'stream_processing_timeout': 'int', 'stream_processing_max_faults': 'int', 'output_module_timeout': 'int', 'stale_master_timeout': 'int', 'disable_index_optimization': 'bool', 'index_optimization_max_num_segments': 'int', 'gc_warning_threshold': 'str'}
 
-        self.attribute_map = {
-            'inputbuffer_processors': 'inputbuffer_processors', 'processbuffer_processors': 'processbuffer_processors', 'outputbuffer_processors': 'outputbuffer_processors', 'processor_wait_strategy': 'processor_wait_strategy', 'inputbuffer_wait_strategy': 'inputbuffer_wait_strategy', 'inputbuffer_ring_size': 'inputbuffer_ring_size', 'ring_size': 'ring_size', 'plugin_dir': 'plugin_dir', 'node_id_file': 'node_id_file', 'allow_highlighting': 'allow_highlighting', 'allow_leading_wildcard_searches': 'allow_leading_wildcard_searches', 'elasticsearch_shards': 'elasticsearch_shards', 'elasticsearch_replicas': 'elasticsearch_replicas', 'stream_processing_timeout': 'stream_processing_timeout', 'stream_processing_max_faults': 'stream_processing_max_faults', 'output_module_timeout': 'output_module_timeout', 'stale_master_timeout': 'stale_master_timeout', 'disable_index_optimization': 'disable_index_optimization', 'index_optimization_max_num_segments': 'index_optimization_max_num_segments', 'gc_warning_threshold': 'gc_warning_threshold'
-        }
+        self.attribute_map = {'inputbuffer_processors': 'inputbuffer_processors', 'processbuffer_processors': 'processbuffer_processors', 'outputbuffer_processors': 'outputbuffer_processors', 'processor_wait_strategy': 'processor_wait_strategy', 'inputbuffer_wait_strategy': 'inputbuffer_wait_strategy', 'inputbuffer_ring_size': 'inputbuffer_ring_size', 'ring_size': 'ring_size', 'plugin_dir': 'plugin_dir', 'node_id_file': 'node_id_file', 'allow_highlighting': 'allow_highlighting', 'allow_leading_wildcard_searches': 'allow_leading_wildcard_searches', 'elasticsearch_shards': 'elasticsearch_shards', 'elasticsearch_replicas': 'elasticsearch_replicas', 'stream_processing_timeout': 'stream_processing_timeout', 'stream_processing_max_faults': 'stream_processing_max_faults', 'output_module_timeout': 'output_module_timeout', 'stale_master_timeout': 'stale_master_timeout', 'disable_index_optimization': 'disable_index_optimization', 'index_optimization_max_num_segments': 'index_optimization_max_num_segments', 'gc_warning_threshold': 'gc_warning_threshold'}
 
         self._inputbuffer_processors = inputbuffer_processors
         self._processbuffer_processors = processbuffer_processors
@@ -388,7 +384,7 @@ class ExposedConfiguration(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

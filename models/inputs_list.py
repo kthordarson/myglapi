@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class InputsList(object):
     def __init__(self, inputs=None, total=None):
@@ -13,13 +13,9 @@ class InputsList(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'inputs': 'list[object]', 'total': 'int'
-        }
+        self.swagger_types = {'inputs': 'list[object]', 'total': 'int'}
 
-        self.attribute_map = {
-            'inputs': 'inputs', 'total': 'total'
-        }
+        self.attribute_map = {'inputs': 'inputs', 'total': 'total'}
 
         self._inputs = inputs
         self._total = total
@@ -64,7 +60,7 @@ class InputsList(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

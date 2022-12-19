@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ClusterDataSet(object):
     def __init__(self, timestamp=None, version=None, cluster_id=None, report_interval_ms=None, cluster_stats=None):
@@ -13,13 +13,9 @@ class ClusterDataSet(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'timestamp': 'int', 'version': 'str', 'cluster_id': 'str', 'report_interval_ms': 'int', 'cluster_stats': 'object'
-        }
+        self.swagger_types = {'timestamp': 'int', 'version': 'str', 'cluster_id': 'str', 'report_interval_ms': 'int', 'cluster_stats': 'object'}
 
-        self.attribute_map = {
-            'timestamp': 'timestamp', 'version': 'version', 'cluster_id': 'cluster_id', 'report_interval_ms': 'report_interval_ms', 'cluster_stats': 'cluster_stats'
-        }
+        self.attribute_map = {'timestamp': 'timestamp', 'version': 'version', 'cluster_id': 'cluster_id', 'report_interval_ms': 'report_interval_ms', 'cluster_stats': 'cluster_stats'}
 
         self._timestamp = timestamp
         self._version = version
@@ -118,7 +114,7 @@ class ClusterDataSet(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

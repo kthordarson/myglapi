@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class JournalSummaryResponse(object):
     def __init__(self, enabled=None, append_events_per_second=None, read_events_per_second=None, uncommitted_journal_entries=None, journal_size=None, journal_size_limit=None, number_of_segments=None, oldest_segment=None, journal_config=None):
@@ -13,13 +13,9 @@ class JournalSummaryResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'enabled': 'bool', 'append_events_per_second': 'int', 'read_events_per_second': 'int', 'uncommitted_journal_entries': 'int', 'journal_size': 'Any', 'journal_size_limit': 'Any', 'number_of_segments': 'int', 'oldest_segment': 'datetime', 'journal_config': 'object'
-        }
+        self.swagger_types = {'enabled': 'bool', 'append_events_per_second': 'int', 'read_events_per_second': 'int', 'uncommitted_journal_entries': 'int', 'journal_size': 'Any', 'journal_size_limit': 'Any', 'number_of_segments': 'int', 'oldest_segment': 'datetime', 'journal_config': 'object'}
 
-        self.attribute_map = {
-            'enabled': 'enabled', 'append_events_per_second': 'append_events_per_second', 'read_events_per_second': 'read_events_per_second', 'uncommitted_journal_entries': 'uncommitted_journal_entries', 'journal_size': 'journal_size', 'journal_size_limit': 'journal_size_limit', 'number_of_segments': 'number_of_segments', 'oldest_segment': 'oldest_segment', 'journal_config': 'journal_config'
-        }
+        self.attribute_map = {'enabled': 'enabled', 'append_events_per_second': 'append_events_per_second', 'read_events_per_second': 'read_events_per_second', 'uncommitted_journal_entries': 'uncommitted_journal_entries', 'journal_size': 'journal_size', 'journal_size_limit': 'journal_size_limit', 'number_of_segments': 'number_of_segments', 'oldest_segment': 'oldest_segment', 'journal_config': 'journal_config'}
 
         self._enabled = enabled
         self._append_events_per_second = append_events_per_second
@@ -190,7 +186,7 @@ class JournalSummaryResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

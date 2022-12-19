@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ElasticsearchStats(object):
     def __init__(self, status=None, cluster_name=None, nodes_stats=None, cluster_health=None, indices_stats=None):
@@ -13,13 +13,9 @@ class ElasticsearchStats(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'status': 'str', 'cluster_name': 'str', 'nodes_stats': 'object', 'cluster_health': 'object', 'indices_stats': 'object'
-        }
+        self.swagger_types = {'status': 'str', 'cluster_name': 'str', 'nodes_stats': 'object', 'cluster_health': 'object', 'indices_stats': 'object'}
 
-        self.attribute_map = {
-            'status': 'status', 'cluster_name': 'cluster_name', 'nodes_stats': 'nodes_stats', 'cluster_health': 'cluster_health', 'indices_stats': 'indices_stats'
-        }
+        self.attribute_map = {'status': 'status', 'cluster_name': 'cluster_name', 'nodes_stats': 'nodes_stats', 'cluster_health': 'cluster_health', 'indices_stats': 'indices_stats'}
 
         self._status = status
         self._cluster_name = cluster_name
@@ -124,7 +120,7 @@ class ElasticsearchStats(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

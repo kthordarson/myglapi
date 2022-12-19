@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class DebugEvent(object):
     def __init__(self, node_id=None, date=None, text=None):
@@ -13,13 +13,9 @@ class DebugEvent(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'node_id': 'str', 'date': 'datetime', 'text': 'str'
-        }
+        self.swagger_types = {'node_id': 'str', 'date': 'datetime', 'text': 'str'}
 
-        self.attribute_map = {
-            'node_id': 'node_id', 'date': 'date', 'text': 'text'
-        }
+        self.attribute_map = {'node_id': 'node_id', 'date': 'date', 'text': 'text'}
 
         self._node_id = node_id
         self._date = date
@@ -82,7 +78,7 @@ class DebugEvent(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

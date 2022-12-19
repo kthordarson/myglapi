@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class Token(object):
     def __init__(self, name=None, token=None, last_access=None):
@@ -13,13 +13,9 @@ class Token(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'name': 'str', 'token': 'str', 'last_access': 'datetime'
-        }
+        self.swagger_types = {'name': 'str', 'token': 'str', 'last_access': 'datetime'}
 
-        self.attribute_map = {
-            'name': 'name', 'token': 'token', 'last_access': 'last_access'
-        }
+        self.attribute_map = {'name': 'name', 'token': 'token', 'last_access': 'last_access'}
 
         self._name = name
         self._token = token
@@ -82,7 +78,7 @@ class Token(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class RoleResponse(object):
     def __init__(self, name=None, description=None, permissions=None, read_only=None):
@@ -13,13 +13,9 @@ class RoleResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'name': 'str', 'description': 'str', 'permissions': 'list[str]', 'read_only': 'bool'
-        }
+        self.swagger_types = {'name': 'str', 'description': 'str', 'permissions': 'list[str]', 'read_only': 'bool'}
 
-        self.attribute_map = {
-            'name': 'name', 'description': 'description', 'permissions': 'permissions', 'read_only': 'read_only'
-        }
+        self.attribute_map = {'name': 'name', 'description': 'description', 'permissions': 'permissions', 'read_only': 'read_only'}
 
         self._name = name
         self._description = description
@@ -100,7 +96,7 @@ class RoleResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

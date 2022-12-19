@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class MongoStats(object):
     def __init__(self, server_status=None, servers=None, host_info=None, build_info=None, database_stats=None):
@@ -13,13 +13,9 @@ class MongoStats(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'server_status': 'object', 'servers': 'list[str]', 'host_info': 'object', 'build_info': 'object', 'database_stats': 'object'
-        }
+        self.swagger_types = {'server_status': 'object', 'servers': 'list[str]', 'host_info': 'object', 'build_info': 'object', 'database_stats': 'object'}
 
-        self.attribute_map = {
-            'server_status': 'server_status', 'servers': 'servers', 'host_info': 'host_info', 'build_info': 'build_info', 'database_stats': 'database_stats'
-        }
+        self.attribute_map = {'server_status': 'server_status', 'servers': 'servers', 'host_info': 'host_info', 'build_info': 'build_info', 'database_stats': 'database_stats'}
 
         self._server_status = server_status
         self._servers = servers
@@ -118,7 +114,7 @@ class MongoStats(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

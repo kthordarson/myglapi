@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class UpdateDashboardRequest(object):
     def __init__(self, title=None, description=None):
@@ -13,13 +13,9 @@ class UpdateDashboardRequest(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'title': 'str', 'description': 'str'
-        }
+        self.swagger_types = {'title': 'str', 'description': 'str'}
 
-        self.attribute_map = {
-            'title': 'title', 'description': 'description'
-        }
+        self.attribute_map = {'title': 'title', 'description': 'description'}
 
         self._title = title
         self._description = description
@@ -64,7 +60,7 @@ class UpdateDashboardRequest(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

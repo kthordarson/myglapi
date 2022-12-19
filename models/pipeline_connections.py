@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class PipelineConnections(object):
     def __init__(self, id=None, stream_id=None, pipeline_ids=None):
@@ -13,13 +13,9 @@ class PipelineConnections(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'id': 'str', 'stream_id': 'str', 'pipeline_ids': 'list[str]'
-        }
+        self.swagger_types = {'id': 'str', 'stream_id': 'str', 'pipeline_ids': 'list[str]'}
 
-        self.attribute_map = {
-            'id': 'id', 'stream_id': 'stream_id', 'pipeline_ids': 'pipeline_ids'
-        }
+        self.attribute_map = {'id': 'id', 'stream_id': 'stream_id', 'pipeline_ids': 'pipeline_ids'}
 
         self._id = id
         self._stream_id = stream_id
@@ -82,7 +78,7 @@ class PipelineConnections(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

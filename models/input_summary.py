@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class InputSummary(object):
     def __init__(self, title=None, _global=None, name=None, content_pack=None, id=None, created_at=None, type=None, creator_user_id=None, attributes=None, static_fields=None, node=None):
@@ -13,13 +13,9 @@ class InputSummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'title': 'str', '_global': 'bool', 'name': 'str', 'content_pack': 'str', 'id': 'str', 'created_at': 'datetime', 'type': 'str', 'creator_user_id': 'str', 'attributes': 'object', 'static_fields': 'object', 'node': 'str'
-        }
+        self.swagger_types = {'title': 'str', '_global': 'bool', 'name': 'str', 'content_pack': 'str', 'id': 'str', 'created_at': 'datetime', 'type': 'str', 'creator_user_id': 'str', 'attributes': 'object', 'static_fields': 'object', 'node': 'str'}
 
-        self.attribute_map = {
-            'title': 'title', '_global': 'global', 'name': 'name', 'content_pack': 'content_pack', 'id': 'id', 'created_at': 'created_at', 'type': 'type', 'creator_user_id': 'creator_user_id', 'attributes': 'attributes', 'static_fields': 'static_fields', 'node': 'node'
-        }
+        self.attribute_map = {'title': 'title', '_global': 'global', 'name': 'name', 'content_pack': 'content_pack', 'id': 'id', 'created_at': 'created_at', 'type': 'type', 'creator_user_id': 'creator_user_id', 'attributes': 'attributes', 'static_fields': 'static_fields', 'node': 'node'}
 
         self._title = title
         self.__global = _global
@@ -226,7 +222,7 @@ class InputSummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

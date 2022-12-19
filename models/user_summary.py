@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class UserSummary(object):
     def __init__(self, id=None, username=None, email=None, full_name=None, permissions=None, preferences=None, timezone=None, session_timeout_ms=None, read_only=None, external=None, startpage=None, roles=None, session_active=None, last_activity=None, client_address=None):
@@ -13,13 +13,9 @@ class UserSummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'id': 'str', 'username': 'str', 'email': 'str', 'full_name': 'str', 'permissions': 'list[str]', 'preferences': 'object', 'timezone': 'str', 'session_timeout_ms': 'int', 'read_only': 'bool', 'external': 'bool', 'startpage': 'object', 'roles': 'list[str]', 'session_active': 'bool', 'last_activity': 'datetime', 'client_address': 'str'
-        }
+        self.swagger_types = {'id': 'str', 'username': 'str', 'email': 'str', 'full_name': 'str', 'permissions': 'list[str]', 'preferences': 'object', 'timezone': 'str', 'session_timeout_ms': 'int', 'read_only': 'bool', 'external': 'bool', 'startpage': 'object', 'roles': 'list[str]', 'session_active': 'bool', 'last_activity': 'datetime', 'client_address': 'str'}
 
-        self.attribute_map = {
-            'id': 'id', 'username': 'username', 'email': 'email', 'full_name': 'full_name', 'permissions': 'permissions', 'preferences': 'preferences', 'timezone': 'timezone', 'session_timeout_ms': 'session_timeout_ms', 'read_only': 'read_only', 'external': 'external', 'startpage': 'startpage', 'roles': 'roles', 'session_active': 'session_active', 'last_activity': 'last_activity', 'client_address': 'client_address'
-        }
+        self.attribute_map = {'id': 'id', 'username': 'username', 'email': 'email', 'full_name': 'full_name', 'permissions': 'permissions', 'preferences': 'preferences', 'timezone': 'timezone', 'session_timeout_ms': 'session_timeout_ms', 'read_only': 'read_only', 'external': 'external', 'startpage': 'startpage', 'roles': 'roles', 'session_active': 'session_active', 'last_activity': 'last_activity', 'client_address': 'client_address'}
 
         self._id = id
         self._username = username
@@ -298,7 +294,7 @@ class UserSummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

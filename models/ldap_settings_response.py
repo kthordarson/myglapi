@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class LdapSettingsResponse(object):
     def __init__(self, enabled=None, system_username=None, system_password=None, ldap_uri=None, use_start_tls=None, trust_all_certificates=None, active_directory=None, search_base=None, search_pattern=None, default_group=None, group_mapping=None, group_search_base=None, group_id_attribute=None, additional_default_groups=None, group_search_pattern=None, display_name_attribute=None):
@@ -13,13 +13,9 @@ class LdapSettingsResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'enabled': 'bool', 'system_username': 'str', 'system_password': 'str', 'ldap_uri': 'str', 'use_start_tls': 'bool', 'trust_all_certificates': 'bool', 'active_directory': 'bool', 'search_base': 'str', 'search_pattern': 'str', 'default_group': 'str', 'group_mapping': 'object', 'group_search_base': 'str', 'group_id_attribute': 'str', 'additional_default_groups': 'list[str]', 'group_search_pattern': 'str', 'display_name_attribute': 'str'
-        }
+        self.swagger_types = {'enabled': 'bool', 'system_username': 'str', 'system_password': 'str', 'ldap_uri': 'str', 'use_start_tls': 'bool', 'trust_all_certificates': 'bool', 'active_directory': 'bool', 'search_base': 'str', 'search_pattern': 'str', 'default_group': 'str', 'group_mapping': 'object', 'group_search_base': 'str', 'group_id_attribute': 'str', 'additional_default_groups': 'list[str]', 'group_search_pattern': 'str', 'display_name_attribute': 'str'}
 
-        self.attribute_map = {
-            'enabled': 'enabled', 'system_username': 'system_username', 'system_password': 'system_password', 'ldap_uri': 'ldap_uri', 'use_start_tls': 'use_start_tls', 'trust_all_certificates': 'trust_all_certificates', 'active_directory': 'active_directory', 'search_base': 'search_base', 'search_pattern': 'search_pattern', 'default_group': 'default_group', 'group_mapping': 'group_mapping', 'group_search_base': 'group_search_base', 'group_id_attribute': 'group_id_attribute', 'additional_default_groups': 'additional_default_groups', 'group_search_pattern': 'group_search_pattern', 'display_name_attribute': 'display_name_attribute'
-        }
+        self.attribute_map = {'enabled': 'enabled', 'system_username': 'system_username', 'system_password': 'system_password', 'ldap_uri': 'ldap_uri', 'use_start_tls': 'use_start_tls', 'trust_all_certificates': 'trust_all_certificates', 'active_directory': 'active_directory', 'search_base': 'search_base', 'search_pattern': 'search_pattern', 'default_group': 'default_group', 'group_mapping': 'group_mapping', 'group_search_base': 'group_search_base', 'group_id_attribute': 'group_id_attribute', 'additional_default_groups': 'additional_default_groups', 'group_search_pattern': 'group_search_pattern', 'display_name_attribute': 'display_name_attribute'}
 
         self._enabled = enabled
         self._system_username = system_username
@@ -316,7 +312,7 @@ class LdapSettingsResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

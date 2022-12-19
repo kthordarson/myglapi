@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class TestMatchResponse(object):
     def __init__(self, matches=None, rules=None):
@@ -13,13 +13,9 @@ class TestMatchResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'matches': 'bool', 'rules': 'object'
-        }
+        self.swagger_types = {'matches': 'bool', 'rules': 'object'}
 
-        self.attribute_map = {
-            'matches': 'matches', 'rules': 'rules'
-        }
+        self.attribute_map = {'matches': 'matches', 'rules': 'rules'}
 
         self._matches = matches
         self._rules = rules
@@ -64,7 +60,7 @@ class TestMatchResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

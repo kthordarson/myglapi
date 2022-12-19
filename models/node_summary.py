@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class NodeSummary(object):
     def __init__(self, cluster_id=None, node_id=None, type=None, is_master=None, transport_address=None, last_seen=None, short_node_id=None, hostname=None):
@@ -13,13 +13,9 @@ class NodeSummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'cluster_id': 'str', 'node_id': 'str', 'type': 'str', 'is_master': 'bool', 'transport_address': 'str', 'last_seen': 'str', 'short_node_id': 'str', 'hostname': 'str'
-        }
+        self.swagger_types = {'cluster_id': 'str', 'node_id': 'str', 'type': 'str', 'is_master': 'bool', 'transport_address': 'str', 'last_seen': 'str', 'short_node_id': 'str', 'hostname': 'str'}
 
-        self.attribute_map = {
-            'cluster_id': 'cluster_id', 'node_id': 'node_id', 'type': 'type', 'is_master': 'is_master', 'transport_address': 'transport_address', 'last_seen': 'last_seen', 'short_node_id': 'short_node_id', 'hostname': 'hostname'
-        }
+        self.attribute_map = {'cluster_id': 'cluster_id', 'node_id': 'node_id', 'type': 'type', 'is_master': 'is_master', 'transport_address': 'transport_address', 'last_seen': 'last_seen', 'short_node_id': 'short_node_id', 'hostname': 'hostname'}
 
         self._cluster_id = cluster_id
         self._node_id = node_id
@@ -172,7 +168,7 @@ class NodeSummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

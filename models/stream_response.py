@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class StreamResponse(object):
     def __init__(self, id=None, creator_user_id=None, outputs=None, matching_type=None, description=None, created_at=None, disabled=None, rules=None, alert_conditions=None, alert_receivers=None, title=None, content_pack=None):
@@ -13,13 +13,9 @@ class StreamResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'id': 'str', 'creator_user_id': 'str', 'outputs': 'list[object]', 'matching_type': 'str', 'description': 'str', 'created_at': 'str', 'disabled': 'bool', 'rules': 'list[object]', 'alert_conditions': 'list[object]', 'alert_receivers': 'object', 'title': 'str', 'content_pack': 'str'
-        }
+        self.swagger_types = {'id': 'str', 'creator_user_id': 'str', 'outputs': 'list[object]', 'matching_type': 'str', 'description': 'str', 'created_at': 'str', 'disabled': 'bool', 'rules': 'list[object]', 'alert_conditions': 'list[object]', 'alert_receivers': 'object', 'title': 'str', 'content_pack': 'str'}
 
-        self.attribute_map = {
-            'id': 'id', 'creator_user_id': 'creator_user_id', 'outputs': 'outputs', 'matching_type': 'matching_type', 'description': 'description', 'created_at': 'created_at', 'disabled': 'disabled', 'rules': 'rules', 'alert_conditions': 'alert_conditions', 'alert_receivers': 'alert_receivers', 'title': 'title', 'content_pack': 'content_pack'
-        }
+        self.attribute_map = {'id': 'id', 'creator_user_id': 'creator_user_id', 'outputs': 'outputs', 'matching_type': 'matching_type', 'description': 'description', 'created_at': 'created_at', 'disabled': 'disabled', 'rules': 'rules', 'alert_conditions': 'alert_conditions', 'alert_receivers': 'alert_receivers', 'title': 'title', 'content_pack': 'content_pack'}
 
         self._id = id
         self._creator_user_id = creator_user_id
@@ -244,7 +240,7 @@ class StreamResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

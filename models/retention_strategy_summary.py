@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class RetentionStrategySummary(object):
     def __init__(self, strategy=None, config=None):
@@ -13,13 +13,9 @@ class RetentionStrategySummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'strategy': 'str', 'config': 'object'
-        }
+        self.swagger_types = {'strategy': 'str', 'config': 'object'}
 
-        self.attribute_map = {
-            'strategy': 'strategy', 'config': 'config'
-        }
+        self.attribute_map = {'strategy': 'strategy', 'config': 'config'}
 
         self._strategy = strategy
         self._config = config
@@ -64,7 +60,7 @@ class RetentionStrategySummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

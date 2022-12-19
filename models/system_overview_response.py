@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class SystemOverviewResponse(object):
     def __init__(self, facility=None, codename=None, node_id=None, cluster_id=None, version=None, started_at=None, is_processing=None, hostname=None, lifecycle=None, lb_status=None, timezone=None, operating_system=None):
@@ -13,13 +13,9 @@ class SystemOverviewResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'facility': 'str', 'codename': 'str', 'node_id': 'str', 'cluster_id': 'str', 'version': 'str', 'started_at': 'str', 'is_processing': 'bool', 'hostname': 'str', 'lifecycle': 'str', 'lb_status': 'str', 'timezone': 'str', 'operating_system': 'str'
-        }
+        self.swagger_types = {'facility': 'str', 'codename': 'str', 'node_id': 'str', 'cluster_id': 'str', 'version': 'str', 'started_at': 'str', 'is_processing': 'bool', 'hostname': 'str', 'lifecycle': 'str', 'lb_status': 'str', 'timezone': 'str', 'operating_system': 'str'}
 
-        self.attribute_map = {
-            'facility': 'facility', 'codename': 'codename', 'node_id': 'node_id', 'cluster_id': 'cluster_id', 'version': 'version', 'started_at': 'started_at', 'is_processing': 'is_processing', 'hostname': 'hostname', 'lifecycle': 'lifecycle', 'lb_status': 'lb_status', 'timezone': 'timezone', 'operating_system': 'operating_system'
-        }
+        self.attribute_map = {'facility': 'facility', 'codename': 'codename', 'node_id': 'node_id', 'cluster_id': 'cluster_id', 'version': 'version', 'started_at': 'started_at', 'is_processing': 'is_processing', 'hostname': 'hostname', 'lifecycle': 'lifecycle', 'lb_status': 'lb_status', 'timezone': 'timezone', 'operating_system': 'operating_system'}
 
         self._facility = facility
         self._codename = codename
@@ -244,7 +240,7 @@ class SystemOverviewResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

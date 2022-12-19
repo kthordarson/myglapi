@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ReaderPermissionResponse(object):
     def __init__(self, permissions=None):
@@ -13,13 +13,9 @@ class ReaderPermissionResponse(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'permissions': 'list[str]'
-        }
+        self.swagger_types = {'permissions': 'list[str]'}
 
-        self.attribute_map = {
-            'permissions': 'permissions'
-        }
+        self.attribute_map = {'permissions': 'permissions'}
 
         self._permissions = permissions
 
@@ -46,7 +42,7 @@ class ReaderPermissionResponse(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

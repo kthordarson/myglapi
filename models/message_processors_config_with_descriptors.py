@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class MessageProcessorsConfigWithDescriptors(object):
     def __init__(self, processor_order=None, disabled_processors=None):
@@ -13,13 +13,9 @@ class MessageProcessorsConfigWithDescriptors(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'processor_order': 'list[object]', 'disabled_processors': 'list[str]'
-        }
+        self.swagger_types = {'processor_order': 'list[object]', 'disabled_processors': 'list[str]'}
 
-        self.attribute_map = {
-            'processor_order': 'processor_order', 'disabled_processors': 'disabled_processors'
-        }
+        self.attribute_map = {'processor_order': 'processor_order', 'disabled_processors': 'disabled_processors'}
 
         self._processor_order = processor_order
         self._disabled_processors = disabled_processors
@@ -64,7 +60,7 @@ class MessageProcessorsConfigWithDescriptors(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

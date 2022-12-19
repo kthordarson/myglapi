@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class JvmStats(object):
     def __init__(self, start_time=None, class_path=None, spec_version=None, spec_vendor=None, mem=None, boot_class_path=None, version=None, garbage_collectors=None, vm_name=None, vm_version=None, vm_vendor=None, input_arguments=None, system_properties=None, memory_pools=None, spec_name=None):
@@ -13,13 +13,9 @@ class JvmStats(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'start_time': 'int', 'class_path': 'str', 'spec_version': 'str', 'spec_vendor': 'str', 'mem': 'object', 'boot_class_path': 'str', 'version': 'str', 'garbage_collectors': 'list[str]', 'vm_name': 'str', 'vm_version': 'str', 'vm_vendor': 'str', 'input_arguments': 'list[str]', 'system_properties': 'object', 'memory_pools': 'list[str]', 'spec_name': 'str'
-        }
+        self.swagger_types = {'start_time': 'int', 'class_path': 'str', 'spec_version': 'str', 'spec_vendor': 'str', 'mem': 'object', 'boot_class_path': 'str', 'version': 'str', 'garbage_collectors': 'list[str]', 'vm_name': 'str', 'vm_version': 'str', 'vm_vendor': 'str', 'input_arguments': 'list[str]', 'system_properties': 'object', 'memory_pools': 'list[str]', 'spec_name': 'str'}
 
-        self.attribute_map = {
-            'start_time': 'start_time', 'class_path': 'class_path', 'spec_version': 'spec_version', 'spec_vendor': 'spec_vendor', 'mem': 'mem', 'boot_class_path': 'boot_class_path', 'version': 'version', 'garbage_collectors': 'garbage_collectors', 'vm_name': 'vm_name', 'vm_version': 'vm_version', 'vm_vendor': 'vm_vendor', 'input_arguments': 'input_arguments', 'system_properties': 'system_properties', 'memory_pools': 'memory_pools', 'spec_name': 'spec_name'
-        }
+        self.attribute_map = {'start_time': 'start_time', 'class_path': 'class_path', 'spec_version': 'spec_version', 'spec_vendor': 'spec_vendor', 'mem': 'mem', 'boot_class_path': 'boot_class_path', 'version': 'version', 'garbage_collectors': 'garbage_collectors', 'vm_name': 'vm_name', 'vm_version': 'vm_version', 'vm_vendor': 'vm_vendor', 'input_arguments': 'input_arguments', 'system_properties': 'system_properties', 'memory_pools': 'memory_pools', 'spec_name': 'spec_name'}
 
         self._start_time = start_time
         self._class_path = class_path
@@ -298,7 +294,7 @@ class JvmStats(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

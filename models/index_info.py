@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class IndexInfo(object):
     def __init__(self, primary_shards=None, all_shards=None, routing=None, reopened=None):
@@ -13,13 +13,9 @@ class IndexInfo(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'primary_shards': 'object', 'all_shards': 'object', 'routing': 'list[object]', 'reopened': 'bool'
-        }
+        self.swagger_types = {'primary_shards': 'object', 'all_shards': 'object', 'routing': 'list[object]', 'reopened': 'bool'}
 
-        self.attribute_map = {
-            'primary_shards': 'primary_shards', 'all_shards': 'all_shards', 'routing': 'routing', 'reopened': 'reopened'
-        }
+        self.attribute_map = {'primary_shards': 'primary_shards', 'all_shards': 'all_shards', 'routing': 'routing', 'reopened': 'reopened'}
 
         self._primary_shards = primary_shards
         self._all_shards = all_shards
@@ -100,7 +96,7 @@ class IndexInfo(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

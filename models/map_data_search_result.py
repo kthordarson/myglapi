@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class MapDataSearchResult(object):
     def __init__(self, query=None, timerange=None, limit=None, stream_id=None, fields=None):
@@ -13,13 +13,9 @@ class MapDataSearchResult(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'query': 'str', 'timerange': 'object', 'limit': 'int', 'stream_id': 'str', 'fields': 'object'
-        }
+        self.swagger_types = {'query': 'str', 'timerange': 'object', 'limit': 'int', 'stream_id': 'str', 'fields': 'object'}
 
-        self.attribute_map = {
-            'query': 'query', 'timerange': 'timerange', 'limit': 'limit', 'stream_id': 'stream_id', 'fields': 'fields'
-        }
+        self.attribute_map = {'query': 'query', 'timerange': 'timerange', 'limit': 'limit', 'stream_id': 'stream_id', 'fields': 'fields'}
 
         self._query = query
         self._timerange = timerange
@@ -118,7 +114,7 @@ class MapDataSearchResult(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

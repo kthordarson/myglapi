@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ClusterStats(object):
     def __init__(self, output_count=None, stream_rule_count=None, stream_rule_count_by_stream=None, input_count_by_type=None, stream_count=None, user_count=None, output_count_by_type=None, dashboard_count=None, input_count=None, global_input_count=None, extractor_count=None, content_pack_count=None, extractor_count_by_type=None, ldap_stats=None, alarm_stats=None, elasticsearch=None, mongo=None):
@@ -13,13 +13,9 @@ class ClusterStats(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'output_count': 'int', 'stream_rule_count': 'int', 'stream_rule_count_by_stream': 'object', 'input_count_by_type': 'object', 'stream_count': 'int', 'user_count': 'int', 'output_count_by_type': 'object', 'dashboard_count': 'int', 'input_count': 'int', 'global_input_count': 'int', 'extractor_count': 'int', 'content_pack_count': 'int', 'extractor_count_by_type': 'object', 'ldap_stats': 'object', 'alarm_stats': 'object', 'elasticsearch': 'object', 'mongo': 'object'
-        }
+        self.swagger_types = {'output_count': 'int', 'stream_rule_count': 'int', 'stream_rule_count_by_stream': 'object', 'input_count_by_type': 'object', 'stream_count': 'int', 'user_count': 'int', 'output_count_by_type': 'object', 'dashboard_count': 'int', 'input_count': 'int', 'global_input_count': 'int', 'extractor_count': 'int', 'content_pack_count': 'int', 'extractor_count_by_type': 'object', 'ldap_stats': 'object', 'alarm_stats': 'object', 'elasticsearch': 'object', 'mongo': 'object'}
 
-        self.attribute_map = {
-            'output_count': 'output_count', 'stream_rule_count': 'stream_rule_count', 'stream_rule_count_by_stream': 'stream_rule_count_by_stream', 'input_count_by_type': 'input_count_by_type', 'stream_count': 'stream_count', 'user_count': 'user_count', 'output_count_by_type': 'output_count_by_type', 'dashboard_count': 'dashboard_count', 'input_count': 'input_count', 'global_input_count': 'global_input_count', 'extractor_count': 'extractor_count', 'content_pack_count': 'content_pack_count', 'extractor_count_by_type': 'extractor_count_by_type', 'ldap_stats': 'ldap_stats', 'alarm_stats': 'alarm_stats', 'elasticsearch': 'elasticsearch', 'mongo': 'mongo'
-        }
+        self.attribute_map = {'output_count': 'output_count', 'stream_rule_count': 'stream_rule_count', 'stream_rule_count_by_stream': 'stream_rule_count_by_stream', 'input_count_by_type': 'input_count_by_type', 'stream_count': 'stream_count', 'user_count': 'user_count', 'output_count_by_type': 'output_count_by_type', 'dashboard_count': 'dashboard_count', 'input_count': 'input_count', 'global_input_count': 'global_input_count', 'extractor_count': 'extractor_count', 'content_pack_count': 'content_pack_count', 'extractor_count_by_type': 'extractor_count_by_type', 'ldap_stats': 'ldap_stats', 'alarm_stats': 'alarm_stats', 'elasticsearch': 'elasticsearch', 'mongo': 'mongo'}
 
         self._output_count = output_count
         self._stream_rule_count = stream_rule_count
@@ -334,7 +330,7 @@ class ClusterStats(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

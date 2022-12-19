@@ -5,8 +5,6 @@ import http.client #  as httplib
 import sys
 from loguru import logger
 
-from six import iteritems
-
 import os
 
 def singleton(cls, *args, **kw):

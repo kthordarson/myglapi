@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class AlertListSummary(object):
     def __init__(self, total=None, alerts=None):
@@ -13,13 +13,9 @@ class AlertListSummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'total': 'int', 'alerts': 'list[object]'
-        }
+        self.swagger_types = {'total': 'int', 'alerts': 'list[object]'}
 
-        self.attribute_map = {
-            'total': 'total', 'alerts': 'alerts'
-        }
+        self.attribute_map = {'total': 'total', 'alerts': 'alerts'}
 
         self._total = total
         self._alerts = alerts
@@ -64,7 +60,7 @@ class AlertListSummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

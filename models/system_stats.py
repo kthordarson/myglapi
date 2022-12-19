@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class SystemStats(object):
     def __init__(self, os=None, jvm=None, process=None, network=None, fs=None):
@@ -13,13 +13,9 @@ class SystemStats(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'os': 'object', 'jvm': 'object', 'process': 'object', 'network': 'object', 'fs': 'object'
-        }
+        self.swagger_types = {'os': 'object', 'jvm': 'object', 'process': 'object', 'network': 'object', 'fs': 'object'}
 
-        self.attribute_map = {
-            'os': 'os', 'jvm': 'jvm', 'process': 'process', 'network': 'network', 'fs': 'fs'
-        }
+        self.attribute_map = {'os': 'os', 'jvm': 'jvm', 'process': 'process', 'network': 'network', 'fs': 'fs'}
 
         self._os = os
         self._jvm = jvm
@@ -118,7 +114,7 @@ class SystemStats(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

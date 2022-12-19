@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class CollectorRegistrationRequest(object):
     def __init__(self, node_id=None, node_details=None):
@@ -13,13 +13,9 @@ class CollectorRegistrationRequest(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'node_id': 'str', 'node_details': 'object'
-        }
+        self.swagger_types = {'node_id': 'str', 'node_details': 'object'}
 
-        self.attribute_map = {
-            'node_id': 'node_id', 'node_details': 'node_details'
-        }
+        self.attribute_map = {'node_id': 'node_id', 'node_details': 'node_details'}
 
         self._node_id = node_id
         self._node_details = node_details
@@ -64,7 +60,7 @@ class CollectorRegistrationRequest(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class ClosedIndices(object):
     def __init__(self, indices=None, total=None):
@@ -13,13 +13,9 @@ class ClosedIndices(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'indices': 'list[str]', 'total': 'int'
-        }
+        self.swagger_types = {'indices': 'list[str]', 'total': 'int'}
 
-        self.attribute_map = {
-            'indices': 'indices', 'total': 'total'
-        }
+        self.attribute_map = {'indices': 'indices', 'total': 'total'}
 
         self._indices = indices
         self._total = total
@@ -64,7 +60,7 @@ class ClosedIndices(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])

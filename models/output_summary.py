@@ -1,7 +1,7 @@
 
 
 from pprint import pformat
-from six import iteritems
+
 import re
 class OutputSummary(object):
     def __init__(self, id=None, title=None, type=None, creator_user_id=None, created_at=None, configuration=None, content_pack=None):
@@ -13,13 +13,9 @@ class OutputSummary(object):
         :param dict attributeMap: The key is attribute name
                                   and the value is json key in definition.
         """
-        self.swagger_types = {
-            'id': 'str', 'title': 'str', 'type': 'str', 'creator_user_id': 'str', 'created_at': 'datetime', 'configuration': 'object', 'content_pack': 'str'
-        }
+        self.swagger_types = {'id': 'str', 'title': 'str', 'type': 'str', 'creator_user_id': 'str', 'created_at': 'datetime', 'configuration': 'object', 'content_pack': 'str'}
 
-        self.attribute_map = {
-            'id': 'id', 'title': 'title', 'type': 'type', 'creator_user_id': 'creator_user_id', 'created_at': 'created_at', 'configuration': 'configuration', 'content_pack': 'content_pack'
-        }
+        self.attribute_map = {'id': 'id', 'title': 'title', 'type': 'type', 'creator_user_id': 'creator_user_id', 'created_at': 'created_at', 'configuration': 'configuration', 'content_pack': 'content_pack'}
 
         self._id = id
         self._title = title
@@ -154,7 +150,7 @@ class OutputSummary(object):
         """
         result = {}
 
-        for attr, _ in iteritems(self.swagger_types):
+        for attr in self.swagger_types:
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list([x.to_dict() if hasattr(x, "to_dict") else x for x in value])
