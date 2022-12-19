@@ -5,18 +5,12 @@ import ssl
 import certifi
 import logging
 import re
-
-# python 2 and python 3 compatibility library
-from six import iteritems
-
 from configuration import Configuration
 
 import urllib3
 from urllib.parse import urlencode
 from urllib3.exceptions import MaxRetryError, NewConnectionError, LocationValueError
 from loguru import logger
-
-
 class RESTResponse(io.IOBase):
 
     def __init__(self, resp):
@@ -36,7 +30,6 @@ class RESTResponse(io.IOBase):
         Returns a given response header.
         """
         return self.urllib3_response.getheader(name, default)
-
 
 class RESTClientObject(object):
 
@@ -157,7 +150,6 @@ class RESTClientObject(object):
 
     def PATCH(self, url, headers=None, query_params=None, post_params=None, body=None):
         return self.request("PATCH", url, headers=headers, query_params=query_params, post_params=post_params, body=body)
-
 
 class ApiException(Exception):
 

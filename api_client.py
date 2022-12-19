@@ -15,15 +15,10 @@ import threading
 
 from datetime import datetime
 from datetime import date
-
-# python 2 and python 3 compatibility library
-from six import iteritems
-
 from urllib.parse import quote
 long = int
 
 from configuration import Configuration
-
 
 class ApiClient(object):
     def __init__(self, host=None, header_name=None, header_value=None, cookie=None):
@@ -32,9 +27,7 @@ class ApiClient(object):
         Constructor of the class.
         """
         self.rest_client = RESTClientObject()
-        self.default_headers = {
-            'Authorization': Configuration().get_basic_auth_token()
-        }
+        self.default_headers = {'Authorization': Configuration().get_basic_auth_token()}
         if header_name is not None:
             self.default_headers[header_name] = header_value
         if host is None:
@@ -75,7 +68,8 @@ class ApiClient(object):
         # path parameters
         if path_params:
             path_params = self.sanitize_for_serialization(path_params)
-            for k, v in iteritems(path_params):
+            for k in path_params:
+                v = path_params[k]
                 replacement = quote(str(self.to_path_value(v)))
                 resource_path = resource_path.\
                     replace('{' + k + '}', replacement)
@@ -83,7 +77,7 @@ class ApiClient(object):
         # query parameters
         if query_params:
             query_params = self.sanitize_for_serialization(query_params)
-            query_params = {k: self.to_path_value(v) for k, v in iteritems(query_params)}
+            # query_params = {k: self.to_path_value(v) for k, v in iter(query_params)}
 
         # post parameters
         if post_params or files:
@@ -168,15 +162,14 @@ class ApiClient(object):
             if isinstance(obj, dict):
                 obj_dict = obj
             else:
-                # Convert model obj to dict except
-                # attributes `swagger_types`, `attribute_map`
-                # and attributes which value is not None.
-                # Convert attribute name to json key in
-                # model definition for request.
-                obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr, _ in iteritems(obj.swagger_types) if getattr(obj, attr) is not None}
-
-            return {key: self.sanitize_for_serialization(val)
-                    for key, val in iteritems(obj_dict)}
+                obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr, _ in iter(obj.swagger_types) if getattr(obj, attr) is not None}
+            res = None
+            try:
+                #res = {key: self.sanitize_for_serialization(obj_dict[key]) for key, obj_dict[key] in obj_dict}
+                res = {key: f'{self.sanitize_for_serialization(obj_dict[key])}' for key in obj_dict}
+            except ValueError as e:
+                logger.error(f'[sanatize] ValueError {e} obj_dict: {obj_dict}')
+            return res
 
     def deserialize(self, response, response_type):
         """
@@ -222,7 +215,7 @@ class ApiClient(object):
             if klass.startswith('dict('):
                 sub_kls = re.match('dict\(([^,]*), (.*)\)', klass).group(2)
                 return {k: self.__deserialize(v, sub_kls)
-                        for k, v in iteritems(data)}
+                        for k, v in iter(data)}
 
             # convert str to class
             # for native types
@@ -312,7 +305,7 @@ class ApiClient(object):
             params = post_params
 
         if files:
-            for k, v in iteritems(files):
+            for k, v in iter(files):
                 if not v:
                     continue
                 file_names = v if type(v) is list else [v]
@@ -484,10 +477,9 @@ class ApiClient(object):
         """
         instance = klass()
 
-        for attr, attr_type in iteritems(instance.swagger_types):
-            if data is not None \
-               and instance.attribute_map[attr] in data\
-               and isinstance(data, (list, dict)):
+        for attr in instance.swagger_types:
+            attr_type = instance.swagger_types[attr]
+            if data is not None and instance.attribute_map[attr] in data and isinstance(data, (list, dict)):
                 value = data[instance.attribute_map[attr]]
                 setattr(instance, attr, self.__deserialize(value, attr_type))
 

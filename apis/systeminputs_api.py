@@ -1,14 +1,9 @@
 import sys
 import os
 import re
-
-# python 2 and python 3 compatibility library
-from six import iteritems
-
+from loguru import logger
 from configuration import Configuration
 from api_client import ApiClient
-
-
 class SysteminputsApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -70,7 +65,7 @@ class SysteminputsApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key, val in enumerate(params['kwargs']):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -162,7 +157,7 @@ class SysteminputsApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key, val in enumerate(params['kwargs']):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -225,7 +220,7 @@ class SysteminputsApi(object):
         if kwargs.get('callback'):
             return self.list_with_http_info(**kwargs)
         else:
-            (data) = self.list_with_http_info(**kwargs)
+            data = self.list_with_http_info(**kwargs)
             return data
 
     def list_with_http_info(self, **kwargs):
@@ -252,12 +247,10 @@ class SysteminputsApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method list" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key} to method list")
             params[key] = val
         del params['kwargs']
 
@@ -339,7 +332,7 @@ class SysteminputsApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key, val in enumerate(params['kwargs']):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -433,7 +426,7 @@ class SysteminputsApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key, val in enumerate(params['kwargs']):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"

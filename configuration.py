@@ -16,10 +16,7 @@ def singleton(cls, *args, **kw):
         if cls not in instances:
             instances[cls] = cls(*args, **kw)
         return instances[cls]
-    return _singleton
-
-
-@singleton
+    return _singleton@singleton
 class Configuration(object):
     def __init__(self):
         """
@@ -102,7 +99,12 @@ class Configuration(object):
             return self.api_key[identifier]
 
     def get_basic_auth_token(self):
-        return urllib3.util.make_headers(basic_auth=self.username + ':' + self.password).get('authorization')
+        token = None
+        try:
+            token = urllib3.util.make_headers(basic_auth=self.username + ':' + self.password).get('authorization')
+        except TypeError as e:
+            logger.error(e)
+        return token
 
     def auth_settings(self):
         return {}

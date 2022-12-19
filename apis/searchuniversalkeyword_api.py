@@ -1,14 +1,8 @@
 import sys
 import os
 import re
-
-# python 2 and python 3 compatibility library
-from six import iteritems
-
 from configuration import Configuration
 from api_client import ApiClient
-
-
 class SearchuniversalkeywordApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -80,7 +74,8 @@ class SearchuniversalkeywordApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -198,7 +193,8 @@ class SearchuniversalkeywordApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -315,7 +311,8 @@ class SearchuniversalkeywordApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -433,7 +430,8 @@ class SearchuniversalkeywordApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -548,7 +546,8 @@ class SearchuniversalkeywordApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -660,7 +659,8 @@ class SearchuniversalkeywordApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -778,7 +778,8 @@ class SearchuniversalkeywordApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"

@@ -2,14 +2,9 @@ from loguru import logger
 import sys
 import os
 import re
-
-# python 2 and python 3 compatibility library
-from six import iteritems
 sys.path.append('/home/kth/development2/graylogstuff/myglapi')
 from configuration import Configuration
 from api_client import ApiClient
-
-
 class ApidocsApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -69,7 +64,8 @@ class ApidocsApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -154,7 +150,8 @@ class ApidocsApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"

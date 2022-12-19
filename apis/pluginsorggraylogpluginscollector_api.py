@@ -1,14 +1,8 @@
 import sys
 import os
 import re
-
-# python 2 and python 3 compatibility library
-from six import iteritems
-
 from configuration import Configuration
 from api_client import ApiClient
-
-
 class PluginsorggraylogpluginscollectorApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -70,12 +64,10 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method copy_configuration" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key} to method copy_configuration")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'id' is set
@@ -162,7 +154,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -254,7 +247,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -346,7 +340,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -440,7 +435,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -536,7 +532,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -635,7 +632,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -734,7 +732,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -831,7 +830,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -923,7 +923,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -1015,7 +1016,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -1107,7 +1109,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -1201,7 +1204,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -1295,7 +1299,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -1385,7 +1390,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -1470,7 +1476,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -1559,7 +1566,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -1660,7 +1668,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -1766,7 +1775,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
@@ -1872,7 +1882,8 @@ class PluginsorggraylogpluginscollectorApi(object):
         all_params.append('_return_http_data_only')
 
         params = locals()
-        for key, val in iteritems(params['kwargs']):
+        for key in params['kwargs']:
+            val = params['kwargs'][key]
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
