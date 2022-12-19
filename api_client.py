@@ -77,7 +77,7 @@ class ApiClient(object):
         # query parameters
         if query_params:
             query_params = self.sanitize_for_serialization(query_params)
-            # query_params = {k: self.to_path_value(v) for k, v in iter(query_params)}
+            query_params = {k: self.to_path_value(query_params[k]) for k in query_params}
 
         # post parameters
         if post_params or files:
@@ -162,7 +162,7 @@ class ApiClient(object):
             if isinstance(obj, dict):
                 obj_dict = obj
             else:
-                obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr, _ in iter(obj.swagger_types) if getattr(obj, attr) is not None}
+                obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr in obj.swagger_types if getattr(obj, attr) is not None}
             res = None
             try:
                 #res = {key: self.sanitize_for_serialization(obj_dict[key]) for key, obj_dict[key] in obj_dict}
@@ -224,6 +224,7 @@ class ApiClient(object):
             # for model types
             else:
                 klass = eval('models.' + klass)
+                logger.debug(f'[api] klass={klass}')
 
         if klass in [int, int, float, str, bool]:
             return self.__deserialize_primitive(data, klass)
