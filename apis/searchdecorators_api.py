@@ -76,14 +76,12 @@ class SearchdecoratorsApi(object):
             body_params = params['json_body']
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -150,14 +148,12 @@ class SearchdecoratorsApi(object):
         body_params = None
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -217,14 +213,12 @@ class SearchdecoratorsApi(object):
         body_params = None
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -284,14 +278,12 @@ class SearchdecoratorsApi(object):
         body_params = None
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -365,14 +357,12 @@ class SearchdecoratorsApi(object):
             body_params = params['json_body']
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []

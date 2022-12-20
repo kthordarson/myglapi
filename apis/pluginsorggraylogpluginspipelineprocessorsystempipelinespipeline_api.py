@@ -19,7 +19,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
     def create_from_parser(self, pipeline, **kwargs):
         """
         Create a processing pipeline from source
-        
+
 
         >>> thread = api.create_from_parser(pipeline, callback=callback_function)
 
@@ -37,7 +37,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
     def create_from_parser_with_http_info(self, pipeline, **kwargs):
         """
         Create a processing pipeline from source
-        
+
 
         >>> thread = api.create_from_parser_with_http_info(pipeline, callback=callback_function)
 
@@ -76,14 +76,12 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
             body_params = params['pipeline']
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -150,14 +148,12 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
         body_params = None
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -224,14 +220,12 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
         body_params = None
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -241,7 +235,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
     def get_all(self, **kwargs):
         """
         Get all processing pipelines
-        
+
 
         >>> thread = api.get_all(callback=callback_function)
 
@@ -258,7 +252,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
     def get_all_with_http_info(self, **kwargs):
         """
         Get all processing pipelines
-        
+
 
         >>> thread = api.get_all_with_http_info(callback=callback_function)
 
@@ -291,14 +285,12 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
         body_params = None
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -308,7 +300,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
     def parse(self, pipeline, **kwargs):
         """
         Parse a processing pipeline without saving it
-        
+
 
         >>> thread = api.parse(pipeline, callback=callback_function)
 
@@ -326,7 +318,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
     def parse_with_http_info(self, pipeline, **kwargs):
         """
         Parse a processing pipeline without saving it
-        
+
 
         >>> thread = api.parse_with_http_info(pipeline, callback=callback_function)
 
@@ -365,14 +357,12 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
             body_params = params['pipeline']
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []
@@ -446,14 +436,12 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
             body_params = params['pipeline']
 
         # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
+        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
         if not header_params['Accept']:
             del header_params['Accept']
 
         # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type([])
+        header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
         # Authentication setting
         auth_settings = []

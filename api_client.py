@@ -71,8 +71,7 @@ class ApiClient(object):
             for k in path_params:
                 v = path_params[k]
                 replacement = quote(str(self.to_path_value(v)))
-                resource_path = resource_path.\
-                    replace('{' + k + '}', replacement)
+                resource_path = resource_path.replace('{' + k + '}', replacement)
 
         # query parameters
         if query_params:
@@ -115,7 +114,7 @@ class ApiClient(object):
             return ( deserialized_data );
         else:
             return (deserialized_data, response_data.status, response_data.getheaders())
-        
+
 
     def to_path_value(self, obj):
         """
@@ -189,7 +188,8 @@ class ApiClient(object):
         # fetch data from response object
         try:
             data = json.loads(response.data)
-        except ValueError:
+        except ValueError as e:
+            logger.error(f'[deserialize] ValueError {e} response: {response}')
             data = response.data
 
         return self.__deserialize(data, response_type)
@@ -395,9 +395,7 @@ class ApiClient(object):
 
         content_disposition = response.getheader("Content-Disposition")
         if content_disposition:
-            filename = re.\
-                search(r'filename=[\'"]?([^\'"\s]+)[\'"]?', content_disposition).\
-                group(1)
+            filename = re.search(r'filename=[\'"]?([^\'"\s]+)[\'"]?', content_disposition).group(1)
             path = os.path.join(os.path.dirname(path), filename)
 
         with open(path, "w") as f:
@@ -416,9 +414,11 @@ class ApiClient(object):
         """
         try:
             value = klass(data)
-        except UnicodeEncodeError:
+        except UnicodeEncodeError as e:
+            logger.warning(f'[desrial] UnicodeEncodeError {e}')
             value = str(data)
-        except TypeError:
+        except TypeError as e:
+            logger.warning(f'[desrial] TypeError {e}')
             value = data
         return value
 
@@ -442,11 +442,9 @@ class ApiClient(object):
             return parse(string).date()
         except ImportError:
             return string
-        except ValueError:
-            raise ApiException(
-                status=0, reason="Failed to parse `{0}` into a date object"
-                .format(string)
-            )
+        except ValueError as e:
+            logger.error(f'[desrial] ValueError {e}')
+            raise ApiException(status=0, reason="Failed to parse `{0}` into a date object".format(string))
 
     def __deserialize_datatime(self, string):
         """
@@ -462,11 +460,9 @@ class ApiClient(object):
             return parse(string)
         except ImportError:
             return string
-        except ValueError:
-            raise ApiException(
-                status=0, reason="Failed to parse `{0}` into a datetime object".
-                format(string)
-            )
+        except ValueError as e:
+            logger.error(f'[desrial] ValueError {e}')
+            raise ApiException(status=0, reason="Failed to parse `{0}` into a datetime object".format(string))
 
     def __deserialize_model(self, data, klass):
         """
