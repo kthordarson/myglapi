@@ -18,9 +18,7 @@ class SystempluginsApi(object):
 
     def list(self, **kwargs):
         """
-        List all installed plugins on this node.
-        
-
+        List all installed plugins on this node
         >>> thread = api.list(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -35,9 +33,7 @@ class SystempluginsApi(object):
 
     def list_with_http_info(self, **kwargs):
         """
-        List all installed plugins on this node.
-        
-
+        List all installed plugins on this node
         >>> thread = api.list_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

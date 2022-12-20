@@ -18,9 +18,7 @@ class StreamsalertsApi(object):
 
     def list_all(self, **kwargs):
         """
-        Get the 300 most recent alarms of all streams.
-        
-
+        Get the 300 most recent alarms of all streams
         >>> thread = api.list_all(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -36,9 +34,7 @@ class StreamsalertsApi(object):
 
     def list_all_with_http_info(self, **kwargs):
         """
-        Get the 300 most recent alarms of all streams.
-        
-
+        Get the 300 most recent alarms of all streams
         >>> thread = api.list_all_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

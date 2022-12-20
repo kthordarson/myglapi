@@ -92,7 +92,7 @@ class SystemprocessingApi(object):
     def resume_processing(self, **kwargs):
         """
         Resume message processing
-        
+
 
         >>> thread = api.resume_processing(callback=callback_function)
 
@@ -109,7 +109,7 @@ class SystemprocessingApi(object):
     def resume_processing_with_http_info(self, **kwargs):
         """
         Resume message processing
-        
+
 
         >>> thread = api.resume_processing_with_http_info(callback=callback_function)
 

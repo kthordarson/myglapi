@@ -19,7 +19,7 @@ class SystemauthenticationApi(object):
     def create(self, config, **kwargs):
         """
         Update authentication providers configuration
-        
+
 
         >>> thread = api.create(config, callback=callback_function)
 
@@ -37,7 +37,7 @@ class SystemauthenticationApi(object):
     def create_with_http_info(self, config, **kwargs):
         """
         Update authentication providers configuration
-        
+
 
         >>> thread = api.create_with_http_info(config, callback=callback_function)
 
@@ -93,7 +93,7 @@ class SystemauthenticationApi(object):
     def get_authenticators(self, **kwargs):
         """
         Retrieve authentication providers configuration
-        
+
 
         >>> thread = api.get_authenticators(callback=callback_function)
 
@@ -110,7 +110,7 @@ class SystemauthenticationApi(object):
     def get_authenticators_with_http_info(self, **kwargs):
         """
         Retrieve authentication providers configuration
-        
+
 
         >>> thread = api.get_authenticators_with_http_info(callback=callback_function)
 

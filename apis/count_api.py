@@ -18,9 +18,7 @@ class CountApi(object):
 
     def total(self, **kwargs):
         """
-        Total number of messages in all your indices.
-        
-
+        Total number of messages in all your indices
         >>> thread = api.total(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -35,9 +33,7 @@ class CountApi(object):
 
     def total_with_http_info(self, **kwargs):
         """
-        Total number of messages in all your indices.
-        
-
+        Total number of messages in all your indices
         >>> thread = api.total_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

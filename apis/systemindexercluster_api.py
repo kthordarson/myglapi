@@ -19,7 +19,7 @@ class SystemindexerclusterApi(object):
     def cluster_health(self, **kwargs):
         """
         Get cluster and shard health overview
-        
+
 
         >>> thread = api.cluster_health(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SystemindexerclusterApi(object):
     def cluster_health_with_http_info(self, **kwargs):
         """
         Get cluster and shard health overview
-        
+
 
         >>> thread = api.cluster_health_with_http_info(callback=callback_function)
 
@@ -86,7 +86,7 @@ class SystemindexerclusterApi(object):
     def cluster_name(self, **kwargs):
         """
         Get the cluster name
-        
+
 
         >>> thread = api.cluster_name(callback=callback_function)
 
@@ -103,7 +103,7 @@ class SystemindexerclusterApi(object):
     def cluster_name_with_http_info(self, **kwargs):
         """
         Get the cluster name
-        
+
 
         >>> thread = api.cluster_name_with_http_info(callback=callback_function)
 

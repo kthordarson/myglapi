@@ -18,9 +18,7 @@ class SystemindexeroverviewApi(object):
 
     def index(self, **kwargs):
         """
-        Get overview of current indexing state, including deflector config, cluster state, index ranges & message counts.
-        
-
+        Get overview of current indexing state, including deflector config, cluster state, index ranges & message counts
         >>> thread = api.index(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -35,9 +33,7 @@ class SystemindexeroverviewApi(object):
 
     def index_with_http_info(self, **kwargs):
         """
-        Get overview of current indexing state, including deflector config, cluster state, index ranges & message counts.
-        
-
+        Get overview of current indexing state, including deflector config, cluster state, index ranges & message counts
         >>> thread = api.index_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

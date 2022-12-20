@@ -19,7 +19,7 @@ class SysteminputstatesApi(object):
     def get(self, input_id, **kwargs):
         """
         Get input state for specified input id on this node
-        
+
 
         >>> thread = api.get(input_id, callback=callback_function)
 
@@ -37,7 +37,7 @@ class SysteminputstatesApi(object):
     def get_with_http_info(self, input_id, **kwargs):
         """
         Get input state for specified input id on this node
-        
+
 
         >>> thread = api.get_with_http_info(input_id, callback=callback_function)
 
@@ -93,7 +93,7 @@ class SysteminputstatesApi(object):
     def list(self, **kwargs):
         """
         Get all input states of this node
-        
+
 
         >>> thread = api.list(callback=callback_function)
 
@@ -110,7 +110,7 @@ class SysteminputstatesApi(object):
     def list_with_http_info(self, **kwargs):
         """
         Get all input states of this node
-        
+
 
         >>> thread = api.list_with_http_info(callback=callback_function)
 
@@ -160,7 +160,7 @@ class SysteminputstatesApi(object):
     def start(self, input_id, **kwargs):
         """
         (Re-)Start specified input on this node
-        
+
 
         >>> thread = api.start(input_id, callback=callback_function)
 
@@ -178,7 +178,7 @@ class SysteminputstatesApi(object):
     def start_with_http_info(self, input_id, **kwargs):
         """
         (Re-)Start specified input on this node
-        
+
 
         >>> thread = api.start_with_http_info(input_id, callback=callback_function)
 
@@ -234,7 +234,7 @@ class SysteminputstatesApi(object):
     def stop(self, input_id, **kwargs):
         """
         Stop specified input on this node
-        
+
 
         >>> thread = api.stop(input_id, callback=callback_function)
 
@@ -252,7 +252,7 @@ class SysteminputstatesApi(object):
     def stop_with_http_info(self, input_id, **kwargs):
         """
         Stop specified input on this node
-        
+
 
         >>> thread = api.stop_with_http_info(input_id, callback=callback_function)
 

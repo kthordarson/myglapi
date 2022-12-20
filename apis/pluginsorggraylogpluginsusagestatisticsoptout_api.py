@@ -19,7 +19,7 @@ class PluginsorggraylogpluginsusagestatisticsoptoutApi(object):
     def get_opt_out_state(self, **kwargs):
         """
         Get opt-out status
-        
+
 
         >>> thread = api.get_opt_out_state(callback=callback_function)
 
@@ -36,7 +36,7 @@ class PluginsorggraylogpluginsusagestatisticsoptoutApi(object):
     def get_opt_out_state_with_http_info(self, **kwargs):
         """
         Get opt-out status
-        
+
 
         >>> thread = api.get_opt_out_state_with_http_info(callback=callback_function)
 
@@ -86,7 +86,7 @@ class PluginsorggraylogpluginsusagestatisticsoptoutApi(object):
     def set_opt_out_state(self, **kwargs):
         """
         Disable sending anonymous usage stats
-        
+
 
         >>> thread = api.set_opt_out_state(callback=callback_function)
 
@@ -103,7 +103,7 @@ class PluginsorggraylogpluginsusagestatisticsoptoutApi(object):
     def set_opt_out_state_with_http_info(self, **kwargs):
         """
         Disable sending anonymous usage stats
-        
+
 
         >>> thread = api.set_opt_out_state_with_http_info(callback=callback_function)
 

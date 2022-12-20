@@ -18,9 +18,7 @@ class SystempermissionsApi(object):
 
     def permissions(self, **kwargs):
         """
-        Get all available user permissions.
-        
-
+        Get all available user permissions
         >>> thread = api.permissions(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -35,9 +33,7 @@ class SystempermissionsApi(object):
 
     def permissions_with_http_info(self, **kwargs):
         """
-        Get all available user permissions.
-        
-
+        Get all available user permissions
         >>> thread = api.permissions_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -86,7 +82,7 @@ class SystempermissionsApi(object):
     def reader_permissions(self, username, **kwargs):
         """
         Get the initial permissions assigned to a reader account
-        
+
 
         >>> thread = api.reader_permissions(username, callback=callback_function)
 
@@ -104,7 +100,7 @@ class SystempermissionsApi(object):
     def reader_permissions_with_http_info(self, username, **kwargs):
         """
         Get the initial permissions assigned to a reader account
-        
+
 
         >>> thread = api.reader_permissions_with_http_info(username, callback=callback_function)
 

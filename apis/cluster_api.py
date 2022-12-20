@@ -21,8 +21,6 @@ class ClusterApi(object):
     def get(self, **kwargs):
         """
         Get system overview of all Graylog nodes
-        
-
         >>> thread = api.get(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -38,7 +36,7 @@ class ClusterApi(object):
     def get_with_http_info(self, **kwargs):
         """
         Get system overview of all Graylog nodes
-        
+
 
         >>> thread = api.get_with_http_info(callback=callback_function)
 
@@ -88,7 +86,7 @@ class ClusterApi(object):
     def jvm(self, node_id, **kwargs):
         """
         Get JVM information of the given node
-        
+
 
         >>> thread = api.jvm(node_id, callback=callback_function)
 
@@ -106,7 +104,7 @@ class ClusterApi(object):
     def jvm_with_http_info(self, node_id, **kwargs):
         """
         Get JVM information of the given node
-        
+
 
         >>> thread = api.jvm_with_http_info(node_id, callback=callback_function)
 
@@ -162,7 +160,7 @@ class ClusterApi(object):
     def thread_dump(self, node_id, **kwargs):
         """
         Get a thread dump of the given node
-        
+
 
         >>> thread = api.thread_dump(node_id, callback=callback_function)
 
@@ -180,7 +178,7 @@ class ClusterApi(object):
     def thread_dump_with_http_info(self, node_id, **kwargs):
         """
         Get a thread dump of the given node
-        
+
 
         >>> thread = api.thread_dump_with_http_info(node_id, callback=callback_function)
 

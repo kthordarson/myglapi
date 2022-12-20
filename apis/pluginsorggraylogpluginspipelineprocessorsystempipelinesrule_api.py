@@ -19,7 +19,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def create_from_parser(self, rule, **kwargs):
         """
         Create a processing rule from source
-        
+
 
         >>> thread = api.create_from_parser(rule, callback=callback_function)
 
@@ -37,7 +37,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def create_from_parser_with_http_info(self, rule, **kwargs):
         """
         Create a processing rule from source
-        
+
 
         >>> thread = api.create_from_parser_with_http_info(rule, callback=callback_function)
 
@@ -167,7 +167,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def function_descriptors(self, **kwargs):
         """
         Get function descriptors
-        
+
 
         >>> thread = api.function_descriptors(callback=callback_function)
 
@@ -184,7 +184,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def function_descriptors_with_http_info(self, **kwargs):
         """
         Get function descriptors
-        
+
 
         >>> thread = api.function_descriptors_with_http_info(callback=callback_function)
 
@@ -308,7 +308,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def get_all(self, **kwargs):
         """
         Get all processing rules
-        
+
 
         >>> thread = api.get_all(callback=callback_function)
 
@@ -325,7 +325,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def get_all_with_http_info(self, **kwargs):
         """
         Get all processing rules
-        
+
 
         >>> thread = api.get_all_with_http_info(callback=callback_function)
 
@@ -375,7 +375,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def get_bulk(self, **kwargs):
         """
         Retrieve the named processing rules in bulk
-        
+
 
         >>> thread = api.get_bulk(callback=callback_function)
 
@@ -393,7 +393,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def get_bulk_with_http_info(self, **kwargs):
         """
         Retrieve the named processing rules in bulk
-        
+
 
         >>> thread = api.get_bulk_with_http_info(callback=callback_function)
 
@@ -446,7 +446,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def parse(self, rule, **kwargs):
         """
         Parse a processing rule without saving it
-        
+
 
         >>> thread = api.parse(rule, callback=callback_function)
 
@@ -464,7 +464,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def parse_with_http_info(self, rule, **kwargs):
         """
         Parse a processing rule without saving it
-        
+
 
         >>> thread = api.parse_with_http_info(rule, callback=callback_function)
 

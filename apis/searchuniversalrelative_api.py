@@ -119,9 +119,7 @@ class SearchuniversalrelativeApi(object):
 
     def field_histogram_relative(self, query, field, interval, range, **kwargs):
         """
-        Field value histogram of a query using a relative timerange.
-        
-
+        Field value histogram of a query using a relative timerange
         >>> thread = api.field_histogram_relative(query, field, interval, range, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -142,9 +140,7 @@ class SearchuniversalrelativeApi(object):
 
     def field_histogram_relative_with_http_info(self, query, field, interval, range, **kwargs):
         """
-        Field value histogram of a query using a relative timerange.
-        
-
+        Field value histogram of a query using a relative timerange
         >>> thread = api.field_histogram_relative_with_http_info(query, field, interval, range, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -222,9 +218,7 @@ class SearchuniversalrelativeApi(object):
 
     def histogram_relative(self, query, interval, range, **kwargs):
         """
-        Datetime histogram of a query using a relative timerange.
-        
-
+        Datetime histogram of a query using a relative timerange
         >>> thread = api.histogram_relative(query, interval, range, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -243,9 +237,7 @@ class SearchuniversalrelativeApi(object):
 
     def histogram_relative_with_http_info(self, query, interval, range, **kwargs):
         """
-        Datetime histogram of a query using a relative timerange.
-        
-
+        Datetime histogram of a query using a relative timerange
         >>> thread = api.histogram_relative_with_http_info(query, interval, range, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -511,9 +503,7 @@ class SearchuniversalrelativeApi(object):
 
     def terms_relative(self, field, query, range, **kwargs):
         """
-        Most common field terms of a query using a relative timerange.
-        
-
+        Most common field terms of a query using a relative timerange
         >>> thread = api.terms_relative(field, query, range, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -533,9 +523,7 @@ class SearchuniversalrelativeApi(object):
 
     def terms_relative_with_http_info(self, field, query, range, **kwargs):
         """
-        Most common field terms of a query using a relative timerange.
-        
-
+        Most common field terms of a query using a relative timerange
         >>> thread = api.terms_relative_with_http_info(field, query, range, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -607,9 +595,7 @@ class SearchuniversalrelativeApi(object):
 
     def terms_stats_relative(self, key_field, value_field, order, query, range, **kwargs):
         """
-        Ordered field terms of a query computed on another field using a relative timerange.
-        
-
+        Ordered field terms of a query computed on another field using a relative timerange
         >>> thread = api.terms_stats_relative(key_field, value_field, order, query, range, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -631,9 +617,7 @@ class SearchuniversalrelativeApi(object):
 
     def terms_stats_relative_with_http_info(self, key_field, value_field, order, query, range, **kwargs):
         """
-        Ordered field terms of a query computed on another field using a relative timerange.
-        
-
+        Ordered field terms of a query computed on another field using a relative timerange
         >>> thread = api.terms_stats_relative_with_http_info(key_field, value_field, order, query, range, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

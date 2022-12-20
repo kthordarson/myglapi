@@ -19,7 +19,7 @@ class SystemserviceManagerApi(object):
     def list(self, **kwargs):
         """
         List current status of ServiceManager
-        
+
 
         >>> thread = api.list(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SystemserviceManagerApi(object):
     def list_with_http_info(self, **kwargs):
         """
         List current status of ServiceManager
-        
+
 
         >>> thread = api.list_with_http_info(callback=callback_function)
 

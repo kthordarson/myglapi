@@ -19,7 +19,7 @@ class PluginsorggraylogpluginscollectorcollectorsApi(object):
     def get(self, collector_id, **kwargs):
         """
         Returns at most one collector summary for the specified collector id
-        
+
 
         >>> thread = api.get(collector_id, callback=callback_function)
 
@@ -37,7 +37,7 @@ class PluginsorggraylogpluginscollectorcollectorsApi(object):
     def get_with_http_info(self, collector_id, **kwargs):
         """
         Returns at most one collector summary for the specified collector id
-        
+
 
         >>> thread = api.get_with_http_info(collector_id, callback=callback_function)
 
@@ -93,7 +93,7 @@ class PluginsorggraylogpluginscollectorcollectorsApi(object):
     def list(self, **kwargs):
         """
         Lists all existing collector registrations
-        
+
 
         >>> thread = api.list(callback=callback_function)
 
@@ -110,7 +110,7 @@ class PluginsorggraylogpluginscollectorcollectorsApi(object):
     def list_with_http_info(self, **kwargs):
         """
         Lists all existing collector registrations
-        
+
 
         >>> thread = api.list_with_http_info(callback=callback_function)
 

@@ -19,7 +19,7 @@ class SystembundlesApi(object):
     def apply_bundle(self, bundle_id, **kwargs):
         """
         Set up entities described by content pack
-        
+
 
         >>> thread = api.apply_bundle(bundle_id, callback=callback_function)
 
@@ -37,7 +37,7 @@ class SystembundlesApi(object):
     def apply_bundle_with_http_info(self, bundle_id, **kwargs):
         """
         Set up entities described by content pack
-        
+
 
         >>> thread = api.apply_bundle_with_http_info(bundle_id, callback=callback_function)
 
@@ -93,7 +93,7 @@ class SystembundlesApi(object):
     def create_bundle(self, request_body, **kwargs):
         """
         Upload a content pack
-        
+
 
         >>> thread = api.create_bundle(request_body, callback=callback_function)
 
@@ -111,7 +111,7 @@ class SystembundlesApi(object):
     def create_bundle_with_http_info(self, request_body, **kwargs):
         """
         Upload a content pack
-        
+
 
         >>> thread = api.create_bundle_with_http_info(request_body, callback=callback_function)
 
@@ -167,7 +167,7 @@ class SystembundlesApi(object):
     def delete_bundle(self, bundle_id, **kwargs):
         """
         Delete content pack
-        
+
 
         >>> thread = api.delete_bundle(bundle_id, callback=callback_function)
 
@@ -185,7 +185,7 @@ class SystembundlesApi(object):
     def delete_bundle_with_http_info(self, bundle_id, **kwargs):
         """
         Delete content pack
-        
+
 
         >>> thread = api.delete_bundle_with_http_info(bundle_id, callback=callback_function)
 
@@ -241,7 +241,7 @@ class SystembundlesApi(object):
     def export_bundle(self, export_bundle, **kwargs):
         """
         Export entities as a content pack
-        
+
 
         >>> thread = api.export_bundle(export_bundle, callback=callback_function)
 
@@ -259,7 +259,7 @@ class SystembundlesApi(object):
     def export_bundle_with_http_info(self, export_bundle, **kwargs):
         """
         Export entities as a content pack
-        
+
 
         >>> thread = api.export_bundle_with_http_info(export_bundle, callback=callback_function)
 
@@ -315,7 +315,7 @@ class SystembundlesApi(object):
     def list_bundles(self, **kwargs):
         """
         List available content packs
-        
+
 
         >>> thread = api.list_bundles(callback=callback_function)
 
@@ -332,7 +332,7 @@ class SystembundlesApi(object):
     def list_bundles_with_http_info(self, **kwargs):
         """
         List available content packs
-        
+
 
         >>> thread = api.list_bundles_with_http_info(callback=callback_function)
 
@@ -382,7 +382,7 @@ class SystembundlesApi(object):
     def show_bundle(self, bundle_id, **kwargs):
         """
         Show content pack
-        
+
 
         >>> thread = api.show_bundle(bundle_id, callback=callback_function)
 
@@ -400,7 +400,7 @@ class SystembundlesApi(object):
     def show_bundle_with_http_info(self, bundle_id, **kwargs):
         """
         Show content pack
-        
+
 
         >>> thread = api.show_bundle_with_http_info(bundle_id, callback=callback_function)
 
@@ -456,7 +456,7 @@ class SystembundlesApi(object):
     def update_bundle(self, bundle_id, request_body, **kwargs):
         """
         Update content pack
-        
+
 
         >>> thread = api.update_bundle(bundle_id, request_body, callback=callback_function)
 
@@ -475,7 +475,7 @@ class SystembundlesApi(object):
     def update_bundle_with_http_info(self, bundle_id, request_body, **kwargs):
         """
         Update content pack
-        
+
 
         >>> thread = api.update_bundle_with_http_info(bundle_id, request_body, callback=callback_function)
 

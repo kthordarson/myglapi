@@ -19,7 +19,7 @@ class SystemgrokApi(object):
     def bulk_update_patterns(self, patterns, **kwargs):
         """
         Add a list of new patterns
-        
+
 
         >>> thread = api.bulk_update_patterns(patterns, callback=callback_function)
 
@@ -38,7 +38,7 @@ class SystemgrokApi(object):
     def bulk_update_patterns_with_http_info(self, patterns, **kwargs):
         """
         Add a list of new patterns
-        
+
 
         >>> thread = api.bulk_update_patterns_with_http_info(patterns, callback=callback_function)
 
@@ -103,7 +103,7 @@ class SystemgrokApi(object):
     def create_pattern(self, pattern, **kwargs):
         """
         Add a new named pattern
-        
+
 
         >>> thread = api.create_pattern(pattern, callback=callback_function)
 
@@ -121,7 +121,7 @@ class SystemgrokApi(object):
     def create_pattern_with_http_info(self, pattern, **kwargs):
         """
         Add a new named pattern
-        
+
 
         >>> thread = api.create_pattern_with_http_info(pattern, callback=callback_function)
 
@@ -177,7 +177,7 @@ class SystemgrokApi(object):
     def list_grok_patterns(self, **kwargs):
         """
         Get all existing grok patterns
-        
+
 
         >>> thread = api.list_grok_patterns(callback=callback_function)
 
@@ -194,7 +194,7 @@ class SystemgrokApi(object):
     def list_grok_patterns_with_http_info(self, **kwargs):
         """
         Get all existing grok patterns
-        
+
 
         >>> thread = api.list_grok_patterns_with_http_info(callback=callback_function)
 
@@ -244,7 +244,7 @@ class SystemgrokApi(object):
     def list_pattern(self, pattern_id, **kwargs):
         """
         Get the existing grok pattern
-        
+
 
         >>> thread = api.list_pattern(pattern_id, callback=callback_function)
 
@@ -262,7 +262,7 @@ class SystemgrokApi(object):
     def list_pattern_with_http_info(self, pattern_id, **kwargs):
         """
         Get the existing grok pattern
-        
+
 
         >>> thread = api.list_pattern_with_http_info(pattern_id, callback=callback_function)
 
@@ -318,7 +318,7 @@ class SystemgrokApi(object):
     def remove_pattern(self, **kwargs):
         """
         Remove an existing pattern by id
-        
+
 
         >>> thread = api.remove_pattern(callback=callback_function)
 
@@ -335,7 +335,7 @@ class SystemgrokApi(object):
     def remove_pattern_with_http_info(self, **kwargs):
         """
         Remove an existing pattern by id
-        
+
 
         >>> thread = api.remove_pattern_with_http_info(callback=callback_function)
 
@@ -385,7 +385,7 @@ class SystemgrokApi(object):
     def update_pattern(self, pattern_id, pattern, **kwargs):
         """
         Update an existing pattern
-        
+
 
         >>> thread = api.update_pattern(pattern_id, pattern, callback=callback_function)
 
@@ -404,7 +404,7 @@ class SystemgrokApi(object):
     def update_pattern_with_http_info(self, pattern_id, pattern, **kwargs):
         """
         Update an existing pattern
-        
+
 
         >>> thread = api.update_pattern_with_http_info(pattern_id, pattern, callback=callback_function)
 

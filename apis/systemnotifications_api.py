@@ -19,7 +19,7 @@ class SystemnotificationsApi(object):
     def delete_notification(self, notification_type, **kwargs):
         """
         Delete a notification
-        
+
 
         >>> thread = api.delete_notification(notification_type, callback=callback_function)
 
@@ -37,7 +37,7 @@ class SystemnotificationsApi(object):
     def delete_notification_with_http_info(self, notification_type, **kwargs):
         """
         Delete a notification
-        
+
 
         >>> thread = api.delete_notification_with_http_info(notification_type, callback=callback_function)
 
@@ -93,7 +93,7 @@ class SystemnotificationsApi(object):
     def list_notifications(self, **kwargs):
         """
         Get all active notifications
-        
+
 
         >>> thread = api.list_notifications(callback=callback_function)
 
@@ -110,7 +110,7 @@ class SystemnotificationsApi(object):
     def list_notifications_with_http_info(self, **kwargs):
         """
         Get all active notifications
-        
+
 
         >>> thread = api.list_notifications_with_http_info(callback=callback_function)
 

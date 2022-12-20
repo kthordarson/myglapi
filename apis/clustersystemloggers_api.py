@@ -19,7 +19,7 @@ class ClustersystemloggersApi(object):
     def loggers(self, **kwargs):
         """
         List all loggers of all nodes and their current levels
-        
+
 
         >>> thread = api.loggers(callback=callback_function)
 
@@ -36,7 +36,7 @@ class ClustersystemloggersApi(object):
     def loggers_with_http_info(self, **kwargs):
         """
         List all loggers of all nodes and their current levels
-        
+
 
         >>> thread = api.loggers_with_http_info(callback=callback_function)
 
@@ -180,7 +180,7 @@ class ClustersystemloggersApi(object):
     def subsystems(self, **kwargs):
         """
         List all logger subsystems and their current levels
-        
+
 
         >>> thread = api.subsystems(callback=callback_function)
 
@@ -197,7 +197,7 @@ class ClustersystemloggersApi(object):
     def subsystems_with_http_info(self, **kwargs):
         """
         List all logger subsystems and their current levels
-        
+
 
         >>> thread = api.subsystems_with_http_info(callback=callback_function)
 

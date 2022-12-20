@@ -19,7 +19,7 @@ class SystemldapApi(object):
     def delete_ldap_settings(self, **kwargs):
         """
         Remove the LDAP configuration
-        
+
 
         >>> thread = api.delete_ldap_settings(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SystemldapApi(object):
     def delete_ldap_settings_with_http_info(self, **kwargs):
         """
         Remove the LDAP configuration
-        
+
 
         >>> thread = api.delete_ldap_settings_with_http_info(callback=callback_function)
 
@@ -86,7 +86,7 @@ class SystemldapApi(object):
     def get_ldap_settings(self, **kwargs):
         """
         Get the LDAP configuration if it is configured
-        
+
 
         >>> thread = api.get_ldap_settings(callback=callback_function)
 
@@ -103,7 +103,7 @@ class SystemldapApi(object):
     def get_ldap_settings_with_http_info(self, **kwargs):
         """
         Get the LDAP configuration if it is configured
-        
+
 
         >>> thread = api.get_ldap_settings_with_http_info(callback=callback_function)
 
@@ -220,7 +220,7 @@ class SystemldapApi(object):
     def read_groups(self, **kwargs):
         """
         Get the available LDAP groups
-        
+
 
         >>> thread = api.read_groups(callback=callback_function)
 
@@ -237,7 +237,7 @@ class SystemldapApi(object):
     def read_groups_with_http_info(self, **kwargs):
         """
         Get the available LDAP groups
-        
+
 
         >>> thread = api.read_groups_with_http_info(callback=callback_function)
 
@@ -287,7 +287,7 @@ class SystemldapApi(object):
     def test_ldap_configuration(self, configuration_to_test, **kwargs):
         """
         Test LDAP Configuration
-        
+
 
         >>> thread = api.test_ldap_configuration(configuration_to_test, callback=callback_function)
 
@@ -305,7 +305,7 @@ class SystemldapApi(object):
     def test_ldap_configuration_with_http_info(self, configuration_to_test, **kwargs):
         """
         Test LDAP Configuration
-        
+
 
         >>> thread = api.test_ldap_configuration_with_http_info(configuration_to_test, callback=callback_function)
 
@@ -441,7 +441,7 @@ class SystemldapApi(object):
     def update_ldap_settings(self, json_body, **kwargs):
         """
         Update the LDAP configuration
-        
+
 
         >>> thread = api.update_ldap_settings(json_body, callback=callback_function)
 
@@ -459,7 +459,7 @@ class SystemldapApi(object):
     def update_ldap_settings_with_http_info(self, json_body, **kwargs):
         """
         Update the LDAP configuration
-        
+
 
         >>> thread = api.update_ldap_settings_with_http_info(json_body, callback=callback_function)
 

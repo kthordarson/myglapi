@@ -19,7 +19,7 @@ class PluginsorggraylogpluginsmapmapdataApi(object):
     def map_data(self, json_body, **kwargs):
         """
         Get map data
-        
+
 
         >>> thread = api.map_data(json_body, callback=callback_function)
 
@@ -37,7 +37,7 @@ class PluginsorggraylogpluginsmapmapdataApi(object):
     def map_data_with_http_info(self, json_body, **kwargs):
         """
         Get map data
-        
+
 
         >>> thread = api.map_data_with_http_info(json_body, callback=callback_function)
 

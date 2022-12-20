@@ -19,7 +19,7 @@ class ClusterjobsApi(object):
     def cancel_job(self, job_id, **kwargs):
         """
         Cancel job with the given ID
-        
+
 
         >>> thread = api.cancel_job(job_id, callback=callback_function)
 
@@ -37,7 +37,7 @@ class ClusterjobsApi(object):
     def cancel_job_with_http_info(self, job_id, **kwargs):
         """
         Cancel job with the given ID
-        
+
 
         >>> thread = api.cancel_job_with_http_info(job_id, callback=callback_function)
 
@@ -93,7 +93,7 @@ class ClusterjobsApi(object):
     def get_job(self, job_id, **kwargs):
         """
         Get job with the given ID
-        
+
 
         >>> thread = api.get_job(job_id, callback=callback_function)
 
@@ -111,7 +111,7 @@ class ClusterjobsApi(object):
     def get_job_with_http_info(self, job_id, **kwargs):
         """
         Get job with the given ID
-        
+
 
         >>> thread = api.get_job_with_http_info(job_id, callback=callback_function)
 
@@ -167,7 +167,7 @@ class ClusterjobsApi(object):
     def list(self, **kwargs):
         """
         List currently running jobs
-        
+
 
         >>> thread = api.list(callback=callback_function)
 
@@ -184,7 +184,7 @@ class ClusterjobsApi(object):
     def list_with_http_info(self, **kwargs):
         """
         List currently running jobs
-        
+
 
         >>> thread = api.list_with_http_info(callback=callback_function)
 

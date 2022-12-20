@@ -118,9 +118,7 @@ class SearchuniversalkeywordApi(object):
 
     def field_histogram_keyword(self, query, field, interval, keyword, **kwargs):
         """
-        Datetime histogram of a query using keyword timerange.
-        
-
+        Datetime histogram of a query using keyword timerange
         >>> thread = api.field_histogram_keyword(query, field, interval, keyword, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -141,9 +139,7 @@ class SearchuniversalkeywordApi(object):
 
     def field_histogram_keyword_with_http_info(self, query, field, interval, keyword, **kwargs):
         """
-        Datetime histogram of a query using keyword timerange.
-        
-
+        Datetime histogram of a query using keyword timerange
         >>> thread = api.field_histogram_keyword_with_http_info(query, field, interval, keyword, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -221,9 +217,7 @@ class SearchuniversalkeywordApi(object):
 
     def histogram_keyword(self, query, interval, keyword, **kwargs):
         """
-        Datetime histogram of a query using keyword timerange.
-        
-
+        Datetime histogram of a query using keyword timerange
         >>> thread = api.histogram_keyword(query, interval, keyword, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -242,9 +236,7 @@ class SearchuniversalkeywordApi(object):
 
     def histogram_keyword_with_http_info(self, query, interval, keyword, **kwargs):
         """
-        Datetime histogram of a query using keyword timerange.
-        
-
+        Datetime histogram of a query using keyword timerange
         >>> thread = api.histogram_keyword_with_http_info(query, interval, keyword, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -510,9 +502,7 @@ class SearchuniversalkeywordApi(object):
 
     def terms_keyword(self, field, query, keyword, **kwargs):
         """
-        Most common field terms of a query using a keyword timerange.
-        
-
+        Most common field terms of a query using a keyword timerange
         >>> thread = api.terms_keyword(field, query, keyword, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -532,9 +522,7 @@ class SearchuniversalkeywordApi(object):
 
     def terms_keyword_with_http_info(self, field, query, keyword, **kwargs):
         """
-        Most common field terms of a query using a keyword timerange.
-        
-
+        Most common field terms of a query using a keyword timerange
         >>> thread = api.terms_keyword_with_http_info(field, query, keyword, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -606,9 +594,7 @@ class SearchuniversalkeywordApi(object):
 
     def terms_stats_relative(self, key_field, value_field, order, query, keyword, **kwargs):
         """
-        Ordered field terms of a query computed on another field using a keyword timerange.
-        
-
+        Ordered field terms of a query computed on another field using a keyword timerange
         >>> thread = api.terms_stats_relative(key_field, value_field, order, query, keyword, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -630,9 +616,7 @@ class SearchuniversalkeywordApi(object):
 
     def terms_stats_relative_with_http_info(self, key_field, value_field, order, query, keyword, **kwargs):
         """
-        Ordered field terms of a query computed on another field using a keyword timerange.
-        
-
+        Ordered field terms of a query computed on another field using a keyword timerange
         >>> thread = api.terms_stats_relative_with_http_info(key_field, value_field, order, query, keyword, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

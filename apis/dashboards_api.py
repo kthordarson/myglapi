@@ -19,8 +19,6 @@ class DashboardsApi(object):
     def create(self, json_body, **kwargs):
         """
         Create a dashboard
-        
-
         >>> thread = api.create(json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -37,8 +35,6 @@ class DashboardsApi(object):
     def create_with_http_info(self, json_body, **kwargs):
         """
         Create a dashboard
-        
-
         >>> thread = api.create_with_http_info(json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -93,7 +89,7 @@ class DashboardsApi(object):
     def delete(self, dashboard_id, **kwargs):
         """
         Delete a dashboard and all its widgets
-        
+
 
         >>> thread = api.delete(dashboard_id, callback=callback_function)
 
@@ -111,7 +107,7 @@ class DashboardsApi(object):
     def delete_with_http_info(self, dashboard_id, **kwargs):
         """
         Delete a dashboard and all its widgets
-        
+
 
         >>> thread = api.delete_with_http_info(dashboard_id, callback=callback_function)
 
@@ -166,9 +162,7 @@ class DashboardsApi(object):
 
     def get(self, dashboard_id, **kwargs):
         """
-        Get a single dashboards and all configurations of its widgets.
-        
-
+        Get a single dashboards and all configurations of its widgets
         >>> thread = api.get(dashboard_id, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -184,9 +178,7 @@ class DashboardsApi(object):
 
     def get_with_http_info(self, dashboard_id, **kwargs):
         """
-        Get a single dashboards and all configurations of its widgets.
-        
-
+        Get a single dashboards and all configurations of its widgets
         >>> thread = api.get_with_http_info(dashboard_id, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -240,9 +232,7 @@ class DashboardsApi(object):
 
     def list(self, **kwargs):
         """
-        Get a list of all dashboards and all configurations of their widgets.
-        
-
+        Get a list of all dashboards and all configurations of their widgets
         >>> thread = api.list(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -257,9 +247,7 @@ class DashboardsApi(object):
 
     def list_with_http_info(self, **kwargs):
         """
-        Get a list of all dashboards and all configurations of their widgets.
-        
-
+        Get a list of all dashboards and all configurations of their widgets
         >>> thread = api.list_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -307,9 +295,7 @@ class DashboardsApi(object):
 
     def set_positions(self, dashboard_id, json_body, **kwargs):
         """
-        Update/set the positions of dashboard widgets.
-        
-
+        Update/set the positions of dashboard widgets
         >>> thread = api.set_positions(dashboard_id, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -326,9 +312,7 @@ class DashboardsApi(object):
 
     def set_positions_with_http_info(self, dashboard_id, json_body, **kwargs):
         """
-        Update/set the positions of dashboard widgets.
-        
-
+        Update/set the positions of dashboard widgets
         >>> thread = api.set_positions_with_http_info(dashboard_id, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -394,9 +378,7 @@ class DashboardsApi(object):
 
     def update(self, dashboard_id, json_body, **kwargs):
         """
-        Update the settings of a dashboard.
-        
-
+        Update the settings of a dashboard
         >>> thread = api.update(dashboard_id, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -413,9 +395,7 @@ class DashboardsApi(object):
 
     def update_with_http_info(self, dashboard_id, json_body, **kwargs):
         """
-        Update the settings of a dashboard.
-        
-
+        Update the settings of a dashboard
         >>> thread = api.update_with_http_info(dashboard_id, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

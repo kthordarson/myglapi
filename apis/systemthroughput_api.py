@@ -19,7 +19,7 @@ class SystemthroughputApi(object):
     def total(self, **kwargs):
         """
         Current throughput of this node in messages per second
-        
+
 
         >>> thread = api.total(callback=callback_function)
 
@@ -36,8 +36,6 @@ class SystemthroughputApi(object):
     def total_with_http_info(self, **kwargs):
         """
         Current throughput of this node in messages per second
-        
-
         >>> thread = api.total_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

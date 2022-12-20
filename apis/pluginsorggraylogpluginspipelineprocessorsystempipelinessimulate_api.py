@@ -19,7 +19,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinessimulateApi(object
     def simulate(self, simulation, **kwargs):
         """
         Simulate the execution of the pipeline message processor
-        
+
 
         >>> thread = api.simulate(simulation, callback=callback_function)
 
@@ -37,7 +37,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinessimulateApi(object
     def simulate_with_http_info(self, simulation, **kwargs):
         """
         Simulate the execution of the pipeline message processor
-        
+
 
         >>> thread = api.simulate_with_http_info(simulation, callback=callback_function)
 

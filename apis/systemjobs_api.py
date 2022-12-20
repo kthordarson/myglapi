@@ -19,8 +19,6 @@ class SystemjobsApi(object):
     def cancel(self, job_id, **kwargs):
         """
         Cancel running job
-        
-
         >>> thread = api.cancel(job_id, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -37,7 +35,7 @@ class SystemjobsApi(object):
     def cancel_with_http_info(self, job_id, **kwargs):
         """
         Cancel running job
-        
+
 
         >>> thread = api.cancel_with_http_info(job_id, callback=callback_function)
 
@@ -93,7 +91,7 @@ class SystemjobsApi(object):
     def get(self, job_id, **kwargs):
         """
         Get information of a specific currently running job
-        
+
 
         >>> thread = api.get(job_id, callback=callback_function)
 
@@ -111,7 +109,7 @@ class SystemjobsApi(object):
     def get_with_http_info(self, job_id, **kwargs):
         """
         Get information of a specific currently running job
-        
+
 
         >>> thread = api.get_with_http_info(job_id, callback=callback_function)
 
@@ -167,7 +165,7 @@ class SystemjobsApi(object):
     def list(self, **kwargs):
         """
         List currently running jobs
-        
+
 
         >>> thread = api.list(callback=callback_function)
 
@@ -184,7 +182,7 @@ class SystemjobsApi(object):
     def list_with_http_info(self, **kwargs):
         """
         List currently running jobs
-        
+
 
         >>> thread = api.list_with_http_info(callback=callback_function)
 
@@ -234,7 +232,7 @@ class SystemjobsApi(object):
     def trigger(self, json_body, **kwargs):
         """
         Trigger new job
-        
+
 
         >>> thread = api.trigger(json_body, callback=callback_function)
 
@@ -252,7 +250,7 @@ class SystemjobsApi(object):
     def trigger_with_http_info(self, json_body, **kwargs):
         """
         Trigger new job
-        
+
 
         >>> thread = api.trigger_with_http_info(json_body, callback=callback_function)
 

@@ -19,7 +19,7 @@ class RolesApi(object):
     def add_member(self, rolename, username, **kwargs):
         """
         Add a user to a role
-        
+
 
         >>> thread = api.add_member(rolename, username, callback=callback_function)
 
@@ -39,7 +39,7 @@ class RolesApi(object):
     def add_member_with_http_info(self, rolename, username, **kwargs):
         """
         Add a user to a role
-        
+
 
         >>> thread = api.add_member_with_http_info(rolename, username, callback=callback_function)
 
@@ -110,7 +110,7 @@ class RolesApi(object):
     def create(self, json_body, **kwargs):
         """
         Create a new role
-        
+
 
         >>> thread = api.create(json_body, callback=callback_function)
 
@@ -128,7 +128,7 @@ class RolesApi(object):
     def create_with_http_info(self, json_body, **kwargs):
         """
         Create a new role
-        
+
 
         >>> thread = api.create_with_http_info(json_body, callback=callback_function)
 
@@ -184,7 +184,7 @@ class RolesApi(object):
     def delete(self, rolename, **kwargs):
         """
         Remove the named role and dissociate any users from it
-        
+
 
         >>> thread = api.delete(rolename, callback=callback_function)
 
@@ -202,7 +202,7 @@ class RolesApi(object):
     def delete_with_http_info(self, rolename, **kwargs):
         """
         Remove the named role and dissociate any users from it
-        
+
 
         >>> thread = api.delete_with_http_info(rolename, callback=callback_function)
 
@@ -258,7 +258,7 @@ class RolesApi(object):
     def get_members(self, rolename, **kwargs):
         """
         Retrieve the role's members
-        
+
 
         >>> thread = api.get_members(rolename, callback=callback_function)
 
@@ -276,7 +276,7 @@ class RolesApi(object):
     def get_members_with_http_info(self, rolename, **kwargs):
         """
         Retrieve the role's members
-        
+
 
         >>> thread = api.get_members_with_http_info(rolename, callback=callback_function)
 
@@ -332,7 +332,7 @@ class RolesApi(object):
     def list_all(self, **kwargs):
         """
         List all roles
-        
+
 
         >>> thread = api.list_all(callback=callback_function)
 
@@ -349,7 +349,7 @@ class RolesApi(object):
     def list_all_with_http_info(self, **kwargs):
         """
         List all roles
-        
+
 
         >>> thread = api.list_all_with_http_info(callback=callback_function)
 
@@ -399,7 +399,7 @@ class RolesApi(object):
     def read(self, rolename, **kwargs):
         """
         Retrieve permissions for a single role
-        
+
 
         >>> thread = api.read(rolename, callback=callback_function)
 
@@ -417,7 +417,7 @@ class RolesApi(object):
     def read_with_http_info(self, rolename, **kwargs):
         """
         Retrieve permissions for a single role
-        
+
 
         >>> thread = api.read_with_http_info(rolename, callback=callback_function)
 
@@ -473,7 +473,7 @@ class RolesApi(object):
     def remove_member(self, rolename, username, **kwargs):
         """
         Remove a user from a role
-        
+
 
         >>> thread = api.remove_member(rolename, username, callback=callback_function)
 
@@ -492,7 +492,7 @@ class RolesApi(object):
     def remove_member_with_http_info(self, rolename, username, **kwargs):
         """
         Remove a user from a role
-        
+
 
         >>> thread = api.remove_member_with_http_info(rolename, username, callback=callback_function)
 
@@ -554,7 +554,7 @@ class RolesApi(object):
     def update(self, rolename, json_body, **kwargs):
         """
         Update an existing role
-        
+
 
         >>> thread = api.update(rolename, json_body, callback=callback_function)
 
@@ -573,7 +573,7 @@ class RolesApi(object):
     def update_with_http_info(self, rolename, json_body, **kwargs):
         """
         Update an existing role
-        
+
 
         >>> thread = api.update_with_http_info(rolename, json_body, callback=callback_function)
 

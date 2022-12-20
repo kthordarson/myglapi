@@ -319,7 +319,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CollectorConfiguration json_body:  (required)
-        :param Object create_defaults: 
+        :param Object create_defaults:
         :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
@@ -332,13 +332,13 @@ class PluginsorggraylogpluginscollectorApi(object):
     def create_configuration_with_http_info(self, json_body, **kwargs):
         """
         Create new collector configuration
-        
+
 
         >>> thread = api.create_configuration_with_http_info(json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CollectorConfiguration json_body:  (required)
-        :param Object create_defaults: 
+        :param Object create_defaults:
         :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
 
@@ -634,7 +634,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def delete_configuration(self, id, **kwargs):
         """
         Delete a collector configuration
-        
+
 
         >>> thread = api.delete_configuration(id, callback=callback_function)
 
@@ -652,7 +652,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def delete_configuration_with_http_info(self, id, **kwargs):
         """
         Delete a collector configuration
-        
+
 
         >>> thread = api.delete_configuration_with_http_info(id, callback=callback_function)
 
@@ -708,7 +708,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def delete_input(self, id, **kwargs):
         """
         Delete input form configuration
-        
+
 
         >>> thread = api.delete_input(id, callback=callback_function)
 
@@ -726,7 +726,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def delete_input_with_http_info(self, id, **kwargs):
         """
         Delete input form configuration
-        
+
 
         >>> thread = api.delete_input_with_http_info(id, callback=callback_function)
 
@@ -782,7 +782,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def delete_output(self, id, **kwargs):
         """
         Delete output from configuration
-        
+
 
         >>> thread = api.delete_output(id, callback=callback_function)
 
@@ -800,7 +800,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def delete_output_with_http_info(self, id, **kwargs):
         """
         Delete output from configuration
-        
+
 
         >>> thread = api.delete_output_with_http_info(id, callback=callback_function)
 
@@ -856,7 +856,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def delete_snippet(self, id, **kwargs):
         """
         Delete snippet from configuration
-        
+
 
         >>> thread = api.delete_snippet(id, callback=callback_function)
 
@@ -874,7 +874,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def delete_snippet_with_http_info(self, id, **kwargs):
         """
         Delete snippet from configuration
-        
+
 
         >>> thread = api.delete_snippet_with_http_info(id, callback=callback_function)
 
@@ -930,13 +930,13 @@ class PluginsorggraylogpluginscollectorApi(object):
     def get_configuration(self, collector_id, **kwargs):
         """
         Get a single collector configuration
-        
+
 
         >>> thread = api.get_configuration(collector_id, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object collector_id:  (required)
-        :param Object tags: 
+        :param Object tags:
         :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
@@ -949,13 +949,13 @@ class PluginsorggraylogpluginscollectorApi(object):
     def get_configuration_with_http_info(self, collector_id, **kwargs):
         """
         Get a single collector configuration
-        
+
 
         >>> thread = api.get_configuration_with_http_info(collector_id, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object collector_id:  (required)
-        :param Object tags: 
+        :param Object tags:
         :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
 
@@ -1008,7 +1008,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def get_configurations(self, id, **kwargs):
         """
         Show collector configuration details
-        
+
 
         >>> thread = api.get_configurations(id, callback=callback_function)
 
@@ -1026,7 +1026,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def get_configurations_with_http_info(self, id, **kwargs):
         """
         Show collector configuration details
-        
+
 
         >>> thread = api.get_configurations_with_http_info(id, callback=callback_function)
 
@@ -1082,7 +1082,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def get_tags(self, **kwargs):
         """
         List all used tags
-        
+
 
         >>> thread = api.get_tags(callback=callback_function)
 
@@ -1099,7 +1099,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def get_tags_with_http_info(self, **kwargs):
         """
         List all used tags
-        
+
 
         >>> thread = api.get_tags_with_http_info(callback=callback_function)
 
@@ -1149,7 +1149,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def list_configurations(self, **kwargs):
         """
         List all collector configurations
-        
+
 
         >>> thread = api.list_configurations(callback=callback_function)
 
@@ -1166,7 +1166,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def list_configurations_with_http_info(self, **kwargs):
         """
         List all collector configurations
-        
+
 
         >>> thread = api.list_configurations_with_http_info(callback=callback_function)
 
@@ -1216,7 +1216,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def update_configuration_name(self, id, json_body, **kwargs):
         """
         Updates a collector configuration name
-        
+
 
         >>> thread = api.update_configuration_name(id, json_body, callback=callback_function)
 
@@ -1235,7 +1235,7 @@ class PluginsorggraylogpluginscollectorApi(object):
     def update_configuration_name_with_http_info(self, id, json_body, **kwargs):
         """
         Updates a collector configuration name
-        
+
 
         >>> thread = api.update_configuration_name_with_http_info(id, json_body, callback=callback_function)
 

@@ -20,7 +20,7 @@ class SystemloggersApi(object):
     def loggers(self, **kwargs):
         """
         List all loggers and their current levels
-        
+
 
         >>> thread = api.loggers(callback=callback_function)
 
@@ -37,7 +37,7 @@ class SystemloggersApi(object):
     def loggers_with_http_info(self, **kwargs):
         """
         List all loggers and their current levels
-        
+
 
         >>> thread = api.loggers_with_http_info(callback=callback_function)
 
@@ -87,7 +87,7 @@ class SystemloggersApi(object):
     def messages(self, **kwargs):
         """
         Get recent internal log messages
-        
+
 
         >>> thread = api.messages(callback=callback_function)
 
@@ -106,7 +106,7 @@ class SystemloggersApi(object):
     def messages_with_http_info(self, **kwargs):
         """
         Get recent internal log messages
-        
+
 
         >>> thread = api.messages_with_http_info(callback=callback_function)
 
@@ -336,7 +336,7 @@ class SystemloggersApi(object):
     def subsystems(self, **kwargs):
         """
         List all logger subsystems and their current levels
-        
+
 
         >>> thread = api.subsystems(callback=callback_function)
 
@@ -353,7 +353,7 @@ class SystemloggersApi(object):
     def subsystems_with_http_info(self, **kwargs):
         """
         List all logger subsystems and their current levels
-        
+
 
         >>> thread = api.subsystems_with_http_info(callback=callback_function)
 

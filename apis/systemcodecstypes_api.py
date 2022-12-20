@@ -19,7 +19,7 @@ class SystemcodecstypesApi(object):
     def get_all(self, **kwargs):
         """
         Get all codec types
-        
+
 
         >>> thread = api.get_all(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SystemcodecstypesApi(object):
     def get_all_with_http_info(self, **kwargs):
         """
         Get all codec types
-        
+
 
         >>> thread = api.get_all_with_http_info(callback=callback_function)
 

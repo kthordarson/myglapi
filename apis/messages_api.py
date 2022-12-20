@@ -100,7 +100,7 @@ class MessagesApi(object):
     def parse(self, json_body, **kwargs):
         """
         Parse a raw message
-        
+
 
         >>> thread = api.parse(json_body, callback=callback_function)
 
@@ -118,7 +118,7 @@ class MessagesApi(object):
     def parse_with_http_info(self, json_body, **kwargs):
         """
         Parse a raw message
-        
+
 
         >>> thread = api.parse_with_http_info(json_body, callback=callback_function)
 
@@ -173,9 +173,7 @@ class MessagesApi(object):
 
     def search(self, index, message_id, **kwargs):
         """
-        Get a single message.
-        
-
+        Get a single message
         >>> thread = api.search(index, message_id, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -192,9 +190,7 @@ class MessagesApi(object):
 
     def search_with_http_info(self, index, message_id, **kwargs):
         """
-        Get a single message.
-        
-
+        Get a single message
         >>> thread = api.search_with_http_info(index, message_id, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

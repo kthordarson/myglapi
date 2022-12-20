@@ -19,7 +19,7 @@ class SearchdecoratorsApi(object):
     def create(self, json_body, **kwargs):
         """
         Creates a message decoration configuration
-        
+
 
         >>> thread = api.create(json_body, callback=callback_function)
 
@@ -37,7 +37,7 @@ class SearchdecoratorsApi(object):
     def create_with_http_info(self, json_body, **kwargs):
         """
         Creates a message decoration configuration
-        
+
 
         >>> thread = api.create_with_http_info(json_body, callback=callback_function)
 
@@ -93,7 +93,7 @@ class SearchdecoratorsApi(object):
     def delete(self, decorator_id, **kwargs):
         """
         Create a decorator
-        
+
 
         >>> thread = api.delete(decorator_id, callback=callback_function)
 
@@ -111,7 +111,7 @@ class SearchdecoratorsApi(object):
     def delete_with_http_info(self, decorator_id, **kwargs):
         """
         Create a decorator
-        
+
 
         >>> thread = api.delete_with_http_info(decorator_id, callback=callback_function)
 
@@ -167,7 +167,7 @@ class SearchdecoratorsApi(object):
     def get(self, **kwargs):
         """
         Returns all configured message decorations
-        
+
 
         >>> thread = api.get(callback=callback_function)
 
@@ -184,7 +184,7 @@ class SearchdecoratorsApi(object):
     def get_with_http_info(self, **kwargs):
         """
         Returns all configured message decorations
-        
+
 
         >>> thread = api.get_with_http_info(callback=callback_function)
 
@@ -234,7 +234,7 @@ class SearchdecoratorsApi(object):
     def get_available(self, **kwargs):
         """
         Returns all available message decorations
-        
+
 
         >>> thread = api.get_available(callback=callback_function)
 
@@ -251,7 +251,7 @@ class SearchdecoratorsApi(object):
     def get_available_with_http_info(self, **kwargs):
         """
         Returns all available message decorations
-        
+
 
         >>> thread = api.get_available_with_http_info(callback=callback_function)
 
@@ -301,7 +301,7 @@ class SearchdecoratorsApi(object):
     def update(self, decorator_id, json_body, **kwargs):
         """
         Update a decorator
-        
+
 
         >>> thread = api.update(decorator_id, json_body, callback=callback_function)
 
@@ -320,7 +320,7 @@ class SearchdecoratorsApi(object):
     def update_with_http_info(self, decorator_id, json_body, **kwargs):
         """
         Update a decorator
-        
+
 
         >>> thread = api.update_with_http_info(decorator_id, json_body, callback=callback_function)
 

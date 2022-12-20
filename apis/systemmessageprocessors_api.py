@@ -19,7 +19,7 @@ class SystemmessageprocessorsApi(object):
     def config(self, **kwargs):
         """
         Get message processor configuration
-        
+
 
         >>> thread = api.config(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SystemmessageprocessorsApi(object):
     def config_with_http_info(self, **kwargs):
         """
         Get message processor configuration
-        
+
 
         >>> thread = api.config_with_http_info(callback=callback_function)
 
@@ -86,7 +86,7 @@ class SystemmessageprocessorsApi(object):
     def update_config(self, config, **kwargs):
         """
         Update message processor configuration
-        
+
 
         >>> thread = api.update_config(config, callback=callback_function)
 
@@ -104,7 +104,7 @@ class SystemmessageprocessorsApi(object):
     def update_config_with_http_info(self, config, **kwargs):
         """
         Update message processor configuration
-        
+
 
         >>> thread = api.update_config_with_http_info(config, callback=callback_function)
 

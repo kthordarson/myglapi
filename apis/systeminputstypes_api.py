@@ -19,7 +19,7 @@ class SysteminputstypesApi(object):
     def all(self, **kwargs):
         """
         Get information about all input types
-        
+
 
         >>> thread = api.all(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SysteminputstypesApi(object):
     def all_with_http_info(self, **kwargs):
         """
         Get information about all input types
-        
+
 
         >>> thread = api.all_with_http_info(callback=callback_function)
 
@@ -86,7 +86,7 @@ class SysteminputstypesApi(object):
     def info(self, input_type, **kwargs):
         """
         Get information about a single input type
-        
+
 
         >>> thread = api.info(input_type, callback=callback_function)
 
@@ -104,7 +104,7 @@ class SysteminputstypesApi(object):
     def info_with_http_info(self, input_type, **kwargs):
         """
         Get information about a single input type
-        
+
 
         >>> thread = api.info_with_http_info(input_type, callback=callback_function)
 
@@ -160,7 +160,7 @@ class SysteminputstypesApi(object):
     def types(self, **kwargs):
         """
         Get all available input types of this node
-        
+
 
         >>> thread = api.types(callback=callback_function)
 
@@ -177,7 +177,7 @@ class SysteminputstypesApi(object):
     def types_with_http_info(self, **kwargs):
         """
         Get all available input types of this node
-        
+
 
         >>> thread = api.types_with_http_info(callback=callback_function)
 

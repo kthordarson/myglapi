@@ -19,7 +19,7 @@ class ClusterinputstatesApi(object):
     def get(self, **kwargs):
         """
         Get all input states
-        
+
 
         >>> thread = api.get(callback=callback_function)
 
@@ -36,7 +36,7 @@ class ClusterinputstatesApi(object):
     def get_with_http_info(self, **kwargs):
         """
         Get all input states
-        
+
 
         >>> thread = api.get_with_http_info(callback=callback_function)
 
@@ -86,7 +86,7 @@ class ClusterinputstatesApi(object):
     def start(self, input_id, **kwargs):
         """
         Start or restart specified input in all nodes
-        
+
 
         >>> thread = api.start(input_id, callback=callback_function)
 
@@ -104,7 +104,7 @@ class ClusterinputstatesApi(object):
     def start_with_http_info(self, input_id, **kwargs):
         """
         Start or restart specified input in all nodes
-        
+
 
         >>> thread = api.start_with_http_info(input_id, callback=callback_function)
 
@@ -160,7 +160,7 @@ class ClusterinputstatesApi(object):
     def stop(self, input_id, **kwargs):
         """
         Stop specified input in all nodes
-        
+
 
         >>> thread = api.stop(input_id, callback=callback_function)
 
@@ -178,7 +178,7 @@ class ClusterinputstatesApi(object):
     def stop_with_http_info(self, input_id, **kwargs):
         """
         Stop specified input in all nodes
-        
+
 
         >>> thread = api.stop_with_http_info(input_id, callback=callback_function)
 

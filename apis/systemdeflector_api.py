@@ -19,7 +19,7 @@ class SystemdeflectorApi(object):
     def cycle(self, **kwargs):
         """
         Cycle deflector to new/next index
-        
+
 
         >>> thread = api.cycle(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SystemdeflectorApi(object):
     def cycle_with_http_info(self, **kwargs):
         """
         Cycle deflector to new/next index
-        
+
 
         >>> thread = api.cycle_with_http_info(callback=callback_function)
 
@@ -86,7 +86,7 @@ class SystemdeflectorApi(object):
     def deflector(self, **kwargs):
         """
         Get current deflector status
-        
+
 
         >>> thread = api.deflector(callback=callback_function)
 
@@ -103,7 +103,7 @@ class SystemdeflectorApi(object):
     def deflector_with_http_info(self, **kwargs):
         """
         Get current deflector status
-        
+
 
         >>> thread = api.deflector_with_http_info(callback=callback_function)
 

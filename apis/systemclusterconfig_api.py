@@ -19,7 +19,7 @@ class SystemclusterconfigApi(object):
     def delete(self, config_class, **kwargs):
         """
         Delete configuration settings from database
-        
+
 
         >>> thread = api.delete(config_class, callback=callback_function)
 
@@ -37,7 +37,7 @@ class SystemclusterconfigApi(object):
     def delete_with_http_info(self, config_class, **kwargs):
         """
         Delete configuration settings from database
-        
+
 
         >>> thread = api.delete_with_http_info(config_class, callback=callback_function)
 
@@ -93,7 +93,7 @@ class SystemclusterconfigApi(object):
     def list(self, **kwargs):
         """
         List all configuration classes
-        
+
 
         >>> thread = api.list(callback=callback_function)
 
@@ -110,7 +110,7 @@ class SystemclusterconfigApi(object):
     def list_with_http_info(self, **kwargs):
         """
         List all configuration classes
-        
+
 
         >>> thread = api.list_with_http_info(callback=callback_function)
 
@@ -160,7 +160,7 @@ class SystemclusterconfigApi(object):
     def schema(self, config_class, **kwargs):
         """
         Get JSON schema of configuration class
-        
+
 
         >>> thread = api.schema(config_class, callback=callback_function)
 
@@ -178,7 +178,7 @@ class SystemclusterconfigApi(object):
     def schema_with_http_info(self, config_class, **kwargs):
         """
         Get JSON schema of configuration class
-        
+
 
         >>> thread = api.schema_with_http_info(config_class, callback=callback_function)
 
@@ -234,7 +234,7 @@ class SystemclusterconfigApi(object):
     def update(self, config_class, body, **kwargs):
         """
         Update configuration in database
-        
+
 
         >>> thread = api.update(config_class, body, callback=callback_function)
 
@@ -253,7 +253,7 @@ class SystemclusterconfigApi(object):
     def update_with_http_info(self, config_class, body, **kwargs):
         """
         Update configuration in database
-        
+
 
         >>> thread = api.update_with_http_info(config_class, body, callback=callback_function)
 

@@ -21,10 +21,7 @@ class ApidocsApi(object):
     def overview(self, **kwargs):
         """
         Get API documentation
-        
-
         >>> thread = api.overview(callback=callback_function)
-
         :param callback function: The callback function for asynchronous request. (optional)
         :return:\s None If the method is called asynchronously, returns the request thread.
         """
@@ -38,10 +35,7 @@ class ApidocsApi(object):
     def overview_with_http_info(self, **kwargs):
         """
         Get API documentation
-        
-
         >>> thread = api.overview_with_http_info(callback=callback_function)
-
         :param callback function: The callback function for asynchronous request. (optional)
         :return:\s None If the method is called asynchronously, returns the request thread.
         """
@@ -86,7 +80,7 @@ class ApidocsApi(object):
     def route(self, route, **kwargs):
         """
         Get detailed API documentation of a single resource
-        
+
 
         >>> thread = api.route(route, callback=callback_function)
 
@@ -104,7 +98,7 @@ class ApidocsApi(object):
     def route_with_http_info(self, route, **kwargs):
         """
         Get detailed API documentation of a single resource
-        
+
 
         >>> thread = api.route_with_http_info(route, callback=callback_function)
 

@@ -167,7 +167,7 @@ class FiltersblacklistApi(object):
     def get(self, filter_id, **kwargs):
         """
         Get the existing blacklist filter
-        
+
 
         >>> thread = api.get(filter_id, callback=callback_function)
 
@@ -185,7 +185,7 @@ class FiltersblacklistApi(object):
     def get_with_http_info(self, filter_id, **kwargs):
         """
         Get the existing blacklist filter
-        
+
 
         >>> thread = api.get_with_http_info(filter_id, callback=callback_function)
 
@@ -241,7 +241,7 @@ class FiltersblacklistApi(object):
     def get_all(self, **kwargs):
         """
         Get all blacklist filters
-        
+
 
         >>> thread = api.get_all(callback=callback_function)
 
@@ -258,7 +258,7 @@ class FiltersblacklistApi(object):
     def get_all_with_http_info(self, **kwargs):
         """
         Get all blacklist filters
-        
+
 
         >>> thread = api.get_all_with_http_info(callback=callback_function)
 

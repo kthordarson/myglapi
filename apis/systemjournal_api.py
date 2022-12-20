@@ -18,9 +18,7 @@ class SystemjournalApi(object):
 
     def show(self, **kwargs):
         """
-        Get current state of the journal on this node.
-        
-
+        Get current state of the journal on this node
         >>> thread = api.show(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -35,9 +33,7 @@ class SystemjournalApi(object):
 
     def show_with_http_info(self, **kwargs):
         """
-        Get current state of the journal on this node.
-        
-
+        Get current state of the journal on this node
         >>> thread = api.show_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

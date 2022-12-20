@@ -19,7 +19,7 @@ class SystemgettingstartedApi(object):
     def dismiss_getting_started(self, **kwargs):
         """
         Dismiss auto-showing getting started guide for this version
-        
+
 
         >>> thread = api.dismiss_getting_started(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SystemgettingstartedApi(object):
     def dismiss_getting_started_with_http_info(self, **kwargs):
         """
         Dismiss auto-showing getting started guide for this version
-        
+
 
         >>> thread = api.dismiss_getting_started_with_http_info(callback=callback_function)
 
@@ -86,7 +86,7 @@ class SystemgettingstartedApi(object):
     def display_getting_started(self, **kwargs):
         """
         Check whether to display the Getting started guide for this version
-        
+
 
         >>> thread = api.display_getting_started(callback=callback_function)
 
@@ -103,7 +103,7 @@ class SystemgettingstartedApi(object):
     def display_getting_started_with_http_info(self, **kwargs):
         """
         Check whether to display the Getting started guide for this version
-        
+
 
         >>> thread = api.display_getting_started_with_http_info(callback=callback_function)
 

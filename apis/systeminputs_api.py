@@ -20,7 +20,7 @@ class SysteminputsApi(object):
     def create(self, json_body, **kwargs):
         """
         Launch input on this node
-        
+
 
         >>> thread = api.create(json_body, callback=callback_function)
 
@@ -38,7 +38,7 @@ class SysteminputsApi(object):
     def create_with_http_info(self, json_body, **kwargs):
         """
         Launch input on this node
-        
+
 
         >>> thread = api.create_with_http_info(json_body, callback=callback_function)
 
@@ -93,7 +93,7 @@ class SysteminputsApi(object):
     def get(self, input_id, **kwargs):
         """
         Get information of a single input on this node
-        
+
 
         >>> thread = api.get(input_id, callback=callback_function)
 
@@ -111,7 +111,7 @@ class SysteminputsApi(object):
     def get_with_http_info(self, input_id, **kwargs):
         """
         Get information of a single input on this node
-        
+
 
         >>> thread = api.get_with_http_info(input_id, callback=callback_function)
 
@@ -166,7 +166,7 @@ class SysteminputsApi(object):
     def list(self, **kwargs):
         """
         Get all inputs
-        
+
 
         >>> thread = api.list(callback=callback_function)
 
@@ -183,7 +183,7 @@ class SysteminputsApi(object):
     def list_with_http_info(self, **kwargs):
         """
         Get all inputs
-        
+
 
         >>> thread = api.list_with_http_info(callback=callback_function)
 
@@ -233,7 +233,7 @@ class SysteminputsApi(object):
     def terminate(self, input_id, **kwargs):
         """
         Terminate input on this node
-        
+
 
         >>> thread = api.terminate(input_id, callback=callback_function)
 
@@ -251,7 +251,7 @@ class SysteminputsApi(object):
     def terminate_with_http_info(self, input_id, **kwargs):
         """
         Terminate input on this node
-        
+
 
         >>> thread = api.terminate_with_http_info(input_id, callback=callback_function)
 
@@ -306,7 +306,7 @@ class SysteminputsApi(object):
     def update(self, json_body, input_id, **kwargs):
         """
         Update input on this node
-        
+
 
         >>> thread = api.update(json_body, input_id, callback=callback_function)
 
@@ -325,7 +325,7 @@ class SysteminputsApi(object):
     def update_with_http_info(self, json_body, input_id, **kwargs):
         """
         Update input on this node
-        
+
 
         >>> thread = api.update_with_http_info(json_body, input_id, callback=callback_function)
 

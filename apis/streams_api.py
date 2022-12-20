@@ -20,7 +20,7 @@ class StreamsApi(object):
     def clone_stream(self, stream_id, json_body, **kwargs):
         """
         Clone a stream
-        
+
 
         >>> thread = api.clone_stream(stream_id, json_body, callback=callback_function)
 
@@ -39,7 +39,7 @@ class StreamsApi(object):
     def clone_stream_with_http_info(self, stream_id, json_body, **kwargs):
         """
         Clone a stream
-        
+
 
         >>> thread = api.clone_stream_with_http_info(stream_id, json_body, callback=callback_function)
 
@@ -101,7 +101,7 @@ class StreamsApi(object):
     def create(self, json_body, **kwargs):
         """
         Create a stream
-        
+
 
         >>> thread = api.create(json_body, callback=callback_function)
 
@@ -119,7 +119,7 @@ class StreamsApi(object):
     def create_with_http_info(self, json_body, **kwargs):
         """
         Create a stream
-        
+
 
         >>> thread = api.create_with_http_info(json_body, callback=callback_function)
 
@@ -175,7 +175,7 @@ class StreamsApi(object):
     def delete(self, stream_id, **kwargs):
         """
         Delete a stream
-        
+
 
         >>> thread = api.delete(stream_id, callback=callback_function)
 
@@ -193,7 +193,7 @@ class StreamsApi(object):
     def delete_with_http_info(self, stream_id, **kwargs):
         """
         Delete a stream
-        
+
 
         >>> thread = api.delete_with_http_info(stream_id, callback=callback_function)
 
@@ -249,7 +249,7 @@ class StreamsApi(object):
     def get(self, **kwargs):
         """
         Get a list of all streams
-        
+
 
         >>> thread = api.get(callback=callback_function)
 
@@ -266,7 +266,7 @@ class StreamsApi(object):
     def get_with_http_info(self, **kwargs):
         """
         Get a list of all streams
-        
+
 
         >>> thread = api.get_with_http_info(callback=callback_function)
 
@@ -316,7 +316,7 @@ class StreamsApi(object):
     def get_0(self, stream_id, **kwargs):
         """
         Get a single stream
-        
+
 
         >>> thread = api.get_0(stream_id, callback=callback_function)
 
@@ -334,7 +334,7 @@ class StreamsApi(object):
     def get_0_with_http_info(self, stream_id, **kwargs):
         """
         Get a single stream
-        
+
 
         >>> thread = api.get_0_with_http_info(stream_id, callback=callback_function)
 
@@ -390,7 +390,7 @@ class StreamsApi(object):
     def get_enabled(self, **kwargs):
         """
         Get a list of all enabled streams
-        
+
 
         >>> thread = api.get_enabled(callback=callback_function)
 
@@ -407,7 +407,7 @@ class StreamsApi(object):
     def get_enabled_with_http_info(self, **kwargs):
         """
         Get a list of all enabled streams
-        
+
 
         >>> thread = api.get_enabled_with_http_info(callback=callback_function)
 
@@ -457,7 +457,7 @@ class StreamsApi(object):
     def pause(self, stream_id, **kwargs):
         """
         Pause a stream
-        
+
 
         >>> thread = api.pause(stream_id, callback=callback_function)
 
@@ -475,7 +475,7 @@ class StreamsApi(object):
     def pause_with_http_info(self, stream_id, **kwargs):
         """
         Pause a stream
-        
+
 
         >>> thread = api.pause_with_http_info(stream_id, callback=callback_function)
 
@@ -531,7 +531,7 @@ class StreamsApi(object):
     def resume(self, stream_id, **kwargs):
         """
         Resume a stream
-        
+
 
         >>> thread = api.resume(stream_id, callback=callback_function)
 
@@ -549,7 +549,7 @@ class StreamsApi(object):
     def resume_with_http_info(self, stream_id, **kwargs):
         """
         Resume a stream
-        
+
 
         >>> thread = api.resume_with_http_info(stream_id, callback=callback_function)
 
@@ -605,7 +605,7 @@ class StreamsApi(object):
     def test_match(self, stream_id, json_body, **kwargs):
         """
         Test matching of a stream against a supplied message
-        
+
 
         >>> thread = api.test_match(stream_id, json_body, callback=callback_function)
 
@@ -624,7 +624,7 @@ class StreamsApi(object):
     def test_match_with_http_info(self, stream_id, json_body, **kwargs):
         """
         Test matching of a stream against a supplied message
-        
+
 
         >>> thread = api.test_match_with_http_info(stream_id, json_body, callback=callback_function)
 
@@ -686,7 +686,7 @@ class StreamsApi(object):
     def update(self, stream_id, json_body, **kwargs):
         """
         Update a stream
-        
+
 
         >>> thread = api.update(stream_id, json_body, callback=callback_function)
 
@@ -705,7 +705,7 @@ class StreamsApi(object):
     def update_with_http_info(self, stream_id, json_body, **kwargs):
         """
         Update a stream
-        
+
 
         >>> thread = api.update_with_http_info(stream_id, json_body, callback=callback_function)
 

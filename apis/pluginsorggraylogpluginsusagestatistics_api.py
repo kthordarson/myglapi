@@ -19,7 +19,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
     def show_cluster_data_set(self, **kwargs):
         """
         Show the collected anonymous usage statistics of this Graylog cluster
-        
+
 
         >>> thread = api.show_cluster_data_set(callback=callback_function)
 
@@ -36,7 +36,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
     def show_cluster_data_set_with_http_info(self, **kwargs):
         """
         Show the collected anonymous usage statistics of this Graylog cluster
-        
+
 
         >>> thread = api.show_cluster_data_set_with_http_info(callback=callback_function)
 
@@ -86,7 +86,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
     def show_config(self, **kwargs):
         """
         Show configuration for the anonymous usage statistics plugin
-        
+
 
         >>> thread = api.show_config(callback=callback_function)
 
@@ -103,7 +103,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
     def show_config_with_http_info(self, **kwargs):
         """
         Show configuration for the anonymous usage statistics plugin
-        
+
 
         >>> thread = api.show_config_with_http_info(callback=callback_function)
 
@@ -153,7 +153,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
     def show_node_data_set(self, **kwargs):
         """
         Show the collected anonymous usage statistics of this Graylog node
-        
+
 
         >>> thread = api.show_node_data_set(callback=callback_function)
 
@@ -170,7 +170,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
     def show_node_data_set_with_http_info(self, **kwargs):
         """
         Show the collected anonymous usage statistics of this Graylog node
-        
+
 
         >>> thread = api.show_node_data_set_with_http_info(callback=callback_function)
 

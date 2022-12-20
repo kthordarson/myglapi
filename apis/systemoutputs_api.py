@@ -19,7 +19,7 @@ class SystemoutputsApi(object):
     def available(self, **kwargs):
         """
         Get all available output modules
-        
+
 
         >>> thread = api.available(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SystemoutputsApi(object):
     def available_with_http_info(self, **kwargs):
         """
         Get all available output modules
-        
+
 
         >>> thread = api.available_with_http_info(callback=callback_function)
 
@@ -86,7 +86,7 @@ class SystemoutputsApi(object):
     def create(self, json_body, **kwargs):
         """
         Create an output
-        
+
 
         >>> thread = api.create(json_body, callback=callback_function)
 
@@ -104,7 +104,7 @@ class SystemoutputsApi(object):
     def create_with_http_info(self, json_body, **kwargs):
         """
         Create an output
-        
+
 
         >>> thread = api.create_with_http_info(json_body, callback=callback_function)
 
@@ -160,7 +160,7 @@ class SystemoutputsApi(object):
     def delete(self, output_id, **kwargs):
         """
         Delete output
-        
+
 
         >>> thread = api.delete(output_id, callback=callback_function)
 
@@ -178,7 +178,7 @@ class SystemoutputsApi(object):
     def delete_with_http_info(self, output_id, **kwargs):
         """
         Delete output
-        
+
 
         >>> thread = api.delete_with_http_info(output_id, callback=callback_function)
 
@@ -234,7 +234,7 @@ class SystemoutputsApi(object):
     def get(self, **kwargs):
         """
         Get a list of all outputs
-        
+
 
         >>> thread = api.get(callback=callback_function)
 
@@ -251,7 +251,7 @@ class SystemoutputsApi(object):
     def get_with_http_info(self, **kwargs):
         """
         Get a list of all outputs
-        
+
 
         >>> thread = api.get_with_http_info(callback=callback_function)
 
@@ -301,7 +301,7 @@ class SystemoutputsApi(object):
     def get_0(self, output_id, **kwargs):
         """
         Get specific output
-        
+
 
         >>> thread = api.get_0(output_id, callback=callback_function)
 
@@ -319,7 +319,7 @@ class SystemoutputsApi(object):
     def get_0_with_http_info(self, output_id, **kwargs):
         """
         Get specific output
-        
+
 
         >>> thread = api.get_0_with_http_info(output_id, callback=callback_function)
 
@@ -375,7 +375,7 @@ class SystemoutputsApi(object):
     def update(self, output_id, json_body, **kwargs):
         """
         Update output
-        
+
 
         >>> thread = api.update(output_id, json_body, callback=callback_function)
 
@@ -394,7 +394,7 @@ class SystemoutputsApi(object):
     def update_with_http_info(self, output_id, json_body, **kwargs):
         """
         Update output
-        
+
 
         >>> thread = api.update_with_http_info(output_id, json_body, callback=callback_function)
 

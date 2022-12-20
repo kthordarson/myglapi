@@ -21,7 +21,7 @@ class ClusterdeflectorApi(object):
     def cycle(self, **kwargs):
         """
         Finds master node and triggers deflector cycle
-        
+
 
         >>> thread = api.cycle(callback=callback_function)
 
@@ -38,7 +38,7 @@ class ClusterdeflectorApi(object):
     def cycle_with_http_info(self, **kwargs):
         """
         Finds master node and triggers deflector cycle
-        
+
 
         >>> thread = api.cycle_with_http_info(callback=callback_function)
 

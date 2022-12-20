@@ -19,7 +19,7 @@ class ClustermetricsApi(object):
     def multiple_metrics_all_nodes(self, requested_metrics, **kwargs):
         """
         Get all metrics of all nodes in the cluster
-        
+
 
         >>> thread = api.multiple_metrics_all_nodes(requested_metrics, callback=callback_function)
 
@@ -37,7 +37,7 @@ class ClustermetricsApi(object):
     def multiple_metrics_all_nodes_with_http_info(self, requested_metrics, **kwargs):
         """
         Get all metrics of all nodes in the cluster
-        
+
 
         >>> thread = api.multiple_metrics_all_nodes_with_http_info(requested_metrics, callback=callback_function)
 

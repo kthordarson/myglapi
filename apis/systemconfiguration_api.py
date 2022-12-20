@@ -19,7 +19,7 @@ class SystemconfigurationApi(object):
     def get_relevant(self, **kwargs):
         """
         Get relevant configuration settings and their values
-        
+
 
         >>> thread = api.get_relevant(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SystemconfigurationApi(object):
     def get_relevant_with_http_info(self, **kwargs):
         """
         Get relevant configuration settings and their values
-        
+
 
         >>> thread = api.get_relevant_with_http_info(callback=callback_function)
 

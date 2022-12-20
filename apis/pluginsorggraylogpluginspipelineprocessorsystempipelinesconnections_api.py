@@ -19,7 +19,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesconnectionsApi(obj
     def connect_pipelines(self, json_body, **kwargs):
         """
         Connect processing pipelines to a stream
-        
+
 
         >>> thread = api.connect_pipelines(json_body, callback=callback_function)
 
@@ -37,7 +37,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesconnectionsApi(obj
     def connect_pipelines_with_http_info(self, json_body, **kwargs):
         """
         Connect processing pipelines to a stream
-        
+
 
         >>> thread = api.connect_pipelines_with_http_info(json_body, callback=callback_function)
 
@@ -93,7 +93,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesconnectionsApi(obj
     def get_all(self, **kwargs):
         """
         Get all pipeline connections
-        
+
 
         >>> thread = api.get_all(callback=callback_function)
 
@@ -110,7 +110,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesconnectionsApi(obj
     def get_all_with_http_info(self, **kwargs):
         """
         Get all pipeline connections
-        
+
 
         >>> thread = api.get_all_with_http_info(callback=callback_function)
 
@@ -160,7 +160,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesconnectionsApi(obj
     def get_pipelines_for_stream(self, stream_id, **kwargs):
         """
         Get pipeline connections for the given stream
-        
+
 
         >>> thread = api.get_pipelines_for_stream(stream_id, callback=callback_function)
 
@@ -178,7 +178,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesconnectionsApi(obj
     def get_pipelines_for_stream_with_http_info(self, stream_id, **kwargs):
         """
         Get pipeline connections for the given stream
-        
+
 
         >>> thread = api.get_pipelines_for_stream_with_http_info(stream_id, callback=callback_function)
 

@@ -18,9 +18,7 @@ class UsersApi(object):
 
     def change_password(self, username, json_body, **kwargs):
         """
-        Update the password for a user.
-        
-
+        Update the password for a user
         >>> thread = api.change_password(username, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -37,9 +35,7 @@ class UsersApi(object):
 
     def change_password_with_http_info(self, username, json_body, **kwargs):
         """
-        Update the password for a user.
-        
-
+        Update the password for a user
         >>> thread = api.change_password_with_http_info(username, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -105,9 +101,7 @@ class UsersApi(object):
 
     def change_user(self, username, json_body, **kwargs):
         """
-        Modify user details.
-        
-
+        Modify user details
         >>> thread = api.change_user(username, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -124,9 +118,7 @@ class UsersApi(object):
 
     def change_user_with_http_info(self, username, json_body, **kwargs):
         """
-        Modify user details.
-        
-
+        Modify user details
         >>> thread = api.change_user_with_http_info(username, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -192,9 +184,7 @@ class UsersApi(object):
 
     def create(self, json_body, **kwargs):
         """
-        Create a new user account.
-        
-
+        Create a new user account
         >>> thread = api.create(json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -210,9 +200,7 @@ class UsersApi(object):
 
     def create_with_http_info(self, json_body, **kwargs):
         """
-        Create a new user account.
-        
-
+        Create a new user account
         >>> thread = api.create_with_http_info(json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -266,9 +254,7 @@ class UsersApi(object):
 
     def delete_permissions(self, username, **kwargs):
         """
-        Revoke all permissions for a user without deleting the account.
-        
-
+        Revoke all permissions for a user without deleting the account
         >>> thread = api.delete_permissions(username, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -284,9 +270,7 @@ class UsersApi(object):
 
     def delete_permissions_with_http_info(self, username, **kwargs):
         """
-        Revoke all permissions for a user without deleting the account.
-        
-
+        Revoke all permissions for a user without deleting the account
         >>> thread = api.delete_permissions_with_http_info(username, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -340,9 +324,7 @@ class UsersApi(object):
 
     def delete_user(self, username, **kwargs):
         """
-        Removes a user account.
-        
-
+        Removes a user account
         >>> thread = api.delete_user(username, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -358,9 +340,7 @@ class UsersApi(object):
 
     def delete_user_with_http_info(self, username, **kwargs):
         """
-        Removes a user account.
-        
-
+        Removes a user account
         >>> thread = api.delete_user_with_http_info(username, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -414,9 +394,7 @@ class UsersApi(object):
 
     def edit_permissions(self, username, json_body, **kwargs):
         """
-        Update a user's permission set.
-        
-
+        Update a user's permission set
         >>> thread = api.edit_permissions(username, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -433,9 +411,7 @@ class UsersApi(object):
 
     def edit_permissions_with_http_info(self, username, json_body, **kwargs):
         """
-        Update a user's permission set.
-        
-
+        Update a user's permission set
         >>> thread = api.edit_permissions_with_http_info(username, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -502,7 +478,7 @@ class UsersApi(object):
     def generate_new_token(self, username, name, **kwargs):
         """
         Generates a new access token for a user
-        
+
 
         >>> thread = api.generate_new_token(username, name, callback=callback_function)
 
@@ -522,7 +498,7 @@ class UsersApi(object):
     def generate_new_token_with_http_info(self, username, name, **kwargs):
         """
         Generates a new access token for a user
-        
+
 
         >>> thread = api.generate_new_token_with_http_info(username, name, callback=callback_function)
 
@@ -661,7 +637,7 @@ class UsersApi(object):
     def list_tokens(self, username, **kwargs):
         """
         Retrieves the list of access tokens for a user
-        
+
 
         >>> thread = api.list_tokens(username, callback=callback_function)
 
@@ -679,7 +655,7 @@ class UsersApi(object):
     def list_tokens_with_http_info(self, username, **kwargs):
         """
         Retrieves the list of access tokens for a user
-        
+
 
         >>> thread = api.list_tokens_with_http_info(username, callback=callback_function)
 
@@ -802,7 +778,7 @@ class UsersApi(object):
     def revoke_token(self, username, token, **kwargs):
         """
         Removes a token for a user
-        
+
 
         >>> thread = api.revoke_token(username, token, callback=callback_function)
 
@@ -821,7 +797,7 @@ class UsersApi(object):
     def revoke_token_with_http_info(self, username, token, **kwargs):
         """
         Removes a token for a user
-        
+
 
         >>> thread = api.revoke_token_with_http_info(username, token, callback=callback_function)
 
@@ -882,9 +858,7 @@ class UsersApi(object):
 
     def save_preferences(self, username, json_body, **kwargs):
         """
-        Update a user's preferences set.
-        
-
+        Update a user's preferences set
         >>> thread = api.save_preferences(username, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -901,9 +875,7 @@ class UsersApi(object):
 
     def save_preferences_with_http_info(self, username, json_body, **kwargs):
         """
-        Update a user's preferences set.
-        
-
+        Update a user's preferences set
         >>> thread = api.save_preferences_with_http_info(username, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

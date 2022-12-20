@@ -19,7 +19,7 @@ class SystemmessagesApi(object):
     def all(self, **kwargs):
         """
         Get internal Graylog system messages
-        
+
 
         >>> thread = api.all(callback=callback_function)
 
@@ -37,7 +37,7 @@ class SystemmessagesApi(object):
     def all_with_http_info(self, **kwargs):
         """
         Get internal Graylog system messages
-        
+
 
         >>> thread = api.all_with_http_info(callback=callback_function)
 

@@ -159,9 +159,7 @@ class SystemclusterApi(object):
 
     def nodes(self, **kwargs):
         """
-        List all active nodes in this cluster.
-        
-
+        List all active nodes in this cluster
         >>> thread = api.nodes(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -176,9 +174,7 @@ class SystemclusterApi(object):
 
     def nodes_with_http_info(self, **kwargs):
         """
-        List all active nodes in this cluster.
-        
-
+        List all active nodes in this cluster
         >>> thread = api.nodes_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

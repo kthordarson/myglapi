@@ -19,7 +19,7 @@ class SearchsavedApi(object):
     def create(self, json_body, **kwargs):
         """
         Create a new saved search
-        
+
 
         >>> thread = api.create(json_body, callback=callback_function)
 
@@ -37,7 +37,7 @@ class SearchsavedApi(object):
     def create_with_http_info(self, json_body, **kwargs):
         """
         Create a new saved search
-        
+
 
         >>> thread = api.create_with_http_info(json_body, callback=callback_function)
 
@@ -93,7 +93,7 @@ class SearchsavedApi(object):
     def delete(self, search_id, **kwargs):
         """
         Delete a saved search
-        
+
 
         >>> thread = api.delete(search_id, callback=callback_function)
 
@@ -111,7 +111,7 @@ class SearchsavedApi(object):
     def delete_with_http_info(self, search_id, **kwargs):
         """
         Delete a saved search
-        
+
 
         >>> thread = api.delete_with_http_info(search_id, callback=callback_function)
 
@@ -167,7 +167,7 @@ class SearchsavedApi(object):
     def get(self, search_id, **kwargs):
         """
         Get a single saved search
-        
+
 
         >>> thread = api.get(search_id, callback=callback_function)
 
@@ -185,7 +185,7 @@ class SearchsavedApi(object):
     def get_with_http_info(self, search_id, **kwargs):
         """
         Get a single saved search
-        
+
 
         >>> thread = api.get_with_http_info(search_id, callback=callback_function)
 
@@ -241,7 +241,7 @@ class SearchsavedApi(object):
     def list(self, **kwargs):
         """
         Get a list of all saved searches
-        
+
 
         >>> thread = api.list(callback=callback_function)
 
@@ -258,7 +258,7 @@ class SearchsavedApi(object):
     def list_with_http_info(self, **kwargs):
         """
         Get a list of all saved searches
-        
+
 
         >>> thread = api.list_with_http_info(callback=callback_function)
 
@@ -308,7 +308,7 @@ class SearchsavedApi(object):
     def update(self, search_id, json_body, **kwargs):
         """
         Update a saved search
-        
+
 
         >>> thread = api.update(search_id, json_body, callback=callback_function)
 
@@ -327,7 +327,7 @@ class SearchsavedApi(object):
     def update_with_http_info(self, search_id, json_body, **kwargs):
         """
         Update a saved search
-        
+
 
         >>> thread = api.update_with_http_info(search_id, json_body, callback=callback_function)
 

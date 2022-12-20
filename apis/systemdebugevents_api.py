@@ -18,13 +18,11 @@ class SystemdebugeventsApi(object):
 
     def generate_cluster_debug_event(self, **kwargs):
         """
-        Create and send a cluster debug event.
-        
-
+        Create and send a cluster debug event
         >>> thread = api.generate_cluster_debug_event(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :param String text: 
+        :param String text:
         :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
@@ -36,13 +34,11 @@ class SystemdebugeventsApi(object):
 
     def generate_cluster_debug_event_with_http_info(self, **kwargs):
         """
-        Create and send a cluster debug event.
-        
-
+        Create and send a cluster debug event
         >>> thread = api.generate_cluster_debug_event_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :param String text: 
+        :param String text:
         :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
@@ -89,13 +85,11 @@ class SystemdebugeventsApi(object):
 
     def generate_debug_event(self, **kwargs):
         """
-        Create and send a local debug event.
-        
-
+        Create and send a local debug event
         >>> thread = api.generate_debug_event(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :param String text: 
+        :param String text:
         :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
@@ -107,13 +101,11 @@ class SystemdebugeventsApi(object):
 
     def generate_debug_event_with_http_info(self, **kwargs):
         """
-        Create and send a local debug event.
-        
-
+        Create and send a local debug event
         >>> thread = api.generate_debug_event_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :param String text: 
+        :param String text:
         :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
@@ -160,9 +152,7 @@ class SystemdebugeventsApi(object):
 
     def show_last_cluster_debug_event(self, **kwargs):
         """
-        Show last received cluster debug event.
-        
-
+        Show last received cluster debug event
         >>> thread = api.show_last_cluster_debug_event(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -177,9 +167,7 @@ class SystemdebugeventsApi(object):
 
     def show_last_cluster_debug_event_with_http_info(self, **kwargs):
         """
-        Show last received cluster debug event.
-        
-
+        Show last received cluster debug event
         >>> thread = api.show_last_cluster_debug_event_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -227,9 +215,7 @@ class SystemdebugeventsApi(object):
 
     def show_last_debug_event(self, **kwargs):
         """
-        Show last received local debug event.
-        
-
+        Show last received local debug event
         >>> thread = api.show_last_debug_event(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -244,9 +230,7 @@ class SystemdebugeventsApi(object):
 
     def show_last_debug_event_with_http_info(self, **kwargs):
         """
-        Show last received local debug event.
-        
-
+        Show last received local debug event
         >>> thread = api.show_last_debug_event_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

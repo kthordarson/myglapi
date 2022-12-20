@@ -125,9 +125,7 @@ class SearchuniversalabsoluteApi(object):
 
     def field_histogram_absolute(self, query, field, interval, _from, to, **kwargs):
         """
-        Field value histogram of a query using an absolute timerange.
-        
-
+        Field value histogram of a query using an absolute timerange
         >>> thread = api.field_histogram_absolute(query, field, interval, _from, to, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -149,9 +147,7 @@ class SearchuniversalabsoluteApi(object):
 
     def field_histogram_absolute_with_http_info(self, query, field, interval, _from, to, **kwargs):
         """
-        Field value histogram of a query using an absolute timerange.
-        
-
+        Field value histogram of a query using an absolute timerange
         >>> thread = api.field_histogram_absolute_with_http_info(query, field, interval, _from, to, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -235,9 +231,7 @@ class SearchuniversalabsoluteApi(object):
 
     def histogram_absolute(self, query, interval, _from, to, **kwargs):
         """
-        Datetime histogram of a query using an absolute timerange.
-        
-
+        Datetime histogram of a query using an absolute timerange
         >>> thread = api.histogram_absolute(query, interval, _from, to, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -257,9 +251,7 @@ class SearchuniversalabsoluteApi(object):
 
     def histogram_absolute_with_http_info(self, query, interval, _from, to, **kwargs):
         """
-        Datetime histogram of a query using an absolute timerange.
-        
-
+        Datetime histogram of a query using an absolute timerange
         >>> thread = api.histogram_absolute_with_http_info(query, interval, _from, to, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -545,9 +537,7 @@ class SearchuniversalabsoluteApi(object):
 
     def terms_absolute(self, field, query, _from, to, **kwargs):
         """
-        Most common field terms of a query using an absolute timerange.
-        
-
+        Most common field terms of a query using an absolute timerange
         >>> thread = api.terms_absolute(field, query, _from, to, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -568,9 +558,7 @@ class SearchuniversalabsoluteApi(object):
 
     def terms_absolute_with_http_info(self, field, query, _from, to, **kwargs):
         """
-        Most common field terms of a query using an absolute timerange.
-        
-
+        Most common field terms of a query using an absolute timerange
         >>> thread = api.terms_absolute_with_http_info(field, query, _from, to, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -648,9 +636,7 @@ class SearchuniversalabsoluteApi(object):
 
     def terms_stats_absolute(self, key_field, value_field, order, query, _from, to, **kwargs):
         """
-        Ordered field terms of a query computed on another field using an absolute timerange.
-        
-
+        Ordered field terms of a query computed on another field using an absolute timerange
         >>> thread = api.terms_stats_absolute(key_field, value_field, order, query, _from, to, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -673,9 +659,7 @@ class SearchuniversalabsoluteApi(object):
 
     def terms_stats_absolute_with_http_info(self, key_field, value_field, order, query, _from, to, **kwargs):
         """
-        Ordered field terms of a query computed on another field using an absolute timerange.
-        
-
+        Ordered field terms of a query computed on another field using an absolute timerange
         >>> thread = api.terms_stats_absolute_with_http_info(key_field, value_field, order, query, _from, to, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

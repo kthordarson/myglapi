@@ -18,9 +18,7 @@ class SystemindexerfailuresApi(object):
 
     def count(self, since, **kwargs):
         """
-        Total count of failed index operations since the given date.
-        
-
+        Total count of failed index operations since the given date
         >>> thread = api.count(since, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -36,9 +34,7 @@ class SystemindexerfailuresApi(object):
 
     def count_with_http_info(self, since, **kwargs):
         """
-        Total count of failed index operations since the given date.
-        
-
+        Total count of failed index operations since the given date
         >>> thread = api.count_with_http_info(since, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -92,9 +88,7 @@ class SystemindexerfailuresApi(object):
 
     def single(self, limit, offset, **kwargs):
         """
-        Get a list of failed index operations.
-        
-
+        Get a list of failed index operations
         >>> thread = api.single(limit, offset, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -111,9 +105,7 @@ class SystemindexerfailuresApi(object):
 
     def single_with_http_info(self, limit, offset, **kwargs):
         """
-        Get a list of failed index operations.
-        
-
+        Get a list of failed index operations
         >>> thread = api.single_with_http_info(limit, offset, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

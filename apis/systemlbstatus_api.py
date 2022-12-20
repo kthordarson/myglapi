@@ -18,9 +18,7 @@ class SystemlbstatusApi(object):
 
     def override(self, status, **kwargs):
         """
-        Override load balancer status of this Graylog server node. Next lifecycle change will override it again to its default. Set to ALIVE, DEAD, or THROTTLED.
-        
-
+        Override load balancer status of this Graylog server node. Next lifecycle change will override it again to its default. Set to ALIVE, DEAD, or THROTTLED
         >>> thread = api.override(status, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -36,9 +34,7 @@ class SystemlbstatusApi(object):
 
     def override_with_http_info(self, status, **kwargs):
         """
-        Override load balancer status of this Graylog server node. Next lifecycle change will override it again to its default. Set to ALIVE, DEAD, or THROTTLED.
-        
-
+        Override load balancer status of this Graylog server node. Next lifecycle change will override it again to its default. Set to ALIVE, DEAD, or THROTTLED
         >>> thread = api.override_with_http_info(status, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -98,9 +94,7 @@ class SystemlbstatusApi(object):
 
     def status(self, **kwargs):
         """
-        Get status of this Graylog server node for load balancers. Returns ALIVE with HTTP 200, DEAD with HTTP 503, or THROTTLED with HTTP 429.
-        
-
+        Get status of this Graylog server node for load balancers. Returns ALIVE with HTTP 200, DEAD with HTTP 503, or THROTTLED with HTTP 429
         >>> thread = api.status(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -115,9 +109,7 @@ class SystemlbstatusApi(object):
 
     def status_with_http_info(self, **kwargs):
         """
-        Get status of this Graylog server node for load balancers. Returns ALIVE with HTTP 200, DEAD with HTTP 503, or THROTTLED with HTTP 429.
-        
-
+        Get status of this Graylog server node for load balancers. Returns ALIVE with HTTP 200, DEAD with HTTP 503, or THROTTLED with HTTP 429
         >>> thread = api.status_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

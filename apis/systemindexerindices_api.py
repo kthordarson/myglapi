@@ -18,9 +18,7 @@ class SystemindexerindicesApi(object):
 
     def all(self, **kwargs):
         """
-        List all open, closed and reopened indices.
-        
-
+        List all open, closed and reopened indices
         >>> thread = api.all(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -35,9 +33,7 @@ class SystemindexerindicesApi(object):
 
     def all_with_http_info(self, **kwargs):
         """
-        List all open, closed and reopened indices.
-        
-
+        List all open, closed and reopened indices
         >>> thread = api.all_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -85,9 +81,7 @@ class SystemindexerindicesApi(object):
 
     def close(self, index, **kwargs):
         """
-        Close an index. This will also trigger an index ranges rebuild job.
-        
-
+        Close an index. This will also trigger an index ranges rebuild job
         >>> thread = api.close(index, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -103,9 +97,7 @@ class SystemindexerindicesApi(object):
 
     def close_with_http_info(self, index, **kwargs):
         """
-        Close an index. This will also trigger an index ranges rebuild job.
-        
-
+        Close an index. This will also trigger an index ranges rebuild job
         >>> thread = api.close_with_http_info(index, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -159,9 +151,7 @@ class SystemindexerindicesApi(object):
 
     def closed(self, **kwargs):
         """
-        Get a list of closed indices that can be reopened.
-        
-
+        Get a list of closed indices that can be reopened
         >>> thread = api.closed(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -176,9 +166,7 @@ class SystemindexerindicesApi(object):
 
     def closed_with_http_info(self, **kwargs):
         """
-        Get a list of closed indices that can be reopened.
-        
-
+        Get a list of closed indices that can be reopened
         >>> thread = api.closed_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -226,9 +214,7 @@ class SystemindexerindicesApi(object):
 
     def delete(self, index, **kwargs):
         """
-        Delete an index. This will also trigger an index ranges rebuild job.
-        
-
+        Delete an index. This will also trigger an index ranges rebuild job
         >>> thread = api.delete(index, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -244,9 +230,7 @@ class SystemindexerindicesApi(object):
 
     def delete_with_http_info(self, index, **kwargs):
         """
-        Delete an index. This will also trigger an index ranges rebuild job.
-        
-
+        Delete an index. This will also trigger an index ranges rebuild job
         >>> thread = api.delete_with_http_info(index, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -300,9 +284,7 @@ class SystemindexerindicesApi(object):
 
     def multiple(self, requested_indices, **kwargs):
         """
-        Get information of all specified indices and their shards.
-        
-
+        Get information of all specified indices and their shards
         >>> thread = api.multiple(requested_indices, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -318,9 +300,7 @@ class SystemindexerindicesApi(object):
 
     def multiple_with_http_info(self, requested_indices, **kwargs):
         """
-        Get information of all specified indices and their shards.
-        
-
+        Get information of all specified indices and their shards
         >>> thread = api.multiple_with_http_info(requested_indices, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -374,9 +354,7 @@ class SystemindexerindicesApi(object):
 
     def open(self, **kwargs):
         """
-        Get information of all open indices managed by Graylog and their shards.
-        
-
+        Get information of all open indices managed by Graylog and their shards
         >>> thread = api.open(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -391,9 +369,7 @@ class SystemindexerindicesApi(object):
 
     def open_with_http_info(self, **kwargs):
         """
-        Get information of all open indices managed by Graylog and their shards.
-        
-
+        Get information of all open indices managed by Graylog and their shards
         >>> thread = api.open_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -441,9 +417,7 @@ class SystemindexerindicesApi(object):
 
     def reopen(self, index, **kwargs):
         """
-        Reopen a closed index. This will also trigger an index ranges rebuild job.
-        
-
+        Reopen a closed index. This will also trigger an index ranges rebuild job
         >>> thread = api.reopen(index, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -459,9 +433,7 @@ class SystemindexerindicesApi(object):
 
     def reopen_with_http_info(self, index, **kwargs):
         """
-        Reopen a closed index. This will also trigger an index ranges rebuild job.
-        
-
+        Reopen a closed index. This will also trigger an index ranges rebuild job
         >>> thread = api.reopen_with_http_info(index, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -516,7 +488,7 @@ class SystemindexerindicesApi(object):
     def reopened(self, **kwargs):
         """
         Get a list of reopened indices, which will not be cleaned by retention cleaning
-        
+
 
         >>> thread = api.reopened(callback=callback_function)
 
@@ -533,7 +505,7 @@ class SystemindexerindicesApi(object):
     def reopened_with_http_info(self, **kwargs):
         """
         Get a list of reopened indices, which will not be cleaned by retention cleaning
-        
+
 
         >>> thread = api.reopened_with_http_info(callback=callback_function)
 
@@ -582,9 +554,7 @@ class SystemindexerindicesApi(object):
 
     def single(self, index, **kwargs):
         """
-        Get information of an index and its shards.
-        
-
+        Get information of an index and its shards
         >>> thread = api.single(index, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
@@ -600,9 +570,7 @@ class SystemindexerindicesApi(object):
 
     def single_with_http_info(self, index, **kwargs):
         """
-        Get information of an index and its shards.
-        
-
+        Get information of an index and its shards
         >>> thread = api.single_with_http_info(index, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)

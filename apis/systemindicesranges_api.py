@@ -19,7 +19,7 @@ class SystemindicesrangesApi(object):
     def list(self, **kwargs):
         """
         Get a list of all index ranges
-        
+
 
         >>> thread = api.list(callback=callback_function)
 
@@ -36,7 +36,7 @@ class SystemindicesrangesApi(object):
     def list_with_http_info(self, **kwargs):
         """
         Get a list of all index ranges
-        
+
 
         >>> thread = api.list_with_http_info(callback=callback_function)
 
@@ -227,7 +227,7 @@ class SystemindicesrangesApi(object):
     def show(self, index, **kwargs):
         """
         Show single index range
-        
+
 
         >>> thread = api.show(index, callback=callback_function)
 
@@ -245,7 +245,7 @@ class SystemindicesrangesApi(object):
     def show_with_http_info(self, index, **kwargs):
         """
         Show single index range
-        
+
 
         >>> thread = api.show_with_http_info(index, callback=callback_function)
 
