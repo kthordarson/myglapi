@@ -8,10 +8,8 @@ class DashboardList(object):
         """
         DashboardList - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'dashboards': 'list[object]'}
 
@@ -23,7 +21,7 @@ class DashboardList(object):
     @property
     def total(self):
         """
-        Gets the total of this DashboardList.        :return: The total of this DashboardList.
+        Gets the total of this DashboardList. :return: The total of this DashboardList.
         :rtype: int
         """
         return self._total
@@ -31,7 +29,7 @@ class DashboardList(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this DashboardList.        :param total: The total of this DashboardList.
+        Sets the total of this DashboardList. :param total: The total of this DashboardList.
         :type: int
         """
 
@@ -40,7 +38,7 @@ class DashboardList(object):
     @property
     def dashboards(self):
         """
-        Gets the dashboards of this DashboardList.        :return: The dashboards of this DashboardList.
+        Gets the dashboards of this DashboardList. :return: The dashboards of this DashboardList.
         :rtype: list[object]
         """
         return self._dashboards
@@ -48,7 +46,7 @@ class DashboardList(object):
     @dashboards.setter
     def dashboards(self, dashboards):
         """
-        Sets the dashboards of this DashboardList.        :param dashboards: The dashboards of this DashboardList.
+        Sets the dashboards of this DashboardList. :param dashboards: The dashboards of this DashboardList.
         :type: list[object]
         """
 

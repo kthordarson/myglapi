@@ -8,10 +8,8 @@ class CreateStreamRequest(object):
         """
         CreateStreamRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'title': 'str', 'description': 'str', 'rules': 'list[object]', 'content_pack': 'str', 'matching_type': 'str'}
 
@@ -26,7 +24,7 @@ class CreateStreamRequest(object):
     @property
     def title(self):
         """
-        Gets the title of this CreateStreamRequest.        :return: The title of this CreateStreamRequest.
+        Gets the title of this CreateStreamRequest. :return: The title of this CreateStreamRequest.
         :rtype: str
         """
         return self._title
@@ -34,7 +32,7 @@ class CreateStreamRequest(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this CreateStreamRequest.        :param title: The title of this CreateStreamRequest.
+        Sets the title of this CreateStreamRequest. :param title: The title of this CreateStreamRequest.
         :type: str
         """
 
@@ -43,7 +41,7 @@ class CreateStreamRequest(object):
     @property
     def description(self):
         """
-        Gets the description of this CreateStreamRequest.        :return: The description of this CreateStreamRequest.
+        Gets the description of this CreateStreamRequest. :return: The description of this CreateStreamRequest.
         :rtype: str
         """
         return self._description
@@ -51,7 +49,7 @@ class CreateStreamRequest(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this CreateStreamRequest.        :param description: The description of this CreateStreamRequest.
+        Sets the description of this CreateStreamRequest. :param description: The description of this CreateStreamRequest.
         :type: str
         """
 
@@ -60,7 +58,7 @@ class CreateStreamRequest(object):
     @property
     def rules(self):
         """
-        Gets the rules of this CreateStreamRequest.        :return: The rules of this CreateStreamRequest.
+        Gets the rules of this CreateStreamRequest. :return: The rules of this CreateStreamRequest.
         :rtype: list[object]
         """
         return self._rules
@@ -68,7 +66,7 @@ class CreateStreamRequest(object):
     @rules.setter
     def rules(self, rules):
         """
-        Sets the rules of this CreateStreamRequest.        :param rules: The rules of this CreateStreamRequest.
+        Sets the rules of this CreateStreamRequest. :param rules: The rules of this CreateStreamRequest.
         :type: list[object]
         """
 
@@ -77,7 +75,7 @@ class CreateStreamRequest(object):
     @property
     def content_pack(self):
         """
-        Gets the content_pack of this CreateStreamRequest.        :return: The content_pack of this CreateStreamRequest.
+        Gets the content_pack of this CreateStreamRequest. :return: The content_pack of this CreateStreamRequest.
         :rtype: str
         """
         return self._content_pack
@@ -85,7 +83,7 @@ class CreateStreamRequest(object):
     @content_pack.setter
     def content_pack(self, content_pack):
         """
-        Sets the content_pack of this CreateStreamRequest.        :param content_pack: The content_pack of this CreateStreamRequest.
+        Sets the content_pack of this CreateStreamRequest. :param content_pack: The content_pack of this CreateStreamRequest.
         :type: str
         """
 
@@ -94,7 +92,7 @@ class CreateStreamRequest(object):
     @property
     def matching_type(self):
         """
-        Gets the matching_type of this CreateStreamRequest.        :return: The matching_type of this CreateStreamRequest.
+        Gets the matching_type of this CreateStreamRequest. :return: The matching_type of this CreateStreamRequest.
         :rtype: str
         """
         return self._matching_type
@@ -102,7 +100,7 @@ class CreateStreamRequest(object):
     @matching_type.setter
     def matching_type(self, matching_type):
         """
-        Sets the matching_type of this CreateStreamRequest.        :param matching_type: The matching_type of this CreateStreamRequest.
+        Sets the matching_type of this CreateStreamRequest. :param matching_type: The matching_type of this CreateStreamRequest.
         :type: str
         """
         allowed_values = ["AND", "OR"]

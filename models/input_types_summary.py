@@ -8,10 +8,8 @@ class InputTypesSummary(object):
         """
         InputTypesSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'types': 'object'}
 
@@ -22,7 +20,7 @@ class InputTypesSummary(object):
     @property
     def types(self):
         """
-        Gets the types of this InputTypesSummary.        :return: The types of this InputTypesSummary.
+        Gets the types of this InputTypesSummary. :return: The types of this InputTypesSummary.
         :rtype: object
         """
         return self._types
@@ -30,7 +28,7 @@ class InputTypesSummary(object):
     @types.setter
     def types(self, types):
         """
-        Sets the types of this InputTypesSummary.        :param types: The types of this InputTypesSummary.
+        Sets the types of this InputTypesSummary. :param types: The types of this InputTypesSummary.
         :type: object
         """
 

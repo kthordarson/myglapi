@@ -8,10 +8,8 @@ class RetentionStrategySummary(object):
         """
         RetentionStrategySummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'strategy': 'str', 'config': 'object'}
 
@@ -23,7 +21,7 @@ class RetentionStrategySummary(object):
     @property
     def strategy(self):
         """
-        Gets the strategy of this RetentionStrategySummary.        :return: The strategy of this RetentionStrategySummary.
+        Gets the strategy of this RetentionStrategySummary. :return: The strategy of this RetentionStrategySummary.
         :rtype: str
         """
         return self._strategy
@@ -31,7 +29,7 @@ class RetentionStrategySummary(object):
     @strategy.setter
     def strategy(self, strategy):
         """
-        Sets the strategy of this RetentionStrategySummary.        :param strategy: The strategy of this RetentionStrategySummary.
+        Sets the strategy of this RetentionStrategySummary. :param strategy: The strategy of this RetentionStrategySummary.
         :type: str
         """
 
@@ -40,7 +38,7 @@ class RetentionStrategySummary(object):
     @property
     def config(self):
         """
-        Gets the config of this RetentionStrategySummary.        :return: The config of this RetentionStrategySummary.
+        Gets the config of this RetentionStrategySummary. :return: The config of this RetentionStrategySummary.
         :rtype: object
         """
         return self._config
@@ -48,7 +46,7 @@ class RetentionStrategySummary(object):
     @config.setter
     def config(self, config):
         """
-        Sets the config of this RetentionStrategySummary.        :param config: The config of this RetentionStrategySummary.
+        Sets the config of this RetentionStrategySummary. :param config: The config of this RetentionStrategySummary.
         :type: object
         """
 

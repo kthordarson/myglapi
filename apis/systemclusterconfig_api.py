@@ -54,10 +54,7 @@ class SystemclusterconfigApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method delete" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'config_class' is set
@@ -129,10 +126,7 @@ class SystemclusterconfigApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method list" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -201,10 +195,7 @@ class SystemclusterconfigApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method schema" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'config_class' is set
@@ -280,10 +271,7 @@ class SystemclusterconfigApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method update" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'config_class' is set

@@ -8,10 +8,8 @@ class Throughput(object):
         """
         Throughput - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'throughput': 'int'}
 
@@ -22,7 +20,7 @@ class Throughput(object):
     @property
     def throughput(self):
         """
-        Gets the throughput of this Throughput.        :return: The throughput of this Throughput.
+        Gets the throughput of this Throughput. :return: The throughput of this Throughput.
         :rtype: int
         """
         return self._throughput
@@ -30,7 +28,7 @@ class Throughput(object):
     @throughput.setter
     def throughput(self, throughput):
         """
-        Sets the throughput of this Throughput.        :param throughput: The throughput of this Throughput.
+        Sets the throughput of this Throughput. :param throughput: The throughput of this Throughput.
         :type: int
         """
 

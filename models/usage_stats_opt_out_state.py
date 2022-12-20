@@ -8,10 +8,8 @@ class UsageStatsOptOutState(object):
         """
         UsageStatsOptOutState - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'opt_out': 'bool'}
 
@@ -22,7 +20,7 @@ class UsageStatsOptOutState(object):
     @property
     def opt_out(self):
         """
-        Gets the opt_out of this UsageStatsOptOutState.        :return: The opt_out of this UsageStatsOptOutState.
+        Gets the opt_out of this UsageStatsOptOutState. :return: The opt_out of this UsageStatsOptOutState.
         :rtype: bool
         """
         return self._opt_out
@@ -30,7 +28,7 @@ class UsageStatsOptOutState(object):
     @opt_out.setter
     def opt_out(self, opt_out):
         """
-        Sets the opt_out of this UsageStatsOptOutState.        :param opt_out: The opt_out of this UsageStatsOptOutState.
+        Sets the opt_out of this UsageStatsOptOutState. :param opt_out: The opt_out of this UsageStatsOptOutState.
         :type: bool
         """
 

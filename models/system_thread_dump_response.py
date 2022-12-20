@@ -8,10 +8,8 @@ class SystemThreadDumpResponse(object):
         """
         SystemThreadDumpResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'threaddump': 'str'}
 
@@ -22,7 +20,7 @@ class SystemThreadDumpResponse(object):
     @property
     def threaddump(self):
         """
-        Gets the threaddump of this SystemThreadDumpResponse.        :return: The threaddump of this SystemThreadDumpResponse.
+        Gets the threaddump of this SystemThreadDumpResponse. :return: The threaddump of this SystemThreadDumpResponse.
         :rtype: str
         """
         return self._threaddump
@@ -30,7 +28,7 @@ class SystemThreadDumpResponse(object):
     @threaddump.setter
     def threaddump(self, threaddump):
         """
-        Sets the threaddump of this SystemThreadDumpResponse.        :param threaddump: The threaddump of this SystemThreadDumpResponse.
+        Sets the threaddump of this SystemThreadDumpResponse. :param threaddump: The threaddump of this SystemThreadDumpResponse.
         :type: str
         """
 

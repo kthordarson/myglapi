@@ -8,10 +8,8 @@ class ChangeUserRequest(object):
         """
         ChangeUserRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'email': 'str', 'full_name': 'str', 'permissions': 'list[str]', 'timezone': 'str', 'startpage': 'object', 'session_timeout_ms': 'int', 'roles': 'list[str]'}
 
@@ -28,7 +26,7 @@ class ChangeUserRequest(object):
     @property
     def email(self):
         """
-        Gets the email of this ChangeUserRequest.        :return: The email of this ChangeUserRequest.
+        Gets the email of this ChangeUserRequest. :return: The email of this ChangeUserRequest.
         :rtype: str
         """
         return self._email
@@ -36,7 +34,7 @@ class ChangeUserRequest(object):
     @email.setter
     def email(self, email):
         """
-        Sets the email of this ChangeUserRequest.        :param email: The email of this ChangeUserRequest.
+        Sets the email of this ChangeUserRequest. :param email: The email of this ChangeUserRequest.
         :type: str
         """
 
@@ -45,7 +43,7 @@ class ChangeUserRequest(object):
     @property
     def full_name(self):
         """
-        Gets the full_name of this ChangeUserRequest.        :return: The full_name of this ChangeUserRequest.
+        Gets the full_name of this ChangeUserRequest. :return: The full_name of this ChangeUserRequest.
         :rtype: str
         """
         return self._full_name
@@ -53,7 +51,7 @@ class ChangeUserRequest(object):
     @full_name.setter
     def full_name(self, full_name):
         """
-        Sets the full_name of this ChangeUserRequest.        :param full_name: The full_name of this ChangeUserRequest.
+        Sets the full_name of this ChangeUserRequest. :param full_name: The full_name of this ChangeUserRequest.
         :type: str
         """
 
@@ -62,7 +60,7 @@ class ChangeUserRequest(object):
     @property
     def permissions(self):
         """
-        Gets the permissions of this ChangeUserRequest.        :return: The permissions of this ChangeUserRequest.
+        Gets the permissions of this ChangeUserRequest. :return: The permissions of this ChangeUserRequest.
         :rtype: list[str]
         """
         return self._permissions
@@ -70,7 +68,7 @@ class ChangeUserRequest(object):
     @permissions.setter
     def permissions(self, permissions):
         """
-        Sets the permissions of this ChangeUserRequest.        :param permissions: The permissions of this ChangeUserRequest.
+        Sets the permissions of this ChangeUserRequest. :param permissions: The permissions of this ChangeUserRequest.
         :type: list[str]
         """
 
@@ -79,7 +77,7 @@ class ChangeUserRequest(object):
     @property
     def timezone(self):
         """
-        Gets the timezone of this ChangeUserRequest.        :return: The timezone of this ChangeUserRequest.
+        Gets the timezone of this ChangeUserRequest. :return: The timezone of this ChangeUserRequest.
         :rtype: str
         """
         return self._timezone
@@ -87,7 +85,7 @@ class ChangeUserRequest(object):
     @timezone.setter
     def timezone(self, timezone):
         """
-        Sets the timezone of this ChangeUserRequest.        :param timezone: The timezone of this ChangeUserRequest.
+        Sets the timezone of this ChangeUserRequest. :param timezone: The timezone of this ChangeUserRequest.
         :type: str
         """
 
@@ -96,7 +94,7 @@ class ChangeUserRequest(object):
     @property
     def startpage(self):
         """
-        Gets the startpage of this ChangeUserRequest.        :return: The startpage of this ChangeUserRequest.
+        Gets the startpage of this ChangeUserRequest. :return: The startpage of this ChangeUserRequest.
         :rtype: object
         """
         return self._startpage
@@ -104,7 +102,7 @@ class ChangeUserRequest(object):
     @startpage.setter
     def startpage(self, startpage):
         """
-        Sets the startpage of this ChangeUserRequest.        :param startpage: The startpage of this ChangeUserRequest.
+        Sets the startpage of this ChangeUserRequest. :param startpage: The startpage of this ChangeUserRequest.
         :type: object
         """
 
@@ -113,7 +111,7 @@ class ChangeUserRequest(object):
     @property
     def session_timeout_ms(self):
         """
-        Gets the session_timeout_ms of this ChangeUserRequest.        :return: The session_timeout_ms of this ChangeUserRequest.
+        Gets the session_timeout_ms of this ChangeUserRequest. :return: The session_timeout_ms of this ChangeUserRequest.
         :rtype: int
         """
         return self._session_timeout_ms
@@ -121,7 +119,7 @@ class ChangeUserRequest(object):
     @session_timeout_ms.setter
     def session_timeout_ms(self, session_timeout_ms):
         """
-        Sets the session_timeout_ms of this ChangeUserRequest.        :param session_timeout_ms: The session_timeout_ms of this ChangeUserRequest.
+        Sets the session_timeout_ms of this ChangeUserRequest. :param session_timeout_ms: The session_timeout_ms of this ChangeUserRequest.
         :type: int
         """
 
@@ -130,7 +128,7 @@ class ChangeUserRequest(object):
     @property
     def roles(self):
         """
-        Gets the roles of this ChangeUserRequest.        :return: The roles of this ChangeUserRequest.
+        Gets the roles of this ChangeUserRequest. :return: The roles of this ChangeUserRequest.
         :rtype: list[str]
         """
         return self._roles
@@ -138,7 +136,7 @@ class ChangeUserRequest(object):
     @roles.setter
     def roles(self, roles):
         """
-        Sets the roles of this ChangeUserRequest.        :param roles: The roles of this ChangeUserRequest.
+        Sets the roles of this ChangeUserRequest. :param roles: The roles of this ChangeUserRequest.
         :type: list[str]
         """
 

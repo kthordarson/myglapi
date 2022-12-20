@@ -8,10 +8,8 @@ class GrokPatternList(object):
         """
         GrokPatternList - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'patterns': 'list[object]'}
 
@@ -22,7 +20,7 @@ class GrokPatternList(object):
     @property
     def patterns(self):
         """
-        Gets the patterns of this GrokPatternList.        :return: The patterns of this GrokPatternList.
+        Gets the patterns of this GrokPatternList. :return: The patterns of this GrokPatternList.
         :rtype: list[object]
         """
         return self._patterns
@@ -30,7 +28,7 @@ class GrokPatternList(object):
     @patterns.setter
     def patterns(self, patterns):
         """
-        Sets the patterns of this GrokPatternList.        :param patterns: The patterns of this GrokPatternList.
+        Sets the patterns of this GrokPatternList. :param patterns: The patterns of this GrokPatternList.
         :type: list[object]
         """
 

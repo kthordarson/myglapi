@@ -52,10 +52,7 @@ class SystemldapApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method delete_ldap_settings" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -122,10 +119,7 @@ class SystemldapApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method get_ldap_settings" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -192,10 +186,7 @@ class SystemldapApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method read_group_mapping" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -262,10 +253,7 @@ class SystemldapApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method read_groups" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -334,10 +322,7 @@ class SystemldapApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method test_ldap_configuration" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'configuration_to_test' is set
@@ -411,10 +396,7 @@ class SystemldapApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method update_group_mapping_settings" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'json_body' is set
@@ -494,10 +476,7 @@ class SystemldapApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method update_ldap_settings" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'json_body' is set

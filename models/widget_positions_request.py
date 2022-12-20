@@ -8,10 +8,8 @@ class WidgetPositionsRequest(object):
         """
         WidgetPositionsRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'positions': 'list[object]'}
 
@@ -22,7 +20,7 @@ class WidgetPositionsRequest(object):
     @property
     def positions(self):
         """
-        Gets the positions of this WidgetPositionsRequest.        :return: The positions of this WidgetPositionsRequest.
+        Gets the positions of this WidgetPositionsRequest. :return: The positions of this WidgetPositionsRequest.
         :rtype: list[object]
         """
         return self._positions
@@ -30,7 +28,7 @@ class WidgetPositionsRequest(object):
     @positions.setter
     def positions(self, positions):
         """
-        Sets the positions of this WidgetPositionsRequest.        :param positions: The positions of this WidgetPositionsRequest.
+        Sets the positions of this WidgetPositionsRequest. :param positions: The positions of this WidgetPositionsRequest.
         :type: list[object]
         """
 

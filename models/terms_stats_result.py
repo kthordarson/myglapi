@@ -8,10 +8,8 @@ class TermsStatsResult(object):
         """
         TermsStatsResult - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'time': 'int', 'terms': 'list[object]', 'built_query': 'str'}
 
@@ -24,7 +22,7 @@ class TermsStatsResult(object):
     @property
     def time(self):
         """
-        Gets the time of this TermsStatsResult.        :return: The time of this TermsStatsResult.
+        Gets the time of this TermsStatsResult. :return: The time of this TermsStatsResult.
         :rtype: int
         """
         return self._time
@@ -32,7 +30,7 @@ class TermsStatsResult(object):
     @time.setter
     def time(self, time):
         """
-        Sets the time of this TermsStatsResult.        :param time: The time of this TermsStatsResult.
+        Sets the time of this TermsStatsResult. :param time: The time of this TermsStatsResult.
         :type: int
         """
 
@@ -41,7 +39,7 @@ class TermsStatsResult(object):
     @property
     def terms(self):
         """
-        Gets the terms of this TermsStatsResult.        :return: The terms of this TermsStatsResult.
+        Gets the terms of this TermsStatsResult. :return: The terms of this TermsStatsResult.
         :rtype: list[object]
         """
         return self._terms
@@ -49,7 +47,7 @@ class TermsStatsResult(object):
     @terms.setter
     def terms(self, terms):
         """
-        Sets the terms of this TermsStatsResult.        :param terms: The terms of this TermsStatsResult.
+        Sets the terms of this TermsStatsResult. :param terms: The terms of this TermsStatsResult.
         :type: list[object]
         """
 
@@ -58,7 +56,7 @@ class TermsStatsResult(object):
     @property
     def built_query(self):
         """
-        Gets the built_query of this TermsStatsResult.        :return: The built_query of this TermsStatsResult.
+        Gets the built_query of this TermsStatsResult. :return: The built_query of this TermsStatsResult.
         :rtype: str
         """
         return self._built_query
@@ -66,7 +64,7 @@ class TermsStatsResult(object):
     @built_query.setter
     def built_query(self, built_query):
         """
-        Sets the built_query of this TermsStatsResult.        :param built_query: The built_query of this TermsStatsResult.
+        Sets the built_query of this TermsStatsResult. :param built_query: The built_query of this TermsStatsResult.
         :type: str
         """
 

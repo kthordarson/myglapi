@@ -8,10 +8,8 @@ class IndicesReadRequest(object):
         """
         IndicesReadRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'indices': 'list[str]'}
 
@@ -22,7 +20,7 @@ class IndicesReadRequest(object):
     @property
     def indices(self):
         """
-        Gets the indices of this IndicesReadRequest.        :return: The indices of this IndicesReadRequest.
+        Gets the indices of this IndicesReadRequest. :return: The indices of this IndicesReadRequest.
         :rtype: list[str]
         """
         return self._indices
@@ -30,7 +28,7 @@ class IndicesReadRequest(object):
     @indices.setter
     def indices(self, indices):
         """
-        Sets the indices of this IndicesReadRequest.        :param indices: The indices of this IndicesReadRequest.
+        Sets the indices of this IndicesReadRequest. :param indices: The indices of this IndicesReadRequest.
         :type: list[str]
         """
 

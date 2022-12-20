@@ -52,10 +52,7 @@ class SystemstatsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method fs_stats" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -122,10 +119,7 @@ class SystemstatsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method jvm_stats" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -192,10 +186,7 @@ class SystemstatsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method network_stats" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -262,10 +253,7 @@ class SystemstatsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method os_stats" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -332,10 +320,7 @@ class SystemstatsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method process_stats" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -402,10 +387,7 @@ class SystemstatsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method system_stats" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 

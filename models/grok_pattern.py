@@ -8,10 +8,8 @@ class GrokPattern(object):
         """
         GrokPattern - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'Any', 'name': 'str', 'pattern': 'str', 'content_pack': 'str'}
 
@@ -25,7 +23,7 @@ class GrokPattern(object):
     @property
     def id(self):
         """
-        Gets the id of this GrokPattern.        :return: The id of this GrokPattern.
+        Gets the id of this GrokPattern. :return: The id of this GrokPattern.
         :rtype: Any
         """
         return self._id
@@ -33,7 +31,7 @@ class GrokPattern(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this GrokPattern.        :param id: The id of this GrokPattern.
+        Sets the id of this GrokPattern. :param id: The id of this GrokPattern.
         :type: Any
         """
 
@@ -42,7 +40,7 @@ class GrokPattern(object):
     @property
     def name(self):
         """
-        Gets the name of this GrokPattern.        :return: The name of this GrokPattern.
+        Gets the name of this GrokPattern. :return: The name of this GrokPattern.
         :rtype: str
         """
         return self._name
@@ -50,7 +48,7 @@ class GrokPattern(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this GrokPattern.        :param name: The name of this GrokPattern.
+        Sets the name of this GrokPattern. :param name: The name of this GrokPattern.
         :type: str
         """
 
@@ -59,7 +57,7 @@ class GrokPattern(object):
     @property
     def pattern(self):
         """
-        Gets the pattern of this GrokPattern.        :return: The pattern of this GrokPattern.
+        Gets the pattern of this GrokPattern. :return: The pattern of this GrokPattern.
         :rtype: str
         """
         return self._pattern
@@ -67,7 +65,7 @@ class GrokPattern(object):
     @pattern.setter
     def pattern(self, pattern):
         """
-        Sets the pattern of this GrokPattern.        :param pattern: The pattern of this GrokPattern.
+        Sets the pattern of this GrokPattern. :param pattern: The pattern of this GrokPattern.
         :type: str
         """
 
@@ -76,7 +74,7 @@ class GrokPattern(object):
     @property
     def content_pack(self):
         """
-        Gets the content_pack of this GrokPattern.        :return: The content_pack of this GrokPattern.
+        Gets the content_pack of this GrokPattern. :return: The content_pack of this GrokPattern.
         :rtype: str
         """
         return self._content_pack
@@ -84,7 +82,7 @@ class GrokPattern(object):
     @content_pack.setter
     def content_pack(self, content_pack):
         """
-        Sets the content_pack of this GrokPattern.        :param content_pack: The content_pack of this GrokPattern.
+        Sets the content_pack of this GrokPattern. :param content_pack: The content_pack of this GrokPattern.
         :type: str
         """
 

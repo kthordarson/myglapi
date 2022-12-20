@@ -8,10 +8,8 @@ class CreateDashboardRequest(object):
         """
         CreateDashboardRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'title': 'str', 'description': 'str'}
 
@@ -23,7 +21,7 @@ class CreateDashboardRequest(object):
     @property
     def title(self):
         """
-        Gets the title of this CreateDashboardRequest.        :return: The title of this CreateDashboardRequest.
+        Gets the title of this CreateDashboardRequest. :return: The title of this CreateDashboardRequest.
         :rtype: str
         """
         return self._title
@@ -31,7 +29,7 @@ class CreateDashboardRequest(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this CreateDashboardRequest.        :param title: The title of this CreateDashboardRequest.
+        Sets the title of this CreateDashboardRequest. :param title: The title of this CreateDashboardRequest.
         :type: str
         """
 
@@ -40,7 +38,7 @@ class CreateDashboardRequest(object):
     @property
     def description(self):
         """
-        Gets the description of this CreateDashboardRequest.        :return: The description of this CreateDashboardRequest.
+        Gets the description of this CreateDashboardRequest. :return: The description of this CreateDashboardRequest.
         :rtype: str
         """
         return self._description
@@ -48,7 +46,7 @@ class CreateDashboardRequest(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this CreateDashboardRequest.        :param description: The description of this CreateDashboardRequest.
+        Sets the description of this CreateDashboardRequest. :param description: The description of this CreateDashboardRequest.
         :type: str
         """
 

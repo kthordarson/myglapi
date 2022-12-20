@@ -8,10 +8,8 @@ class StreamListResponse(object):
         """
         StreamListResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'streams': 'list[object]'}
 
@@ -23,7 +21,7 @@ class StreamListResponse(object):
     @property
     def total(self):
         """
-        Gets the total of this StreamListResponse.        :return: The total of this StreamListResponse.
+        Gets the total of this StreamListResponse. :return: The total of this StreamListResponse.
         :rtype: int
         """
         return self._total
@@ -31,7 +29,7 @@ class StreamListResponse(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this StreamListResponse.        :param total: The total of this StreamListResponse.
+        Sets the total of this StreamListResponse. :param total: The total of this StreamListResponse.
         :type: int
         """
 
@@ -40,7 +38,7 @@ class StreamListResponse(object):
     @property
     def streams(self):
         """
-        Gets the streams of this StreamListResponse.        :return: The streams of this StreamListResponse.
+        Gets the streams of this StreamListResponse. :return: The streams of this StreamListResponse.
         :rtype: list[object]
         """
         return self._streams
@@ -48,7 +46,7 @@ class StreamListResponse(object):
     @streams.setter
     def streams(self, streams):
         """
-        Sets the streams of this StreamListResponse.        :param streams: The streams of this StreamListResponse.
+        Sets the streams of this StreamListResponse. :param streams: The streams of this StreamListResponse.
         :type: list[object]
         """
 

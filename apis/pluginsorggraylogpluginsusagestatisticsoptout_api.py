@@ -52,10 +52,7 @@ class PluginsorggraylogpluginsusagestatisticsoptoutApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method get_opt_out_state" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -122,10 +119,7 @@ class PluginsorggraylogpluginsusagestatisticsoptoutApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method set_opt_out_state" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 

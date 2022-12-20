@@ -8,10 +8,8 @@ class MetricsSummaryResponse(object):
         """
         MetricsSummaryResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'metrics': 'list[object]'}
 
@@ -23,7 +21,7 @@ class MetricsSummaryResponse(object):
     @property
     def total(self):
         """
-        Gets the total of this MetricsSummaryResponse.        :return: The total of this MetricsSummaryResponse.
+        Gets the total of this MetricsSummaryResponse. :return: The total of this MetricsSummaryResponse.
         :rtype: int
         """
         return self._total
@@ -31,7 +29,7 @@ class MetricsSummaryResponse(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this MetricsSummaryResponse.        :param total: The total of this MetricsSummaryResponse.
+        Sets the total of this MetricsSummaryResponse. :param total: The total of this MetricsSummaryResponse.
         :type: int
         """
 
@@ -40,7 +38,7 @@ class MetricsSummaryResponse(object):
     @property
     def metrics(self):
         """
-        Gets the metrics of this MetricsSummaryResponse.        :return: The metrics of this MetricsSummaryResponse.
+        Gets the metrics of this MetricsSummaryResponse. :return: The metrics of this MetricsSummaryResponse.
         :rtype: list[object]
         """
         return self._metrics
@@ -48,7 +46,7 @@ class MetricsSummaryResponse(object):
     @metrics.setter
     def metrics(self, metrics):
         """
-        Sets the metrics of this MetricsSummaryResponse.        :param metrics: The metrics of this MetricsSummaryResponse.
+        Sets the metrics of this MetricsSummaryResponse. :param metrics: The metrics of this MetricsSummaryResponse.
         :type: list[object]
         """
 

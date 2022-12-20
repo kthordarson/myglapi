@@ -8,10 +8,8 @@ class JournalSummaryResponse(object):
         """
         JournalSummaryResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'enabled': 'bool', 'append_events_per_second': 'int', 'read_events_per_second': 'int', 'uncommitted_journal_entries': 'int', 'journal_size': 'Any', 'journal_size_limit': 'Any', 'number_of_segments': 'int', 'oldest_segment': 'datetime', 'journal_config': 'object'}
 
@@ -30,7 +28,7 @@ class JournalSummaryResponse(object):
     @property
     def enabled(self):
         """
-        Gets the enabled of this JournalSummaryResponse.        :return: The enabled of this JournalSummaryResponse.
+        Gets the enabled of this JournalSummaryResponse. :return: The enabled of this JournalSummaryResponse.
         :rtype: bool
         """
         return self._enabled
@@ -38,7 +36,7 @@ class JournalSummaryResponse(object):
     @enabled.setter
     def enabled(self, enabled):
         """
-        Sets the enabled of this JournalSummaryResponse.        :param enabled: The enabled of this JournalSummaryResponse.
+        Sets the enabled of this JournalSummaryResponse. :param enabled: The enabled of this JournalSummaryResponse.
         :type: bool
         """
 
@@ -47,7 +45,7 @@ class JournalSummaryResponse(object):
     @property
     def append_events_per_second(self):
         """
-        Gets the append_events_per_second of this JournalSummaryResponse.        :return: The append_events_per_second of this JournalSummaryResponse.
+        Gets the append_events_per_second of this JournalSummaryResponse. :return: The append_events_per_second of this JournalSummaryResponse.
         :rtype: int
         """
         return self._append_events_per_second
@@ -55,7 +53,7 @@ class JournalSummaryResponse(object):
     @append_events_per_second.setter
     def append_events_per_second(self, append_events_per_second):
         """
-        Sets the append_events_per_second of this JournalSummaryResponse.        :param append_events_per_second: The append_events_per_second of this JournalSummaryResponse.
+        Sets the append_events_per_second of this JournalSummaryResponse. :param append_events_per_second: The append_events_per_second of this JournalSummaryResponse.
         :type: int
         """
 
@@ -64,7 +62,7 @@ class JournalSummaryResponse(object):
     @property
     def read_events_per_second(self):
         """
-        Gets the read_events_per_second of this JournalSummaryResponse.        :return: The read_events_per_second of this JournalSummaryResponse.
+        Gets the read_events_per_second of this JournalSummaryResponse. :return: The read_events_per_second of this JournalSummaryResponse.
         :rtype: int
         """
         return self._read_events_per_second
@@ -72,7 +70,7 @@ class JournalSummaryResponse(object):
     @read_events_per_second.setter
     def read_events_per_second(self, read_events_per_second):
         """
-        Sets the read_events_per_second of this JournalSummaryResponse.        :param read_events_per_second: The read_events_per_second of this JournalSummaryResponse.
+        Sets the read_events_per_second of this JournalSummaryResponse. :param read_events_per_second: The read_events_per_second of this JournalSummaryResponse.
         :type: int
         """
 
@@ -81,7 +79,7 @@ class JournalSummaryResponse(object):
     @property
     def uncommitted_journal_entries(self):
         """
-        Gets the uncommitted_journal_entries of this JournalSummaryResponse.        :return: The uncommitted_journal_entries of this JournalSummaryResponse.
+        Gets the uncommitted_journal_entries of this JournalSummaryResponse. :return: The uncommitted_journal_entries of this JournalSummaryResponse.
         :rtype: int
         """
         return self._uncommitted_journal_entries
@@ -89,7 +87,7 @@ class JournalSummaryResponse(object):
     @uncommitted_journal_entries.setter
     def uncommitted_journal_entries(self, uncommitted_journal_entries):
         """
-        Sets the uncommitted_journal_entries of this JournalSummaryResponse.        :param uncommitted_journal_entries: The uncommitted_journal_entries of this JournalSummaryResponse.
+        Sets the uncommitted_journal_entries of this JournalSummaryResponse. :param uncommitted_journal_entries: The uncommitted_journal_entries of this JournalSummaryResponse.
         :type: int
         """
 
@@ -98,7 +96,7 @@ class JournalSummaryResponse(object):
     @property
     def journal_size(self):
         """
-        Gets the journal_size of this JournalSummaryResponse.        :return: The journal_size of this JournalSummaryResponse.
+        Gets the journal_size of this JournalSummaryResponse. :return: The journal_size of this JournalSummaryResponse.
         :rtype: Any
         """
         return self._journal_size
@@ -106,7 +104,7 @@ class JournalSummaryResponse(object):
     @journal_size.setter
     def journal_size(self, journal_size):
         """
-        Sets the journal_size of this JournalSummaryResponse.        :param journal_size: The journal_size of this JournalSummaryResponse.
+        Sets the journal_size of this JournalSummaryResponse. :param journal_size: The journal_size of this JournalSummaryResponse.
         :type: Any
         """
 
@@ -115,7 +113,7 @@ class JournalSummaryResponse(object):
     @property
     def journal_size_limit(self):
         """
-        Gets the journal_size_limit of this JournalSummaryResponse.        :return: The journal_size_limit of this JournalSummaryResponse.
+        Gets the journal_size_limit of this JournalSummaryResponse. :return: The journal_size_limit of this JournalSummaryResponse.
         :rtype: Any
         """
         return self._journal_size_limit
@@ -123,7 +121,7 @@ class JournalSummaryResponse(object):
     @journal_size_limit.setter
     def journal_size_limit(self, journal_size_limit):
         """
-        Sets the journal_size_limit of this JournalSummaryResponse.        :param journal_size_limit: The journal_size_limit of this JournalSummaryResponse.
+        Sets the journal_size_limit of this JournalSummaryResponse. :param journal_size_limit: The journal_size_limit of this JournalSummaryResponse.
         :type: Any
         """
 
@@ -132,7 +130,7 @@ class JournalSummaryResponse(object):
     @property
     def number_of_segments(self):
         """
-        Gets the number_of_segments of this JournalSummaryResponse.        :return: The number_of_segments of this JournalSummaryResponse.
+        Gets the number_of_segments of this JournalSummaryResponse. :return: The number_of_segments of this JournalSummaryResponse.
         :rtype: int
         """
         return self._number_of_segments
@@ -140,7 +138,7 @@ class JournalSummaryResponse(object):
     @number_of_segments.setter
     def number_of_segments(self, number_of_segments):
         """
-        Sets the number_of_segments of this JournalSummaryResponse.        :param number_of_segments: The number_of_segments of this JournalSummaryResponse.
+        Sets the number_of_segments of this JournalSummaryResponse. :param number_of_segments: The number_of_segments of this JournalSummaryResponse.
         :type: int
         """
 
@@ -149,7 +147,7 @@ class JournalSummaryResponse(object):
     @property
     def oldest_segment(self):
         """
-        Gets the oldest_segment of this JournalSummaryResponse.        :return: The oldest_segment of this JournalSummaryResponse.
+        Gets the oldest_segment of this JournalSummaryResponse. :return: The oldest_segment of this JournalSummaryResponse.
         :rtype: datetime
         """
         return self._oldest_segment
@@ -157,7 +155,7 @@ class JournalSummaryResponse(object):
     @oldest_segment.setter
     def oldest_segment(self, oldest_segment):
         """
-        Sets the oldest_segment of this JournalSummaryResponse.        :param oldest_segment: The oldest_segment of this JournalSummaryResponse.
+        Sets the oldest_segment of this JournalSummaryResponse. :param oldest_segment: The oldest_segment of this JournalSummaryResponse.
         :type: datetime
         """
 
@@ -166,7 +164,7 @@ class JournalSummaryResponse(object):
     @property
     def journal_config(self):
         """
-        Gets the journal_config of this JournalSummaryResponse.        :return: The journal_config of this JournalSummaryResponse.
+        Gets the journal_config of this JournalSummaryResponse. :return: The journal_config of this JournalSummaryResponse.
         :rtype: object
         """
         return self._journal_config
@@ -174,7 +172,7 @@ class JournalSummaryResponse(object):
     @journal_config.setter
     def journal_config(self, journal_config):
         """
-        Sets the journal_config of this JournalSummaryResponse.        :param journal_config: The journal_config of this JournalSummaryResponse.
+        Sets the journal_config of this JournalSummaryResponse. :param journal_config: The journal_config of this JournalSummaryResponse.
         :type: object
         """
 

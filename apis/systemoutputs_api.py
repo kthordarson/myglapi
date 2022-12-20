@@ -52,10 +52,7 @@ class SystemoutputsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method available" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -124,10 +121,7 @@ class SystemoutputsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method create" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'json_body' is set
@@ -201,10 +195,7 @@ class SystemoutputsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method delete" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'output_id' is set
@@ -276,10 +267,7 @@ class SystemoutputsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method get" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
 
@@ -348,10 +336,7 @@ class SystemoutputsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method get_0" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'output_id' is set
@@ -427,10 +412,7 @@ class SystemoutputsApi(object):
         for key in params['kwargs']:
             val = params['kwargs'][key]
             if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method update" % key
-                )
+                raise TypeError(f"Got an unexpected keyword argument {key}")
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'output_id' is set

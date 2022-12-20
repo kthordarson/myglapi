@@ -8,10 +8,8 @@ class ClusterName(object):
         """
         ClusterName - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'name': 'str'}
 
@@ -22,7 +20,7 @@ class ClusterName(object):
     @property
     def name(self):
         """
-        Gets the name of this ClusterName.        :return: The name of this ClusterName.
+        Gets the name of this ClusterName. :return: The name of this ClusterName.
         :rtype: str
         """
         return self._name
@@ -30,7 +28,7 @@ class ClusterName(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this ClusterName.        :param name: The name of this ClusterName.
+        Sets the name of this ClusterName. :param name: The name of this ClusterName.
         :type: str
         """
 

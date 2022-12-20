@@ -8,10 +8,8 @@ class DeflectorSummary(object):
         """
         DeflectorSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'is_up': 'bool', 'current_target': 'str'}
 
@@ -23,7 +21,7 @@ class DeflectorSummary(object):
     @property
     def is_up(self):
         """
-        Gets the is_up of this DeflectorSummary.        :return: The is_up of this DeflectorSummary.
+        Gets the is_up of this DeflectorSummary. :return: The is_up of this DeflectorSummary.
         :rtype: bool
         """
         return self._is_up
@@ -31,7 +29,7 @@ class DeflectorSummary(object):
     @is_up.setter
     def is_up(self, is_up):
         """
-        Sets the is_up of this DeflectorSummary.        :param is_up: The is_up of this DeflectorSummary.
+        Sets the is_up of this DeflectorSummary. :param is_up: The is_up of this DeflectorSummary.
         :type: bool
         """
 
@@ -40,7 +38,7 @@ class DeflectorSummary(object):
     @property
     def current_target(self):
         """
-        Gets the current_target of this DeflectorSummary.        :return: The current_target of this DeflectorSummary.
+        Gets the current_target of this DeflectorSummary. :return: The current_target of this DeflectorSummary.
         :rtype: str
         """
         return self._current_target
@@ -48,7 +46,7 @@ class DeflectorSummary(object):
     @current_target.setter
     def current_target(self, current_target):
         """
-        Sets the current_target of this DeflectorSummary.        :param current_target: The current_target of this DeflectorSummary.
+        Sets the current_target of this DeflectorSummary. :param current_target: The current_target of this DeflectorSummary.
         :type: str
         """
 

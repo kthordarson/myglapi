@@ -8,10 +8,8 @@ class AlertListSummary(object):
         """
         AlertListSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'alerts': 'list[object]'}
 
@@ -23,7 +21,7 @@ class AlertListSummary(object):
     @property
     def total(self):
         """
-        Gets the total of this AlertListSummary.        :return: The total of this AlertListSummary.
+        Gets the total of this AlertListSummary. :return: The total of this AlertListSummary.
         :rtype: int
         """
         return self._total
@@ -31,7 +29,7 @@ class AlertListSummary(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this AlertListSummary.        :param total: The total of this AlertListSummary.
+        Sets the total of this AlertListSummary. :param total: The total of this AlertListSummary.
         :type: int
         """
 
@@ -40,7 +38,7 @@ class AlertListSummary(object):
     @property
     def alerts(self):
         """
-        Gets the alerts of this AlertListSummary.        :return: The alerts of this AlertListSummary.
+        Gets the alerts of this AlertListSummary. :return: The alerts of this AlertListSummary.
         :rtype: list[object]
         """
         return self._alerts
@@ -48,7 +46,7 @@ class AlertListSummary(object):
     @alerts.setter
     def alerts(self, alerts):
         """
-        Sets the alerts of this AlertListSummary.        :param alerts: The alerts of this AlertListSummary.
+        Sets the alerts of this AlertListSummary. :param alerts: The alerts of this AlertListSummary.
         :type: list[object]
         """
 

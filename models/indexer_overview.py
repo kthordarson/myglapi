@@ -8,10 +8,8 @@ class IndexerOverview(object):
         """
         IndexerOverview - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'indexer_cluster': 'object', 'counts': 'object', 'indices': 'object', 'deflector': 'object'}
 
@@ -25,7 +23,7 @@ class IndexerOverview(object):
     @property
     def indexer_cluster(self):
         """
-        Gets the indexer_cluster of this IndexerOverview.        :return: The indexer_cluster of this IndexerOverview.
+        Gets the indexer_cluster of this IndexerOverview. :return: The indexer_cluster of this IndexerOverview.
         :rtype: object
         """
         return self._indexer_cluster
@@ -33,7 +31,7 @@ class IndexerOverview(object):
     @indexer_cluster.setter
     def indexer_cluster(self, indexer_cluster):
         """
-        Sets the indexer_cluster of this IndexerOverview.        :param indexer_cluster: The indexer_cluster of this IndexerOverview.
+        Sets the indexer_cluster of this IndexerOverview. :param indexer_cluster: The indexer_cluster of this IndexerOverview.
         :type: object
         """
 
@@ -42,7 +40,7 @@ class IndexerOverview(object):
     @property
     def counts(self):
         """
-        Gets the counts of this IndexerOverview.        :return: The counts of this IndexerOverview.
+        Gets the counts of this IndexerOverview. :return: The counts of this IndexerOverview.
         :rtype: object
         """
         return self._counts
@@ -50,7 +48,7 @@ class IndexerOverview(object):
     @counts.setter
     def counts(self, counts):
         """
-        Sets the counts of this IndexerOverview.        :param counts: The counts of this IndexerOverview.
+        Sets the counts of this IndexerOverview. :param counts: The counts of this IndexerOverview.
         :type: object
         """
 
@@ -59,7 +57,7 @@ class IndexerOverview(object):
     @property
     def indices(self):
         """
-        Gets the indices of this IndexerOverview.        :return: The indices of this IndexerOverview.
+        Gets the indices of this IndexerOverview. :return: The indices of this IndexerOverview.
         :rtype: object
         """
         return self._indices
@@ -67,7 +65,7 @@ class IndexerOverview(object):
     @indices.setter
     def indices(self, indices):
         """
-        Sets the indices of this IndexerOverview.        :param indices: The indices of this IndexerOverview.
+        Sets the indices of this IndexerOverview. :param indices: The indices of this IndexerOverview.
         :type: object
         """
 
@@ -76,7 +74,7 @@ class IndexerOverview(object):
     @property
     def deflector(self):
         """
-        Gets the deflector of this IndexerOverview.        :return: The deflector of this IndexerOverview.
+        Gets the deflector of this IndexerOverview. :return: The deflector of this IndexerOverview.
         :rtype: object
         """
         return self._deflector
@@ -84,7 +82,7 @@ class IndexerOverview(object):
     @deflector.setter
     def deflector(self, deflector):
         """
-        Sets the deflector of this IndexerOverview.        :param deflector: The deflector of this IndexerOverview.
+        Sets the deflector of this IndexerOverview. :param deflector: The deflector of this IndexerOverview.
         :type: object
         """
 

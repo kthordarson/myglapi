@@ -8,10 +8,8 @@ class OsStats(object):
         """
         OsStats - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'swap': 'object', 'processor': 'object', 'load_average': 'list[float]', 'uptime': 'int', 'memory': 'object'}
 
@@ -26,7 +24,7 @@ class OsStats(object):
     @property
     def swap(self):
         """
-        Gets the swap of this OsStats.        :return: The swap of this OsStats.
+        Gets the swap of this OsStats. :return: The swap of this OsStats.
         :rtype: object
         """
         return self._swap
@@ -34,7 +32,7 @@ class OsStats(object):
     @swap.setter
     def swap(self, swap):
         """
-        Sets the swap of this OsStats.        :param swap: The swap of this OsStats.
+        Sets the swap of this OsStats. :param swap: The swap of this OsStats.
         :type: object
         """
 
@@ -43,7 +41,7 @@ class OsStats(object):
     @property
     def processor(self):
         """
-        Gets the processor of this OsStats.        :return: The processor of this OsStats.
+        Gets the processor of this OsStats. :return: The processor of this OsStats.
         :rtype: object
         """
         return self._processor
@@ -51,7 +49,7 @@ class OsStats(object):
     @processor.setter
     def processor(self, processor):
         """
-        Sets the processor of this OsStats.        :param processor: The processor of this OsStats.
+        Sets the processor of this OsStats. :param processor: The processor of this OsStats.
         :type: object
         """
 
@@ -60,7 +58,7 @@ class OsStats(object):
     @property
     def load_average(self):
         """
-        Gets the load_average of this OsStats.        :return: The load_average of this OsStats.
+        Gets the load_average of this OsStats. :return: The load_average of this OsStats.
         :rtype: list[float]
         """
         return self._load_average
@@ -68,7 +66,7 @@ class OsStats(object):
     @load_average.setter
     def load_average(self, load_average):
         """
-        Sets the load_average of this OsStats.        :param load_average: The load_average of this OsStats.
+        Sets the load_average of this OsStats. :param load_average: The load_average of this OsStats.
         :type: list[float]
         """
 
@@ -77,7 +75,7 @@ class OsStats(object):
     @property
     def uptime(self):
         """
-        Gets the uptime of this OsStats.        :return: The uptime of this OsStats.
+        Gets the uptime of this OsStats. :return: The uptime of this OsStats.
         :rtype: int
         """
         return self._uptime
@@ -85,7 +83,7 @@ class OsStats(object):
     @uptime.setter
     def uptime(self, uptime):
         """
-        Sets the uptime of this OsStats.        :param uptime: The uptime of this OsStats.
+        Sets the uptime of this OsStats. :param uptime: The uptime of this OsStats.
         :type: int
         """
 
@@ -94,7 +92,7 @@ class OsStats(object):
     @property
     def memory(self):
         """
-        Gets the memory of this OsStats.        :return: The memory of this OsStats.
+        Gets the memory of this OsStats. :return: The memory of this OsStats.
         :rtype: object
         """
         return self._memory
@@ -102,7 +100,7 @@ class OsStats(object):
     @memory.setter
     def memory(self, memory):
         """
-        Sets the memory of this OsStats.        :param memory: The memory of this OsStats.
+        Sets the memory of this OsStats. :param memory: The memory of this OsStats.
         :type: object
         """
 

@@ -8,10 +8,8 @@ class SystemJobSummary(object):
         """
         SystemJobSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'description': 'str', 'name': 'str', 'info': 'str', 'node_id': 'str', 'started_at': 'datetime', 'percent_complete': 'int', 'is_cancelable': 'bool', 'provides_progress': 'bool'}
 
@@ -30,7 +28,7 @@ class SystemJobSummary(object):
     @property
     def id(self):
         """
-        Gets the id of this SystemJobSummary.        :return: The id of this SystemJobSummary.
+        Gets the id of this SystemJobSummary. :return: The id of this SystemJobSummary.
         :rtype: str
         """
         return self._id
@@ -38,7 +36,7 @@ class SystemJobSummary(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this SystemJobSummary.        :param id: The id of this SystemJobSummary.
+        Sets the id of this SystemJobSummary. :param id: The id of this SystemJobSummary.
         :type: str
         """
 
@@ -47,7 +45,7 @@ class SystemJobSummary(object):
     @property
     def description(self):
         """
-        Gets the description of this SystemJobSummary.        :return: The description of this SystemJobSummary.
+        Gets the description of this SystemJobSummary. :return: The description of this SystemJobSummary.
         :rtype: str
         """
         return self._description
@@ -55,7 +53,7 @@ class SystemJobSummary(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this SystemJobSummary.        :param description: The description of this SystemJobSummary.
+        Sets the description of this SystemJobSummary. :param description: The description of this SystemJobSummary.
         :type: str
         """
 
@@ -64,7 +62,7 @@ class SystemJobSummary(object):
     @property
     def name(self):
         """
-        Gets the name of this SystemJobSummary.        :return: The name of this SystemJobSummary.
+        Gets the name of this SystemJobSummary. :return: The name of this SystemJobSummary.
         :rtype: str
         """
         return self._name
@@ -72,7 +70,7 @@ class SystemJobSummary(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this SystemJobSummary.        :param name: The name of this SystemJobSummary.
+        Sets the name of this SystemJobSummary. :param name: The name of this SystemJobSummary.
         :type: str
         """
 
@@ -81,7 +79,7 @@ class SystemJobSummary(object):
     @property
     def info(self):
         """
-        Gets the info of this SystemJobSummary.        :return: The info of this SystemJobSummary.
+        Gets the info of this SystemJobSummary. :return: The info of this SystemJobSummary.
         :rtype: str
         """
         return self._info
@@ -89,7 +87,7 @@ class SystemJobSummary(object):
     @info.setter
     def info(self, info):
         """
-        Sets the info of this SystemJobSummary.        :param info: The info of this SystemJobSummary.
+        Sets the info of this SystemJobSummary. :param info: The info of this SystemJobSummary.
         :type: str
         """
 
@@ -98,7 +96,7 @@ class SystemJobSummary(object):
     @property
     def node_id(self):
         """
-        Gets the node_id of this SystemJobSummary.        :return: The node_id of this SystemJobSummary.
+        Gets the node_id of this SystemJobSummary. :return: The node_id of this SystemJobSummary.
         :rtype: str
         """
         return self._node_id
@@ -106,7 +104,7 @@ class SystemJobSummary(object):
     @node_id.setter
     def node_id(self, node_id):
         """
-        Sets the node_id of this SystemJobSummary.        :param node_id: The node_id of this SystemJobSummary.
+        Sets the node_id of this SystemJobSummary. :param node_id: The node_id of this SystemJobSummary.
         :type: str
         """
 
@@ -115,7 +113,7 @@ class SystemJobSummary(object):
     @property
     def started_at(self):
         """
-        Gets the started_at of this SystemJobSummary.        :return: The started_at of this SystemJobSummary.
+        Gets the started_at of this SystemJobSummary. :return: The started_at of this SystemJobSummary.
         :rtype: datetime
         """
         return self._started_at
@@ -123,7 +121,7 @@ class SystemJobSummary(object):
     @started_at.setter
     def started_at(self, started_at):
         """
-        Sets the started_at of this SystemJobSummary.        :param started_at: The started_at of this SystemJobSummary.
+        Sets the started_at of this SystemJobSummary. :param started_at: The started_at of this SystemJobSummary.
         :type: datetime
         """
 
@@ -132,7 +130,7 @@ class SystemJobSummary(object):
     @property
     def percent_complete(self):
         """
-        Gets the percent_complete of this SystemJobSummary.        :return: The percent_complete of this SystemJobSummary.
+        Gets the percent_complete of this SystemJobSummary. :return: The percent_complete of this SystemJobSummary.
         :rtype: int
         """
         return self._percent_complete
@@ -140,7 +138,7 @@ class SystemJobSummary(object):
     @percent_complete.setter
     def percent_complete(self, percent_complete):
         """
-        Sets the percent_complete of this SystemJobSummary.        :param percent_complete: The percent_complete of this SystemJobSummary.
+        Sets the percent_complete of this SystemJobSummary. :param percent_complete: The percent_complete of this SystemJobSummary.
         :type: int
         """
 
@@ -149,7 +147,7 @@ class SystemJobSummary(object):
     @property
     def is_cancelable(self):
         """
-        Gets the is_cancelable of this SystemJobSummary.        :return: The is_cancelable of this SystemJobSummary.
+        Gets the is_cancelable of this SystemJobSummary. :return: The is_cancelable of this SystemJobSummary.
         :rtype: bool
         """
         return self._is_cancelable
@@ -157,7 +155,7 @@ class SystemJobSummary(object):
     @is_cancelable.setter
     def is_cancelable(self, is_cancelable):
         """
-        Sets the is_cancelable of this SystemJobSummary.        :param is_cancelable: The is_cancelable of this SystemJobSummary.
+        Sets the is_cancelable of this SystemJobSummary. :param is_cancelable: The is_cancelable of this SystemJobSummary.
         :type: bool
         """
 
@@ -166,7 +164,7 @@ class SystemJobSummary(object):
     @property
     def provides_progress(self):
         """
-        Gets the provides_progress of this SystemJobSummary.        :return: The provides_progress of this SystemJobSummary.
+        Gets the provides_progress of this SystemJobSummary. :return: The provides_progress of this SystemJobSummary.
         :rtype: bool
         """
         return self._provides_progress
@@ -174,7 +172,7 @@ class SystemJobSummary(object):
     @provides_progress.setter
     def provides_progress(self, provides_progress):
         """
-        Sets the provides_progress of this SystemJobSummary.        :param provides_progress: The provides_progress of this SystemJobSummary.
+        Sets the provides_progress of this SystemJobSummary. :param provides_progress: The provides_progress of this SystemJobSummary.
         :type: bool
         """
 

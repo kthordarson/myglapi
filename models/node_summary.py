@@ -8,10 +8,8 @@ class NodeSummary(object):
         """
         NodeSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'cluster_id': 'str', 'node_id': 'str', 'type': 'str', 'is_master': 'bool', 'transport_address': 'str', 'last_seen': 'str', 'short_node_id': 'str', 'hostname': 'str'}
 
@@ -29,7 +27,7 @@ class NodeSummary(object):
     @property
     def cluster_id(self):
         """
-        Gets the cluster_id of this NodeSummary.        :return: The cluster_id of this NodeSummary.
+        Gets the cluster_id of this NodeSummary. :return: The cluster_id of this NodeSummary.
         :rtype: str
         """
         return self._cluster_id
@@ -37,7 +35,7 @@ class NodeSummary(object):
     @cluster_id.setter
     def cluster_id(self, cluster_id):
         """
-        Sets the cluster_id of this NodeSummary.        :param cluster_id: The cluster_id of this NodeSummary.
+        Sets the cluster_id of this NodeSummary. :param cluster_id: The cluster_id of this NodeSummary.
         :type: str
         """
 
@@ -46,7 +44,7 @@ class NodeSummary(object):
     @property
     def node_id(self):
         """
-        Gets the node_id of this NodeSummary.        :return: The node_id of this NodeSummary.
+        Gets the node_id of this NodeSummary. :return: The node_id of this NodeSummary.
         :rtype: str
         """
         return self._node_id
@@ -54,7 +52,7 @@ class NodeSummary(object):
     @node_id.setter
     def node_id(self, node_id):
         """
-        Sets the node_id of this NodeSummary.        :param node_id: The node_id of this NodeSummary.
+        Sets the node_id of this NodeSummary. :param node_id: The node_id of this NodeSummary.
         :type: str
         """
 
@@ -63,7 +61,7 @@ class NodeSummary(object):
     @property
     def type(self):
         """
-        Gets the type of this NodeSummary.        :return: The type of this NodeSummary.
+        Gets the type of this NodeSummary. :return: The type of this NodeSummary.
         :rtype: str
         """
         return self._type
@@ -71,7 +69,7 @@ class NodeSummary(object):
     @type.setter
     def type(self, type):
         """
-        Sets the type of this NodeSummary.        :param type: The type of this NodeSummary.
+        Sets the type of this NodeSummary. :param type: The type of this NodeSummary.
         :type: str
         """
 
@@ -80,7 +78,7 @@ class NodeSummary(object):
     @property
     def is_master(self):
         """
-        Gets the is_master of this NodeSummary.        :return: The is_master of this NodeSummary.
+        Gets the is_master of this NodeSummary. :return: The is_master of this NodeSummary.
         :rtype: bool
         """
         return self._is_master
@@ -88,7 +86,7 @@ class NodeSummary(object):
     @is_master.setter
     def is_master(self, is_master):
         """
-        Sets the is_master of this NodeSummary.        :param is_master: The is_master of this NodeSummary.
+        Sets the is_master of this NodeSummary. :param is_master: The is_master of this NodeSummary.
         :type: bool
         """
 
@@ -97,7 +95,7 @@ class NodeSummary(object):
     @property
     def transport_address(self):
         """
-        Gets the transport_address of this NodeSummary.        :return: The transport_address of this NodeSummary.
+        Gets the transport_address of this NodeSummary. :return: The transport_address of this NodeSummary.
         :rtype: str
         """
         return self._transport_address
@@ -105,7 +103,7 @@ class NodeSummary(object):
     @transport_address.setter
     def transport_address(self, transport_address):
         """
-        Sets the transport_address of this NodeSummary.        :param transport_address: The transport_address of this NodeSummary.
+        Sets the transport_address of this NodeSummary. :param transport_address: The transport_address of this NodeSummary.
         :type: str
         """
 
@@ -114,7 +112,7 @@ class NodeSummary(object):
     @property
     def last_seen(self):
         """
-        Gets the last_seen of this NodeSummary.        :return: The last_seen of this NodeSummary.
+        Gets the last_seen of this NodeSummary. :return: The last_seen of this NodeSummary.
         :rtype: str
         """
         return self._last_seen
@@ -122,7 +120,7 @@ class NodeSummary(object):
     @last_seen.setter
     def last_seen(self, last_seen):
         """
-        Sets the last_seen of this NodeSummary.        :param last_seen: The last_seen of this NodeSummary.
+        Sets the last_seen of this NodeSummary. :param last_seen: The last_seen of this NodeSummary.
         :type: str
         """
 
@@ -131,7 +129,7 @@ class NodeSummary(object):
     @property
     def short_node_id(self):
         """
-        Gets the short_node_id of this NodeSummary.        :return: The short_node_id of this NodeSummary.
+        Gets the short_node_id of this NodeSummary. :return: The short_node_id of this NodeSummary.
         :rtype: str
         """
         return self._short_node_id
@@ -139,7 +137,7 @@ class NodeSummary(object):
     @short_node_id.setter
     def short_node_id(self, short_node_id):
         """
-        Sets the short_node_id of this NodeSummary.        :param short_node_id: The short_node_id of this NodeSummary.
+        Sets the short_node_id of this NodeSummary. :param short_node_id: The short_node_id of this NodeSummary.
         :type: str
         """
 
@@ -148,7 +146,7 @@ class NodeSummary(object):
     @property
     def hostname(self):
         """
-        Gets the hostname of this NodeSummary.        :return: The hostname of this NodeSummary.
+        Gets the hostname of this NodeSummary. :return: The hostname of this NodeSummary.
         :rtype: str
         """
         return self._hostname
@@ -156,7 +154,7 @@ class NodeSummary(object):
     @hostname.setter
     def hostname(self, hostname):
         """
-        Sets the hostname of this NodeSummary.        :param hostname: The hostname of this NodeSummary.
+        Sets the hostname of this NodeSummary. :param hostname: The hostname of this NodeSummary.
         :type: str
         """
 

@@ -8,10 +8,8 @@ class LdapSettingsResponse(object):
         """
         LdapSettingsResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'enabled': 'bool', 'system_username': 'str', 'system_password': 'str', 'ldap_uri': 'str', 'use_start_tls': 'bool', 'trust_all_certificates': 'bool', 'active_directory': 'bool', 'search_base': 'str', 'search_pattern': 'str', 'default_group': 'str', 'group_mapping': 'object', 'group_search_base': 'str', 'group_id_attribute': 'str', 'additional_default_groups': 'list[str]', 'group_search_pattern': 'str', 'display_name_attribute': 'str'}
 
@@ -37,7 +35,7 @@ class LdapSettingsResponse(object):
     @property
     def enabled(self):
         """
-        Gets the enabled of this LdapSettingsResponse.        :return: The enabled of this LdapSettingsResponse.
+        Gets the enabled of this LdapSettingsResponse. :return: The enabled of this LdapSettingsResponse.
         :rtype: bool
         """
         return self._enabled
@@ -45,7 +43,7 @@ class LdapSettingsResponse(object):
     @enabled.setter
     def enabled(self, enabled):
         """
-        Sets the enabled of this LdapSettingsResponse.        :param enabled: The enabled of this LdapSettingsResponse.
+        Sets the enabled of this LdapSettingsResponse. :param enabled: The enabled of this LdapSettingsResponse.
         :type: bool
         """
 
@@ -54,7 +52,7 @@ class LdapSettingsResponse(object):
     @property
     def system_username(self):
         """
-        Gets the system_username of this LdapSettingsResponse.        :return: The system_username of this LdapSettingsResponse.
+        Gets the system_username of this LdapSettingsResponse. :return: The system_username of this LdapSettingsResponse.
         :rtype: str
         """
         return self._system_username
@@ -62,7 +60,7 @@ class LdapSettingsResponse(object):
     @system_username.setter
     def system_username(self, system_username):
         """
-        Sets the system_username of this LdapSettingsResponse.        :param system_username: The system_username of this LdapSettingsResponse.
+        Sets the system_username of this LdapSettingsResponse. :param system_username: The system_username of this LdapSettingsResponse.
         :type: str
         """
 
@@ -71,7 +69,7 @@ class LdapSettingsResponse(object):
     @property
     def system_password(self):
         """
-        Gets the system_password of this LdapSettingsResponse.        :return: The system_password of this LdapSettingsResponse.
+        Gets the system_password of this LdapSettingsResponse. :return: The system_password of this LdapSettingsResponse.
         :rtype: str
         """
         return self._system_password
@@ -79,7 +77,7 @@ class LdapSettingsResponse(object):
     @system_password.setter
     def system_password(self, system_password):
         """
-        Sets the system_password of this LdapSettingsResponse.        :param system_password: The system_password of this LdapSettingsResponse.
+        Sets the system_password of this LdapSettingsResponse. :param system_password: The system_password of this LdapSettingsResponse.
         :type: str
         """
 
@@ -88,7 +86,7 @@ class LdapSettingsResponse(object):
     @property
     def ldap_uri(self):
         """
-        Gets the ldap_uri of this LdapSettingsResponse.        :return: The ldap_uri of this LdapSettingsResponse.
+        Gets the ldap_uri of this LdapSettingsResponse. :return: The ldap_uri of this LdapSettingsResponse.
         :rtype: str
         """
         return self._ldap_uri
@@ -96,7 +94,7 @@ class LdapSettingsResponse(object):
     @ldap_uri.setter
     def ldap_uri(self, ldap_uri):
         """
-        Sets the ldap_uri of this LdapSettingsResponse.        :param ldap_uri: The ldap_uri of this LdapSettingsResponse.
+        Sets the ldap_uri of this LdapSettingsResponse. :param ldap_uri: The ldap_uri of this LdapSettingsResponse.
         :type: str
         """
 
@@ -105,7 +103,7 @@ class LdapSettingsResponse(object):
     @property
     def use_start_tls(self):
         """
-        Gets the use_start_tls of this LdapSettingsResponse.        :return: The use_start_tls of this LdapSettingsResponse.
+        Gets the use_start_tls of this LdapSettingsResponse. :return: The use_start_tls of this LdapSettingsResponse.
         :rtype: bool
         """
         return self._use_start_tls
@@ -113,7 +111,7 @@ class LdapSettingsResponse(object):
     @use_start_tls.setter
     def use_start_tls(self, use_start_tls):
         """
-        Sets the use_start_tls of this LdapSettingsResponse.        :param use_start_tls: The use_start_tls of this LdapSettingsResponse.
+        Sets the use_start_tls of this LdapSettingsResponse. :param use_start_tls: The use_start_tls of this LdapSettingsResponse.
         :type: bool
         """
 
@@ -122,7 +120,7 @@ class LdapSettingsResponse(object):
     @property
     def trust_all_certificates(self):
         """
-        Gets the trust_all_certificates of this LdapSettingsResponse.        :return: The trust_all_certificates of this LdapSettingsResponse.
+        Gets the trust_all_certificates of this LdapSettingsResponse. :return: The trust_all_certificates of this LdapSettingsResponse.
         :rtype: bool
         """
         return self._trust_all_certificates
@@ -130,7 +128,7 @@ class LdapSettingsResponse(object):
     @trust_all_certificates.setter
     def trust_all_certificates(self, trust_all_certificates):
         """
-        Sets the trust_all_certificates of this LdapSettingsResponse.        :param trust_all_certificates: The trust_all_certificates of this LdapSettingsResponse.
+        Sets the trust_all_certificates of this LdapSettingsResponse. :param trust_all_certificates: The trust_all_certificates of this LdapSettingsResponse.
         :type: bool
         """
 
@@ -139,7 +137,7 @@ class LdapSettingsResponse(object):
     @property
     def active_directory(self):
         """
-        Gets the active_directory of this LdapSettingsResponse.        :return: The active_directory of this LdapSettingsResponse.
+        Gets the active_directory of this LdapSettingsResponse. :return: The active_directory of this LdapSettingsResponse.
         :rtype: bool
         """
         return self._active_directory
@@ -147,7 +145,7 @@ class LdapSettingsResponse(object):
     @active_directory.setter
     def active_directory(self, active_directory):
         """
-        Sets the active_directory of this LdapSettingsResponse.        :param active_directory: The active_directory of this LdapSettingsResponse.
+        Sets the active_directory of this LdapSettingsResponse. :param active_directory: The active_directory of this LdapSettingsResponse.
         :type: bool
         """
 
@@ -156,7 +154,7 @@ class LdapSettingsResponse(object):
     @property
     def search_base(self):
         """
-        Gets the search_base of this LdapSettingsResponse.        :return: The search_base of this LdapSettingsResponse.
+        Gets the search_base of this LdapSettingsResponse. :return: The search_base of this LdapSettingsResponse.
         :rtype: str
         """
         return self._search_base
@@ -164,7 +162,7 @@ class LdapSettingsResponse(object):
     @search_base.setter
     def search_base(self, search_base):
         """
-        Sets the search_base of this LdapSettingsResponse.        :param search_base: The search_base of this LdapSettingsResponse.
+        Sets the search_base of this LdapSettingsResponse. :param search_base: The search_base of this LdapSettingsResponse.
         :type: str
         """
 
@@ -173,7 +171,7 @@ class LdapSettingsResponse(object):
     @property
     def search_pattern(self):
         """
-        Gets the search_pattern of this LdapSettingsResponse.        :return: The search_pattern of this LdapSettingsResponse.
+        Gets the search_pattern of this LdapSettingsResponse. :return: The search_pattern of this LdapSettingsResponse.
         :rtype: str
         """
         return self._search_pattern
@@ -181,7 +179,7 @@ class LdapSettingsResponse(object):
     @search_pattern.setter
     def search_pattern(self, search_pattern):
         """
-        Sets the search_pattern of this LdapSettingsResponse.        :param search_pattern: The search_pattern of this LdapSettingsResponse.
+        Sets the search_pattern of this LdapSettingsResponse. :param search_pattern: The search_pattern of this LdapSettingsResponse.
         :type: str
         """
 
@@ -190,7 +188,7 @@ class LdapSettingsResponse(object):
     @property
     def default_group(self):
         """
-        Gets the default_group of this LdapSettingsResponse.        :return: The default_group of this LdapSettingsResponse.
+        Gets the default_group of this LdapSettingsResponse. :return: The default_group of this LdapSettingsResponse.
         :rtype: str
         """
         return self._default_group
@@ -198,7 +196,7 @@ class LdapSettingsResponse(object):
     @default_group.setter
     def default_group(self, default_group):
         """
-        Sets the default_group of this LdapSettingsResponse.        :param default_group: The default_group of this LdapSettingsResponse.
+        Sets the default_group of this LdapSettingsResponse. :param default_group: The default_group of this LdapSettingsResponse.
         :type: str
         """
 
@@ -207,7 +205,7 @@ class LdapSettingsResponse(object):
     @property
     def group_mapping(self):
         """
-        Gets the group_mapping of this LdapSettingsResponse.        :return: The group_mapping of this LdapSettingsResponse.
+        Gets the group_mapping of this LdapSettingsResponse. :return: The group_mapping of this LdapSettingsResponse.
         :rtype: object
         """
         return self._group_mapping
@@ -215,7 +213,7 @@ class LdapSettingsResponse(object):
     @group_mapping.setter
     def group_mapping(self, group_mapping):
         """
-        Sets the group_mapping of this LdapSettingsResponse.        :param group_mapping: The group_mapping of this LdapSettingsResponse.
+        Sets the group_mapping of this LdapSettingsResponse. :param group_mapping: The group_mapping of this LdapSettingsResponse.
         :type: object
         """
 
@@ -224,7 +222,7 @@ class LdapSettingsResponse(object):
     @property
     def group_search_base(self):
         """
-        Gets the group_search_base of this LdapSettingsResponse.        :return: The group_search_base of this LdapSettingsResponse.
+        Gets the group_search_base of this LdapSettingsResponse. :return: The group_search_base of this LdapSettingsResponse.
         :rtype: str
         """
         return self._group_search_base
@@ -232,7 +230,7 @@ class LdapSettingsResponse(object):
     @group_search_base.setter
     def group_search_base(self, group_search_base):
         """
-        Sets the group_search_base of this LdapSettingsResponse.        :param group_search_base: The group_search_base of this LdapSettingsResponse.
+        Sets the group_search_base of this LdapSettingsResponse. :param group_search_base: The group_search_base of this LdapSettingsResponse.
         :type: str
         """
 
@@ -241,7 +239,7 @@ class LdapSettingsResponse(object):
     @property
     def group_id_attribute(self):
         """
-        Gets the group_id_attribute of this LdapSettingsResponse.        :return: The group_id_attribute of this LdapSettingsResponse.
+        Gets the group_id_attribute of this LdapSettingsResponse. :return: The group_id_attribute of this LdapSettingsResponse.
         :rtype: str
         """
         return self._group_id_attribute
@@ -249,7 +247,7 @@ class LdapSettingsResponse(object):
     @group_id_attribute.setter
     def group_id_attribute(self, group_id_attribute):
         """
-        Sets the group_id_attribute of this LdapSettingsResponse.        :param group_id_attribute: The group_id_attribute of this LdapSettingsResponse.
+        Sets the group_id_attribute of this LdapSettingsResponse. :param group_id_attribute: The group_id_attribute of this LdapSettingsResponse.
         :type: str
         """
 
@@ -258,7 +256,7 @@ class LdapSettingsResponse(object):
     @property
     def additional_default_groups(self):
         """
-        Gets the additional_default_groups of this LdapSettingsResponse.        :return: The additional_default_groups of this LdapSettingsResponse.
+        Gets the additional_default_groups of this LdapSettingsResponse. :return: The additional_default_groups of this LdapSettingsResponse.
         :rtype: list[str]
         """
         return self._additional_default_groups
@@ -266,7 +264,7 @@ class LdapSettingsResponse(object):
     @additional_default_groups.setter
     def additional_default_groups(self, additional_default_groups):
         """
-        Sets the additional_default_groups of this LdapSettingsResponse.        :param additional_default_groups: The additional_default_groups of this LdapSettingsResponse.
+        Sets the additional_default_groups of this LdapSettingsResponse. :param additional_default_groups: The additional_default_groups of this LdapSettingsResponse.
         :type: list[str]
         """
 
@@ -275,7 +273,7 @@ class LdapSettingsResponse(object):
     @property
     def group_search_pattern(self):
         """
-        Gets the group_search_pattern of this LdapSettingsResponse.        :return: The group_search_pattern of this LdapSettingsResponse.
+        Gets the group_search_pattern of this LdapSettingsResponse. :return: The group_search_pattern of this LdapSettingsResponse.
         :rtype: str
         """
         return self._group_search_pattern
@@ -283,7 +281,7 @@ class LdapSettingsResponse(object):
     @group_search_pattern.setter
     def group_search_pattern(self, group_search_pattern):
         """
-        Sets the group_search_pattern of this LdapSettingsResponse.        :param group_search_pattern: The group_search_pattern of this LdapSettingsResponse.
+        Sets the group_search_pattern of this LdapSettingsResponse. :param group_search_pattern: The group_search_pattern of this LdapSettingsResponse.
         :type: str
         """
 
@@ -292,7 +290,7 @@ class LdapSettingsResponse(object):
     @property
     def display_name_attribute(self):
         """
-        Gets the display_name_attribute of this LdapSettingsResponse.        :return: The display_name_attribute of this LdapSettingsResponse.
+        Gets the display_name_attribute of this LdapSettingsResponse. :return: The display_name_attribute of this LdapSettingsResponse.
         :rtype: str
         """
         return self._display_name_attribute
@@ -300,7 +298,7 @@ class LdapSettingsResponse(object):
     @display_name_attribute.setter
     def display_name_attribute(self, display_name_attribute):
         """
-        Sets the display_name_attribute of this LdapSettingsResponse.        :param display_name_attribute: The display_name_attribute of this LdapSettingsResponse.
+        Sets the display_name_attribute of this LdapSettingsResponse. :param display_name_attribute: The display_name_attribute of this LdapSettingsResponse.
         :type: str
         """
 

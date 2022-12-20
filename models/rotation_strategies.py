@@ -8,10 +8,8 @@ class RotationStrategies(object):
         """
         RotationStrategies - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'strategies': 'list[object]'}
 
@@ -23,7 +21,7 @@ class RotationStrategies(object):
     @property
     def total(self):
         """
-        Gets the total of this RotationStrategies.        :return: The total of this RotationStrategies.
+        Gets the total of this RotationStrategies. :return: The total of this RotationStrategies.
         :rtype: int
         """
         return self._total
@@ -31,7 +29,7 @@ class RotationStrategies(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this RotationStrategies.        :param total: The total of this RotationStrategies.
+        Sets the total of this RotationStrategies. :param total: The total of this RotationStrategies.
         :type: int
         """
 
@@ -40,7 +38,7 @@ class RotationStrategies(object):
     @property
     def strategies(self):
         """
-        Gets the strategies of this RotationStrategies.        :return: The strategies of this RotationStrategies.
+        Gets the strategies of this RotationStrategies. :return: The strategies of this RotationStrategies.
         :rtype: list[object]
         """
         return self._strategies
@@ -48,7 +46,7 @@ class RotationStrategies(object):
     @strategies.setter
     def strategies(self, strategies):
         """
-        Sets the strategies of this RotationStrategies.        :param strategies: The strategies of this RotationStrategies.
+        Sets the strategies of this RotationStrategies. :param strategies: The strategies of this RotationStrategies.
         :type: list[object]
         """
 

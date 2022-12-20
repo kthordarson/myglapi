@@ -8,10 +8,8 @@ class LoggersSummary(object):
         """
         LoggersSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'loggers': 'object'}
 
@@ -23,7 +21,7 @@ class LoggersSummary(object):
     @property
     def total(self):
         """
-        Gets the total of this LoggersSummary.        :return: The total of this LoggersSummary.
+        Gets the total of this LoggersSummary. :return: The total of this LoggersSummary.
         :rtype: int
         """
         return self._total
@@ -31,7 +29,7 @@ class LoggersSummary(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this LoggersSummary.        :param total: The total of this LoggersSummary.
+        Sets the total of this LoggersSummary. :param total: The total of this LoggersSummary.
         :type: int
         """
 
@@ -40,7 +38,7 @@ class LoggersSummary(object):
     @property
     def loggers(self):
         """
-        Gets the loggers of this LoggersSummary.        :return: The loggers of this LoggersSummary.
+        Gets the loggers of this LoggersSummary. :return: The loggers of this LoggersSummary.
         :rtype: object
         """
         return self._loggers
@@ -48,7 +46,7 @@ class LoggersSummary(object):
     @loggers.setter
     def loggers(self, loggers):
         """
-        Sets the loggers of this LoggersSummary.        :param loggers: The loggers of this LoggersSummary.
+        Sets the loggers of this LoggersSummary. :param loggers: The loggers of this LoggersSummary.
         :type: object
         """
 

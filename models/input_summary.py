@@ -8,10 +8,8 @@ class InputSummary(object):
         """
         InputSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'title': 'str', '_global': 'bool', 'name': 'str', 'content_pack': 'str', 'id': 'str', 'created_at': 'datetime', 'type': 'str', 'creator_user_id': 'str', 'attributes': 'object', 'static_fields': 'object', 'node': 'str'}
 
@@ -32,7 +30,7 @@ class InputSummary(object):
     @property
     def title(self):
         """
-        Gets the title of this InputSummary.        :return: The title of this InputSummary.
+        Gets the title of this InputSummary. :return: The title of this InputSummary.
         :rtype: str
         """
         return self._title
@@ -40,7 +38,7 @@ class InputSummary(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this InputSummary.        :param title: The title of this InputSummary.
+        Sets the title of this InputSummary. :param title: The title of this InputSummary.
         :type: str
         """
 
@@ -49,7 +47,7 @@ class InputSummary(object):
     @property
     def _global(self):
         """
-        Gets the _global of this InputSummary.        :return: The _global of this InputSummary.
+        Gets the _global of this InputSummary. :return: The _global of this InputSummary.
         :rtype: bool
         """
         return self.__global
@@ -57,7 +55,7 @@ class InputSummary(object):
     @_global.setter
     def _global(self, _global):
         """
-        Sets the _global of this InputSummary.        :param _global: The _global of this InputSummary.
+        Sets the _global of this InputSummary. :param _global: The _global of this InputSummary.
         :type: bool
         """
 
@@ -66,7 +64,7 @@ class InputSummary(object):
     @property
     def name(self):
         """
-        Gets the name of this InputSummary.        :return: The name of this InputSummary.
+        Gets the name of this InputSummary. :return: The name of this InputSummary.
         :rtype: str
         """
         return self._name
@@ -74,7 +72,7 @@ class InputSummary(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this InputSummary.        :param name: The name of this InputSummary.
+        Sets the name of this InputSummary. :param name: The name of this InputSummary.
         :type: str
         """
 
@@ -83,7 +81,7 @@ class InputSummary(object):
     @property
     def content_pack(self):
         """
-        Gets the content_pack of this InputSummary.        :return: The content_pack of this InputSummary.
+        Gets the content_pack of this InputSummary. :return: The content_pack of this InputSummary.
         :rtype: str
         """
         return self._content_pack
@@ -91,7 +89,7 @@ class InputSummary(object):
     @content_pack.setter
     def content_pack(self, content_pack):
         """
-        Sets the content_pack of this InputSummary.        :param content_pack: The content_pack of this InputSummary.
+        Sets the content_pack of this InputSummary. :param content_pack: The content_pack of this InputSummary.
         :type: str
         """
 
@@ -100,7 +98,7 @@ class InputSummary(object):
     @property
     def id(self):
         """
-        Gets the id of this InputSummary.        :return: The id of this InputSummary.
+        Gets the id of this InputSummary. :return: The id of this InputSummary.
         :rtype: str
         """
         return self._id
@@ -108,7 +106,7 @@ class InputSummary(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this InputSummary.        :param id: The id of this InputSummary.
+        Sets the id of this InputSummary. :param id: The id of this InputSummary.
         :type: str
         """
 
@@ -117,7 +115,7 @@ class InputSummary(object):
     @property
     def created_at(self):
         """
-        Gets the created_at of this InputSummary.        :return: The created_at of this InputSummary.
+        Gets the created_at of this InputSummary. :return: The created_at of this InputSummary.
         :rtype: datetime
         """
         return self._created_at
@@ -125,7 +123,7 @@ class InputSummary(object):
     @created_at.setter
     def created_at(self, created_at):
         """
-        Sets the created_at of this InputSummary.        :param created_at: The created_at of this InputSummary.
+        Sets the created_at of this InputSummary. :param created_at: The created_at of this InputSummary.
         :type: datetime
         """
 
@@ -134,7 +132,7 @@ class InputSummary(object):
     @property
     def type(self):
         """
-        Gets the type of this InputSummary.        :return: The type of this InputSummary.
+        Gets the type of this InputSummary. :return: The type of this InputSummary.
         :rtype: str
         """
         return self._type
@@ -142,7 +140,7 @@ class InputSummary(object):
     @type.setter
     def type(self, type):
         """
-        Sets the type of this InputSummary.        :param type: The type of this InputSummary.
+        Sets the type of this InputSummary. :param type: The type of this InputSummary.
         :type: str
         """
 
@@ -151,7 +149,7 @@ class InputSummary(object):
     @property
     def creator_user_id(self):
         """
-        Gets the creator_user_id of this InputSummary.        :return: The creator_user_id of this InputSummary.
+        Gets the creator_user_id of this InputSummary. :return: The creator_user_id of this InputSummary.
         :rtype: str
         """
         return self._creator_user_id
@@ -159,7 +157,7 @@ class InputSummary(object):
     @creator_user_id.setter
     def creator_user_id(self, creator_user_id):
         """
-        Sets the creator_user_id of this InputSummary.        :param creator_user_id: The creator_user_id of this InputSummary.
+        Sets the creator_user_id of this InputSummary. :param creator_user_id: The creator_user_id of this InputSummary.
         :type: str
         """
 
@@ -168,7 +166,7 @@ class InputSummary(object):
     @property
     def attributes(self):
         """
-        Gets the attributes of this InputSummary.        :return: The attributes of this InputSummary.
+        Gets the attributes of this InputSummary. :return: The attributes of this InputSummary.
         :rtype: object
         """
         return self._attributes
@@ -176,7 +174,7 @@ class InputSummary(object):
     @attributes.setter
     def attributes(self, attributes):
         """
-        Sets the attributes of this InputSummary.        :param attributes: The attributes of this InputSummary.
+        Sets the attributes of this InputSummary. :param attributes: The attributes of this InputSummary.
         :type: object
         """
 
@@ -185,7 +183,7 @@ class InputSummary(object):
     @property
     def static_fields(self):
         """
-        Gets the static_fields of this InputSummary.        :return: The static_fields of this InputSummary.
+        Gets the static_fields of this InputSummary. :return: The static_fields of this InputSummary.
         :rtype: object
         """
         return self._static_fields
@@ -193,7 +191,7 @@ class InputSummary(object):
     @static_fields.setter
     def static_fields(self, static_fields):
         """
-        Sets the static_fields of this InputSummary.        :param static_fields: The static_fields of this InputSummary.
+        Sets the static_fields of this InputSummary. :param static_fields: The static_fields of this InputSummary.
         :type: object
         """
 
@@ -202,7 +200,7 @@ class InputSummary(object):
     @property
     def node(self):
         """
-        Gets the node of this InputSummary.        :return: The node of this InputSummary.
+        Gets the node of this InputSummary. :return: The node of this InputSummary.
         :rtype: str
         """
         return self._node
@@ -210,7 +208,7 @@ class InputSummary(object):
     @node.setter
     def node(self, node):
         """
-        Sets the node of this InputSummary.        :param node: The node of this InputSummary.
+        Sets the node of this InputSummary. :param node: The node of this InputSummary.
         :type: str
         """
 

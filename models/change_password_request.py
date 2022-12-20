@@ -8,10 +8,8 @@ class ChangePasswordRequest(object):
         """
         ChangePasswordRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'old_password': 'str', 'password': 'str'}
 
@@ -23,7 +21,7 @@ class ChangePasswordRequest(object):
     @property
     def old_password(self):
         """
-        Gets the old_password of this ChangePasswordRequest.        :return: The old_password of this ChangePasswordRequest.
+        Gets the old_password of this ChangePasswordRequest. :return: The old_password of this ChangePasswordRequest.
         :rtype: str
         """
         return self._old_password
@@ -31,7 +29,7 @@ class ChangePasswordRequest(object):
     @old_password.setter
     def old_password(self, old_password):
         """
-        Sets the old_password of this ChangePasswordRequest.        :param old_password: The old_password of this ChangePasswordRequest.
+        Sets the old_password of this ChangePasswordRequest. :param old_password: The old_password of this ChangePasswordRequest.
         :type: str
         """
 
@@ -40,7 +38,7 @@ class ChangePasswordRequest(object):
     @property
     def password(self):
         """
-        Gets the password of this ChangePasswordRequest.        :return: The password of this ChangePasswordRequest.
+        Gets the password of this ChangePasswordRequest. :return: The password of this ChangePasswordRequest.
         :rtype: str
         """
         return self._password
@@ -48,7 +46,7 @@ class ChangePasswordRequest(object):
     @password.setter
     def password(self, password):
         """
-        Sets the password of this ChangePasswordRequest.        :param password: The password of this ChangePasswordRequest.
+        Sets the password of this ChangePasswordRequest. :param password: The password of this ChangePasswordRequest.
         :type: str
         """
 

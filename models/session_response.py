@@ -8,10 +8,8 @@ class SessionResponse(object):
         """
         SessionResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'valid_until': 'datetime', 'session_id': 'str'}
 
@@ -23,7 +21,7 @@ class SessionResponse(object):
     @property
     def valid_until(self):
         """
-        Gets the valid_until of this SessionResponse.        :return: The valid_until of this SessionResponse.
+        Gets the valid_until of this SessionResponse. :return: The valid_until of this SessionResponse.
         :rtype: datetime
         """
         return self._valid_until
@@ -31,7 +29,7 @@ class SessionResponse(object):
     @valid_until.setter
     def valid_until(self, valid_until):
         """
-        Sets the valid_until of this SessionResponse.        :param valid_until: The valid_until of this SessionResponse.
+        Sets the valid_until of this SessionResponse. :param valid_until: The valid_until of this SessionResponse.
         :type: datetime
         """
 
@@ -40,7 +38,7 @@ class SessionResponse(object):
     @property
     def session_id(self):
         """
-        Gets the session_id of this SessionResponse.        :return: The session_id of this SessionResponse.
+        Gets the session_id of this SessionResponse. :return: The session_id of this SessionResponse.
         :rtype: str
         """
         return self._session_id
@@ -48,7 +46,7 @@ class SessionResponse(object):
     @session_id.setter
     def session_id(self, session_id):
         """
-        Sets the session_id of this SessionResponse.        :param session_id: The session_id of this SessionResponse.
+        Sets the session_id of this SessionResponse. :param session_id: The session_id of this SessionResponse.
         :type: str
         """
 

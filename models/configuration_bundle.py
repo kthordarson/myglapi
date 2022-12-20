@@ -8,10 +8,8 @@ class ConfigurationBundle(object):
         """
         ConfigurationBundle - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'name': 'str', 'description': 'str', 'category': 'str', 'inputs': 'list[object]', 'streams': 'list[object]', 'outputs': 'list[object]', 'dashboards': 'list[object]', 'grok_patterns': 'list[object]'}
 
@@ -30,7 +28,7 @@ class ConfigurationBundle(object):
     @property
     def id(self):
         """
-        Gets the id of this ConfigurationBundle.        :return: The id of this ConfigurationBundle.
+        Gets the id of this ConfigurationBundle. :return: The id of this ConfigurationBundle.
         :rtype: str
         """
         return self._id
@@ -38,7 +36,7 @@ class ConfigurationBundle(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this ConfigurationBundle.        :param id: The id of this ConfigurationBundle.
+        Sets the id of this ConfigurationBundle. :param id: The id of this ConfigurationBundle.
         :type: str
         """
 
@@ -47,7 +45,7 @@ class ConfigurationBundle(object):
     @property
     def name(self):
         """
-        Gets the name of this ConfigurationBundle.        :return: The name of this ConfigurationBundle.
+        Gets the name of this ConfigurationBundle. :return: The name of this ConfigurationBundle.
         :rtype: str
         """
         return self._name
@@ -55,7 +53,7 @@ class ConfigurationBundle(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this ConfigurationBundle.        :param name: The name of this ConfigurationBundle.
+        Sets the name of this ConfigurationBundle. :param name: The name of this ConfigurationBundle.
         :type: str
         """
 
@@ -64,7 +62,7 @@ class ConfigurationBundle(object):
     @property
     def description(self):
         """
-        Gets the description of this ConfigurationBundle.        :return: The description of this ConfigurationBundle.
+        Gets the description of this ConfigurationBundle. :return: The description of this ConfigurationBundle.
         :rtype: str
         """
         return self._description
@@ -72,7 +70,7 @@ class ConfigurationBundle(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this ConfigurationBundle.        :param description: The description of this ConfigurationBundle.
+        Sets the description of this ConfigurationBundle. :param description: The description of this ConfigurationBundle.
         :type: str
         """
 
@@ -81,7 +79,7 @@ class ConfigurationBundle(object):
     @property
     def category(self):
         """
-        Gets the category of this ConfigurationBundle.        :return: The category of this ConfigurationBundle.
+        Gets the category of this ConfigurationBundle. :return: The category of this ConfigurationBundle.
         :rtype: str
         """
         return self._category
@@ -89,7 +87,7 @@ class ConfigurationBundle(object):
     @category.setter
     def category(self, category):
         """
-        Sets the category of this ConfigurationBundle.        :param category: The category of this ConfigurationBundle.
+        Sets the category of this ConfigurationBundle. :param category: The category of this ConfigurationBundle.
         :type: str
         """
 
@@ -98,7 +96,7 @@ class ConfigurationBundle(object):
     @property
     def inputs(self):
         """
-        Gets the inputs of this ConfigurationBundle.        :return: The inputs of this ConfigurationBundle.
+        Gets the inputs of this ConfigurationBundle. :return: The inputs of this ConfigurationBundle.
         :rtype: list[object]
         """
         return self._inputs
@@ -106,7 +104,7 @@ class ConfigurationBundle(object):
     @inputs.setter
     def inputs(self, inputs):
         """
-        Sets the inputs of this ConfigurationBundle.        :param inputs: The inputs of this ConfigurationBundle.
+        Sets the inputs of this ConfigurationBundle. :param inputs: The inputs of this ConfigurationBundle.
         :type: list[object]
         """
 
@@ -115,7 +113,7 @@ class ConfigurationBundle(object):
     @property
     def streams(self):
         """
-        Gets the streams of this ConfigurationBundle.        :return: The streams of this ConfigurationBundle.
+        Gets the streams of this ConfigurationBundle. :return: The streams of this ConfigurationBundle.
         :rtype: list[object]
         """
         return self._streams
@@ -123,7 +121,7 @@ class ConfigurationBundle(object):
     @streams.setter
     def streams(self, streams):
         """
-        Sets the streams of this ConfigurationBundle.        :param streams: The streams of this ConfigurationBundle.
+        Sets the streams of this ConfigurationBundle. :param streams: The streams of this ConfigurationBundle.
         :type: list[object]
         """
 
@@ -132,7 +130,7 @@ class ConfigurationBundle(object):
     @property
     def outputs(self):
         """
-        Gets the outputs of this ConfigurationBundle.        :return: The outputs of this ConfigurationBundle.
+        Gets the outputs of this ConfigurationBundle. :return: The outputs of this ConfigurationBundle.
         :rtype: list[object]
         """
         return self._outputs
@@ -140,7 +138,7 @@ class ConfigurationBundle(object):
     @outputs.setter
     def outputs(self, outputs):
         """
-        Sets the outputs of this ConfigurationBundle.        :param outputs: The outputs of this ConfigurationBundle.
+        Sets the outputs of this ConfigurationBundle. :param outputs: The outputs of this ConfigurationBundle.
         :type: list[object]
         """
 
@@ -149,7 +147,7 @@ class ConfigurationBundle(object):
     @property
     def dashboards(self):
         """
-        Gets the dashboards of this ConfigurationBundle.        :return: The dashboards of this ConfigurationBundle.
+        Gets the dashboards of this ConfigurationBundle. :return: The dashboards of this ConfigurationBundle.
         :rtype: list[object]
         """
         return self._dashboards
@@ -157,7 +155,7 @@ class ConfigurationBundle(object):
     @dashboards.setter
     def dashboards(self, dashboards):
         """
-        Sets the dashboards of this ConfigurationBundle.        :param dashboards: The dashboards of this ConfigurationBundle.
+        Sets the dashboards of this ConfigurationBundle. :param dashboards: The dashboards of this ConfigurationBundle.
         :type: list[object]
         """
 
@@ -166,7 +164,7 @@ class ConfigurationBundle(object):
     @property
     def grok_patterns(self):
         """
-        Gets the grok_patterns of this ConfigurationBundle.        :return: The grok_patterns of this ConfigurationBundle.
+        Gets the grok_patterns of this ConfigurationBundle. :return: The grok_patterns of this ConfigurationBundle.
         :rtype: list[object]
         """
         return self._grok_patterns
@@ -174,7 +172,7 @@ class ConfigurationBundle(object):
     @grok_patterns.setter
     def grok_patterns(self, grok_patterns):
         """
-        Sets the grok_patterns of this ConfigurationBundle.        :param grok_patterns: The grok_patterns of this ConfigurationBundle.
+        Sets the grok_patterns of this ConfigurationBundle. :param grok_patterns: The grok_patterns of this ConfigurationBundle.
         :type: list[object]
         """
 

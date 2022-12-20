@@ -8,10 +8,8 @@ class TestMatchResponse(object):
         """
         TestMatchResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'matches': 'bool', 'rules': 'object'}
 
@@ -23,7 +21,7 @@ class TestMatchResponse(object):
     @property
     def matches(self):
         """
-        Gets the matches of this TestMatchResponse.        :return: The matches of this TestMatchResponse.
+        Gets the matches of this TestMatchResponse. :return: The matches of this TestMatchResponse.
         :rtype: bool
         """
         return self._matches
@@ -31,7 +29,7 @@ class TestMatchResponse(object):
     @matches.setter
     def matches(self, matches):
         """
-        Sets the matches of this TestMatchResponse.        :param matches: The matches of this TestMatchResponse.
+        Sets the matches of this TestMatchResponse. :param matches: The matches of this TestMatchResponse.
         :type: bool
         """
 
@@ -40,7 +38,7 @@ class TestMatchResponse(object):
     @property
     def rules(self):
         """
-        Gets the rules of this TestMatchResponse.        :return: The rules of this TestMatchResponse.
+        Gets the rules of this TestMatchResponse. :return: The rules of this TestMatchResponse.
         :rtype: object
         """
         return self._rules
@@ -48,7 +46,7 @@ class TestMatchResponse(object):
     @rules.setter
     def rules(self, rules):
         """
-        Sets the rules of this TestMatchResponse.        :param rules: The rules of this TestMatchResponse.
+        Sets the rules of this TestMatchResponse. :param rules: The rules of this TestMatchResponse.
         :type: object
         """
 

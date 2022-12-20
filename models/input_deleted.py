@@ -8,10 +8,8 @@ class InputDeleted(object):
         """
         InputDeleted - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str'}
 
@@ -22,7 +20,7 @@ class InputDeleted(object):
     @property
     def id(self):
         """
-        Gets the id of this InputDeleted.        :return: The id of this InputDeleted.
+        Gets the id of this InputDeleted. :return: The id of this InputDeleted.
         :rtype: str
         """
         return self._id
@@ -30,7 +28,7 @@ class InputDeleted(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this InputDeleted.        :param id: The id of this InputDeleted.
+        Sets the id of this InputDeleted. :param id: The id of this InputDeleted.
         :type: str
         """
 

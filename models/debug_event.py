@@ -8,10 +8,8 @@ class DebugEvent(object):
         """
         DebugEvent - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'node_id': 'str', 'date': 'datetime', 'text': 'str'}
 
@@ -24,7 +22,7 @@ class DebugEvent(object):
     @property
     def node_id(self):
         """
-        Gets the node_id of this DebugEvent.        :return: The node_id of this DebugEvent.
+        Gets the node_id of this DebugEvent. :return: The node_id of this DebugEvent.
         :rtype: str
         """
         return self._node_id
@@ -32,7 +30,7 @@ class DebugEvent(object):
     @node_id.setter
     def node_id(self, node_id):
         """
-        Sets the node_id of this DebugEvent.        :param node_id: The node_id of this DebugEvent.
+        Sets the node_id of this DebugEvent. :param node_id: The node_id of this DebugEvent.
         :type: str
         """
 
@@ -41,7 +39,7 @@ class DebugEvent(object):
     @property
     def date(self):
         """
-        Gets the date of this DebugEvent.        :return: The date of this DebugEvent.
+        Gets the date of this DebugEvent. :return: The date of this DebugEvent.
         :rtype: datetime
         """
         return self._date
@@ -49,7 +47,7 @@ class DebugEvent(object):
     @date.setter
     def date(self, date):
         """
-        Sets the date of this DebugEvent.        :param date: The date of this DebugEvent.
+        Sets the date of this DebugEvent. :param date: The date of this DebugEvent.
         :type: datetime
         """
 
@@ -58,7 +56,7 @@ class DebugEvent(object):
     @property
     def text(self):
         """
-        Gets the text of this DebugEvent.        :return: The text of this DebugEvent.
+        Gets the text of this DebugEvent. :return: The text of this DebugEvent.
         :rtype: str
         """
         return self._text
@@ -66,7 +64,7 @@ class DebugEvent(object):
     @text.setter
     def text(self, text):
         """
-        Sets the text of this DebugEvent.        :param text: The text of this DebugEvent.
+        Sets the text of this DebugEvent. :param text: The text of this DebugEvent.
         :type: str
         """
 

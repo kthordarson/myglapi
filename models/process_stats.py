@@ -8,10 +8,8 @@ class ProcessStats(object):
         """
         ProcessStats - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'pid': 'int', 'cpu': 'object', 'open_file_descriptors': 'int', 'memory': 'object', 'max_file_descriptors': 'int'}
 
@@ -26,7 +24,7 @@ class ProcessStats(object):
     @property
     def pid(self):
         """
-        Gets the pid of this ProcessStats.        :return: The pid of this ProcessStats.
+        Gets the pid of this ProcessStats. :return: The pid of this ProcessStats.
         :rtype: int
         """
         return self._pid
@@ -34,7 +32,7 @@ class ProcessStats(object):
     @pid.setter
     def pid(self, pid):
         """
-        Sets the pid of this ProcessStats.        :param pid: The pid of this ProcessStats.
+        Sets the pid of this ProcessStats. :param pid: The pid of this ProcessStats.
         :type: int
         """
 
@@ -43,7 +41,7 @@ class ProcessStats(object):
     @property
     def cpu(self):
         """
-        Gets the cpu of this ProcessStats.        :return: The cpu of this ProcessStats.
+        Gets the cpu of this ProcessStats. :return: The cpu of this ProcessStats.
         :rtype: object
         """
         return self._cpu
@@ -51,7 +49,7 @@ class ProcessStats(object):
     @cpu.setter
     def cpu(self, cpu):
         """
-        Sets the cpu of this ProcessStats.        :param cpu: The cpu of this ProcessStats.
+        Sets the cpu of this ProcessStats. :param cpu: The cpu of this ProcessStats.
         :type: object
         """
 
@@ -60,7 +58,7 @@ class ProcessStats(object):
     @property
     def open_file_descriptors(self):
         """
-        Gets the open_file_descriptors of this ProcessStats.        :return: The open_file_descriptors of this ProcessStats.
+        Gets the open_file_descriptors of this ProcessStats. :return: The open_file_descriptors of this ProcessStats.
         :rtype: int
         """
         return self._open_file_descriptors
@@ -68,7 +66,7 @@ class ProcessStats(object):
     @open_file_descriptors.setter
     def open_file_descriptors(self, open_file_descriptors):
         """
-        Sets the open_file_descriptors of this ProcessStats.        :param open_file_descriptors: The open_file_descriptors of this ProcessStats.
+        Sets the open_file_descriptors of this ProcessStats. :param open_file_descriptors: The open_file_descriptors of this ProcessStats.
         :type: int
         """
 
@@ -77,7 +75,7 @@ class ProcessStats(object):
     @property
     def memory(self):
         """
-        Gets the memory of this ProcessStats.        :return: The memory of this ProcessStats.
+        Gets the memory of this ProcessStats. :return: The memory of this ProcessStats.
         :rtype: object
         """
         return self._memory
@@ -85,7 +83,7 @@ class ProcessStats(object):
     @memory.setter
     def memory(self, memory):
         """
-        Sets the memory of this ProcessStats.        :param memory: The memory of this ProcessStats.
+        Sets the memory of this ProcessStats. :param memory: The memory of this ProcessStats.
         :type: object
         """
 
@@ -94,7 +92,7 @@ class ProcessStats(object):
     @property
     def max_file_descriptors(self):
         """
-        Gets the max_file_descriptors of this ProcessStats.        :return: The max_file_descriptors of this ProcessStats.
+        Gets the max_file_descriptors of this ProcessStats. :return: The max_file_descriptors of this ProcessStats.
         :rtype: int
         """
         return self._max_file_descriptors
@@ -102,7 +100,7 @@ class ProcessStats(object):
     @max_file_descriptors.setter
     def max_file_descriptors(self, max_file_descriptors):
         """
-        Sets the max_file_descriptors of this ProcessStats.        :param max_file_descriptors: The max_file_descriptors of this ProcessStats.
+        Sets the max_file_descriptors of this ProcessStats. :param max_file_descriptors: The max_file_descriptors of this ProcessStats.
         :type: int
         """
 

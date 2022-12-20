@@ -8,10 +8,8 @@ class TriggerRequest(object):
         """
         TriggerRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'job_name': 'str'}
 
@@ -22,7 +20,7 @@ class TriggerRequest(object):
     @property
     def job_name(self):
         """
-        Gets the job_name of this TriggerRequest.        :return: The job_name of this TriggerRequest.
+        Gets the job_name of this TriggerRequest. :return: The job_name of this TriggerRequest.
         :rtype: str
         """
         return self._job_name
@@ -30,7 +28,7 @@ class TriggerRequest(object):
     @job_name.setter
     def job_name(self, job_name):
         """
-        Sets the job_name of this TriggerRequest.        :param job_name: The job_name of this TriggerRequest.
+        Sets the job_name of this TriggerRequest. :param job_name: The job_name of this TriggerRequest.
         :type: str
         """
 

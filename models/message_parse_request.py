@@ -20,7 +20,7 @@ class MessageParseRequest(object):
     @property
     def message(self):
         """
-        Gets the message of this MessageParseRequest.        :return: The message of this MessageParseRequest.
+        Gets the message of this MessageParseRequest. :return: The message of this MessageParseRequest.
         :rtype: str
         """
         return self._message
@@ -28,7 +28,7 @@ class MessageParseRequest(object):
     @message.setter
     def message(self, message):
         """
-        Sets the message of this MessageParseRequest.        :param message: The message of this MessageParseRequest.
+        Sets the message of this MessageParseRequest. :param message: The message of this MessageParseRequest.
         :type: str
         """
 
@@ -37,7 +37,7 @@ class MessageParseRequest(object):
     @property
     def codec(self):
         """
-        Gets the codec of this MessageParseRequest.        :return: The codec of this MessageParseRequest.
+        Gets the codec of this MessageParseRequest. :return: The codec of this MessageParseRequest.
         :rtype: str
         """
         return self._codec
@@ -45,7 +45,7 @@ class MessageParseRequest(object):
     @codec.setter
     def codec(self, codec):
         """
-        Sets the codec of this MessageParseRequest.        :param codec: The codec of this MessageParseRequest.
+        Sets the codec of this MessageParseRequest. :param codec: The codec of this MessageParseRequest.
         :type: str
         """
 
@@ -54,7 +54,7 @@ class MessageParseRequest(object):
     @property
     def remote_address(self):
         """
-        Gets the remote_address of this MessageParseRequest.        :return: The remote_address of this MessageParseRequest.
+        Gets the remote_address of this MessageParseRequest. :return: The remote_address of this MessageParseRequest.
         :rtype: str
         """
         return self._remote_address
@@ -62,7 +62,7 @@ class MessageParseRequest(object):
     @remote_address.setter
     def remote_address(self, remote_address):
         """
-        Sets the remote_address of this MessageParseRequest.        :param remote_address: The remote_address of this MessageParseRequest.
+        Sets the remote_address of this MessageParseRequest. :param remote_address: The remote_address of this MessageParseRequest.
         :type: str
         """
 
@@ -71,7 +71,7 @@ class MessageParseRequest(object):
     @property
     def configuration(self):
         """
-        Gets the configuration of this MessageParseRequest.        :return: The configuration of this MessageParseRequest.
+        Gets the configuration of this MessageParseRequest. :return: The configuration of this MessageParseRequest.
         :rtype: object
         """
         return self._configuration
@@ -79,7 +79,7 @@ class MessageParseRequest(object):
     @configuration.setter
     def configuration(self, configuration):
         """
-        Sets the configuration of this MessageParseRequest.        :param configuration: The configuration of this MessageParseRequest.
+        Sets the configuration of this MessageParseRequest. :param configuration: The configuration of this MessageParseRequest.
         :type: object
         """
 

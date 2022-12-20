@@ -8,10 +8,8 @@ class CreateSavedSearchRequest(object):
         """
         CreateSavedSearchRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'title': 'str', 'query': 'object'}
 
@@ -23,7 +21,7 @@ class CreateSavedSearchRequest(object):
     @property
     def title(self):
         """
-        Gets the title of this CreateSavedSearchRequest.        :return: The title of this CreateSavedSearchRequest.
+        Gets the title of this CreateSavedSearchRequest. :return: The title of this CreateSavedSearchRequest.
         :rtype: str
         """
         return self._title
@@ -31,7 +29,7 @@ class CreateSavedSearchRequest(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this CreateSavedSearchRequest.        :param title: The title of this CreateSavedSearchRequest.
+        Sets the title of this CreateSavedSearchRequest. :param title: The title of this CreateSavedSearchRequest.
         :type: str
         """
 
@@ -40,7 +38,7 @@ class CreateSavedSearchRequest(object):
     @property
     def query(self):
         """
-        Gets the query of this CreateSavedSearchRequest.        :return: The query of this CreateSavedSearchRequest.
+        Gets the query of this CreateSavedSearchRequest. :return: The query of this CreateSavedSearchRequest.
         :rtype: object
         """
         return self._query
@@ -48,7 +46,7 @@ class CreateSavedSearchRequest(object):
     @query.setter
     def query(self, query):
         """
-        Sets the query of this CreateSavedSearchRequest.        :param query: The query of this CreateSavedSearchRequest.
+        Sets the query of this CreateSavedSearchRequest. :param query: The query of this CreateSavedSearchRequest.
         :type: object
         """
 

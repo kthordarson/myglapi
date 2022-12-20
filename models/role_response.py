@@ -8,10 +8,8 @@ class RoleResponse(object):
         """
         RoleResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'name': 'str', 'description': 'str', 'permissions': 'list[str]', 'read_only': 'bool'}
 
@@ -25,7 +23,7 @@ class RoleResponse(object):
     @property
     def name(self):
         """
-        Gets the name of this RoleResponse.        :return: The name of this RoleResponse.
+        Gets the name of this RoleResponse. :return: The name of this RoleResponse.
         :rtype: str
         """
         return self._name
@@ -33,7 +31,7 @@ class RoleResponse(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this RoleResponse.        :param name: The name of this RoleResponse.
+        Sets the name of this RoleResponse. :param name: The name of this RoleResponse.
         :type: str
         """
 
@@ -42,7 +40,7 @@ class RoleResponse(object):
     @property
     def description(self):
         """
-        Gets the description of this RoleResponse.        :return: The description of this RoleResponse.
+        Gets the description of this RoleResponse. :return: The description of this RoleResponse.
         :rtype: str
         """
         return self._description
@@ -50,7 +48,7 @@ class RoleResponse(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this RoleResponse.        :param description: The description of this RoleResponse.
+        Sets the description of this RoleResponse. :param description: The description of this RoleResponse.
         :type: str
         """
 
@@ -59,7 +57,7 @@ class RoleResponse(object):
     @property
     def permissions(self):
         """
-        Gets the permissions of this RoleResponse.        :return: The permissions of this RoleResponse.
+        Gets the permissions of this RoleResponse. :return: The permissions of this RoleResponse.
         :rtype: list[str]
         """
         return self._permissions
@@ -67,7 +65,7 @@ class RoleResponse(object):
     @permissions.setter
     def permissions(self, permissions):
         """
-        Sets the permissions of this RoleResponse.        :param permissions: The permissions of this RoleResponse.
+        Sets the permissions of this RoleResponse. :param permissions: The permissions of this RoleResponse.
         :type: list[str]
         """
 
@@ -76,7 +74,7 @@ class RoleResponse(object):
     @property
     def read_only(self):
         """
-        Gets the read_only of this RoleResponse.        :return: The read_only of this RoleResponse.
+        Gets the read_only of this RoleResponse. :return: The read_only of this RoleResponse.
         :rtype: bool
         """
         return self._read_only
@@ -84,7 +82,7 @@ class RoleResponse(object):
     @read_only.setter
     def read_only(self, read_only):
         """
-        Sets the read_only of this RoleResponse.        :param read_only: The read_only of this RoleResponse.
+        Sets the read_only of this RoleResponse. :param read_only: The read_only of this RoleResponse.
         :type: bool
         """
 

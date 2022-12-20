@@ -8,10 +8,8 @@ class FailureCount(object):
         """
         FailureCount - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'count': 'int'}
 
@@ -22,7 +20,7 @@ class FailureCount(object):
     @property
     def count(self):
         """
-        Gets the count of this FailureCount.        :return: The count of this FailureCount.
+        Gets the count of this FailureCount. :return: The count of this FailureCount.
         :rtype: int
         """
         return self._count
@@ -30,7 +28,7 @@ class FailureCount(object):
     @count.setter
     def count(self, count):
         """
-        Sets the count of this FailureCount.        :param count: The count of this FailureCount.
+        Sets the count of this FailureCount. :param count: The count of this FailureCount.
         :type: int
         """
 

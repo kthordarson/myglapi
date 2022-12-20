@@ -8,10 +8,8 @@ class RotationStrategySummary(object):
         """
         RotationStrategySummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'strategy': 'str', 'config': 'object'}
 
@@ -23,7 +21,7 @@ class RotationStrategySummary(object):
     @property
     def strategy(self):
         """
-        Gets the strategy of this RotationStrategySummary.        :return: The strategy of this RotationStrategySummary.
+        Gets the strategy of this RotationStrategySummary. :return: The strategy of this RotationStrategySummary.
         :rtype: str
         """
         return self._strategy
@@ -31,7 +29,7 @@ class RotationStrategySummary(object):
     @strategy.setter
     def strategy(self, strategy):
         """
-        Sets the strategy of this RotationStrategySummary.        :param strategy: The strategy of this RotationStrategySummary.
+        Sets the strategy of this RotationStrategySummary. :param strategy: The strategy of this RotationStrategySummary.
         :type: str
         """
 
@@ -40,7 +38,7 @@ class RotationStrategySummary(object):
     @property
     def config(self):
         """
-        Gets the config of this RotationStrategySummary.        :return: The config of this RotationStrategySummary.
+        Gets the config of this RotationStrategySummary. :return: The config of this RotationStrategySummary.
         :rtype: object
         """
         return self._config
@@ -48,7 +46,7 @@ class RotationStrategySummary(object):
     @config.setter
     def config(self, config):
         """
-        Sets the config of this RotationStrategySummary.        :param config: The config of this RotationStrategySummary.
+        Sets the config of this RotationStrategySummary. :param config: The config of this RotationStrategySummary.
         :type: object
         """
 

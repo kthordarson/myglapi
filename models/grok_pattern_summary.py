@@ -8,10 +8,8 @@ class GrokPatternSummary(object):
         """
         GrokPatternSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'name': 'str', 'pattern': 'str', 'content_pack': 'str'}
 
@@ -25,7 +23,7 @@ class GrokPatternSummary(object):
     @property
     def id(self):
         """
-        Gets the id of this GrokPatternSummary.        :return: The id of this GrokPatternSummary.
+        Gets the id of this GrokPatternSummary. :return: The id of this GrokPatternSummary.
         :rtype: str
         """
         return self._id
@@ -33,7 +31,7 @@ class GrokPatternSummary(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this GrokPatternSummary.        :param id: The id of this GrokPatternSummary.
+        Sets the id of this GrokPatternSummary. :param id: The id of this GrokPatternSummary.
         :type: str
         """
 
@@ -42,7 +40,7 @@ class GrokPatternSummary(object):
     @property
     def name(self):
         """
-        Gets the name of this GrokPatternSummary.        :return: The name of this GrokPatternSummary.
+        Gets the name of this GrokPatternSummary. :return: The name of this GrokPatternSummary.
         :rtype: str
         """
         return self._name
@@ -50,7 +48,7 @@ class GrokPatternSummary(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this GrokPatternSummary.        :param name: The name of this GrokPatternSummary.
+        Sets the name of this GrokPatternSummary. :param name: The name of this GrokPatternSummary.
         :type: str
         """
 
@@ -59,7 +57,7 @@ class GrokPatternSummary(object):
     @property
     def pattern(self):
         """
-        Gets the pattern of this GrokPatternSummary.        :return: The pattern of this GrokPatternSummary.
+        Gets the pattern of this GrokPatternSummary. :return: The pattern of this GrokPatternSummary.
         :rtype: str
         """
         return self._pattern
@@ -67,7 +65,7 @@ class GrokPatternSummary(object):
     @pattern.setter
     def pattern(self, pattern):
         """
-        Sets the pattern of this GrokPatternSummary.        :param pattern: The pattern of this GrokPatternSummary.
+        Sets the pattern of this GrokPatternSummary. :param pattern: The pattern of this GrokPatternSummary.
         :type: str
         """
 
@@ -76,7 +74,7 @@ class GrokPatternSummary(object):
     @property
     def content_pack(self):
         """
-        Gets the content_pack of this GrokPatternSummary.        :return: The content_pack of this GrokPatternSummary.
+        Gets the content_pack of this GrokPatternSummary. :return: The content_pack of this GrokPatternSummary.
         :rtype: str
         """
         return self._content_pack
@@ -84,7 +82,7 @@ class GrokPatternSummary(object):
     @content_pack.setter
     def content_pack(self, content_pack):
         """
-        Sets the content_pack of this GrokPatternSummary.        :param content_pack: The content_pack of this GrokPatternSummary.
+        Sets the content_pack of this GrokPatternSummary. :param content_pack: The content_pack of this GrokPatternSummary.
         :type: str
         """
 

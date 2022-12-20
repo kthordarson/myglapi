@@ -8,10 +8,8 @@ class TokenList(object):
         """
         TokenList - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'tokens': 'list[object]'}
 
@@ -22,7 +20,7 @@ class TokenList(object):
     @property
     def tokens(self):
         """
-        Gets the tokens of this TokenList.        :return: The tokens of this TokenList.
+        Gets the tokens of this TokenList. :return: The tokens of this TokenList.
         :rtype: list[object]
         """
         return self._tokens
@@ -30,7 +28,7 @@ class TokenList(object):
     @tokens.setter
     def tokens(self, tokens):
         """
-        Sets the tokens of this TokenList.        :param tokens: The tokens of this TokenList.
+        Sets the tokens of this TokenList. :param tokens: The tokens of this TokenList.
         :type: list[object]
         """
 

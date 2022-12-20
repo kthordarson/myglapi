@@ -8,10 +8,8 @@ class MetricsReadRequest(object):
         """
         MetricsReadRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'metrics': 'list[str]'}
 
@@ -22,7 +20,7 @@ class MetricsReadRequest(object):
     @property
     def metrics(self):
         """
-        Gets the metrics of this MetricsReadRequest.        :return: The metrics of this MetricsReadRequest.
+        Gets the metrics of this MetricsReadRequest. :return: The metrics of this MetricsReadRequest.
         :rtype: list[str]
         """
         return self._metrics
@@ -30,7 +28,7 @@ class MetricsReadRequest(object):
     @metrics.setter
     def metrics(self, metrics):
         """
-        Sets the metrics of this MetricsReadRequest.        :param metrics: The metrics of this MetricsReadRequest.
+        Sets the metrics of this MetricsReadRequest. :param metrics: The metrics of this MetricsReadRequest.
         :type: list[str]
         """
 

@@ -8,10 +8,8 @@ class OutputSummary(object):
         """
         OutputSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'title': 'str', 'type': 'str', 'creator_user_id': 'str', 'created_at': 'datetime', 'configuration': 'object', 'content_pack': 'str'}
 
@@ -28,7 +26,7 @@ class OutputSummary(object):
     @property
     def id(self):
         """
-        Gets the id of this OutputSummary.        :return: The id of this OutputSummary.
+        Gets the id of this OutputSummary. :return: The id of this OutputSummary.
         :rtype: str
         """
         return self._id
@@ -36,7 +34,7 @@ class OutputSummary(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this OutputSummary.        :param id: The id of this OutputSummary.
+        Sets the id of this OutputSummary. :param id: The id of this OutputSummary.
         :type: str
         """
 
@@ -45,7 +43,7 @@ class OutputSummary(object):
     @property
     def title(self):
         """
-        Gets the title of this OutputSummary.        :return: The title of this OutputSummary.
+        Gets the title of this OutputSummary. :return: The title of this OutputSummary.
         :rtype: str
         """
         return self._title
@@ -53,7 +51,7 @@ class OutputSummary(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this OutputSummary.        :param title: The title of this OutputSummary.
+        Sets the title of this OutputSummary. :param title: The title of this OutputSummary.
         :type: str
         """
 
@@ -62,7 +60,7 @@ class OutputSummary(object):
     @property
     def type(self):
         """
-        Gets the type of this OutputSummary.        :return: The type of this OutputSummary.
+        Gets the type of this OutputSummary. :return: The type of this OutputSummary.
         :rtype: str
         """
         return self._type
@@ -70,7 +68,7 @@ class OutputSummary(object):
     @type.setter
     def type(self, type):
         """
-        Sets the type of this OutputSummary.        :param type: The type of this OutputSummary.
+        Sets the type of this OutputSummary. :param type: The type of this OutputSummary.
         :type: str
         """
 
@@ -79,7 +77,7 @@ class OutputSummary(object):
     @property
     def creator_user_id(self):
         """
-        Gets the creator_user_id of this OutputSummary.        :return: The creator_user_id of this OutputSummary.
+        Gets the creator_user_id of this OutputSummary. :return: The creator_user_id of this OutputSummary.
         :rtype: str
         """
         return self._creator_user_id
@@ -87,7 +85,7 @@ class OutputSummary(object):
     @creator_user_id.setter
     def creator_user_id(self, creator_user_id):
         """
-        Sets the creator_user_id of this OutputSummary.        :param creator_user_id: The creator_user_id of this OutputSummary.
+        Sets the creator_user_id of this OutputSummary. :param creator_user_id: The creator_user_id of this OutputSummary.
         :type: str
         """
 
@@ -96,7 +94,7 @@ class OutputSummary(object):
     @property
     def created_at(self):
         """
-        Gets the created_at of this OutputSummary.        :return: The created_at of this OutputSummary.
+        Gets the created_at of this OutputSummary. :return: The created_at of this OutputSummary.
         :rtype: datetime
         """
         return self._created_at
@@ -104,7 +102,7 @@ class OutputSummary(object):
     @created_at.setter
     def created_at(self, created_at):
         """
-        Sets the created_at of this OutputSummary.        :param created_at: The created_at of this OutputSummary.
+        Sets the created_at of this OutputSummary. :param created_at: The created_at of this OutputSummary.
         :type: datetime
         """
 
@@ -113,7 +111,7 @@ class OutputSummary(object):
     @property
     def configuration(self):
         """
-        Gets the configuration of this OutputSummary.        :return: The configuration of this OutputSummary.
+        Gets the configuration of this OutputSummary. :return: The configuration of this OutputSummary.
         :rtype: object
         """
         return self._configuration
@@ -121,7 +119,7 @@ class OutputSummary(object):
     @configuration.setter
     def configuration(self, configuration):
         """
-        Sets the configuration of this OutputSummary.        :param configuration: The configuration of this OutputSummary.
+        Sets the configuration of this OutputSummary. :param configuration: The configuration of this OutputSummary.
         :type: object
         """
 
@@ -130,7 +128,7 @@ class OutputSummary(object):
     @property
     def content_pack(self):
         """
-        Gets the content_pack of this OutputSummary.        :return: The content_pack of this OutputSummary.
+        Gets the content_pack of this OutputSummary. :return: The content_pack of this OutputSummary.
         :rtype: str
         """
         return self._content_pack
@@ -138,7 +136,7 @@ class OutputSummary(object):
     @content_pack.setter
     def content_pack(self, content_pack):
         """
-        Sets the content_pack of this OutputSummary.        :param content_pack: The content_pack of this OutputSummary.
+        Sets the content_pack of this OutputSummary. :param content_pack: The content_pack of this OutputSummary.
         :type: str
         """
 

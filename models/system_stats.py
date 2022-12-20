@@ -8,10 +8,8 @@ class SystemStats(object):
         """
         SystemStats - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'os': 'object', 'jvm': 'object', 'process': 'object', 'network': 'object', 'fs': 'object'}
 
@@ -26,7 +24,7 @@ class SystemStats(object):
     @property
     def os(self):
         """
-        Gets the os of this SystemStats.        :return: The os of this SystemStats.
+        Gets the os of this SystemStats. :return: The os of this SystemStats.
         :rtype: object
         """
         return self._os
@@ -34,7 +32,7 @@ class SystemStats(object):
     @os.setter
     def os(self, os):
         """
-        Sets the os of this SystemStats.        :param os: The os of this SystemStats.
+        Sets the os of this SystemStats. :param os: The os of this SystemStats.
         :type: object
         """
 
@@ -43,7 +41,7 @@ class SystemStats(object):
     @property
     def jvm(self):
         """
-        Gets the jvm of this SystemStats.        :return: The jvm of this SystemStats.
+        Gets the jvm of this SystemStats. :return: The jvm of this SystemStats.
         :rtype: object
         """
         return self._jvm
@@ -51,7 +49,7 @@ class SystemStats(object):
     @jvm.setter
     def jvm(self, jvm):
         """
-        Sets the jvm of this SystemStats.        :param jvm: The jvm of this SystemStats.
+        Sets the jvm of this SystemStats. :param jvm: The jvm of this SystemStats.
         :type: object
         """
 
@@ -60,7 +58,7 @@ class SystemStats(object):
     @property
     def process(self):
         """
-        Gets the process of this SystemStats.        :return: The process of this SystemStats.
+        Gets the process of this SystemStats. :return: The process of this SystemStats.
         :rtype: object
         """
         return self._process
@@ -68,7 +66,7 @@ class SystemStats(object):
     @process.setter
     def process(self, process):
         """
-        Sets the process of this SystemStats.        :param process: The process of this SystemStats.
+        Sets the process of this SystemStats. :param process: The process of this SystemStats.
         :type: object
         """
 
@@ -77,7 +75,7 @@ class SystemStats(object):
     @property
     def network(self):
         """
-        Gets the network of this SystemStats.        :return: The network of this SystemStats.
+        Gets the network of this SystemStats. :return: The network of this SystemStats.
         :rtype: object
         """
         return self._network
@@ -85,7 +83,7 @@ class SystemStats(object):
     @network.setter
     def network(self, network):
         """
-        Sets the network of this SystemStats.        :param network: The network of this SystemStats.
+        Sets the network of this SystemStats. :param network: The network of this SystemStats.
         :type: object
         """
 
@@ -94,7 +92,7 @@ class SystemStats(object):
     @property
     def fs(self):
         """
-        Gets the fs of this SystemStats.        :return: The fs of this SystemStats.
+        Gets the fs of this SystemStats. :return: The fs of this SystemStats.
         :rtype: object
         """
         return self._fs
@@ -102,7 +100,7 @@ class SystemStats(object):
     @fs.setter
     def fs(self, fs):
         """
-        Sets the fs of this SystemStats.        :param fs: The fs of this SystemStats.
+        Sets the fs of this SystemStats. :param fs: The fs of this SystemStats.
         :type: object
         """
 

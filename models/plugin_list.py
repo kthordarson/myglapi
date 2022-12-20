@@ -8,10 +8,8 @@ class PluginList(object):
         """
         PluginList - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'plugins': 'list[object]', 'total': 'int'}
 
@@ -23,7 +21,7 @@ class PluginList(object):
     @property
     def plugins(self):
         """
-        Gets the plugins of this PluginList.        :return: The plugins of this PluginList.
+        Gets the plugins of this PluginList. :return: The plugins of this PluginList.
         :rtype: list[object]
         """
         return self._plugins
@@ -31,7 +29,7 @@ class PluginList(object):
     @plugins.setter
     def plugins(self, plugins):
         """
-        Sets the plugins of this PluginList.        :param plugins: The plugins of this PluginList.
+        Sets the plugins of this PluginList. :param plugins: The plugins of this PluginList.
         :type: list[object]
         """
 
@@ -40,7 +38,7 @@ class PluginList(object):
     @property
     def total(self):
         """
-        Gets the total of this PluginList.        :return: The total of this PluginList.
+        Gets the total of this PluginList. :return: The total of this PluginList.
         :rtype: int
         """
         return self._total
@@ -48,7 +46,7 @@ class PluginList(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this PluginList.        :param total: The total of this PluginList.
+        Sets the total of this PluginList. :param total: The total of this PluginList.
         :type: int
         """
 

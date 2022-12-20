@@ -8,10 +8,8 @@ class InputCreated(object):
         """
         InputCreated - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str'}
 
@@ -22,7 +20,7 @@ class InputCreated(object):
     @property
     def id(self):
         """
-        Gets the id of this InputCreated.        :return: The id of this InputCreated.
+        Gets the id of this InputCreated. :return: The id of this InputCreated.
         :rtype: str
         """
         return self._id
@@ -30,7 +28,7 @@ class InputCreated(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this InputCreated.        :param id: The id of this InputCreated.
+        Sets the id of this InputCreated. :param id: The id of this InputCreated.
         :type: str
         """
 

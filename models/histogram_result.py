@@ -8,10 +8,8 @@ class HistogramResult(object):
         """
         HistogramResult - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'queried_timerange': 'object', 'interval': 'str', 'time': 'int', 'results': 'object', 'built_query': 'str'}
 
@@ -26,7 +24,7 @@ class HistogramResult(object):
     @property
     def queried_timerange(self):
         """
-        Gets the queried_timerange of this HistogramResult.        :return: The queried_timerange of this HistogramResult.
+        Gets the queried_timerange of this HistogramResult. :return: The queried_timerange of this HistogramResult.
         :rtype: object
         """
         return self._queried_timerange
@@ -34,7 +32,7 @@ class HistogramResult(object):
     @queried_timerange.setter
     def queried_timerange(self, queried_timerange):
         """
-        Sets the queried_timerange of this HistogramResult.        :param queried_timerange: The queried_timerange of this HistogramResult.
+        Sets the queried_timerange of this HistogramResult. :param queried_timerange: The queried_timerange of this HistogramResult.
         :type: object
         """
 
@@ -43,7 +41,7 @@ class HistogramResult(object):
     @property
     def interval(self):
         """
-        Gets the interval of this HistogramResult.        :return: The interval of this HistogramResult.
+        Gets the interval of this HistogramResult. :return: The interval of this HistogramResult.
         :rtype: str
         """
         return self._interval
@@ -51,7 +49,7 @@ class HistogramResult(object):
     @interval.setter
     def interval(self, interval):
         """
-        Sets the interval of this HistogramResult.        :param interval: The interval of this HistogramResult.
+        Sets the interval of this HistogramResult. :param interval: The interval of this HistogramResult.
         :type: str
         """
 
@@ -60,7 +58,7 @@ class HistogramResult(object):
     @property
     def time(self):
         """
-        Gets the time of this HistogramResult.        :return: The time of this HistogramResult.
+        Gets the time of this HistogramResult. :return: The time of this HistogramResult.
         :rtype: int
         """
         return self._time
@@ -68,7 +66,7 @@ class HistogramResult(object):
     @time.setter
     def time(self, time):
         """
-        Sets the time of this HistogramResult.        :param time: The time of this HistogramResult.
+        Sets the time of this HistogramResult. :param time: The time of this HistogramResult.
         :type: int
         """
 
@@ -77,7 +75,7 @@ class HistogramResult(object):
     @property
     def results(self):
         """
-        Gets the results of this HistogramResult.        :return: The results of this HistogramResult.
+        Gets the results of this HistogramResult. :return: The results of this HistogramResult.
         :rtype: object
         """
         return self._results
@@ -85,7 +83,7 @@ class HistogramResult(object):
     @results.setter
     def results(self, results):
         """
-        Sets the results of this HistogramResult.        :param results: The results of this HistogramResult.
+        Sets the results of this HistogramResult. :param results: The results of this HistogramResult.
         :type: object
         """
 
@@ -94,7 +92,7 @@ class HistogramResult(object):
     @property
     def built_query(self):
         """
-        Gets the built_query of this HistogramResult.        :return: The built_query of this HistogramResult.
+        Gets the built_query of this HistogramResult. :return: The built_query of this HistogramResult.
         :rtype: str
         """
         return self._built_query
@@ -102,7 +100,7 @@ class HistogramResult(object):
     @built_query.setter
     def built_query(self, built_query):
         """
-        Sets the built_query of this HistogramResult.        :param built_query: The built_query of this HistogramResult.
+        Sets the built_query of this HistogramResult. :param built_query: The built_query of this HistogramResult.
         :type: str
         """
 

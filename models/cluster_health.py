@@ -8,10 +8,8 @@ class ClusterHealth(object):
         """
         ClusterHealth - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'status': 'str', 'shards': 'object'}
 
@@ -23,7 +21,7 @@ class ClusterHealth(object):
     @property
     def status(self):
         """
-        Gets the status of this ClusterHealth.        :return: The status of this ClusterHealth.
+        Gets the status of this ClusterHealth. :return: The status of this ClusterHealth.
         :rtype: str
         """
         return self._status
@@ -31,7 +29,7 @@ class ClusterHealth(object):
     @status.setter
     def status(self, status):
         """
-        Sets the status of this ClusterHealth.        :param status: The status of this ClusterHealth.
+        Sets the status of this ClusterHealth. :param status: The status of this ClusterHealth.
         :type: str
         """
 
@@ -40,7 +38,7 @@ class ClusterHealth(object):
     @property
     def shards(self):
         """
-        Gets the shards of this ClusterHealth.        :return: The shards of this ClusterHealth.
+        Gets the shards of this ClusterHealth. :return: The shards of this ClusterHealth.
         :rtype: object
         """
         return self._shards
@@ -48,7 +46,7 @@ class ClusterHealth(object):
     @shards.setter
     def shards(self, shards):
         """
-        Sets the shards of this ClusterHealth.        :param shards: The shards of this ClusterHealth.
+        Sets the shards of this ClusterHealth. :param shards: The shards of this ClusterHealth.
         :type: object
         """
 

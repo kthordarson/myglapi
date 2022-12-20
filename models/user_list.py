@@ -8,10 +8,8 @@ class UserList(object):
         """
         UserList - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'users': 'list[object]'}
 
@@ -22,7 +20,7 @@ class UserList(object):
     @property
     def users(self):
         """
-        Gets the users of this UserList.        :return: The users of this UserList.
+        Gets the users of this UserList. :return: The users of this UserList.
         :rtype: list[object]
         """
         return self._users
@@ -30,7 +28,7 @@ class UserList(object):
     @users.setter
     def users(self, users):
         """
-        Sets the users of this UserList.        :param users: The users of this UserList.
+        Sets the users of this UserList. :param users: The users of this UserList.
         :type: list[object]
         """
 

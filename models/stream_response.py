@@ -8,10 +8,8 @@ class StreamResponse(object):
         """
         StreamResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'creator_user_id': 'str', 'outputs': 'list[object]', 'matching_type': 'str', 'description': 'str', 'created_at': 'str', 'disabled': 'bool', 'rules': 'list[object]', 'alert_conditions': 'list[object]', 'alert_receivers': 'object', 'title': 'str', 'content_pack': 'str'}
 
@@ -33,7 +31,7 @@ class StreamResponse(object):
     @property
     def id(self):
         """
-        Gets the id of this StreamResponse.        :return: The id of this StreamResponse.
+        Gets the id of this StreamResponse. :return: The id of this StreamResponse.
         :rtype: str
         """
         return self._id
@@ -41,7 +39,7 @@ class StreamResponse(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this StreamResponse.        :param id: The id of this StreamResponse.
+        Sets the id of this StreamResponse. :param id: The id of this StreamResponse.
         :type: str
         """
 
@@ -50,7 +48,7 @@ class StreamResponse(object):
     @property
     def creator_user_id(self):
         """
-        Gets the creator_user_id of this StreamResponse.        :return: The creator_user_id of this StreamResponse.
+        Gets the creator_user_id of this StreamResponse. :return: The creator_user_id of this StreamResponse.
         :rtype: str
         """
         return self._creator_user_id
@@ -58,7 +56,7 @@ class StreamResponse(object):
     @creator_user_id.setter
     def creator_user_id(self, creator_user_id):
         """
-        Sets the creator_user_id of this StreamResponse.        :param creator_user_id: The creator_user_id of this StreamResponse.
+        Sets the creator_user_id of this StreamResponse. :param creator_user_id: The creator_user_id of this StreamResponse.
         :type: str
         """
 
@@ -67,7 +65,7 @@ class StreamResponse(object):
     @property
     def outputs(self):
         """
-        Gets the outputs of this StreamResponse.        :return: The outputs of this StreamResponse.
+        Gets the outputs of this StreamResponse. :return: The outputs of this StreamResponse.
         :rtype: list[object]
         """
         return self._outputs
@@ -75,7 +73,7 @@ class StreamResponse(object):
     @outputs.setter
     def outputs(self, outputs):
         """
-        Sets the outputs of this StreamResponse.        :param outputs: The outputs of this StreamResponse.
+        Sets the outputs of this StreamResponse. :param outputs: The outputs of this StreamResponse.
         :type: list[object]
         """
 
@@ -84,7 +82,7 @@ class StreamResponse(object):
     @property
     def matching_type(self):
         """
-        Gets the matching_type of this StreamResponse.        :return: The matching_type of this StreamResponse.
+        Gets the matching_type of this StreamResponse. :return: The matching_type of this StreamResponse.
         :rtype: str
         """
         return self._matching_type
@@ -92,7 +90,7 @@ class StreamResponse(object):
     @matching_type.setter
     def matching_type(self, matching_type):
         """
-        Sets the matching_type of this StreamResponse.        :param matching_type: The matching_type of this StreamResponse.
+        Sets the matching_type of this StreamResponse. :param matching_type: The matching_type of this StreamResponse.
         :type: str
         """
 
@@ -101,7 +99,7 @@ class StreamResponse(object):
     @property
     def description(self):
         """
-        Gets the description of this StreamResponse.        :return: The description of this StreamResponse.
+        Gets the description of this StreamResponse. :return: The description of this StreamResponse.
         :rtype: str
         """
         return self._description
@@ -109,7 +107,7 @@ class StreamResponse(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this StreamResponse.        :param description: The description of this StreamResponse.
+        Sets the description of this StreamResponse. :param description: The description of this StreamResponse.
         :type: str
         """
 
@@ -118,7 +116,7 @@ class StreamResponse(object):
     @property
     def created_at(self):
         """
-        Gets the created_at of this StreamResponse.        :return: The created_at of this StreamResponse.
+        Gets the created_at of this StreamResponse. :return: The created_at of this StreamResponse.
         :rtype: str
         """
         return self._created_at
@@ -126,7 +124,7 @@ class StreamResponse(object):
     @created_at.setter
     def created_at(self, created_at):
         """
-        Sets the created_at of this StreamResponse.        :param created_at: The created_at of this StreamResponse.
+        Sets the created_at of this StreamResponse. :param created_at: The created_at of this StreamResponse.
         :type: str
         """
 
@@ -135,7 +133,7 @@ class StreamResponse(object):
     @property
     def disabled(self):
         """
-        Gets the disabled of this StreamResponse.        :return: The disabled of this StreamResponse.
+        Gets the disabled of this StreamResponse. :return: The disabled of this StreamResponse.
         :rtype: bool
         """
         return self._disabled
@@ -143,7 +141,7 @@ class StreamResponse(object):
     @disabled.setter
     def disabled(self, disabled):
         """
-        Sets the disabled of this StreamResponse.        :param disabled: The disabled of this StreamResponse.
+        Sets the disabled of this StreamResponse. :param disabled: The disabled of this StreamResponse.
         :type: bool
         """
 
@@ -152,7 +150,7 @@ class StreamResponse(object):
     @property
     def rules(self):
         """
-        Gets the rules of this StreamResponse.        :return: The rules of this StreamResponse.
+        Gets the rules of this StreamResponse. :return: The rules of this StreamResponse.
         :rtype: list[object]
         """
         return self._rules
@@ -160,7 +158,7 @@ class StreamResponse(object):
     @rules.setter
     def rules(self, rules):
         """
-        Sets the rules of this StreamResponse.        :param rules: The rules of this StreamResponse.
+        Sets the rules of this StreamResponse. :param rules: The rules of this StreamResponse.
         :type: list[object]
         """
 
@@ -169,7 +167,7 @@ class StreamResponse(object):
     @property
     def alert_conditions(self):
         """
-        Gets the alert_conditions of this StreamResponse.        :return: The alert_conditions of this StreamResponse.
+        Gets the alert_conditions of this StreamResponse. :return: The alert_conditions of this StreamResponse.
         :rtype: list[object]
         """
         return self._alert_conditions
@@ -177,7 +175,7 @@ class StreamResponse(object):
     @alert_conditions.setter
     def alert_conditions(self, alert_conditions):
         """
-        Sets the alert_conditions of this StreamResponse.        :param alert_conditions: The alert_conditions of this StreamResponse.
+        Sets the alert_conditions of this StreamResponse. :param alert_conditions: The alert_conditions of this StreamResponse.
         :type: list[object]
         """
 
@@ -186,7 +184,7 @@ class StreamResponse(object):
     @property
     def alert_receivers(self):
         """
-        Gets the alert_receivers of this StreamResponse.        :return: The alert_receivers of this StreamResponse.
+        Gets the alert_receivers of this StreamResponse. :return: The alert_receivers of this StreamResponse.
         :rtype: object
         """
         return self._alert_receivers
@@ -194,7 +192,7 @@ class StreamResponse(object):
     @alert_receivers.setter
     def alert_receivers(self, alert_receivers):
         """
-        Sets the alert_receivers of this StreamResponse.        :param alert_receivers: The alert_receivers of this StreamResponse.
+        Sets the alert_receivers of this StreamResponse. :param alert_receivers: The alert_receivers of this StreamResponse.
         :type: object
         """
 
@@ -203,7 +201,7 @@ class StreamResponse(object):
     @property
     def title(self):
         """
-        Gets the title of this StreamResponse.        :return: The title of this StreamResponse.
+        Gets the title of this StreamResponse. :return: The title of this StreamResponse.
         :rtype: str
         """
         return self._title
@@ -211,7 +209,7 @@ class StreamResponse(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this StreamResponse.        :param title: The title of this StreamResponse.
+        Sets the title of this StreamResponse. :param title: The title of this StreamResponse.
         :type: str
         """
 
@@ -220,7 +218,7 @@ class StreamResponse(object):
     @property
     def content_pack(self):
         """
-        Gets the content_pack of this StreamResponse.        :return: The content_pack of this StreamResponse.
+        Gets the content_pack of this StreamResponse. :return: The content_pack of this StreamResponse.
         :rtype: str
         """
         return self._content_pack
@@ -228,7 +226,7 @@ class StreamResponse(object):
     @content_pack.setter
     def content_pack(self, content_pack):
         """
-        Sets the content_pack of this StreamResponse.        :param content_pack: The content_pack of this StreamResponse.
+        Sets the content_pack of this StreamResponse. :param content_pack: The content_pack of this StreamResponse.
         :type: str
         """
 

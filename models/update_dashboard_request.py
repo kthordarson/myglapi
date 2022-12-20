@@ -8,10 +8,8 @@ class UpdateDashboardRequest(object):
         """
         UpdateDashboardRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'title': 'str', 'description': 'str'}
 
@@ -23,7 +21,7 @@ class UpdateDashboardRequest(object):
     @property
     def title(self):
         """
-        Gets the title of this UpdateDashboardRequest.        :return: The title of this UpdateDashboardRequest.
+        Gets the title of this UpdateDashboardRequest. :return: The title of this UpdateDashboardRequest.
         :rtype: str
         """
         return self._title
@@ -31,7 +29,7 @@ class UpdateDashboardRequest(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this UpdateDashboardRequest.        :param title: The title of this UpdateDashboardRequest.
+        Sets the title of this UpdateDashboardRequest. :param title: The title of this UpdateDashboardRequest.
         :type: str
         """
 
@@ -40,7 +38,7 @@ class UpdateDashboardRequest(object):
     @property
     def description(self):
         """
-        Gets the description of this UpdateDashboardRequest.        :return: The description of this UpdateDashboardRequest.
+        Gets the description of this UpdateDashboardRequest. :return: The description of this UpdateDashboardRequest.
         :rtype: str
         """
         return self._description
@@ -48,7 +46,7 @@ class UpdateDashboardRequest(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this UpdateDashboardRequest.        :param description: The description of this UpdateDashboardRequest.
+        Sets the description of this UpdateDashboardRequest. :param description: The description of this UpdateDashboardRequest.
         :type: str
         """
 

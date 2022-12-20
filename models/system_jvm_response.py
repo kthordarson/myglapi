@@ -8,10 +8,8 @@ class SystemJVMResponse(object):
         """
         SystemJVMResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'free_memory': 'object', 'max_memory': 'object', 'total_memory': 'object', 'used_memory': 'object', 'node_id': 'str', 'pid': 'str', 'info': 'str'}
 
@@ -28,7 +26,7 @@ class SystemJVMResponse(object):
     @property
     def free_memory(self):
         """
-        Gets the free_memory of this SystemJVMResponse.        :return: The free_memory of this SystemJVMResponse.
+        Gets the free_memory of this SystemJVMResponse. :return: The free_memory of this SystemJVMResponse.
         :rtype: object
         """
         return self._free_memory
@@ -36,7 +34,7 @@ class SystemJVMResponse(object):
     @free_memory.setter
     def free_memory(self, free_memory):
         """
-        Sets the free_memory of this SystemJVMResponse.        :param free_memory: The free_memory of this SystemJVMResponse.
+        Sets the free_memory of this SystemJVMResponse. :param free_memory: The free_memory of this SystemJVMResponse.
         :type: object
         """
 
@@ -45,7 +43,7 @@ class SystemJVMResponse(object):
     @property
     def max_memory(self):
         """
-        Gets the max_memory of this SystemJVMResponse.        :return: The max_memory of this SystemJVMResponse.
+        Gets the max_memory of this SystemJVMResponse. :return: The max_memory of this SystemJVMResponse.
         :rtype: object
         """
         return self._max_memory
@@ -53,7 +51,7 @@ class SystemJVMResponse(object):
     @max_memory.setter
     def max_memory(self, max_memory):
         """
-        Sets the max_memory of this SystemJVMResponse.        :param max_memory: The max_memory of this SystemJVMResponse.
+        Sets the max_memory of this SystemJVMResponse. :param max_memory: The max_memory of this SystemJVMResponse.
         :type: object
         """
 
@@ -62,7 +60,7 @@ class SystemJVMResponse(object):
     @property
     def total_memory(self):
         """
-        Gets the total_memory of this SystemJVMResponse.        :return: The total_memory of this SystemJVMResponse.
+        Gets the total_memory of this SystemJVMResponse. :return: The total_memory of this SystemJVMResponse.
         :rtype: object
         """
         return self._total_memory
@@ -70,7 +68,7 @@ class SystemJVMResponse(object):
     @total_memory.setter
     def total_memory(self, total_memory):
         """
-        Sets the total_memory of this SystemJVMResponse.        :param total_memory: The total_memory of this SystemJVMResponse.
+        Sets the total_memory of this SystemJVMResponse. :param total_memory: The total_memory of this SystemJVMResponse.
         :type: object
         """
 
@@ -79,7 +77,7 @@ class SystemJVMResponse(object):
     @property
     def used_memory(self):
         """
-        Gets the used_memory of this SystemJVMResponse.        :return: The used_memory of this SystemJVMResponse.
+        Gets the used_memory of this SystemJVMResponse. :return: The used_memory of this SystemJVMResponse.
         :rtype: object
         """
         return self._used_memory
@@ -87,7 +85,7 @@ class SystemJVMResponse(object):
     @used_memory.setter
     def used_memory(self, used_memory):
         """
-        Sets the used_memory of this SystemJVMResponse.        :param used_memory: The used_memory of this SystemJVMResponse.
+        Sets the used_memory of this SystemJVMResponse. :param used_memory: The used_memory of this SystemJVMResponse.
         :type: object
         """
 
@@ -96,7 +94,7 @@ class SystemJVMResponse(object):
     @property
     def node_id(self):
         """
-        Gets the node_id of this SystemJVMResponse.        :return: The node_id of this SystemJVMResponse.
+        Gets the node_id of this SystemJVMResponse. :return: The node_id of this SystemJVMResponse.
         :rtype: str
         """
         return self._node_id
@@ -104,7 +102,7 @@ class SystemJVMResponse(object):
     @node_id.setter
     def node_id(self, node_id):
         """
-        Sets the node_id of this SystemJVMResponse.        :param node_id: The node_id of this SystemJVMResponse.
+        Sets the node_id of this SystemJVMResponse. :param node_id: The node_id of this SystemJVMResponse.
         :type: str
         """
 
@@ -113,7 +111,7 @@ class SystemJVMResponse(object):
     @property
     def pid(self):
         """
-        Gets the pid of this SystemJVMResponse.        :return: The pid of this SystemJVMResponse.
+        Gets the pid of this SystemJVMResponse. :return: The pid of this SystemJVMResponse.
         :rtype: str
         """
         return self._pid
@@ -121,7 +119,7 @@ class SystemJVMResponse(object):
     @pid.setter
     def pid(self, pid):
         """
-        Sets the pid of this SystemJVMResponse.        :param pid: The pid of this SystemJVMResponse.
+        Sets the pid of this SystemJVMResponse. :param pid: The pid of this SystemJVMResponse.
         :type: str
         """
 
@@ -130,7 +128,7 @@ class SystemJVMResponse(object):
     @property
     def info(self):
         """
-        Gets the info of this SystemJVMResponse.        :return: The info of this SystemJVMResponse.
+        Gets the info of this SystemJVMResponse. :return: The info of this SystemJVMResponse.
         :rtype: str
         """
         return self._info
@@ -138,7 +136,7 @@ class SystemJVMResponse(object):
     @info.setter
     def info(self, info):
         """
-        Sets the info of this SystemJVMResponse.        :param info: The info of this SystemJVMResponse.
+        Sets the info of this SystemJVMResponse. :param info: The info of this SystemJVMResponse.
         :type: str
         """
 

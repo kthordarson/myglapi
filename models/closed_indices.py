@@ -8,10 +8,8 @@ class ClosedIndices(object):
         """
         ClosedIndices - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'indices': 'list[str]', 'total': 'int'}
 
@@ -23,7 +21,7 @@ class ClosedIndices(object):
     @property
     def indices(self):
         """
-        Gets the indices of this ClosedIndices.        :return: The indices of this ClosedIndices.
+        Gets the indices of this ClosedIndices. :return: The indices of this ClosedIndices.
         :rtype: list[str]
         """
         return self._indices
@@ -31,7 +29,7 @@ class ClosedIndices(object):
     @indices.setter
     def indices(self, indices):
         """
-        Sets the indices of this ClosedIndices.        :param indices: The indices of this ClosedIndices.
+        Sets the indices of this ClosedIndices. :param indices: The indices of this ClosedIndices.
         :type: list[str]
         """
 
@@ -40,7 +38,7 @@ class ClosedIndices(object):
     @property
     def total(self):
         """
-        Gets the total of this ClosedIndices.        :return: The total of this ClosedIndices.
+        Gets the total of this ClosedIndices. :return: The total of this ClosedIndices.
         :rtype: int
         """
         return self._total
@@ -48,7 +46,7 @@ class ClosedIndices(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this ClosedIndices.        :param total: The total of this ClosedIndices.
+        Sets the total of this ClosedIndices. :param total: The total of this ClosedIndices.
         :type: int
         """
 

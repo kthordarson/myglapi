@@ -8,10 +8,8 @@ class PipelineConnections(object):
         """
         PipelineConnections - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'stream_id': 'str', 'pipeline_ids': 'list[str]'}
 
@@ -24,7 +22,7 @@ class PipelineConnections(object):
     @property
     def id(self):
         """
-        Gets the id of this PipelineConnections.        :return: The id of this PipelineConnections.
+        Gets the id of this PipelineConnections. :return: The id of this PipelineConnections.
         :rtype: str
         """
         return self._id
@@ -32,7 +30,7 @@ class PipelineConnections(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this PipelineConnections.        :param id: The id of this PipelineConnections.
+        Sets the id of this PipelineConnections. :param id: The id of this PipelineConnections.
         :type: str
         """
 
@@ -41,7 +39,7 @@ class PipelineConnections(object):
     @property
     def stream_id(self):
         """
-        Gets the stream_id of this PipelineConnections.        :return: The stream_id of this PipelineConnections.
+        Gets the stream_id of this PipelineConnections. :return: The stream_id of this PipelineConnections.
         :rtype: str
         """
         return self._stream_id
@@ -49,7 +47,7 @@ class PipelineConnections(object):
     @stream_id.setter
     def stream_id(self, stream_id):
         """
-        Sets the stream_id of this PipelineConnections.        :param stream_id: The stream_id of this PipelineConnections.
+        Sets the stream_id of this PipelineConnections. :param stream_id: The stream_id of this PipelineConnections.
         :type: str
         """
 
@@ -58,7 +56,7 @@ class PipelineConnections(object):
     @property
     def pipeline_ids(self):
         """
-        Gets the pipeline_ids of this PipelineConnections.        :return: The pipeline_ids of this PipelineConnections.
+        Gets the pipeline_ids of this PipelineConnections. :return: The pipeline_ids of this PipelineConnections.
         :rtype: list[str]
         """
         return self._pipeline_ids
@@ -66,7 +64,7 @@ class PipelineConnections(object):
     @pipeline_ids.setter
     def pipeline_ids(self, pipeline_ids):
         """
-        Sets the pipeline_ids of this PipelineConnections.        :param pipeline_ids: The pipeline_ids of this PipelineConnections.
+        Sets the pipeline_ids of this PipelineConnections. :param pipeline_ids: The pipeline_ids of this PipelineConnections.
         :type: list[str]
         """
 

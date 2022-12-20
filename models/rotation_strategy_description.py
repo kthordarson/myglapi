@@ -8,10 +8,8 @@ class RotationStrategyDescription(object):
         """
         RotationStrategyDescription - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'type': 'str', 'default_config': 'object', 'json_schema': 'object'}
 
@@ -24,7 +22,7 @@ class RotationStrategyDescription(object):
     @property
     def type(self):
         """
-        Gets the type of this RotationStrategyDescription.        :return: The type of this RotationStrategyDescription.
+        Gets the type of this RotationStrategyDescription. :return: The type of this RotationStrategyDescription.
         :rtype: str
         """
         return self._type
@@ -32,7 +30,7 @@ class RotationStrategyDescription(object):
     @type.setter
     def type(self, type):
         """
-        Sets the type of this RotationStrategyDescription.        :param type: The type of this RotationStrategyDescription.
+        Sets the type of this RotationStrategyDescription. :param type: The type of this RotationStrategyDescription.
         :type: str
         """
 
@@ -41,7 +39,7 @@ class RotationStrategyDescription(object):
     @property
     def default_config(self):
         """
-        Gets the default_config of this RotationStrategyDescription.        :return: The default_config of this RotationStrategyDescription.
+        Gets the default_config of this RotationStrategyDescription. :return: The default_config of this RotationStrategyDescription.
         :rtype: object
         """
         return self._default_config
@@ -49,7 +47,7 @@ class RotationStrategyDescription(object):
     @default_config.setter
     def default_config(self, default_config):
         """
-        Sets the default_config of this RotationStrategyDescription.        :param default_config: The default_config of this RotationStrategyDescription.
+        Sets the default_config of this RotationStrategyDescription. :param default_config: The default_config of this RotationStrategyDescription.
         :type: object
         """
 
@@ -58,7 +56,7 @@ class RotationStrategyDescription(object):
     @property
     def json_schema(self):
         """
-        Gets the json_schema of this RotationStrategyDescription.        :return: The json_schema of this RotationStrategyDescription.
+        Gets the json_schema of this RotationStrategyDescription. :return: The json_schema of this RotationStrategyDescription.
         :rtype: object
         """
         return self._json_schema
@@ -66,7 +64,7 @@ class RotationStrategyDescription(object):
     @json_schema.setter
     def json_schema(self, json_schema):
         """
-        Sets the json_schema of this RotationStrategyDescription.        :param json_schema: The json_schema of this RotationStrategyDescription.
+        Sets the json_schema of this RotationStrategyDescription. :param json_schema: The json_schema of this RotationStrategyDescription.
         :type: object
         """
 

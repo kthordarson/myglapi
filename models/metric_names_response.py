@@ -8,10 +8,8 @@ class MetricNamesResponse(object):
         """
         MetricNamesResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'names': 'list[str]'}
 
@@ -22,7 +20,7 @@ class MetricNamesResponse(object):
     @property
     def names(self):
         """
-        Gets the names of this MetricNamesResponse.        :return: The names of this MetricNamesResponse.
+        Gets the names of this MetricNamesResponse. :return: The names of this MetricNamesResponse.
         :rtype: list[str]
         """
         return self._names
@@ -30,7 +28,7 @@ class MetricNamesResponse(object):
     @names.setter
     def names(self, names):
         """
-        Sets the names of this MetricNamesResponse.        :param names: The names of this MetricNamesResponse.
+        Sets the names of this MetricNamesResponse. :param names: The names of this MetricNamesResponse.
         :type: list[str]
         """
 

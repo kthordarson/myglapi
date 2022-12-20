@@ -8,10 +8,8 @@ class IndexRangesResponse(object):
         """
         IndexRangesResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'ranges': 'list[object]'}
 
@@ -23,7 +21,7 @@ class IndexRangesResponse(object):
     @property
     def total(self):
         """
-        Gets the total of this IndexRangesResponse.        :return: The total of this IndexRangesResponse.
+        Gets the total of this IndexRangesResponse. :return: The total of this IndexRangesResponse.
         :rtype: int
         """
         return self._total
@@ -31,7 +29,7 @@ class IndexRangesResponse(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this IndexRangesResponse.        :param total: The total of this IndexRangesResponse.
+        Sets the total of this IndexRangesResponse. :param total: The total of this IndexRangesResponse.
         :type: int
         """
 
@@ -40,7 +38,7 @@ class IndexRangesResponse(object):
     @property
     def ranges(self):
         """
-        Gets the ranges of this IndexRangesResponse.        :return: The ranges of this IndexRangesResponse.
+        Gets the ranges of this IndexRangesResponse. :return: The ranges of this IndexRangesResponse.
         :rtype: list[object]
         """
         return self._ranges
@@ -48,7 +46,7 @@ class IndexRangesResponse(object):
     @ranges.setter
     def ranges(self, ranges):
         """
-        Sets the ranges of this IndexRangesResponse.        :param ranges: The ranges of this IndexRangesResponse.
+        Sets the ranges of this IndexRangesResponse. :param ranges: The ranges of this IndexRangesResponse.
         :type: list[object]
         """
 

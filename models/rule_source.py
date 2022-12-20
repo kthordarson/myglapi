@@ -8,10 +8,8 @@ class RuleSource(object):
         """
         RuleSource - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'title': 'str', 'description': 'str', 'source': 'str', 'created_at': 'datetime', 'modified_at': 'datetime', 'errors': 'list[object]'}
 
@@ -28,7 +26,7 @@ class RuleSource(object):
     @property
     def id(self):
         """
-        Gets the id of this RuleSource.        :return: The id of this RuleSource.
+        Gets the id of this RuleSource. :return: The id of this RuleSource.
         :rtype: str
         """
         return self._id
@@ -36,7 +34,7 @@ class RuleSource(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this RuleSource.        :param id: The id of this RuleSource.
+        Sets the id of this RuleSource. :param id: The id of this RuleSource.
         :type: str
         """
 
@@ -45,7 +43,7 @@ class RuleSource(object):
     @property
     def title(self):
         """
-        Gets the title of this RuleSource.        :return: The title of this RuleSource.
+        Gets the title of this RuleSource. :return: The title of this RuleSource.
         :rtype: str
         """
         return self._title
@@ -53,7 +51,7 @@ class RuleSource(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this RuleSource.        :param title: The title of this RuleSource.
+        Sets the title of this RuleSource. :param title: The title of this RuleSource.
         :type: str
         """
 
@@ -62,7 +60,7 @@ class RuleSource(object):
     @property
     def description(self):
         """
-        Gets the description of this RuleSource.        :return: The description of this RuleSource.
+        Gets the description of this RuleSource. :return: The description of this RuleSource.
         :rtype: str
         """
         return self._description
@@ -70,7 +68,7 @@ class RuleSource(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this RuleSource.        :param description: The description of this RuleSource.
+        Sets the description of this RuleSource. :param description: The description of this RuleSource.
         :type: str
         """
 
@@ -79,7 +77,7 @@ class RuleSource(object):
     @property
     def source(self):
         """
-        Gets the source of this RuleSource.        :return: The source of this RuleSource.
+        Gets the source of this RuleSource. :return: The source of this RuleSource.
         :rtype: str
         """
         return self._source
@@ -87,7 +85,7 @@ class RuleSource(object):
     @source.setter
     def source(self, source):
         """
-        Sets the source of this RuleSource.        :param source: The source of this RuleSource.
+        Sets the source of this RuleSource. :param source: The source of this RuleSource.
         :type: str
         """
 
@@ -96,7 +94,7 @@ class RuleSource(object):
     @property
     def created_at(self):
         """
-        Gets the created_at of this RuleSource.        :return: The created_at of this RuleSource.
+        Gets the created_at of this RuleSource. :return: The created_at of this RuleSource.
         :rtype: datetime
         """
         return self._created_at
@@ -104,7 +102,7 @@ class RuleSource(object):
     @created_at.setter
     def created_at(self, created_at):
         """
-        Sets the created_at of this RuleSource.        :param created_at: The created_at of this RuleSource.
+        Sets the created_at of this RuleSource. :param created_at: The created_at of this RuleSource.
         :type: datetime
         """
 
@@ -113,7 +111,7 @@ class RuleSource(object):
     @property
     def modified_at(self):
         """
-        Gets the modified_at of this RuleSource.        :return: The modified_at of this RuleSource.
+        Gets the modified_at of this RuleSource. :return: The modified_at of this RuleSource.
         :rtype: datetime
         """
         return self._modified_at
@@ -121,7 +119,7 @@ class RuleSource(object):
     @modified_at.setter
     def modified_at(self, modified_at):
         """
-        Sets the modified_at of this RuleSource.        :param modified_at: The modified_at of this RuleSource.
+        Sets the modified_at of this RuleSource. :param modified_at: The modified_at of this RuleSource.
         :type: datetime
         """
 
@@ -130,7 +128,7 @@ class RuleSource(object):
     @property
     def errors(self):
         """
-        Gets the errors of this RuleSource.        :return: The errors of this RuleSource.
+        Gets the errors of this RuleSource. :return: The errors of this RuleSource.
         :rtype: list[object]
         """
         return self._errors
@@ -138,7 +136,7 @@ class RuleSource(object):
     @errors.setter
     def errors(self, errors):
         """
-        Sets the errors of this RuleSource.        :param errors: The errors of this RuleSource.
+        Sets the errors of this RuleSource. :param errors: The errors of this RuleSource.
         :type: list[object]
         """
 

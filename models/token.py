@@ -8,10 +8,8 @@ class Token(object):
         """
         Token - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'name': 'str', 'token': 'str', 'last_access': 'datetime'}
 
@@ -24,7 +22,7 @@ class Token(object):
     @property
     def name(self):
         """
-        Gets the name of this Token.        :return: The name of this Token.
+        Gets the name of this Token. :return: The name of this Token.
         :rtype: str
         """
         return self._name
@@ -32,7 +30,7 @@ class Token(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this Token.        :param name: The name of this Token.
+        Sets the name of this Token. :param name: The name of this Token.
         :type: str
         """
 
@@ -41,7 +39,7 @@ class Token(object):
     @property
     def token(self):
         """
-        Gets the token of this Token.        :return: The token of this Token.
+        Gets the token of this Token. :return: The token of this Token.
         :rtype: str
         """
         return self._token
@@ -49,7 +47,7 @@ class Token(object):
     @token.setter
     def token(self, token):
         """
-        Sets the token of this Token.        :param token: The token of this Token.
+        Sets the token of this Token. :param token: The token of this Token.
         :type: str
         """
 
@@ -58,7 +56,7 @@ class Token(object):
     @property
     def last_access(self):
         """
-        Gets the last_access of this Token.        :return: The last_access of this Token.
+        Gets the last_access of this Token. :return: The last_access of this Token.
         :rtype: datetime
         """
         return self._last_access
@@ -66,7 +64,7 @@ class Token(object):
     @last_access.setter
     def last_access(self, last_access):
         """
-        Sets the last_access of this Token.        :param last_access: The last_access of this Token.
+        Sets the last_access of this Token. :param last_access: The last_access of this Token.
         :type: datetime
         """
 

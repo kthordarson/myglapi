@@ -8,10 +8,8 @@ class IndexInfo(object):
         """
         IndexInfo - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'primary_shards': 'object', 'all_shards': 'object', 'routing': 'list[object]', 'reopened': 'bool'}
 
@@ -25,7 +23,7 @@ class IndexInfo(object):
     @property
     def primary_shards(self):
         """
-        Gets the primary_shards of this IndexInfo.        :return: The primary_shards of this IndexInfo.
+        Gets the primary_shards of this IndexInfo. :return: The primary_shards of this IndexInfo.
         :rtype: object
         """
         return self._primary_shards
@@ -33,7 +31,7 @@ class IndexInfo(object):
     @primary_shards.setter
     def primary_shards(self, primary_shards):
         """
-        Sets the primary_shards of this IndexInfo.        :param primary_shards: The primary_shards of this IndexInfo.
+        Sets the primary_shards of this IndexInfo. :param primary_shards: The primary_shards of this IndexInfo.
         :type: object
         """
 
@@ -42,7 +40,7 @@ class IndexInfo(object):
     @property
     def all_shards(self):
         """
-        Gets the all_shards of this IndexInfo.        :return: The all_shards of this IndexInfo.
+        Gets the all_shards of this IndexInfo. :return: The all_shards of this IndexInfo.
         :rtype: object
         """
         return self._all_shards
@@ -50,7 +48,7 @@ class IndexInfo(object):
     @all_shards.setter
     def all_shards(self, all_shards):
         """
-        Sets the all_shards of this IndexInfo.        :param all_shards: The all_shards of this IndexInfo.
+        Sets the all_shards of this IndexInfo. :param all_shards: The all_shards of this IndexInfo.
         :type: object
         """
 
@@ -59,7 +57,7 @@ class IndexInfo(object):
     @property
     def routing(self):
         """
-        Gets the routing of this IndexInfo.        :return: The routing of this IndexInfo.
+        Gets the routing of this IndexInfo. :return: The routing of this IndexInfo.
         :rtype: list[object]
         """
         return self._routing
@@ -67,7 +65,7 @@ class IndexInfo(object):
     @routing.setter
     def routing(self, routing):
         """
-        Sets the routing of this IndexInfo.        :param routing: The routing of this IndexInfo.
+        Sets the routing of this IndexInfo. :param routing: The routing of this IndexInfo.
         :type: list[object]
         """
 
@@ -76,7 +74,7 @@ class IndexInfo(object):
     @property
     def reopened(self):
         """
-        Gets the reopened of this IndexInfo.        :return: The reopened of this IndexInfo.
+        Gets the reopened of this IndexInfo. :return: The reopened of this IndexInfo.
         :rtype: bool
         """
         return self._reopened
@@ -84,7 +82,7 @@ class IndexInfo(object):
     @reopened.setter
     def reopened(self, reopened):
         """
-        Sets the reopened of this IndexInfo.        :param reopened: The reopened of this IndexInfo.
+        Sets the reopened of this IndexInfo. :param reopened: The reopened of this IndexInfo.
         :type: bool
         """
 

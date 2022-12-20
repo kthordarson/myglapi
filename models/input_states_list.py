@@ -8,10 +8,8 @@ class InputStatesList(object):
         """
         InputStatesList - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'states': 'list[object]'}
 
@@ -22,7 +20,7 @@ class InputStatesList(object):
     @property
     def states(self):
         """
-        Gets the states of this InputStatesList.        :return: The states of this InputStatesList.
+        Gets the states of this InputStatesList. :return: The states of this InputStatesList.
         :rtype: list[object]
         """
         return self._states
@@ -30,7 +28,7 @@ class InputStatesList(object):
     @states.setter
     def states(self, states):
         """
-        Sets the states of this InputStatesList.        :param states: The states of this InputStatesList.
+        Sets the states of this InputStatesList. :param states: The states of this InputStatesList.
         :type: list[object]
         """
 

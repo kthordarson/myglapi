@@ -8,10 +8,8 @@ class NodeSummaryList(object):
         """
         NodeSummaryList - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'nodes': 'list[object]', 'total': 'int'}
 
@@ -23,7 +21,7 @@ class NodeSummaryList(object):
     @property
     def nodes(self):
         """
-        Gets the nodes of this NodeSummaryList.        :return: The nodes of this NodeSummaryList.
+        Gets the nodes of this NodeSummaryList. :return: The nodes of this NodeSummaryList.
         :rtype: list[object]
         """
         return self._nodes
@@ -31,7 +29,7 @@ class NodeSummaryList(object):
     @nodes.setter
     def nodes(self, nodes):
         """
-        Sets the nodes of this NodeSummaryList.        :param nodes: The nodes of this NodeSummaryList.
+        Sets the nodes of this NodeSummaryList. :param nodes: The nodes of this NodeSummaryList.
         :type: list[object]
         """
 
@@ -40,7 +38,7 @@ class NodeSummaryList(object):
     @property
     def total(self):
         """
-        Gets the total of this NodeSummaryList.        :return: The total of this NodeSummaryList.
+        Gets the total of this NodeSummaryList. :return: The total of this NodeSummaryList.
         :rtype: int
         """
         return self._total
@@ -48,7 +46,7 @@ class NodeSummaryList(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this NodeSummaryList.        :param total: The total of this NodeSummaryList.
+        Sets the total of this NodeSummaryList. :param total: The total of this NodeSummaryList.
         :type: int
         """
 

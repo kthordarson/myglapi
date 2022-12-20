@@ -8,10 +8,8 @@ class RolesResponse(object):
         """
         RolesResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'roles': 'list[object]', 'total': 'int'}
 
@@ -23,7 +21,7 @@ class RolesResponse(object):
     @property
     def roles(self):
         """
-        Gets the roles of this RolesResponse.        :return: The roles of this RolesResponse.
+        Gets the roles of this RolesResponse. :return: The roles of this RolesResponse.
         :rtype: list[object]
         """
         return self._roles
@@ -31,7 +29,7 @@ class RolesResponse(object):
     @roles.setter
     def roles(self, roles):
         """
-        Sets the roles of this RolesResponse.        :param roles: The roles of this RolesResponse.
+        Sets the roles of this RolesResponse. :param roles: The roles of this RolesResponse.
         :type: list[object]
         """
 
@@ -40,7 +38,7 @@ class RolesResponse(object):
     @property
     def total(self):
         """
-        Gets the total of this RolesResponse.        :return: The total of this RolesResponse.
+        Gets the total of this RolesResponse. :return: The total of this RolesResponse.
         :rtype: int
         """
         return self._total
@@ -48,7 +46,7 @@ class RolesResponse(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this RolesResponse.        :param total: The total of this RolesResponse.
+        Sets the total of this RolesResponse. :param total: The total of this RolesResponse.
         :type: int
         """
 

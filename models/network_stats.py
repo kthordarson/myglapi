@@ -8,10 +8,8 @@ class NetworkStats(object):
         """
         NetworkStats - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'interfaces': 'object', 'tcp': 'object', 'primary_interface': 'str'}
 
@@ -24,7 +22,7 @@ class NetworkStats(object):
     @property
     def interfaces(self):
         """
-        Gets the interfaces of this NetworkStats.        :return: The interfaces of this NetworkStats.
+        Gets the interfaces of this NetworkStats. :return: The interfaces of this NetworkStats.
         :rtype: object
         """
         return self._interfaces
@@ -32,7 +30,7 @@ class NetworkStats(object):
     @interfaces.setter
     def interfaces(self, interfaces):
         """
-        Sets the interfaces of this NetworkStats.        :param interfaces: The interfaces of this NetworkStats.
+        Sets the interfaces of this NetworkStats. :param interfaces: The interfaces of this NetworkStats.
         :type: object
         """
 
@@ -41,7 +39,7 @@ class NetworkStats(object):
     @property
     def tcp(self):
         """
-        Gets the tcp of this NetworkStats.        :return: The tcp of this NetworkStats.
+        Gets the tcp of this NetworkStats. :return: The tcp of this NetworkStats.
         :rtype: object
         """
         return self._tcp
@@ -49,7 +47,7 @@ class NetworkStats(object):
     @tcp.setter
     def tcp(self, tcp):
         """
-        Sets the tcp of this NetworkStats.        :param tcp: The tcp of this NetworkStats.
+        Sets the tcp of this NetworkStats. :param tcp: The tcp of this NetworkStats.
         :type: object
         """
 
@@ -58,7 +56,7 @@ class NetworkStats(object):
     @property
     def primary_interface(self):
         """
-        Gets the primary_interface of this NetworkStats.        :return: The primary_interface of this NetworkStats.
+        Gets the primary_interface of this NetworkStats. :return: The primary_interface of this NetworkStats.
         :rtype: str
         """
         return self._primary_interface
@@ -66,7 +64,7 @@ class NetworkStats(object):
     @primary_interface.setter
     def primary_interface(self, primary_interface):
         """
-        Sets the primary_interface of this NetworkStats.        :param primary_interface: The primary_interface of this NetworkStats.
+        Sets the primary_interface of this NetworkStats. :param primary_interface: The primary_interface of this NetworkStats.
         :type: str
         """
 

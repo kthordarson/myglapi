@@ -8,10 +8,8 @@ class FsStats(object):
         """
         FsStats - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'filesystems': 'object'}
 
@@ -22,7 +20,7 @@ class FsStats(object):
     @property
     def filesystems(self):
         """
-        Gets the filesystems of this FsStats.        :return: The filesystems of this FsStats.
+        Gets the filesystems of this FsStats. :return: The filesystems of this FsStats.
         :rtype: object
         """
         return self._filesystems
@@ -30,7 +28,7 @@ class FsStats(object):
     @filesystems.setter
     def filesystems(self, filesystems):
         """
-        Sets the filesystems of this FsStats.        :param filesystems: The filesystems of this FsStats.
+        Sets the filesystems of this FsStats. :param filesystems: The filesystems of this FsStats.
         :type: object
         """
 

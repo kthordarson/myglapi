@@ -8,10 +8,8 @@ class SimulationResponse(object):
         """
         SimulationResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'messages': 'list[object]', 'simulation_trace': 'list[object]', 'took_microseconds': 'int'}
 
@@ -24,7 +22,7 @@ class SimulationResponse(object):
     @property
     def messages(self):
         """
-        Gets the messages of this SimulationResponse.        :return: The messages of this SimulationResponse.
+        Gets the messages of this SimulationResponse. :return: The messages of this SimulationResponse.
         :rtype: list[object]
         """
         return self._messages
@@ -32,7 +30,7 @@ class SimulationResponse(object):
     @messages.setter
     def messages(self, messages):
         """
-        Sets the messages of this SimulationResponse.        :param messages: The messages of this SimulationResponse.
+        Sets the messages of this SimulationResponse. :param messages: The messages of this SimulationResponse.
         :type: list[object]
         """
 
@@ -41,7 +39,7 @@ class SimulationResponse(object):
     @property
     def simulation_trace(self):
         """
-        Gets the simulation_trace of this SimulationResponse.        :return: The simulation_trace of this SimulationResponse.
+        Gets the simulation_trace of this SimulationResponse. :return: The simulation_trace of this SimulationResponse.
         :rtype: list[object]
         """
         return self._simulation_trace
@@ -49,7 +47,7 @@ class SimulationResponse(object):
     @simulation_trace.setter
     def simulation_trace(self, simulation_trace):
         """
-        Sets the simulation_trace of this SimulationResponse.        :param simulation_trace: The simulation_trace of this SimulationResponse.
+        Sets the simulation_trace of this SimulationResponse. :param simulation_trace: The simulation_trace of this SimulationResponse.
         :type: list[object]
         """
 
@@ -58,7 +56,7 @@ class SimulationResponse(object):
     @property
     def took_microseconds(self):
         """
-        Gets the took_microseconds of this SimulationResponse.        :return: The took_microseconds of this SimulationResponse.
+        Gets the took_microseconds of this SimulationResponse. :return: The took_microseconds of this SimulationResponse.
         :rtype: int
         """
         return self._took_microseconds
@@ -66,7 +64,7 @@ class SimulationResponse(object):
     @took_microseconds.setter
     def took_microseconds(self, took_microseconds):
         """
-        Sets the took_microseconds of this SimulationResponse.        :param took_microseconds: The took_microseconds of this SimulationResponse.
+        Sets the took_microseconds of this SimulationResponse. :param took_microseconds: The took_microseconds of this SimulationResponse.
         :type: int
         """
 

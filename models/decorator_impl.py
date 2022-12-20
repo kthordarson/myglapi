@@ -8,10 +8,8 @@ class DecoratorImpl(object):
         """
         DecoratorImpl - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'type': 'str', 'config': 'object', 'stream': 'str', 'order': 'int', 'id': 'str'}
 
@@ -26,7 +24,7 @@ class DecoratorImpl(object):
     @property
     def type(self):
         """
-        Gets the type of this DecoratorImpl.        :return: The type of this DecoratorImpl.
+        Gets the type of this DecoratorImpl. :return: The type of this DecoratorImpl.
         :rtype: str
         """
         return self._type
@@ -34,7 +32,7 @@ class DecoratorImpl(object):
     @type.setter
     def type(self, type):
         """
-        Sets the type of this DecoratorImpl.        :param type: The type of this DecoratorImpl.
+        Sets the type of this DecoratorImpl. :param type: The type of this DecoratorImpl.
         :type: str
         """
 
@@ -43,7 +41,7 @@ class DecoratorImpl(object):
     @property
     def config(self):
         """
-        Gets the config of this DecoratorImpl.        :return: The config of this DecoratorImpl.
+        Gets the config of this DecoratorImpl. :return: The config of this DecoratorImpl.
         :rtype: object
         """
         return self._config
@@ -51,7 +49,7 @@ class DecoratorImpl(object):
     @config.setter
     def config(self, config):
         """
-        Sets the config of this DecoratorImpl.        :param config: The config of this DecoratorImpl.
+        Sets the config of this DecoratorImpl. :param config: The config of this DecoratorImpl.
         :type: object
         """
 
@@ -60,7 +58,7 @@ class DecoratorImpl(object):
     @property
     def stream(self):
         """
-        Gets the stream of this DecoratorImpl.        :return: The stream of this DecoratorImpl.
+        Gets the stream of this DecoratorImpl. :return: The stream of this DecoratorImpl.
         :rtype: str
         """
         return self._stream
@@ -68,7 +66,7 @@ class DecoratorImpl(object):
     @stream.setter
     def stream(self, stream):
         """
-        Sets the stream of this DecoratorImpl.        :param stream: The stream of this DecoratorImpl.
+        Sets the stream of this DecoratorImpl. :param stream: The stream of this DecoratorImpl.
         :type: str
         """
 
@@ -77,7 +75,7 @@ class DecoratorImpl(object):
     @property
     def order(self):
         """
-        Gets the order of this DecoratorImpl.        :return: The order of this DecoratorImpl.
+        Gets the order of this DecoratorImpl. :return: The order of this DecoratorImpl.
         :rtype: int
         """
         return self._order
@@ -85,7 +83,7 @@ class DecoratorImpl(object):
     @order.setter
     def order(self, order):
         """
-        Sets the order of this DecoratorImpl.        :param order: The order of this DecoratorImpl.
+        Sets the order of this DecoratorImpl. :param order: The order of this DecoratorImpl.
         :type: int
         """
 
@@ -94,7 +92,7 @@ class DecoratorImpl(object):
     @property
     def id(self):
         """
-        Gets the id of this DecoratorImpl.        :return: The id of this DecoratorImpl.
+        Gets the id of this DecoratorImpl. :return: The id of this DecoratorImpl.
         :rtype: str
         """
         return self._id
@@ -102,7 +100,7 @@ class DecoratorImpl(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this DecoratorImpl.        :param id: The id of this DecoratorImpl.
+        Sets the id of this DecoratorImpl. :param id: The id of this DecoratorImpl.
         :type: str
         """
 

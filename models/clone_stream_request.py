@@ -8,10 +8,8 @@ class CloneStreamRequest(object):
         """
         CloneStreamRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'title': 'str', 'description': 'str'}
 
@@ -23,7 +21,7 @@ class CloneStreamRequest(object):
     @property
     def title(self):
         """
-        Gets the title of this CloneStreamRequest.        :return: The title of this CloneStreamRequest.
+        Gets the title of this CloneStreamRequest. :return: The title of this CloneStreamRequest.
         :rtype: str
         """
         return self._title
@@ -31,7 +29,7 @@ class CloneStreamRequest(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this CloneStreamRequest.        :param title: The title of this CloneStreamRequest.
+        Sets the title of this CloneStreamRequest. :param title: The title of this CloneStreamRequest.
         :type: str
         """
 
@@ -40,7 +38,7 @@ class CloneStreamRequest(object):
     @property
     def description(self):
         """
-        Gets the description of this CloneStreamRequest.        :return: The description of this CloneStreamRequest.
+        Gets the description of this CloneStreamRequest. :return: The description of this CloneStreamRequest.
         :rtype: str
         """
         return self._description
@@ -48,7 +46,7 @@ class CloneStreamRequest(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this CloneStreamRequest.        :param description: The description of this CloneStreamRequest.
+        Sets the description of this CloneStreamRequest. :param description: The description of this CloneStreamRequest.
         :type: str
         """
 

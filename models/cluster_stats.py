@@ -8,10 +8,8 @@ class ClusterStats(object):
         """
         ClusterStats - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'output_count': 'int', 'stream_rule_count': 'int', 'stream_rule_count_by_stream': 'object', 'input_count_by_type': 'object', 'stream_count': 'int', 'user_count': 'int', 'output_count_by_type': 'object', 'dashboard_count': 'int', 'input_count': 'int', 'global_input_count': 'int', 'extractor_count': 'int', 'content_pack_count': 'int', 'extractor_count_by_type': 'object', 'ldap_stats': 'object', 'alarm_stats': 'object', 'elasticsearch': 'object', 'mongo': 'object'}
 
@@ -38,7 +36,7 @@ class ClusterStats(object):
     @property
     def output_count(self):
         """
-        Gets the output_count of this ClusterStats.        :return: The output_count of this ClusterStats.
+        Gets the output_count of this ClusterStats. :return: The output_count of this ClusterStats.
         :rtype: int
         """
         return self._output_count
@@ -46,7 +44,7 @@ class ClusterStats(object):
     @output_count.setter
     def output_count(self, output_count):
         """
-        Sets the output_count of this ClusterStats.        :param output_count: The output_count of this ClusterStats.
+        Sets the output_count of this ClusterStats. :param output_count: The output_count of this ClusterStats.
         :type: int
         """
 
@@ -55,7 +53,7 @@ class ClusterStats(object):
     @property
     def stream_rule_count(self):
         """
-        Gets the stream_rule_count of this ClusterStats.        :return: The stream_rule_count of this ClusterStats.
+        Gets the stream_rule_count of this ClusterStats. :return: The stream_rule_count of this ClusterStats.
         :rtype: int
         """
         return self._stream_rule_count
@@ -63,7 +61,7 @@ class ClusterStats(object):
     @stream_rule_count.setter
     def stream_rule_count(self, stream_rule_count):
         """
-        Sets the stream_rule_count of this ClusterStats.        :param stream_rule_count: The stream_rule_count of this ClusterStats.
+        Sets the stream_rule_count of this ClusterStats. :param stream_rule_count: The stream_rule_count of this ClusterStats.
         :type: int
         """
 
@@ -72,7 +70,7 @@ class ClusterStats(object):
     @property
     def stream_rule_count_by_stream(self):
         """
-        Gets the stream_rule_count_by_stream of this ClusterStats.        :return: The stream_rule_count_by_stream of this ClusterStats.
+        Gets the stream_rule_count_by_stream of this ClusterStats. :return: The stream_rule_count_by_stream of this ClusterStats.
         :rtype: object
         """
         return self._stream_rule_count_by_stream
@@ -80,7 +78,7 @@ class ClusterStats(object):
     @stream_rule_count_by_stream.setter
     def stream_rule_count_by_stream(self, stream_rule_count_by_stream):
         """
-        Sets the stream_rule_count_by_stream of this ClusterStats.        :param stream_rule_count_by_stream: The stream_rule_count_by_stream of this ClusterStats.
+        Sets the stream_rule_count_by_stream of this ClusterStats. :param stream_rule_count_by_stream: The stream_rule_count_by_stream of this ClusterStats.
         :type: object
         """
 
@@ -89,7 +87,7 @@ class ClusterStats(object):
     @property
     def input_count_by_type(self):
         """
-        Gets the input_count_by_type of this ClusterStats.        :return: The input_count_by_type of this ClusterStats.
+        Gets the input_count_by_type of this ClusterStats. :return: The input_count_by_type of this ClusterStats.
         :rtype: object
         """
         return self._input_count_by_type
@@ -97,7 +95,7 @@ class ClusterStats(object):
     @input_count_by_type.setter
     def input_count_by_type(self, input_count_by_type):
         """
-        Sets the input_count_by_type of this ClusterStats.        :param input_count_by_type: The input_count_by_type of this ClusterStats.
+        Sets the input_count_by_type of this ClusterStats. :param input_count_by_type: The input_count_by_type of this ClusterStats.
         :type: object
         """
 
@@ -106,7 +104,7 @@ class ClusterStats(object):
     @property
     def stream_count(self):
         """
-        Gets the stream_count of this ClusterStats.        :return: The stream_count of this ClusterStats.
+        Gets the stream_count of this ClusterStats. :return: The stream_count of this ClusterStats.
         :rtype: int
         """
         return self._stream_count
@@ -114,7 +112,7 @@ class ClusterStats(object):
     @stream_count.setter
     def stream_count(self, stream_count):
         """
-        Sets the stream_count of this ClusterStats.        :param stream_count: The stream_count of this ClusterStats.
+        Sets the stream_count of this ClusterStats. :param stream_count: The stream_count of this ClusterStats.
         :type: int
         """
 
@@ -123,7 +121,7 @@ class ClusterStats(object):
     @property
     def user_count(self):
         """
-        Gets the user_count of this ClusterStats.        :return: The user_count of this ClusterStats.
+        Gets the user_count of this ClusterStats. :return: The user_count of this ClusterStats.
         :rtype: int
         """
         return self._user_count
@@ -131,7 +129,7 @@ class ClusterStats(object):
     @user_count.setter
     def user_count(self, user_count):
         """
-        Sets the user_count of this ClusterStats.        :param user_count: The user_count of this ClusterStats.
+        Sets the user_count of this ClusterStats. :param user_count: The user_count of this ClusterStats.
         :type: int
         """
 
@@ -140,7 +138,7 @@ class ClusterStats(object):
     @property
     def output_count_by_type(self):
         """
-        Gets the output_count_by_type of this ClusterStats.        :return: The output_count_by_type of this ClusterStats.
+        Gets the output_count_by_type of this ClusterStats. :return: The output_count_by_type of this ClusterStats.
         :rtype: object
         """
         return self._output_count_by_type
@@ -148,7 +146,7 @@ class ClusterStats(object):
     @output_count_by_type.setter
     def output_count_by_type(self, output_count_by_type):
         """
-        Sets the output_count_by_type of this ClusterStats.        :param output_count_by_type: The output_count_by_type of this ClusterStats.
+        Sets the output_count_by_type of this ClusterStats. :param output_count_by_type: The output_count_by_type of this ClusterStats.
         :type: object
         """
 
@@ -157,7 +155,7 @@ class ClusterStats(object):
     @property
     def dashboard_count(self):
         """
-        Gets the dashboard_count of this ClusterStats.        :return: The dashboard_count of this ClusterStats.
+        Gets the dashboard_count of this ClusterStats. :return: The dashboard_count of this ClusterStats.
         :rtype: int
         """
         return self._dashboard_count
@@ -165,7 +163,7 @@ class ClusterStats(object):
     @dashboard_count.setter
     def dashboard_count(self, dashboard_count):
         """
-        Sets the dashboard_count of this ClusterStats.        :param dashboard_count: The dashboard_count of this ClusterStats.
+        Sets the dashboard_count of this ClusterStats. :param dashboard_count: The dashboard_count of this ClusterStats.
         :type: int
         """
 
@@ -174,7 +172,7 @@ class ClusterStats(object):
     @property
     def input_count(self):
         """
-        Gets the input_count of this ClusterStats.        :return: The input_count of this ClusterStats.
+        Gets the input_count of this ClusterStats. :return: The input_count of this ClusterStats.
         :rtype: int
         """
         return self._input_count
@@ -182,7 +180,7 @@ class ClusterStats(object):
     @input_count.setter
     def input_count(self, input_count):
         """
-        Sets the input_count of this ClusterStats.        :param input_count: The input_count of this ClusterStats.
+        Sets the input_count of this ClusterStats. :param input_count: The input_count of this ClusterStats.
         :type: int
         """
 
@@ -191,7 +189,7 @@ class ClusterStats(object):
     @property
     def global_input_count(self):
         """
-        Gets the global_input_count of this ClusterStats.        :return: The global_input_count of this ClusterStats.
+        Gets the global_input_count of this ClusterStats. :return: The global_input_count of this ClusterStats.
         :rtype: int
         """
         return self._global_input_count
@@ -199,7 +197,7 @@ class ClusterStats(object):
     @global_input_count.setter
     def global_input_count(self, global_input_count):
         """
-        Sets the global_input_count of this ClusterStats.        :param global_input_count: The global_input_count of this ClusterStats.
+        Sets the global_input_count of this ClusterStats. :param global_input_count: The global_input_count of this ClusterStats.
         :type: int
         """
 
@@ -208,7 +206,7 @@ class ClusterStats(object):
     @property
     def extractor_count(self):
         """
-        Gets the extractor_count of this ClusterStats.        :return: The extractor_count of this ClusterStats.
+        Gets the extractor_count of this ClusterStats. :return: The extractor_count of this ClusterStats.
         :rtype: int
         """
         return self._extractor_count
@@ -216,7 +214,7 @@ class ClusterStats(object):
     @extractor_count.setter
     def extractor_count(self, extractor_count):
         """
-        Sets the extractor_count of this ClusterStats.        :param extractor_count: The extractor_count of this ClusterStats.
+        Sets the extractor_count of this ClusterStats. :param extractor_count: The extractor_count of this ClusterStats.
         :type: int
         """
 
@@ -225,7 +223,7 @@ class ClusterStats(object):
     @property
     def content_pack_count(self):
         """
-        Gets the content_pack_count of this ClusterStats.        :return: The content_pack_count of this ClusterStats.
+        Gets the content_pack_count of this ClusterStats. :return: The content_pack_count of this ClusterStats.
         :rtype: int
         """
         return self._content_pack_count
@@ -233,7 +231,7 @@ class ClusterStats(object):
     @content_pack_count.setter
     def content_pack_count(self, content_pack_count):
         """
-        Sets the content_pack_count of this ClusterStats.        :param content_pack_count: The content_pack_count of this ClusterStats.
+        Sets the content_pack_count of this ClusterStats. :param content_pack_count: The content_pack_count of this ClusterStats.
         :type: int
         """
 
@@ -242,7 +240,7 @@ class ClusterStats(object):
     @property
     def extractor_count_by_type(self):
         """
-        Gets the extractor_count_by_type of this ClusterStats.        :return: The extractor_count_by_type of this ClusterStats.
+        Gets the extractor_count_by_type of this ClusterStats. :return: The extractor_count_by_type of this ClusterStats.
         :rtype: object
         """
         return self._extractor_count_by_type
@@ -250,7 +248,7 @@ class ClusterStats(object):
     @extractor_count_by_type.setter
     def extractor_count_by_type(self, extractor_count_by_type):
         """
-        Sets the extractor_count_by_type of this ClusterStats.        :param extractor_count_by_type: The extractor_count_by_type of this ClusterStats.
+        Sets the extractor_count_by_type of this ClusterStats. :param extractor_count_by_type: The extractor_count_by_type of this ClusterStats.
         :type: object
         """
 
@@ -259,7 +257,7 @@ class ClusterStats(object):
     @property
     def ldap_stats(self):
         """
-        Gets the ldap_stats of this ClusterStats.        :return: The ldap_stats of this ClusterStats.
+        Gets the ldap_stats of this ClusterStats. :return: The ldap_stats of this ClusterStats.
         :rtype: object
         """
         return self._ldap_stats
@@ -267,7 +265,7 @@ class ClusterStats(object):
     @ldap_stats.setter
     def ldap_stats(self, ldap_stats):
         """
-        Sets the ldap_stats of this ClusterStats.        :param ldap_stats: The ldap_stats of this ClusterStats.
+        Sets the ldap_stats of this ClusterStats. :param ldap_stats: The ldap_stats of this ClusterStats.
         :type: object
         """
 
@@ -276,7 +274,7 @@ class ClusterStats(object):
     @property
     def alarm_stats(self):
         """
-        Gets the alarm_stats of this ClusterStats.        :return: The alarm_stats of this ClusterStats.
+        Gets the alarm_stats of this ClusterStats. :return: The alarm_stats of this ClusterStats.
         :rtype: object
         """
         return self._alarm_stats
@@ -284,7 +282,7 @@ class ClusterStats(object):
     @alarm_stats.setter
     def alarm_stats(self, alarm_stats):
         """
-        Sets the alarm_stats of this ClusterStats.        :param alarm_stats: The alarm_stats of this ClusterStats.
+        Sets the alarm_stats of this ClusterStats. :param alarm_stats: The alarm_stats of this ClusterStats.
         :type: object
         """
 
@@ -293,7 +291,7 @@ class ClusterStats(object):
     @property
     def elasticsearch(self):
         """
-        Gets the elasticsearch of this ClusterStats.        :return: The elasticsearch of this ClusterStats.
+        Gets the elasticsearch of this ClusterStats. :return: The elasticsearch of this ClusterStats.
         :rtype: object
         """
         return self._elasticsearch
@@ -301,7 +299,7 @@ class ClusterStats(object):
     @elasticsearch.setter
     def elasticsearch(self, elasticsearch):
         """
-        Sets the elasticsearch of this ClusterStats.        :param elasticsearch: The elasticsearch of this ClusterStats.
+        Sets the elasticsearch of this ClusterStats. :param elasticsearch: The elasticsearch of this ClusterStats.
         :type: object
         """
 
@@ -310,7 +308,7 @@ class ClusterStats(object):
     @property
     def mongo(self):
         """
-        Gets the mongo of this ClusterStats.        :return: The mongo of this ClusterStats.
+        Gets the mongo of this ClusterStats. :return: The mongo of this ClusterStats.
         :rtype: object
         """
         return self._mongo
@@ -318,7 +316,7 @@ class ClusterStats(object):
     @mongo.setter
     def mongo(self, mongo):
         """
-        Sets the mongo of this ClusterStats.        :param mongo: The mongo of this ClusterStats.
+        Sets the mongo of this ClusterStats. :param mongo: The mongo of this ClusterStats.
         :type: object
         """
 

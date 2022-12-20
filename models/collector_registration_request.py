@@ -8,10 +8,8 @@ class CollectorRegistrationRequest(object):
         """
         CollectorRegistrationRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'node_id': 'str', 'node_details': 'object'}
 
@@ -23,7 +21,7 @@ class CollectorRegistrationRequest(object):
     @property
     def node_id(self):
         """
-        Gets the node_id of this CollectorRegistrationRequest.        :return: The node_id of this CollectorRegistrationRequest.
+        Gets the node_id of this CollectorRegistrationRequest. :return: The node_id of this CollectorRegistrationRequest.
         :rtype: str
         """
         return self._node_id
@@ -31,7 +29,7 @@ class CollectorRegistrationRequest(object):
     @node_id.setter
     def node_id(self, node_id):
         """
-        Sets the node_id of this CollectorRegistrationRequest.        :param node_id: The node_id of this CollectorRegistrationRequest.
+        Sets the node_id of this CollectorRegistrationRequest. :param node_id: The node_id of this CollectorRegistrationRequest.
         :type: str
         """
 
@@ -40,7 +38,7 @@ class CollectorRegistrationRequest(object):
     @property
     def node_details(self):
         """
-        Gets the node_details of this CollectorRegistrationRequest.        :return: The node_details of this CollectorRegistrationRequest.
+        Gets the node_details of this CollectorRegistrationRequest. :return: The node_details of this CollectorRegistrationRequest.
         :rtype: object
         """
         return self._node_details
@@ -48,7 +46,7 @@ class CollectorRegistrationRequest(object):
     @node_details.setter
     def node_details(self, node_details):
         """
-        Sets the node_details of this CollectorRegistrationRequest.        :param node_details: The node_details of this CollectorRegistrationRequest.
+        Sets the node_details of this CollectorRegistrationRequest. :param node_details: The node_details of this CollectorRegistrationRequest.
         :type: object
         """
 

@@ -8,10 +8,8 @@ class OutputListResponse(object):
         """
         OutputListResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'outputs': 'list[object]'}
 
@@ -23,7 +21,7 @@ class OutputListResponse(object):
     @property
     def total(self):
         """
-        Gets the total of this OutputListResponse.        :return: The total of this OutputListResponse.
+        Gets the total of this OutputListResponse. :return: The total of this OutputListResponse.
         :rtype: int
         """
         return self._total
@@ -31,7 +29,7 @@ class OutputListResponse(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this OutputListResponse.        :param total: The total of this OutputListResponse.
+        Sets the total of this OutputListResponse. :param total: The total of this OutputListResponse.
         :type: int
         """
 
@@ -40,7 +38,7 @@ class OutputListResponse(object):
     @property
     def outputs(self):
         """
-        Gets the outputs of this OutputListResponse.        :return: The outputs of this OutputListResponse.
+        Gets the outputs of this OutputListResponse. :return: The outputs of this OutputListResponse.
         :rtype: list[object]
         """
         return self._outputs
@@ -48,7 +46,7 @@ class OutputListResponse(object):
     @outputs.setter
     def outputs(self, outputs):
         """
-        Sets the outputs of this OutputListResponse.        :param outputs: The outputs of this OutputListResponse.
+        Sets the outputs of this OutputListResponse. :param outputs: The outputs of this OutputListResponse.
         :type: list[object]
         """
 

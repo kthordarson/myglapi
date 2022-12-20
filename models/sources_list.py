@@ -8,10 +8,8 @@ class SourcesList(object):
         """
         SourcesList - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'sources': 'object', 'took_ms': 'int', 'range': 'int'}
 
@@ -25,7 +23,7 @@ class SourcesList(object):
     @property
     def total(self):
         """
-        Gets the total of this SourcesList.        :return: The total of this SourcesList.
+        Gets the total of this SourcesList. :return: The total of this SourcesList.
         :rtype: int
         """
         return self._total
@@ -33,7 +31,7 @@ class SourcesList(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this SourcesList.        :param total: The total of this SourcesList.
+        Sets the total of this SourcesList. :param total: The total of this SourcesList.
         :type: int
         """
 
@@ -42,7 +40,7 @@ class SourcesList(object):
     @property
     def sources(self):
         """
-        Gets the sources of this SourcesList.        :return: The sources of this SourcesList.
+        Gets the sources of this SourcesList. :return: The sources of this SourcesList.
         :rtype: object
         """
         return self._sources
@@ -50,7 +48,7 @@ class SourcesList(object):
     @sources.setter
     def sources(self, sources):
         """
-        Sets the sources of this SourcesList.        :param sources: The sources of this SourcesList.
+        Sets the sources of this SourcesList. :param sources: The sources of this SourcesList.
         :type: object
         """
 
@@ -59,7 +57,7 @@ class SourcesList(object):
     @property
     def took_ms(self):
         """
-        Gets the took_ms of this SourcesList.        :return: The took_ms of this SourcesList.
+        Gets the took_ms of this SourcesList. :return: The took_ms of this SourcesList.
         :rtype: int
         """
         return self._took_ms
@@ -67,7 +65,7 @@ class SourcesList(object):
     @took_ms.setter
     def took_ms(self, took_ms):
         """
-        Sets the took_ms of this SourcesList.        :param took_ms: The took_ms of this SourcesList.
+        Sets the took_ms of this SourcesList. :param took_ms: The took_ms of this SourcesList.
         :type: int
         """
 
@@ -76,7 +74,7 @@ class SourcesList(object):
     @property
     def range(self):
         """
-        Gets the range of this SourcesList.        :return: The range of this SourcesList.
+        Gets the range of this SourcesList. :return: The range of this SourcesList.
         :rtype: int
         """
         return self._range
@@ -84,7 +82,7 @@ class SourcesList(object):
     @range.setter
     def range(self, range):
         """
-        Sets the range of this SourcesList.        :param range: The range of this SourcesList.
+        Sets the range of this SourcesList. :param range: The range of this SourcesList.
         :type: int
         """
 

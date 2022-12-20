@@ -8,10 +8,8 @@ class RetentionStrategies(object):
         """
         RetentionStrategies - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'strategies': 'list[object]'}
 
@@ -23,7 +21,7 @@ class RetentionStrategies(object):
     @property
     def total(self):
         """
-        Gets the total of this RetentionStrategies.        :return: The total of this RetentionStrategies.
+        Gets the total of this RetentionStrategies. :return: The total of this RetentionStrategies.
         :rtype: int
         """
         return self._total
@@ -31,7 +29,7 @@ class RetentionStrategies(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this RetentionStrategies.        :param total: The total of this RetentionStrategies.
+        Sets the total of this RetentionStrategies. :param total: The total of this RetentionStrategies.
         :type: int
         """
 
@@ -40,7 +38,7 @@ class RetentionStrategies(object):
     @property
     def strategies(self):
         """
-        Gets the strategies of this RetentionStrategies.        :return: The strategies of this RetentionStrategies.
+        Gets the strategies of this RetentionStrategies. :return: The strategies of this RetentionStrategies.
         :rtype: list[object]
         """
         return self._strategies
@@ -48,7 +46,7 @@ class RetentionStrategies(object):
     @strategies.setter
     def strategies(self, strategies):
         """
-        Sets the strategies of this RetentionStrategies.        :param strategies: The strategies of this RetentionStrategies.
+        Sets the strategies of this RetentionStrategies. :param strategies: The strategies of this RetentionStrategies.
         :type: list[object]
         """
 

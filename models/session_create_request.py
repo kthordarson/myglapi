@@ -8,10 +8,8 @@ class SessionCreateRequest(object):
         """
         SessionCreateRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'username': 'str', 'password': 'str', 'host': 'str'}
 
@@ -24,7 +22,7 @@ class SessionCreateRequest(object):
     @property
     def username(self):
         """
-        Gets the username of this SessionCreateRequest.        :return: The username of this SessionCreateRequest.
+        Gets the username of this SessionCreateRequest. :return: The username of this SessionCreateRequest.
         :rtype: str
         """
         return self._username
@@ -32,7 +30,7 @@ class SessionCreateRequest(object):
     @username.setter
     def username(self, username):
         """
-        Sets the username of this SessionCreateRequest.        :param username: The username of this SessionCreateRequest.
+        Sets the username of this SessionCreateRequest. :param username: The username of this SessionCreateRequest.
         :type: str
         """
 
@@ -41,7 +39,7 @@ class SessionCreateRequest(object):
     @property
     def password(self):
         """
-        Gets the password of this SessionCreateRequest.        :return: The password of this SessionCreateRequest.
+        Gets the password of this SessionCreateRequest. :return: The password of this SessionCreateRequest.
         :rtype: str
         """
         return self._password
@@ -49,7 +47,7 @@ class SessionCreateRequest(object):
     @password.setter
     def password(self, password):
         """
-        Sets the password of this SessionCreateRequest.        :param password: The password of this SessionCreateRequest.
+        Sets the password of this SessionCreateRequest. :param password: The password of this SessionCreateRequest.
         :type: str
         """
 
@@ -58,7 +56,7 @@ class SessionCreateRequest(object):
     @property
     def host(self):
         """
-        Gets the host of this SessionCreateRequest.        :return: The host of this SessionCreateRequest.
+        Gets the host of this SessionCreateRequest. :return: The host of this SessionCreateRequest.
         :rtype: str
         """
         return self._host
@@ -66,7 +64,7 @@ class SessionCreateRequest(object):
     @host.setter
     def host(self, host):
         """
-        Sets the host of this SessionCreateRequest.        :param host: The host of this SessionCreateRequest.
+        Sets the host of this SessionCreateRequest. :param host: The host of this SessionCreateRequest.
         :type: str
         """
 

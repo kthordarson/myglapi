@@ -8,10 +8,8 @@ class TermsResult(object):
         """
         TermsResult - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'total': 'int', 'other': 'int', 'time': 'int', 'missing': 'int', 'terms': 'object', 'built_query': 'str'}
 
@@ -27,7 +25,7 @@ class TermsResult(object):
     @property
     def total(self):
         """
-        Gets the total of this TermsResult.        :return: The total of this TermsResult.
+        Gets the total of this TermsResult. :return: The total of this TermsResult.
         :rtype: int
         """
         return self._total
@@ -35,7 +33,7 @@ class TermsResult(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this TermsResult.        :param total: The total of this TermsResult.
+        Sets the total of this TermsResult. :param total: The total of this TermsResult.
         :type: int
         """
 
@@ -44,7 +42,7 @@ class TermsResult(object):
     @property
     def other(self):
         """
-        Gets the other of this TermsResult.        :return: The other of this TermsResult.
+        Gets the other of this TermsResult. :return: The other of this TermsResult.
         :rtype: int
         """
         return self._other
@@ -52,7 +50,7 @@ class TermsResult(object):
     @other.setter
     def other(self, other):
         """
-        Sets the other of this TermsResult.        :param other: The other of this TermsResult.
+        Sets the other of this TermsResult. :param other: The other of this TermsResult.
         :type: int
         """
 
@@ -61,7 +59,7 @@ class TermsResult(object):
     @property
     def time(self):
         """
-        Gets the time of this TermsResult.        :return: The time of this TermsResult.
+        Gets the time of this TermsResult. :return: The time of this TermsResult.
         :rtype: int
         """
         return self._time
@@ -69,7 +67,7 @@ class TermsResult(object):
     @time.setter
     def time(self, time):
         """
-        Sets the time of this TermsResult.        :param time: The time of this TermsResult.
+        Sets the time of this TermsResult. :param time: The time of this TermsResult.
         :type: int
         """
 
@@ -78,7 +76,7 @@ class TermsResult(object):
     @property
     def missing(self):
         """
-        Gets the missing of this TermsResult.        :return: The missing of this TermsResult.
+        Gets the missing of this TermsResult. :return: The missing of this TermsResult.
         :rtype: int
         """
         return self._missing
@@ -86,7 +84,7 @@ class TermsResult(object):
     @missing.setter
     def missing(self, missing):
         """
-        Sets the missing of this TermsResult.        :param missing: The missing of this TermsResult.
+        Sets the missing of this TermsResult. :param missing: The missing of this TermsResult.
         :type: int
         """
 
@@ -95,7 +93,7 @@ class TermsResult(object):
     @property
     def terms(self):
         """
-        Gets the terms of this TermsResult.        :return: The terms of this TermsResult.
+        Gets the terms of this TermsResult. :return: The terms of this TermsResult.
         :rtype: object
         """
         return self._terms
@@ -103,7 +101,7 @@ class TermsResult(object):
     @terms.setter
     def terms(self, terms):
         """
-        Sets the terms of this TermsResult.        :param terms: The terms of this TermsResult.
+        Sets the terms of this TermsResult. :param terms: The terms of this TermsResult.
         :type: object
         """
 
@@ -112,7 +110,7 @@ class TermsResult(object):
     @property
     def built_query(self):
         """
-        Gets the built_query of this TermsResult.        :return: The built_query of this TermsResult.
+        Gets the built_query of this TermsResult. :return: The built_query of this TermsResult.
         :rtype: str
         """
         return self._built_query
@@ -120,7 +118,7 @@ class TermsResult(object):
     @built_query.setter
     def built_query(self, built_query):
         """
-        Sets the built_query of this TermsResult.        :param built_query: The built_query of this TermsResult.
+        Sets the built_query of this TermsResult. :param built_query: The built_query of this TermsResult.
         :type: str
         """
 

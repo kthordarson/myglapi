@@ -8,10 +8,8 @@ class InputTypeInfo(object):
         """
         InputTypeInfo - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'type': 'str', 'name': 'str', 'is_exclusive': 'bool', 'requested_configuration': 'object', 'link_to_docs': 'str'}
 
@@ -26,7 +24,7 @@ class InputTypeInfo(object):
     @property
     def type(self):
         """
-        Gets the type of this InputTypeInfo.        :return: The type of this InputTypeInfo.
+        Gets the type of this InputTypeInfo. :return: The type of this InputTypeInfo.
         :rtype: str
         """
         return self._type
@@ -34,7 +32,7 @@ class InputTypeInfo(object):
     @type.setter
     def type(self, type):
         """
-        Sets the type of this InputTypeInfo.        :param type: The type of this InputTypeInfo.
+        Sets the type of this InputTypeInfo. :param type: The type of this InputTypeInfo.
         :type: str
         """
 
@@ -43,7 +41,7 @@ class InputTypeInfo(object):
     @property
     def name(self):
         """
-        Gets the name of this InputTypeInfo.        :return: The name of this InputTypeInfo.
+        Gets the name of this InputTypeInfo. :return: The name of this InputTypeInfo.
         :rtype: str
         """
         return self._name
@@ -51,7 +49,7 @@ class InputTypeInfo(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this InputTypeInfo.        :param name: The name of this InputTypeInfo.
+        Sets the name of this InputTypeInfo. :param name: The name of this InputTypeInfo.
         :type: str
         """
 
@@ -60,7 +58,7 @@ class InputTypeInfo(object):
     @property
     def is_exclusive(self):
         """
-        Gets the is_exclusive of this InputTypeInfo.        :return: The is_exclusive of this InputTypeInfo.
+        Gets the is_exclusive of this InputTypeInfo. :return: The is_exclusive of this InputTypeInfo.
         :rtype: bool
         """
         return self._is_exclusive
@@ -68,7 +66,7 @@ class InputTypeInfo(object):
     @is_exclusive.setter
     def is_exclusive(self, is_exclusive):
         """
-        Sets the is_exclusive of this InputTypeInfo.        :param is_exclusive: The is_exclusive of this InputTypeInfo.
+        Sets the is_exclusive of this InputTypeInfo. :param is_exclusive: The is_exclusive of this InputTypeInfo.
         :type: bool
         """
 
@@ -77,7 +75,7 @@ class InputTypeInfo(object):
     @property
     def requested_configuration(self):
         """
-        Gets the requested_configuration of this InputTypeInfo.        :return: The requested_configuration of this InputTypeInfo.
+        Gets the requested_configuration of this InputTypeInfo. :return: The requested_configuration of this InputTypeInfo.
         :rtype: object
         """
         return self._requested_configuration
@@ -85,7 +83,7 @@ class InputTypeInfo(object):
     @requested_configuration.setter
     def requested_configuration(self, requested_configuration):
         """
-        Sets the requested_configuration of this InputTypeInfo.        :param requested_configuration: The requested_configuration of this InputTypeInfo.
+        Sets the requested_configuration of this InputTypeInfo. :param requested_configuration: The requested_configuration of this InputTypeInfo.
         :type: object
         """
 
@@ -94,7 +92,7 @@ class InputTypeInfo(object):
     @property
     def link_to_docs(self):
         """
-        Gets the link_to_docs of this InputTypeInfo.        :return: The link_to_docs of this InputTypeInfo.
+        Gets the link_to_docs of this InputTypeInfo. :return: The link_to_docs of this InputTypeInfo.
         :rtype: str
         """
         return self._link_to_docs
@@ -102,7 +100,7 @@ class InputTypeInfo(object):
     @link_to_docs.setter
     def link_to_docs(self, link_to_docs):
         """
-        Sets the link_to_docs of this InputTypeInfo.        :param link_to_docs: The link_to_docs of this InputTypeInfo.
+        Sets the link_to_docs of this InputTypeInfo. :param link_to_docs: The link_to_docs of this InputTypeInfo.
         :type: str
         """
 

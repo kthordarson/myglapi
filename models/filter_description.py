@@ -8,10 +8,8 @@ class FilterDescription(object):
         """
         FilterDescription - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'creator_user_id': 'str', 'created_at': 'datetime', 'name': 'str', 'description': 'str', 'field_name': 'str', 'pattern': 'str', 'id': 'Any'}
 
@@ -28,7 +26,7 @@ class FilterDescription(object):
     @property
     def creator_user_id(self):
         """
-        Gets the creator_user_id of this FilterDescription.        :return: The creator_user_id of this FilterDescription.
+        Gets the creator_user_id of this FilterDescription. :return: The creator_user_id of this FilterDescription.
         :rtype: str
         """
         return self._creator_user_id
@@ -36,7 +34,7 @@ class FilterDescription(object):
     @creator_user_id.setter
     def creator_user_id(self, creator_user_id):
         """
-        Sets the creator_user_id of this FilterDescription.        :param creator_user_id: The creator_user_id of this FilterDescription.
+        Sets the creator_user_id of this FilterDescription. :param creator_user_id: The creator_user_id of this FilterDescription.
         :type: str
         """
 
@@ -45,7 +43,7 @@ class FilterDescription(object):
     @property
     def created_at(self):
         """
-        Gets the created_at of this FilterDescription.        :return: The created_at of this FilterDescription.
+        Gets the created_at of this FilterDescription. :return: The created_at of this FilterDescription.
         :rtype: datetime
         """
         return self._created_at
@@ -53,7 +51,7 @@ class FilterDescription(object):
     @created_at.setter
     def created_at(self, created_at):
         """
-        Sets the created_at of this FilterDescription.        :param created_at: The created_at of this FilterDescription.
+        Sets the created_at of this FilterDescription. :param created_at: The created_at of this FilterDescription.
         :type: datetime
         """
 
@@ -62,7 +60,7 @@ class FilterDescription(object):
     @property
     def name(self):
         """
-        Gets the name of this FilterDescription.        :return: The name of this FilterDescription.
+        Gets the name of this FilterDescription. :return: The name of this FilterDescription.
         :rtype: str
         """
         return self._name
@@ -70,7 +68,7 @@ class FilterDescription(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this FilterDescription.        :param name: The name of this FilterDescription.
+        Sets the name of this FilterDescription. :param name: The name of this FilterDescription.
         :type: str
         """
 
@@ -79,7 +77,7 @@ class FilterDescription(object):
     @property
     def description(self):
         """
-        Gets the description of this FilterDescription.        :return: The description of this FilterDescription.
+        Gets the description of this FilterDescription. :return: The description of this FilterDescription.
         :rtype: str
         """
         return self._description
@@ -87,7 +85,7 @@ class FilterDescription(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this FilterDescription.        :param description: The description of this FilterDescription.
+        Sets the description of this FilterDescription. :param description: The description of this FilterDescription.
         :type: str
         """
 
@@ -96,7 +94,7 @@ class FilterDescription(object):
     @property
     def field_name(self):
         """
-        Gets the field_name of this FilterDescription.        :return: The field_name of this FilterDescription.
+        Gets the field_name of this FilterDescription. :return: The field_name of this FilterDescription.
         :rtype: str
         """
         return self._field_name
@@ -104,7 +102,7 @@ class FilterDescription(object):
     @field_name.setter
     def field_name(self, field_name):
         """
-        Sets the field_name of this FilterDescription.        :param field_name: The field_name of this FilterDescription.
+        Sets the field_name of this FilterDescription. :param field_name: The field_name of this FilterDescription.
         :type: str
         """
 
@@ -113,7 +111,7 @@ class FilterDescription(object):
     @property
     def pattern(self):
         """
-        Gets the pattern of this FilterDescription.        :return: The pattern of this FilterDescription.
+        Gets the pattern of this FilterDescription. :return: The pattern of this FilterDescription.
         :rtype: str
         """
         return self._pattern
@@ -121,7 +119,7 @@ class FilterDescription(object):
     @pattern.setter
     def pattern(self, pattern):
         """
-        Sets the pattern of this FilterDescription.        :param pattern: The pattern of this FilterDescription.
+        Sets the pattern of this FilterDescription. :param pattern: The pattern of this FilterDescription.
         :type: str
         """
 
@@ -130,7 +128,7 @@ class FilterDescription(object):
     @property
     def id(self):
         """
-        Gets the id of this FilterDescription.        :return: The id of this FilterDescription.
+        Gets the id of this FilterDescription. :return: The id of this FilterDescription.
         :rtype: Any
         """
         return self._id
@@ -138,7 +136,7 @@ class FilterDescription(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this FilterDescription.        :param id: The id of this FilterDescription.
+        Sets the id of this FilterDescription. :param id: The id of this FilterDescription.
         :type: Any
         """
 

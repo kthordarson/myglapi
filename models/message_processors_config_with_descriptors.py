@@ -8,10 +8,8 @@ class MessageProcessorsConfigWithDescriptors(object):
         """
         MessageProcessorsConfigWithDescriptors - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'processor_order': 'list[object]', 'disabled_processors': 'list[str]'}
 
@@ -23,7 +21,7 @@ class MessageProcessorsConfigWithDescriptors(object):
     @property
     def processor_order(self):
         """
-        Gets the processor_order of this MessageProcessorsConfigWithDescriptors.        :return: The processor_order of this MessageProcessorsConfigWithDescriptors.
+        Gets the processor_order of this MessageProcessorsConfigWithDescriptors. :return: The processor_order of this MessageProcessorsConfigWithDescriptors.
         :rtype: list[object]
         """
         return self._processor_order
@@ -31,7 +29,7 @@ class MessageProcessorsConfigWithDescriptors(object):
     @processor_order.setter
     def processor_order(self, processor_order):
         """
-        Sets the processor_order of this MessageProcessorsConfigWithDescriptors.        :param processor_order: The processor_order of this MessageProcessorsConfigWithDescriptors.
+        Sets the processor_order of this MessageProcessorsConfigWithDescriptors. :param processor_order: The processor_order of this MessageProcessorsConfigWithDescriptors.
         :type: list[object]
         """
 
@@ -40,7 +38,7 @@ class MessageProcessorsConfigWithDescriptors(object):
     @property
     def disabled_processors(self):
         """
-        Gets the disabled_processors of this MessageProcessorsConfigWithDescriptors.        :return: The disabled_processors of this MessageProcessorsConfigWithDescriptors.
+        Gets the disabled_processors of this MessageProcessorsConfigWithDescriptors. :return: The disabled_processors of this MessageProcessorsConfigWithDescriptors.
         :rtype: list[str]
         """
         return self._disabled_processors
@@ -48,7 +46,7 @@ class MessageProcessorsConfigWithDescriptors(object):
     @disabled_processors.setter
     def disabled_processors(self, disabled_processors):
         """
-        Sets the disabled_processors of this MessageProcessorsConfigWithDescriptors.        :param disabled_processors: The disabled_processors of this MessageProcessorsConfigWithDescriptors.
+        Sets the disabled_processors of this MessageProcessorsConfigWithDescriptors. :param disabled_processors: The disabled_processors of this MessageProcessorsConfigWithDescriptors.
         :type: list[str]
         """
 

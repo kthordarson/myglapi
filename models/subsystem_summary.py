@@ -8,10 +8,8 @@ class SubsystemSummary(object):
         """
         SubsystemSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'subsystems': 'object'}
 
@@ -22,7 +20,7 @@ class SubsystemSummary(object):
     @property
     def subsystems(self):
         """
-        Gets the subsystems of this SubsystemSummary.        :return: The subsystems of this SubsystemSummary.
+        Gets the subsystems of this SubsystemSummary. :return: The subsystems of this SubsystemSummary.
         :rtype: object
         """
         return self._subsystems
@@ -30,7 +28,7 @@ class SubsystemSummary(object):
     @subsystems.setter
     def subsystems(self, subsystems):
         """
-        Sets the subsystems of this SubsystemSummary.        :param subsystems: The subsystems of this SubsystemSummary.
+        Sets the subsystems of this SubsystemSummary. :param subsystems: The subsystems of this SubsystemSummary.
         :type: object
         """
 

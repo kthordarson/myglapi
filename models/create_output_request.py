@@ -8,10 +8,8 @@ class CreateOutputRequest(object):
         """
         CreateOutputRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'title': 'str', 'type': 'str', 'configuration': 'object', 'streams': 'list[str]', 'content_pack': 'str'}
 
@@ -26,7 +24,7 @@ class CreateOutputRequest(object):
     @property
     def title(self):
         """
-        Gets the title of this CreateOutputRequest.        :return: The title of this CreateOutputRequest.
+        Gets the title of this CreateOutputRequest. :return: The title of this CreateOutputRequest.
         :rtype: str
         """
         return self._title
@@ -34,7 +32,7 @@ class CreateOutputRequest(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this CreateOutputRequest.        :param title: The title of this CreateOutputRequest.
+        Sets the title of this CreateOutputRequest. :param title: The title of this CreateOutputRequest.
         :type: str
         """
 
@@ -43,7 +41,7 @@ class CreateOutputRequest(object):
     @property
     def type(self):
         """
-        Gets the type of this CreateOutputRequest.        :return: The type of this CreateOutputRequest.
+        Gets the type of this CreateOutputRequest. :return: The type of this CreateOutputRequest.
         :rtype: str
         """
         return self._type
@@ -51,7 +49,7 @@ class CreateOutputRequest(object):
     @type.setter
     def type(self, type):
         """
-        Sets the type of this CreateOutputRequest.        :param type: The type of this CreateOutputRequest.
+        Sets the type of this CreateOutputRequest. :param type: The type of this CreateOutputRequest.
         :type: str
         """
 
@@ -60,7 +58,7 @@ class CreateOutputRequest(object):
     @property
     def configuration(self):
         """
-        Gets the configuration of this CreateOutputRequest.        :return: The configuration of this CreateOutputRequest.
+        Gets the configuration of this CreateOutputRequest. :return: The configuration of this CreateOutputRequest.
         :rtype: object
         """
         return self._configuration
@@ -68,7 +66,7 @@ class CreateOutputRequest(object):
     @configuration.setter
     def configuration(self, configuration):
         """
-        Sets the configuration of this CreateOutputRequest.        :param configuration: The configuration of this CreateOutputRequest.
+        Sets the configuration of this CreateOutputRequest. :param configuration: The configuration of this CreateOutputRequest.
         :type: object
         """
 
@@ -77,7 +75,7 @@ class CreateOutputRequest(object):
     @property
     def streams(self):
         """
-        Gets the streams of this CreateOutputRequest.        :return: The streams of this CreateOutputRequest.
+        Gets the streams of this CreateOutputRequest. :return: The streams of this CreateOutputRequest.
         :rtype: list[str]
         """
         return self._streams
@@ -85,7 +83,7 @@ class CreateOutputRequest(object):
     @streams.setter
     def streams(self, streams):
         """
-        Sets the streams of this CreateOutputRequest.        :param streams: The streams of this CreateOutputRequest.
+        Sets the streams of this CreateOutputRequest. :param streams: The streams of this CreateOutputRequest.
         :type: list[str]
         """
 
@@ -94,7 +92,7 @@ class CreateOutputRequest(object):
     @property
     def content_pack(self):
         """
-        Gets the content_pack of this CreateOutputRequest.        :return: The content_pack of this CreateOutputRequest.
+        Gets the content_pack of this CreateOutputRequest. :return: The content_pack of this CreateOutputRequest.
         :rtype: str
         """
         return self._content_pack
@@ -102,7 +100,7 @@ class CreateOutputRequest(object):
     @content_pack.setter
     def content_pack(self, content_pack):
         """
-        Sets the content_pack of this CreateOutputRequest.        :param content_pack: The content_pack of this CreateOutputRequest.
+        Sets the content_pack of this CreateOutputRequest. :param content_pack: The content_pack of this CreateOutputRequest.
         :type: str
         """
 

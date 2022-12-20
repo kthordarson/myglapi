@@ -8,10 +8,8 @@ class LogMessagesSummary(object):
         """
         LogMessagesSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'messages': 'list[object]'}
 
@@ -22,7 +20,7 @@ class LogMessagesSummary(object):
     @property
     def messages(self):
         """
-        Gets the messages of this LogMessagesSummary.        :return: The messages of this LogMessagesSummary.
+        Gets the messages of this LogMessagesSummary. :return: The messages of this LogMessagesSummary.
         :rtype: list[object]
         """
         return self._messages
@@ -30,7 +28,7 @@ class LogMessagesSummary(object):
     @messages.setter
     def messages(self, messages):
         """
-        Sets the messages of this LogMessagesSummary.        :param messages: The messages of this LogMessagesSummary.
+        Sets the messages of this LogMessagesSummary. :param messages: The messages of this LogMessagesSummary.
         :type: list[object]
         """
 

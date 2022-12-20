@@ -8,10 +8,8 @@ class PermissionEditRequest(object):
         """
         PermissionEditRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'permissions': 'list[str]'}
 
@@ -22,7 +20,7 @@ class PermissionEditRequest(object):
     @property
     def permissions(self):
         """
-        Gets the permissions of this PermissionEditRequest.        :return: The permissions of this PermissionEditRequest.
+        Gets the permissions of this PermissionEditRequest. :return: The permissions of this PermissionEditRequest.
         :rtype: list[str]
         """
         return self._permissions
@@ -30,7 +28,7 @@ class PermissionEditRequest(object):
     @permissions.setter
     def permissions(self, permissions):
         """
-        Sets the permissions of this PermissionEditRequest.        :param permissions: The permissions of this PermissionEditRequest.
+        Sets the permissions of this PermissionEditRequest. :param permissions: The permissions of this PermissionEditRequest.
         :type: list[str]
         """
 

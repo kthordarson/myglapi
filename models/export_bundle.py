@@ -8,10 +8,8 @@ class ExportBundle(object):
         """
         ExportBundle - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'name': 'str', 'description': 'str', 'category': 'str', 'inputs': 'list[str]', 'streams': 'list[str]', 'outputs': 'list[str]', 'dashboards': 'list[str]', 'grok_patterns': 'list[str]'}
 
@@ -29,7 +27,7 @@ class ExportBundle(object):
     @property
     def name(self):
         """
-        Gets the name of this ExportBundle.        :return: The name of this ExportBundle.
+        Gets the name of this ExportBundle. :return: The name of this ExportBundle.
         :rtype: str
         """
         return self._name
@@ -37,7 +35,7 @@ class ExportBundle(object):
     @name.setter
     def name(self, name):
         """
-        Sets the name of this ExportBundle.        :param name: The name of this ExportBundle.
+        Sets the name of this ExportBundle. :param name: The name of this ExportBundle.
         :type: str
         """
 
@@ -46,7 +44,7 @@ class ExportBundle(object):
     @property
     def description(self):
         """
-        Gets the description of this ExportBundle.        :return: The description of this ExportBundle.
+        Gets the description of this ExportBundle. :return: The description of this ExportBundle.
         :rtype: str
         """
         return self._description
@@ -54,7 +52,7 @@ class ExportBundle(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this ExportBundle.        :param description: The description of this ExportBundle.
+        Sets the description of this ExportBundle. :param description: The description of this ExportBundle.
         :type: str
         """
 
@@ -63,7 +61,7 @@ class ExportBundle(object):
     @property
     def category(self):
         """
-        Gets the category of this ExportBundle.        :return: The category of this ExportBundle.
+        Gets the category of this ExportBundle. :return: The category of this ExportBundle.
         :rtype: str
         """
         return self._category
@@ -71,7 +69,7 @@ class ExportBundle(object):
     @category.setter
     def category(self, category):
         """
-        Sets the category of this ExportBundle.        :param category: The category of this ExportBundle.
+        Sets the category of this ExportBundle. :param category: The category of this ExportBundle.
         :type: str
         """
 
@@ -80,7 +78,7 @@ class ExportBundle(object):
     @property
     def inputs(self):
         """
-        Gets the inputs of this ExportBundle.        :return: The inputs of this ExportBundle.
+        Gets the inputs of this ExportBundle. :return: The inputs of this ExportBundle.
         :rtype: list[str]
         """
         return self._inputs
@@ -88,7 +86,7 @@ class ExportBundle(object):
     @inputs.setter
     def inputs(self, inputs):
         """
-        Sets the inputs of this ExportBundle.        :param inputs: The inputs of this ExportBundle.
+        Sets the inputs of this ExportBundle. :param inputs: The inputs of this ExportBundle.
         :type: list[str]
         """
 
@@ -97,7 +95,7 @@ class ExportBundle(object):
     @property
     def streams(self):
         """
-        Gets the streams of this ExportBundle.        :return: The streams of this ExportBundle.
+        Gets the streams of this ExportBundle. :return: The streams of this ExportBundle.
         :rtype: list[str]
         """
         return self._streams
@@ -105,7 +103,7 @@ class ExportBundle(object):
     @streams.setter
     def streams(self, streams):
         """
-        Sets the streams of this ExportBundle.        :param streams: The streams of this ExportBundle.
+        Sets the streams of this ExportBundle. :param streams: The streams of this ExportBundle.
         :type: list[str]
         """
 
@@ -114,7 +112,7 @@ class ExportBundle(object):
     @property
     def outputs(self):
         """
-        Gets the outputs of this ExportBundle.        :return: The outputs of this ExportBundle.
+        Gets the outputs of this ExportBundle. :return: The outputs of this ExportBundle.
         :rtype: list[str]
         """
         return self._outputs
@@ -122,7 +120,7 @@ class ExportBundle(object):
     @outputs.setter
     def outputs(self, outputs):
         """
-        Sets the outputs of this ExportBundle.        :param outputs: The outputs of this ExportBundle.
+        Sets the outputs of this ExportBundle. :param outputs: The outputs of this ExportBundle.
         :type: list[str]
         """
 
@@ -131,7 +129,7 @@ class ExportBundle(object):
     @property
     def dashboards(self):
         """
-        Gets the dashboards of this ExportBundle.        :return: The dashboards of this ExportBundle.
+        Gets the dashboards of this ExportBundle. :return: The dashboards of this ExportBundle.
         :rtype: list[str]
         """
         return self._dashboards
@@ -139,7 +137,7 @@ class ExportBundle(object):
     @dashboards.setter
     def dashboards(self, dashboards):
         """
-        Sets the dashboards of this ExportBundle.        :param dashboards: The dashboards of this ExportBundle.
+        Sets the dashboards of this ExportBundle. :param dashboards: The dashboards of this ExportBundle.
         :type: list[str]
         """
 
@@ -148,7 +146,7 @@ class ExportBundle(object):
     @property
     def grok_patterns(self):
         """
-        Gets the grok_patterns of this ExportBundle.        :return: The grok_patterns of this ExportBundle.
+        Gets the grok_patterns of this ExportBundle. :return: The grok_patterns of this ExportBundle.
         :rtype: list[str]
         """
         return self._grok_patterns
@@ -156,7 +154,7 @@ class ExportBundle(object):
     @grok_patterns.setter
     def grok_patterns(self, grok_patterns):
         """
-        Sets the grok_patterns of this ExportBundle.        :param grok_patterns: The grok_patterns of this ExportBundle.
+        Sets the grok_patterns of this ExportBundle. :param grok_patterns: The grok_patterns of this ExportBundle.
         :type: list[str]
         """
 

@@ -5,10 +5,8 @@ class InputStateSummary(object):
         """
         InputStateSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'state': 'str', 'started_at': 'datetime', 'detailed_message': 'str', 'message_input': 'object'}
         self.attribute_map = {'id': 'id', 'state': 'state', 'started_at': 'started_at', 'detailed_message': 'detailed_message', 'message_input': 'message_input'}
@@ -22,7 +20,7 @@ class InputStateSummary(object):
     @property
     def id(self):
         """
-        Gets the id of this InputStateSummary.        :return: The id of this InputStateSummary.
+        Gets the id of this InputStateSummary. :return: The id of this InputStateSummary.
         :rtype: str
         """
         return self._id
@@ -30,7 +28,7 @@ class InputStateSummary(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this InputStateSummary.        :param id: The id of this InputStateSummary.
+        Sets the id of this InputStateSummary. :param id: The id of this InputStateSummary.
         :type: str
         """
 
@@ -39,7 +37,7 @@ class InputStateSummary(object):
     @property
     def state(self):
         """
-        Gets the state of this InputStateSummary.        :return: The state of this InputStateSummary.
+        Gets the state of this InputStateSummary. :return: The state of this InputStateSummary.
         :rtype: str
         """
         return self._state
@@ -47,7 +45,7 @@ class InputStateSummary(object):
     @state.setter
     def state(self, state):
         """
-        Sets the state of this InputStateSummary.        :param state: The state of this InputStateSummary.
+        Sets the state of this InputStateSummary. :param state: The state of this InputStateSummary.
         :type: str
         """
 
@@ -56,7 +54,7 @@ class InputStateSummary(object):
     @property
     def started_at(self):
         """
-        Gets the started_at of this InputStateSummary.        :return: The started_at of this InputStateSummary.
+        Gets the started_at of this InputStateSummary. :return: The started_at of this InputStateSummary.
         :rtype: datetime
         """
         return self._started_at
@@ -64,7 +62,7 @@ class InputStateSummary(object):
     @started_at.setter
     def started_at(self, started_at):
         """
-        Sets the started_at of this InputStateSummary.        :param started_at: The started_at of this InputStateSummary.
+        Sets the started_at of this InputStateSummary. :param started_at: The started_at of this InputStateSummary.
         :type: datetime
         """
 
@@ -73,7 +71,7 @@ class InputStateSummary(object):
     @property
     def detailed_message(self):
         """
-        Gets the detailed_message of this InputStateSummary.        :return: The detailed_message of this InputStateSummary.
+        Gets the detailed_message of this InputStateSummary. :return: The detailed_message of this InputStateSummary.
         :rtype: str
         """
         return self._detailed_message
@@ -81,7 +79,7 @@ class InputStateSummary(object):
     @detailed_message.setter
     def detailed_message(self, detailed_message):
         """
-        Sets the detailed_message of this InputStateSummary.        :param detailed_message: The detailed_message of this InputStateSummary.
+        Sets the detailed_message of this InputStateSummary. :param detailed_message: The detailed_message of this InputStateSummary.
         :type: str
         """
 
@@ -90,7 +88,7 @@ class InputStateSummary(object):
     @property
     def message_input(self):
         """
-        Gets the message_input of this InputStateSummary.        :return: The message_input of this InputStateSummary.
+        Gets the message_input of this InputStateSummary. :return: The message_input of this InputStateSummary.
         :rtype: object
         """
         return self._message_input
@@ -98,7 +96,7 @@ class InputStateSummary(object):
     @message_input.setter
     def message_input(self, message_input):
         """
-        Sets the message_input of this InputStateSummary.        :param message_input: The message_input of this InputStateSummary.
+        Sets the message_input of this InputStateSummary. :param message_input: The message_input of this InputStateSummary.
         :type: object
         """
 

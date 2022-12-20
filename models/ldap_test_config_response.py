@@ -8,10 +8,8 @@ class LdapTestConfigResponse(object):
         """
         LdapTestConfigResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'connected': 'bool', 'system_authenticated': 'bool', 'login_authenticated': 'bool', 'entry': 'object', 'groups': 'list[str]', 'exception': 'str'}
 
@@ -27,7 +25,7 @@ class LdapTestConfigResponse(object):
     @property
     def connected(self):
         """
-        Gets the connected of this LdapTestConfigResponse.        :return: The connected of this LdapTestConfigResponse.
+        Gets the connected of this LdapTestConfigResponse. :return: The connected of this LdapTestConfigResponse.
         :rtype: bool
         """
         return self._connected
@@ -35,7 +33,7 @@ class LdapTestConfigResponse(object):
     @connected.setter
     def connected(self, connected):
         """
-        Sets the connected of this LdapTestConfigResponse.        :param connected: The connected of this LdapTestConfigResponse.
+        Sets the connected of this LdapTestConfigResponse. :param connected: The connected of this LdapTestConfigResponse.
         :type: bool
         """
 
@@ -44,7 +42,7 @@ class LdapTestConfigResponse(object):
     @property
     def system_authenticated(self):
         """
-        Gets the system_authenticated of this LdapTestConfigResponse.        :return: The system_authenticated of this LdapTestConfigResponse.
+        Gets the system_authenticated of this LdapTestConfigResponse. :return: The system_authenticated of this LdapTestConfigResponse.
         :rtype: bool
         """
         return self._system_authenticated
@@ -52,7 +50,7 @@ class LdapTestConfigResponse(object):
     @system_authenticated.setter
     def system_authenticated(self, system_authenticated):
         """
-        Sets the system_authenticated of this LdapTestConfigResponse.        :param system_authenticated: The system_authenticated of this LdapTestConfigResponse.
+        Sets the system_authenticated of this LdapTestConfigResponse. :param system_authenticated: The system_authenticated of this LdapTestConfigResponse.
         :type: bool
         """
 
@@ -61,7 +59,7 @@ class LdapTestConfigResponse(object):
     @property
     def login_authenticated(self):
         """
-        Gets the login_authenticated of this LdapTestConfigResponse.        :return: The login_authenticated of this LdapTestConfigResponse.
+        Gets the login_authenticated of this LdapTestConfigResponse. :return: The login_authenticated of this LdapTestConfigResponse.
         :rtype: bool
         """
         return self._login_authenticated
@@ -69,7 +67,7 @@ class LdapTestConfigResponse(object):
     @login_authenticated.setter
     def login_authenticated(self, login_authenticated):
         """
-        Sets the login_authenticated of this LdapTestConfigResponse.        :param login_authenticated: The login_authenticated of this LdapTestConfigResponse.
+        Sets the login_authenticated of this LdapTestConfigResponse. :param login_authenticated: The login_authenticated of this LdapTestConfigResponse.
         :type: bool
         """
 
@@ -78,7 +76,7 @@ class LdapTestConfigResponse(object):
     @property
     def entry(self):
         """
-        Gets the entry of this LdapTestConfigResponse.        :return: The entry of this LdapTestConfigResponse.
+        Gets the entry of this LdapTestConfigResponse. :return: The entry of this LdapTestConfigResponse.
         :rtype: object
         """
         return self._entry
@@ -86,7 +84,7 @@ class LdapTestConfigResponse(object):
     @entry.setter
     def entry(self, entry):
         """
-        Sets the entry of this LdapTestConfigResponse.        :param entry: The entry of this LdapTestConfigResponse.
+        Sets the entry of this LdapTestConfigResponse. :param entry: The entry of this LdapTestConfigResponse.
         :type: object
         """
 
@@ -95,7 +93,7 @@ class LdapTestConfigResponse(object):
     @property
     def groups(self):
         """
-        Gets the groups of this LdapTestConfigResponse.        :return: The groups of this LdapTestConfigResponse.
+        Gets the groups of this LdapTestConfigResponse. :return: The groups of this LdapTestConfigResponse.
         :rtype: list[str]
         """
         return self._groups
@@ -103,7 +101,7 @@ class LdapTestConfigResponse(object):
     @groups.setter
     def groups(self, groups):
         """
-        Sets the groups of this LdapTestConfigResponse.        :param groups: The groups of this LdapTestConfigResponse.
+        Sets the groups of this LdapTestConfigResponse. :param groups: The groups of this LdapTestConfigResponse.
         :type: list[str]
         """
 
@@ -112,7 +110,7 @@ class LdapTestConfigResponse(object):
     @property
     def exception(self):
         """
-        Gets the exception of this LdapTestConfigResponse.        :return: The exception of this LdapTestConfigResponse.
+        Gets the exception of this LdapTestConfigResponse. :return: The exception of this LdapTestConfigResponse.
         :rtype: str
         """
         return self._exception
@@ -120,7 +118,7 @@ class LdapTestConfigResponse(object):
     @exception.setter
     def exception(self, exception):
         """
-        Sets the exception of this LdapTestConfigResponse.        :param exception: The exception of this LdapTestConfigResponse.
+        Sets the exception of this LdapTestConfigResponse. :param exception: The exception of this LdapTestConfigResponse.
         :type: str
         """
 

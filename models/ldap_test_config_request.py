@@ -8,10 +8,8 @@ class LdapTestConfigRequest(object):
         """
         LdapTestConfigRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'system_username': 'str', 'system_password': 'str', 'ldap_uri': 'str', 'use_start_tls': 'bool', 'trust_all_certificates': 'bool', 'active_directory': 'bool', 'search_base': 'str', 'search_pattern': 'str', 'principal': 'str', 'password': 'str', 'test_connect_only': 'bool', 'group_search_base': 'str', 'group_id_attribute': 'str', 'group_search_pattern': 'str'}
 
@@ -35,7 +33,7 @@ class LdapTestConfigRequest(object):
     @property
     def system_username(self):
         """
-        Gets the system_username of this LdapTestConfigRequest.        :return: The system_username of this LdapTestConfigRequest.
+        Gets the system_username of this LdapTestConfigRequest. :return: The system_username of this LdapTestConfigRequest.
         :rtype: str
         """
         return self._system_username
@@ -43,7 +41,7 @@ class LdapTestConfigRequest(object):
     @system_username.setter
     def system_username(self, system_username):
         """
-        Sets the system_username of this LdapTestConfigRequest.        :param system_username: The system_username of this LdapTestConfigRequest.
+        Sets the system_username of this LdapTestConfigRequest. :param system_username: The system_username of this LdapTestConfigRequest.
         :type: str
         """
 
@@ -52,7 +50,7 @@ class LdapTestConfigRequest(object):
     @property
     def system_password(self):
         """
-        Gets the system_password of this LdapTestConfigRequest.        :return: The system_password of this LdapTestConfigRequest.
+        Gets the system_password of this LdapTestConfigRequest. :return: The system_password of this LdapTestConfigRequest.
         :rtype: str
         """
         return self._system_password
@@ -60,7 +58,7 @@ class LdapTestConfigRequest(object):
     @system_password.setter
     def system_password(self, system_password):
         """
-        Sets the system_password of this LdapTestConfigRequest.        :param system_password: The system_password of this LdapTestConfigRequest.
+        Sets the system_password of this LdapTestConfigRequest. :param system_password: The system_password of this LdapTestConfigRequest.
         :type: str
         """
 
@@ -69,7 +67,7 @@ class LdapTestConfigRequest(object):
     @property
     def ldap_uri(self):
         """
-        Gets the ldap_uri of this LdapTestConfigRequest.        :return: The ldap_uri of this LdapTestConfigRequest.
+        Gets the ldap_uri of this LdapTestConfigRequest. :return: The ldap_uri of this LdapTestConfigRequest.
         :rtype: str
         """
         return self._ldap_uri
@@ -77,7 +75,7 @@ class LdapTestConfigRequest(object):
     @ldap_uri.setter
     def ldap_uri(self, ldap_uri):
         """
-        Sets the ldap_uri of this LdapTestConfigRequest.        :param ldap_uri: The ldap_uri of this LdapTestConfigRequest.
+        Sets the ldap_uri of this LdapTestConfigRequest. :param ldap_uri: The ldap_uri of this LdapTestConfigRequest.
         :type: str
         """
 
@@ -86,7 +84,7 @@ class LdapTestConfigRequest(object):
     @property
     def use_start_tls(self):
         """
-        Gets the use_start_tls of this LdapTestConfigRequest.        :return: The use_start_tls of this LdapTestConfigRequest.
+        Gets the use_start_tls of this LdapTestConfigRequest. :return: The use_start_tls of this LdapTestConfigRequest.
         :rtype: bool
         """
         return self._use_start_tls
@@ -94,7 +92,7 @@ class LdapTestConfigRequest(object):
     @use_start_tls.setter
     def use_start_tls(self, use_start_tls):
         """
-        Sets the use_start_tls of this LdapTestConfigRequest.        :param use_start_tls: The use_start_tls of this LdapTestConfigRequest.
+        Sets the use_start_tls of this LdapTestConfigRequest. :param use_start_tls: The use_start_tls of this LdapTestConfigRequest.
         :type: bool
         """
 
@@ -103,7 +101,7 @@ class LdapTestConfigRequest(object):
     @property
     def trust_all_certificates(self):
         """
-        Gets the trust_all_certificates of this LdapTestConfigRequest.        :return: The trust_all_certificates of this LdapTestConfigRequest.
+        Gets the trust_all_certificates of this LdapTestConfigRequest. :return: The trust_all_certificates of this LdapTestConfigRequest.
         :rtype: bool
         """
         return self._trust_all_certificates
@@ -111,7 +109,7 @@ class LdapTestConfigRequest(object):
     @trust_all_certificates.setter
     def trust_all_certificates(self, trust_all_certificates):
         """
-        Sets the trust_all_certificates of this LdapTestConfigRequest.        :param trust_all_certificates: The trust_all_certificates of this LdapTestConfigRequest.
+        Sets the trust_all_certificates of this LdapTestConfigRequest. :param trust_all_certificates: The trust_all_certificates of this LdapTestConfigRequest.
         :type: bool
         """
 
@@ -120,7 +118,7 @@ class LdapTestConfigRequest(object):
     @property
     def active_directory(self):
         """
-        Gets the active_directory of this LdapTestConfigRequest.        :return: The active_directory of this LdapTestConfigRequest.
+        Gets the active_directory of this LdapTestConfigRequest. :return: The active_directory of this LdapTestConfigRequest.
         :rtype: bool
         """
         return self._active_directory
@@ -128,7 +126,7 @@ class LdapTestConfigRequest(object):
     @active_directory.setter
     def active_directory(self, active_directory):
         """
-        Sets the active_directory of this LdapTestConfigRequest.        :param active_directory: The active_directory of this LdapTestConfigRequest.
+        Sets the active_directory of this LdapTestConfigRequest. :param active_directory: The active_directory of this LdapTestConfigRequest.
         :type: bool
         """
 
@@ -137,7 +135,7 @@ class LdapTestConfigRequest(object):
     @property
     def search_base(self):
         """
-        Gets the search_base of this LdapTestConfigRequest.        :return: The search_base of this LdapTestConfigRequest.
+        Gets the search_base of this LdapTestConfigRequest. :return: The search_base of this LdapTestConfigRequest.
         :rtype: str
         """
         return self._search_base
@@ -145,7 +143,7 @@ class LdapTestConfigRequest(object):
     @search_base.setter
     def search_base(self, search_base):
         """
-        Sets the search_base of this LdapTestConfigRequest.        :param search_base: The search_base of this LdapTestConfigRequest.
+        Sets the search_base of this LdapTestConfigRequest. :param search_base: The search_base of this LdapTestConfigRequest.
         :type: str
         """
 
@@ -154,7 +152,7 @@ class LdapTestConfigRequest(object):
     @property
     def search_pattern(self):
         """
-        Gets the search_pattern of this LdapTestConfigRequest.        :return: The search_pattern of this LdapTestConfigRequest.
+        Gets the search_pattern of this LdapTestConfigRequest. :return: The search_pattern of this LdapTestConfigRequest.
         :rtype: str
         """
         return self._search_pattern
@@ -162,7 +160,7 @@ class LdapTestConfigRequest(object):
     @search_pattern.setter
     def search_pattern(self, search_pattern):
         """
-        Sets the search_pattern of this LdapTestConfigRequest.        :param search_pattern: The search_pattern of this LdapTestConfigRequest.
+        Sets the search_pattern of this LdapTestConfigRequest. :param search_pattern: The search_pattern of this LdapTestConfigRequest.
         :type: str
         """
 
@@ -171,7 +169,7 @@ class LdapTestConfigRequest(object):
     @property
     def principal(self):
         """
-        Gets the principal of this LdapTestConfigRequest.        :return: The principal of this LdapTestConfigRequest.
+        Gets the principal of this LdapTestConfigRequest. :return: The principal of this LdapTestConfigRequest.
         :rtype: str
         """
         return self._principal
@@ -179,7 +177,7 @@ class LdapTestConfigRequest(object):
     @principal.setter
     def principal(self, principal):
         """
-        Sets the principal of this LdapTestConfigRequest.        :param principal: The principal of this LdapTestConfigRequest.
+        Sets the principal of this LdapTestConfigRequest. :param principal: The principal of this LdapTestConfigRequest.
         :type: str
         """
 
@@ -188,7 +186,7 @@ class LdapTestConfigRequest(object):
     @property
     def password(self):
         """
-        Gets the password of this LdapTestConfigRequest.        :return: The password of this LdapTestConfigRequest.
+        Gets the password of this LdapTestConfigRequest. :return: The password of this LdapTestConfigRequest.
         :rtype: str
         """
         return self._password
@@ -196,7 +194,7 @@ class LdapTestConfigRequest(object):
     @password.setter
     def password(self, password):
         """
-        Sets the password of this LdapTestConfigRequest.        :param password: The password of this LdapTestConfigRequest.
+        Sets the password of this LdapTestConfigRequest. :param password: The password of this LdapTestConfigRequest.
         :type: str
         """
 
@@ -205,7 +203,7 @@ class LdapTestConfigRequest(object):
     @property
     def test_connect_only(self):
         """
-        Gets the test_connect_only of this LdapTestConfigRequest.        :return: The test_connect_only of this LdapTestConfigRequest.
+        Gets the test_connect_only of this LdapTestConfigRequest. :return: The test_connect_only of this LdapTestConfigRequest.
         :rtype: bool
         """
         return self._test_connect_only
@@ -213,7 +211,7 @@ class LdapTestConfigRequest(object):
     @test_connect_only.setter
     def test_connect_only(self, test_connect_only):
         """
-        Sets the test_connect_only of this LdapTestConfigRequest.        :param test_connect_only: The test_connect_only of this LdapTestConfigRequest.
+        Sets the test_connect_only of this LdapTestConfigRequest. :param test_connect_only: The test_connect_only of this LdapTestConfigRequest.
         :type: bool
         """
 
@@ -222,7 +220,7 @@ class LdapTestConfigRequest(object):
     @property
     def group_search_base(self):
         """
-        Gets the group_search_base of this LdapTestConfigRequest.        :return: The group_search_base of this LdapTestConfigRequest.
+        Gets the group_search_base of this LdapTestConfigRequest. :return: The group_search_base of this LdapTestConfigRequest.
         :rtype: str
         """
         return self._group_search_base
@@ -230,7 +228,7 @@ class LdapTestConfigRequest(object):
     @group_search_base.setter
     def group_search_base(self, group_search_base):
         """
-        Sets the group_search_base of this LdapTestConfigRequest.        :param group_search_base: The group_search_base of this LdapTestConfigRequest.
+        Sets the group_search_base of this LdapTestConfigRequest. :param group_search_base: The group_search_base of this LdapTestConfigRequest.
         :type: str
         """
 
@@ -239,7 +237,7 @@ class LdapTestConfigRequest(object):
     @property
     def group_id_attribute(self):
         """
-        Gets the group_id_attribute of this LdapTestConfigRequest.        :return: The group_id_attribute of this LdapTestConfigRequest.
+        Gets the group_id_attribute of this LdapTestConfigRequest. :return: The group_id_attribute of this LdapTestConfigRequest.
         :rtype: str
         """
         return self._group_id_attribute
@@ -247,7 +245,7 @@ class LdapTestConfigRequest(object):
     @group_id_attribute.setter
     def group_id_attribute(self, group_id_attribute):
         """
-        Sets the group_id_attribute of this LdapTestConfigRequest.        :param group_id_attribute: The group_id_attribute of this LdapTestConfigRequest.
+        Sets the group_id_attribute of this LdapTestConfigRequest. :param group_id_attribute: The group_id_attribute of this LdapTestConfigRequest.
         :type: str
         """
 
@@ -256,7 +254,7 @@ class LdapTestConfigRequest(object):
     @property
     def group_search_pattern(self):
         """
-        Gets the group_search_pattern of this LdapTestConfigRequest.        :return: The group_search_pattern of this LdapTestConfigRequest.
+        Gets the group_search_pattern of this LdapTestConfigRequest. :return: The group_search_pattern of this LdapTestConfigRequest.
         :rtype: str
         """
         return self._group_search_pattern
@@ -264,7 +262,7 @@ class LdapTestConfigRequest(object):
     @group_search_pattern.setter
     def group_search_pattern(self, group_search_pattern):
         """
-        Sets the group_search_pattern of this LdapTestConfigRequest.        :param group_search_pattern: The group_search_pattern of this LdapTestConfigRequest.
+        Sets the group_search_pattern of this LdapTestConfigRequest. :param group_search_pattern: The group_search_pattern of this LdapTestConfigRequest.
         :type: str
         """
 

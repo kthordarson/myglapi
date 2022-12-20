@@ -8,10 +8,8 @@ class MessageCountResponse(object):
         """
         MessageCountResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'events': 'int'}
 
@@ -22,7 +20,7 @@ class MessageCountResponse(object):
     @property
     def events(self):
         """
-        Gets the events of this MessageCountResponse.        :return: The events of this MessageCountResponse.
+        Gets the events of this MessageCountResponse. :return: The events of this MessageCountResponse.
         :rtype: int
         """
         return self._events
@@ -30,7 +28,7 @@ class MessageCountResponse(object):
     @events.setter
     def events(self, events):
         """
-        Sets the events of this MessageCountResponse.        :param events: The events of this MessageCountResponse.
+        Sets the events of this MessageCountResponse. :param events: The events of this MessageCountResponse.
         :type: int
         """
 

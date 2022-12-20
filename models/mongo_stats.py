@@ -8,10 +8,8 @@ class MongoStats(object):
         """
         MongoStats - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'server_status': 'object', 'servers': 'list[str]', 'host_info': 'object', 'build_info': 'object', 'database_stats': 'object'}
 
@@ -26,7 +24,7 @@ class MongoStats(object):
     @property
     def server_status(self):
         """
-        Gets the server_status of this MongoStats.        :return: The server_status of this MongoStats.
+        Gets the server_status of this MongoStats. :return: The server_status of this MongoStats.
         :rtype: object
         """
         return self._server_status
@@ -34,7 +32,7 @@ class MongoStats(object):
     @server_status.setter
     def server_status(self, server_status):
         """
-        Sets the server_status of this MongoStats.        :param server_status: The server_status of this MongoStats.
+        Sets the server_status of this MongoStats. :param server_status: The server_status of this MongoStats.
         :type: object
         """
 
@@ -43,7 +41,7 @@ class MongoStats(object):
     @property
     def servers(self):
         """
-        Gets the servers of this MongoStats.        :return: The servers of this MongoStats.
+        Gets the servers of this MongoStats. :return: The servers of this MongoStats.
         :rtype: list[str]
         """
         return self._servers
@@ -51,7 +49,7 @@ class MongoStats(object):
     @servers.setter
     def servers(self, servers):
         """
-        Sets the servers of this MongoStats.        :param servers: The servers of this MongoStats.
+        Sets the servers of this MongoStats. :param servers: The servers of this MongoStats.
         :type: list[str]
         """
 
@@ -60,7 +58,7 @@ class MongoStats(object):
     @property
     def host_info(self):
         """
-        Gets the host_info of this MongoStats.        :return: The host_info of this MongoStats.
+        Gets the host_info of this MongoStats. :return: The host_info of this MongoStats.
         :rtype: object
         """
         return self._host_info
@@ -68,7 +66,7 @@ class MongoStats(object):
     @host_info.setter
     def host_info(self, host_info):
         """
-        Sets the host_info of this MongoStats.        :param host_info: The host_info of this MongoStats.
+        Sets the host_info of this MongoStats. :param host_info: The host_info of this MongoStats.
         :type: object
         """
 
@@ -77,7 +75,7 @@ class MongoStats(object):
     @property
     def build_info(self):
         """
-        Gets the build_info of this MongoStats.        :return: The build_info of this MongoStats.
+        Gets the build_info of this MongoStats. :return: The build_info of this MongoStats.
         :rtype: object
         """
         return self._build_info
@@ -85,7 +83,7 @@ class MongoStats(object):
     @build_info.setter
     def build_info(self, build_info):
         """
-        Sets the build_info of this MongoStats.        :param build_info: The build_info of this MongoStats.
+        Sets the build_info of this MongoStats. :param build_info: The build_info of this MongoStats.
         :type: object
         """
 
@@ -94,7 +92,7 @@ class MongoStats(object):
     @property
     def database_stats(self):
         """
-        Gets the database_stats of this MongoStats.        :return: The database_stats of this MongoStats.
+        Gets the database_stats of this MongoStats. :return: The database_stats of this MongoStats.
         :rtype: object
         """
         return self._database_stats
@@ -102,7 +100,7 @@ class MongoStats(object):
     @database_stats.setter
     def database_stats(self, database_stats):
         """
-        Sets the database_stats of this MongoStats.        :param database_stats: The database_stats of this MongoStats.
+        Sets the database_stats of this MongoStats. :param database_stats: The database_stats of this MongoStats.
         :type: object
         """
 

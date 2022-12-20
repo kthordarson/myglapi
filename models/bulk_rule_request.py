@@ -8,10 +8,8 @@ class BulkRuleRequest(object):
         """
         BulkRuleRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'rules': 'list[str]'}
 
@@ -22,7 +20,7 @@ class BulkRuleRequest(object):
     @property
     def rules(self):
         """
-        Gets the rules of this BulkRuleRequest.        :return: The rules of this BulkRuleRequest.
+        Gets the rules of this BulkRuleRequest. :return: The rules of this BulkRuleRequest.
         :rtype: list[str]
         """
         return self._rules
@@ -30,7 +28,7 @@ class BulkRuleRequest(object):
     @rules.setter
     def rules(self, rules):
         """
-        Sets the rules of this BulkRuleRequest.        :param rules: The rules of this BulkRuleRequest.
+        Sets the rules of this BulkRuleRequest. :param rules: The rules of this BulkRuleRequest.
         :type: list[str]
         """
 

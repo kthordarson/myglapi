@@ -8,10 +8,8 @@ class CollectorList(object):
         """
         CollectorList - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'collectors': 'list[object]'}
 
@@ -22,7 +20,7 @@ class CollectorList(object):
     @property
     def collectors(self):
         """
-        Gets the collectors of this CollectorList.        :return: The collectors of this CollectorList.
+        Gets the collectors of this CollectorList. :return: The collectors of this CollectorList.
         :rtype: list[object]
         """
         return self._collectors
@@ -30,7 +28,7 @@ class CollectorList(object):
     @collectors.setter
     def collectors(self, collectors):
         """
-        Sets the collectors of this CollectorList.        :param collectors: The collectors of this CollectorList.
+        Sets the collectors of this CollectorList. :param collectors: The collectors of this CollectorList.
         :type: list[object]
         """
 

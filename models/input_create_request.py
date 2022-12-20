@@ -8,10 +8,8 @@ class InputCreateRequest(object):
         """
         InputCreateRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'title': 'str', 'type': 'str', '_global': 'bool', 'configuration': 'object', 'node': 'str'}
 
@@ -26,7 +24,7 @@ class InputCreateRequest(object):
     @property
     def title(self):
         """
-        Gets the title of this InputCreateRequest.        :return: The title of this InputCreateRequest.
+        Gets the title of this InputCreateRequest. :return: The title of this InputCreateRequest.
         :rtype: str
         """
         return self._title
@@ -34,7 +32,7 @@ class InputCreateRequest(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this InputCreateRequest.        :param title: The title of this InputCreateRequest.
+        Sets the title of this InputCreateRequest. :param title: The title of this InputCreateRequest.
         :type: str
         """
 
@@ -43,7 +41,7 @@ class InputCreateRequest(object):
     @property
     def type(self):
         """
-        Gets the type of this InputCreateRequest.        :return: The type of this InputCreateRequest.
+        Gets the type of this InputCreateRequest. :return: The type of this InputCreateRequest.
         :rtype: str
         """
         return self._type
@@ -51,7 +49,7 @@ class InputCreateRequest(object):
     @type.setter
     def type(self, type):
         """
-        Sets the type of this InputCreateRequest.        :param type: The type of this InputCreateRequest.
+        Sets the type of this InputCreateRequest. :param type: The type of this InputCreateRequest.
         :type: str
         """
 
@@ -60,7 +58,7 @@ class InputCreateRequest(object):
     @property
     def _global(self):
         """
-        Gets the _global of this InputCreateRequest.        :return: The _global of this InputCreateRequest.
+        Gets the _global of this InputCreateRequest. :return: The _global of this InputCreateRequest.
         :rtype: bool
         """
         return self.__global
@@ -68,7 +66,7 @@ class InputCreateRequest(object):
     @_global.setter
     def _global(self, _global):
         """
-        Sets the _global of this InputCreateRequest.        :param _global: The _global of this InputCreateRequest.
+        Sets the _global of this InputCreateRequest. :param _global: The _global of this InputCreateRequest.
         :type: bool
         """
 
@@ -77,7 +75,7 @@ class InputCreateRequest(object):
     @property
     def configuration(self):
         """
-        Gets the configuration of this InputCreateRequest.        :return: The configuration of this InputCreateRequest.
+        Gets the configuration of this InputCreateRequest. :return: The configuration of this InputCreateRequest.
         :rtype: object
         """
         return self._configuration
@@ -85,7 +83,7 @@ class InputCreateRequest(object):
     @configuration.setter
     def configuration(self, configuration):
         """
-        Sets the configuration of this InputCreateRequest.        :param configuration: The configuration of this InputCreateRequest.
+        Sets the configuration of this InputCreateRequest. :param configuration: The configuration of this InputCreateRequest.
         :type: object
         """
 
@@ -94,7 +92,7 @@ class InputCreateRequest(object):
     @property
     def node(self):
         """
-        Gets the node of this InputCreateRequest.        :return: The node of this InputCreateRequest.
+        Gets the node of this InputCreateRequest. :return: The node of this InputCreateRequest.
         :rtype: str
         """
         return self._node
@@ -102,7 +100,7 @@ class InputCreateRequest(object):
     @node.setter
     def node(self, node):
         """
-        Sets the node of this InputCreateRequest.        :param node: The node of this InputCreateRequest.
+        Sets the node of this InputCreateRequest. :param node: The node of this InputCreateRequest.
         :type: str
         """
 

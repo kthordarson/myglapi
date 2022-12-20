@@ -6,10 +6,8 @@ class AllIndices(object):
         """
         AllIndices - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'closed': 'object', 'reopened': 'object', 'all': 'object'}
 
@@ -22,7 +20,7 @@ class AllIndices(object):
     @property
     def closed(self):
         """
-        Gets the closed of this AllIndices.        :return: The closed of this AllIndices.
+        Gets the closed of this AllIndices. :return: The closed of this AllIndices.
         :rtype: object
         """
         return self._closed
@@ -30,7 +28,7 @@ class AllIndices(object):
     @closed.setter
     def closed(self, closed):
         """
-        Sets the closed of this AllIndices.        :param closed: The closed of this AllIndices.
+        Sets the closed of this AllIndices. :param closed: The closed of this AllIndices.
         :type: object
         """
 
@@ -39,7 +37,7 @@ class AllIndices(object):
     @property
     def reopened(self):
         """
-        Gets the reopened of this AllIndices.        :return: The reopened of this AllIndices.
+        Gets the reopened of this AllIndices. :return: The reopened of this AllIndices.
         :rtype: object
         """
         return self._reopened
@@ -47,7 +45,7 @@ class AllIndices(object):
     @reopened.setter
     def reopened(self, reopened):
         """
-        Sets the reopened of this AllIndices.        :param reopened: The reopened of this AllIndices.
+        Sets the reopened of this AllIndices. :param reopened: The reopened of this AllIndices.
         :type: object
         """
 
@@ -56,7 +54,7 @@ class AllIndices(object):
     @property
     def all(self):
         """
-        Gets the all of this AllIndices.        :return: The all of this AllIndices.
+        Gets the all of this AllIndices. :return: The all of this AllIndices.
         :rtype: object
         """
         return self._all
@@ -64,7 +62,7 @@ class AllIndices(object):
     @all.setter
     def all(self, all):
         """
-        Sets the all of this AllIndices.        :param all: The all of this AllIndices.
+        Sets the all of this AllIndices. :param all: The all of this AllIndices.
         :type: object
         """
 

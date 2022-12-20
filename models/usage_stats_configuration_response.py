@@ -8,10 +8,8 @@ class UsageStatsConfigurationResponse(object):
         """
         UsageStatsConfigurationResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'enabled': 'bool'}
 
@@ -22,7 +20,7 @@ class UsageStatsConfigurationResponse(object):
     @property
     def enabled(self):
         """
-        Gets the enabled of this UsageStatsConfigurationResponse.        :return: The enabled of this UsageStatsConfigurationResponse.
+        Gets the enabled of this UsageStatsConfigurationResponse. :return: The enabled of this UsageStatsConfigurationResponse.
         :rtype: bool
         """
         return self._enabled
@@ -30,7 +28,7 @@ class UsageStatsConfigurationResponse(object):
     @enabled.setter
     def enabled(self, enabled):
         """
-        Sets the enabled of this UsageStatsConfigurationResponse.        :param enabled: The enabled of this UsageStatsConfigurationResponse.
+        Sets the enabled of this UsageStatsConfigurationResponse. :param enabled: The enabled of this UsageStatsConfigurationResponse.
         :type: bool
         """
 

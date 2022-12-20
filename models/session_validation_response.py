@@ -8,10 +8,8 @@ class SessionValidationResponse(object):
         """
         SessionValidationResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'is_valid': 'bool', 'session_id': 'str', 'username': 'str'}
 
@@ -24,7 +22,7 @@ class SessionValidationResponse(object):
     @property
     def is_valid(self):
         """
-        Gets the is_valid of this SessionValidationResponse.        :return: The is_valid of this SessionValidationResponse.
+        Gets the is_valid of this SessionValidationResponse. :return: The is_valid of this SessionValidationResponse.
         :rtype: bool
         """
         return self._is_valid
@@ -32,7 +30,7 @@ class SessionValidationResponse(object):
     @is_valid.setter
     def is_valid(self, is_valid):
         """
-        Sets the is_valid of this SessionValidationResponse.        :param is_valid: The is_valid of this SessionValidationResponse.
+        Sets the is_valid of this SessionValidationResponse. :param is_valid: The is_valid of this SessionValidationResponse.
         :type: bool
         """
 
@@ -41,7 +39,7 @@ class SessionValidationResponse(object):
     @property
     def session_id(self):
         """
-        Gets the session_id of this SessionValidationResponse.        :return: The session_id of this SessionValidationResponse.
+        Gets the session_id of this SessionValidationResponse. :return: The session_id of this SessionValidationResponse.
         :rtype: str
         """
         return self._session_id
@@ -49,7 +47,7 @@ class SessionValidationResponse(object):
     @session_id.setter
     def session_id(self, session_id):
         """
-        Sets the session_id of this SessionValidationResponse.        :param session_id: The session_id of this SessionValidationResponse.
+        Sets the session_id of this SessionValidationResponse. :param session_id: The session_id of this SessionValidationResponse.
         :type: str
         """
 
@@ -58,7 +56,7 @@ class SessionValidationResponse(object):
     @property
     def username(self):
         """
-        Gets the username of this SessionValidationResponse.        :return: The username of this SessionValidationResponse.
+        Gets the username of this SessionValidationResponse. :return: The username of this SessionValidationResponse.
         :rtype: str
         """
         return self._username
@@ -66,7 +64,7 @@ class SessionValidationResponse(object):
     @username.setter
     def username(self, username):
         """
-        Sets the username of this SessionValidationResponse.        :param username: The username of this SessionValidationResponse.
+        Sets the username of this SessionValidationResponse. :param username: The username of this SessionValidationResponse.
         :type: str
         """
 

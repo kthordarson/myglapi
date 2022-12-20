@@ -8,10 +8,8 @@ class IndexRangeSummary(object):
         """
         IndexRangeSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'index_name': 'str', 'begin': 'datetime', 'end': 'datetime', 'calculated_at': 'datetime', 'took_ms': 'int'}
 
@@ -26,7 +24,7 @@ class IndexRangeSummary(object):
     @property
     def index_name(self):
         """
-        Gets the index_name of this IndexRangeSummary.        :return: The index_name of this IndexRangeSummary.
+        Gets the index_name of this IndexRangeSummary. :return: The index_name of this IndexRangeSummary.
         :rtype: str
         """
         return self._index_name
@@ -34,7 +32,7 @@ class IndexRangeSummary(object):
     @index_name.setter
     def index_name(self, index_name):
         """
-        Sets the index_name of this IndexRangeSummary.        :param index_name: The index_name of this IndexRangeSummary.
+        Sets the index_name of this IndexRangeSummary. :param index_name: The index_name of this IndexRangeSummary.
         :type: str
         """
 
@@ -43,7 +41,7 @@ class IndexRangeSummary(object):
     @property
     def begin(self):
         """
-        Gets the begin of this IndexRangeSummary.        :return: The begin of this IndexRangeSummary.
+        Gets the begin of this IndexRangeSummary. :return: The begin of this IndexRangeSummary.
         :rtype: datetime
         """
         return self._begin
@@ -51,7 +49,7 @@ class IndexRangeSummary(object):
     @begin.setter
     def begin(self, begin):
         """
-        Sets the begin of this IndexRangeSummary.        :param begin: The begin of this IndexRangeSummary.
+        Sets the begin of this IndexRangeSummary. :param begin: The begin of this IndexRangeSummary.
         :type: datetime
         """
 
@@ -60,7 +58,7 @@ class IndexRangeSummary(object):
     @property
     def end(self):
         """
-        Gets the end of this IndexRangeSummary.        :return: The end of this IndexRangeSummary.
+        Gets the end of this IndexRangeSummary. :return: The end of this IndexRangeSummary.
         :rtype: datetime
         """
         return self._end
@@ -68,7 +66,7 @@ class IndexRangeSummary(object):
     @end.setter
     def end(self, end):
         """
-        Sets the end of this IndexRangeSummary.        :param end: The end of this IndexRangeSummary.
+        Sets the end of this IndexRangeSummary. :param end: The end of this IndexRangeSummary.
         :type: datetime
         """
 
@@ -77,7 +75,7 @@ class IndexRangeSummary(object):
     @property
     def calculated_at(self):
         """
-        Gets the calculated_at of this IndexRangeSummary.        :return: The calculated_at of this IndexRangeSummary.
+        Gets the calculated_at of this IndexRangeSummary. :return: The calculated_at of this IndexRangeSummary.
         :rtype: datetime
         """
         return self._calculated_at
@@ -85,7 +83,7 @@ class IndexRangeSummary(object):
     @calculated_at.setter
     def calculated_at(self, calculated_at):
         """
-        Sets the calculated_at of this IndexRangeSummary.        :param calculated_at: The calculated_at of this IndexRangeSummary.
+        Sets the calculated_at of this IndexRangeSummary. :param calculated_at: The calculated_at of this IndexRangeSummary.
         :type: datetime
         """
 
@@ -94,7 +92,7 @@ class IndexRangeSummary(object):
     @property
     def took_ms(self):
         """
-        Gets the took_ms of this IndexRangeSummary.        :return: The took_ms of this IndexRangeSummary.
+        Gets the took_ms of this IndexRangeSummary. :return: The took_ms of this IndexRangeSummary.
         :rtype: int
         """
         return self._took_ms
@@ -102,7 +100,7 @@ class IndexRangeSummary(object):
     @took_ms.setter
     def took_ms(self, took_ms):
         """
-        Sets the took_ms of this IndexRangeSummary.        :param took_ms: The took_ms of this IndexRangeSummary.
+        Sets the took_ms of this IndexRangeSummary. :param took_ms: The took_ms of this IndexRangeSummary.
         :type: int
         """
 

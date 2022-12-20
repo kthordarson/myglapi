@@ -8,10 +8,8 @@ class OpenIndicesInfo(object):
         """
         OpenIndicesInfo - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'indices': 'object'}
 
@@ -22,7 +20,7 @@ class OpenIndicesInfo(object):
     @property
     def indices(self):
         """
-        Gets the indices of this OpenIndicesInfo.        :return: The indices of this OpenIndicesInfo.
+        Gets the indices of this OpenIndicesInfo. :return: The indices of this OpenIndicesInfo.
         :rtype: object
         """
         return self._indices
@@ -30,7 +28,7 @@ class OpenIndicesInfo(object):
     @indices.setter
     def indices(self, indices):
         """
-        Sets the indices of this OpenIndicesInfo.        :param indices: The indices of this OpenIndicesInfo.
+        Sets the indices of this OpenIndicesInfo. :param indices: The indices of this OpenIndicesInfo.
         :type: object
         """
 

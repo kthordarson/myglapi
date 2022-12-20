@@ -8,10 +8,8 @@ class ExposedConfiguration(object):
         """
         ExposedConfiguration - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'inputbuffer_processors': 'int', 'processbuffer_processors': 'int', 'outputbuffer_processors': 'int', 'processor_wait_strategy': 'str', 'inputbuffer_wait_strategy': 'str', 'inputbuffer_ring_size': 'int', 'ring_size': 'int', 'plugin_dir': 'str', 'node_id_file': 'str', 'allow_highlighting': 'bool', 'allow_leading_wildcard_searches': 'bool', 'elasticsearch_shards': 'int', 'elasticsearch_replicas': 'int', 'stream_processing_timeout': 'int', 'stream_processing_max_faults': 'int', 'output_module_timeout': 'int', 'stale_master_timeout': 'int', 'disable_index_optimization': 'bool', 'index_optimization_max_num_segments': 'int', 'gc_warning_threshold': 'str'}
 
@@ -41,7 +39,7 @@ class ExposedConfiguration(object):
     @property
     def inputbuffer_processors(self):
         """
-        Gets the inputbuffer_processors of this ExposedConfiguration.        :return: The inputbuffer_processors of this ExposedConfiguration.
+        Gets the inputbuffer_processors of this ExposedConfiguration. :return: The inputbuffer_processors of this ExposedConfiguration.
         :rtype: int
         """
         return self._inputbuffer_processors
@@ -49,7 +47,7 @@ class ExposedConfiguration(object):
     @inputbuffer_processors.setter
     def inputbuffer_processors(self, inputbuffer_processors):
         """
-        Sets the inputbuffer_processors of this ExposedConfiguration.        :param inputbuffer_processors: The inputbuffer_processors of this ExposedConfiguration.
+        Sets the inputbuffer_processors of this ExposedConfiguration. :param inputbuffer_processors: The inputbuffer_processors of this ExposedConfiguration.
         :type: int
         """
 
@@ -58,7 +56,7 @@ class ExposedConfiguration(object):
     @property
     def processbuffer_processors(self):
         """
-        Gets the processbuffer_processors of this ExposedConfiguration.        :return: The processbuffer_processors of this ExposedConfiguration.
+        Gets the processbuffer_processors of this ExposedConfiguration. :return: The processbuffer_processors of this ExposedConfiguration.
         :rtype: int
         """
         return self._processbuffer_processors
@@ -66,7 +64,7 @@ class ExposedConfiguration(object):
     @processbuffer_processors.setter
     def processbuffer_processors(self, processbuffer_processors):
         """
-        Sets the processbuffer_processors of this ExposedConfiguration.        :param processbuffer_processors: The processbuffer_processors of this ExposedConfiguration.
+        Sets the processbuffer_processors of this ExposedConfiguration. :param processbuffer_processors: The processbuffer_processors of this ExposedConfiguration.
         :type: int
         """
 
@@ -75,7 +73,7 @@ class ExposedConfiguration(object):
     @property
     def outputbuffer_processors(self):
         """
-        Gets the outputbuffer_processors of this ExposedConfiguration.        :return: The outputbuffer_processors of this ExposedConfiguration.
+        Gets the outputbuffer_processors of this ExposedConfiguration. :return: The outputbuffer_processors of this ExposedConfiguration.
         :rtype: int
         """
         return self._outputbuffer_processors
@@ -83,7 +81,7 @@ class ExposedConfiguration(object):
     @outputbuffer_processors.setter
     def outputbuffer_processors(self, outputbuffer_processors):
         """
-        Sets the outputbuffer_processors of this ExposedConfiguration.        :param outputbuffer_processors: The outputbuffer_processors of this ExposedConfiguration.
+        Sets the outputbuffer_processors of this ExposedConfiguration. :param outputbuffer_processors: The outputbuffer_processors of this ExposedConfiguration.
         :type: int
         """
 
@@ -92,7 +90,7 @@ class ExposedConfiguration(object):
     @property
     def processor_wait_strategy(self):
         """
-        Gets the processor_wait_strategy of this ExposedConfiguration.        :return: The processor_wait_strategy of this ExposedConfiguration.
+        Gets the processor_wait_strategy of this ExposedConfiguration. :return: The processor_wait_strategy of this ExposedConfiguration.
         :rtype: str
         """
         return self._processor_wait_strategy
@@ -100,7 +98,7 @@ class ExposedConfiguration(object):
     @processor_wait_strategy.setter
     def processor_wait_strategy(self, processor_wait_strategy):
         """
-        Sets the processor_wait_strategy of this ExposedConfiguration.        :param processor_wait_strategy: The processor_wait_strategy of this ExposedConfiguration.
+        Sets the processor_wait_strategy of this ExposedConfiguration. :param processor_wait_strategy: The processor_wait_strategy of this ExposedConfiguration.
         :type: str
         """
 
@@ -109,7 +107,7 @@ class ExposedConfiguration(object):
     @property
     def inputbuffer_wait_strategy(self):
         """
-        Gets the inputbuffer_wait_strategy of this ExposedConfiguration.        :return: The inputbuffer_wait_strategy of this ExposedConfiguration.
+        Gets the inputbuffer_wait_strategy of this ExposedConfiguration. :return: The inputbuffer_wait_strategy of this ExposedConfiguration.
         :rtype: str
         """
         return self._inputbuffer_wait_strategy
@@ -117,7 +115,7 @@ class ExposedConfiguration(object):
     @inputbuffer_wait_strategy.setter
     def inputbuffer_wait_strategy(self, inputbuffer_wait_strategy):
         """
-        Sets the inputbuffer_wait_strategy of this ExposedConfiguration.        :param inputbuffer_wait_strategy: The inputbuffer_wait_strategy of this ExposedConfiguration.
+        Sets the inputbuffer_wait_strategy of this ExposedConfiguration. :param inputbuffer_wait_strategy: The inputbuffer_wait_strategy of this ExposedConfiguration.
         :type: str
         """
 
@@ -126,7 +124,7 @@ class ExposedConfiguration(object):
     @property
     def inputbuffer_ring_size(self):
         """
-        Gets the inputbuffer_ring_size of this ExposedConfiguration.        :return: The inputbuffer_ring_size of this ExposedConfiguration.
+        Gets the inputbuffer_ring_size of this ExposedConfiguration. :return: The inputbuffer_ring_size of this ExposedConfiguration.
         :rtype: int
         """
         return self._inputbuffer_ring_size
@@ -134,7 +132,7 @@ class ExposedConfiguration(object):
     @inputbuffer_ring_size.setter
     def inputbuffer_ring_size(self, inputbuffer_ring_size):
         """
-        Sets the inputbuffer_ring_size of this ExposedConfiguration.        :param inputbuffer_ring_size: The inputbuffer_ring_size of this ExposedConfiguration.
+        Sets the inputbuffer_ring_size of this ExposedConfiguration. :param inputbuffer_ring_size: The inputbuffer_ring_size of this ExposedConfiguration.
         :type: int
         """
 
@@ -143,7 +141,7 @@ class ExposedConfiguration(object):
     @property
     def ring_size(self):
         """
-        Gets the ring_size of this ExposedConfiguration.        :return: The ring_size of this ExposedConfiguration.
+        Gets the ring_size of this ExposedConfiguration. :return: The ring_size of this ExposedConfiguration.
         :rtype: int
         """
         return self._ring_size
@@ -151,7 +149,7 @@ class ExposedConfiguration(object):
     @ring_size.setter
     def ring_size(self, ring_size):
         """
-        Sets the ring_size of this ExposedConfiguration.        :param ring_size: The ring_size of this ExposedConfiguration.
+        Sets the ring_size of this ExposedConfiguration. :param ring_size: The ring_size of this ExposedConfiguration.
         :type: int
         """
 
@@ -160,7 +158,7 @@ class ExposedConfiguration(object):
     @property
     def plugin_dir(self):
         """
-        Gets the plugin_dir of this ExposedConfiguration.        :return: The plugin_dir of this ExposedConfiguration.
+        Gets the plugin_dir of this ExposedConfiguration. :return: The plugin_dir of this ExposedConfiguration.
         :rtype: str
         """
         return self._plugin_dir
@@ -168,7 +166,7 @@ class ExposedConfiguration(object):
     @plugin_dir.setter
     def plugin_dir(self, plugin_dir):
         """
-        Sets the plugin_dir of this ExposedConfiguration.        :param plugin_dir: The plugin_dir of this ExposedConfiguration.
+        Sets the plugin_dir of this ExposedConfiguration. :param plugin_dir: The plugin_dir of this ExposedConfiguration.
         :type: str
         """
 
@@ -177,7 +175,7 @@ class ExposedConfiguration(object):
     @property
     def node_id_file(self):
         """
-        Gets the node_id_file of this ExposedConfiguration.        :return: The node_id_file of this ExposedConfiguration.
+        Gets the node_id_file of this ExposedConfiguration. :return: The node_id_file of this ExposedConfiguration.
         :rtype: str
         """
         return self._node_id_file
@@ -185,7 +183,7 @@ class ExposedConfiguration(object):
     @node_id_file.setter
     def node_id_file(self, node_id_file):
         """
-        Sets the node_id_file of this ExposedConfiguration.        :param node_id_file: The node_id_file of this ExposedConfiguration.
+        Sets the node_id_file of this ExposedConfiguration. :param node_id_file: The node_id_file of this ExposedConfiguration.
         :type: str
         """
 
@@ -194,7 +192,7 @@ class ExposedConfiguration(object):
     @property
     def allow_highlighting(self):
         """
-        Gets the allow_highlighting of this ExposedConfiguration.        :return: The allow_highlighting of this ExposedConfiguration.
+        Gets the allow_highlighting of this ExposedConfiguration. :return: The allow_highlighting of this ExposedConfiguration.
         :rtype: bool
         """
         return self._allow_highlighting
@@ -202,7 +200,7 @@ class ExposedConfiguration(object):
     @allow_highlighting.setter
     def allow_highlighting(self, allow_highlighting):
         """
-        Sets the allow_highlighting of this ExposedConfiguration.        :param allow_highlighting: The allow_highlighting of this ExposedConfiguration.
+        Sets the allow_highlighting of this ExposedConfiguration. :param allow_highlighting: The allow_highlighting of this ExposedConfiguration.
         :type: bool
         """
 
@@ -211,7 +209,7 @@ class ExposedConfiguration(object):
     @property
     def allow_leading_wildcard_searches(self):
         """
-        Gets the allow_leading_wildcard_searches of this ExposedConfiguration.        :return: The allow_leading_wildcard_searches of this ExposedConfiguration.
+        Gets the allow_leading_wildcard_searches of this ExposedConfiguration. :return: The allow_leading_wildcard_searches of this ExposedConfiguration.
         :rtype: bool
         """
         return self._allow_leading_wildcard_searches
@@ -219,7 +217,7 @@ class ExposedConfiguration(object):
     @allow_leading_wildcard_searches.setter
     def allow_leading_wildcard_searches(self, allow_leading_wildcard_searches):
         """
-        Sets the allow_leading_wildcard_searches of this ExposedConfiguration.        :param allow_leading_wildcard_searches: The allow_leading_wildcard_searches of this ExposedConfiguration.
+        Sets the allow_leading_wildcard_searches of this ExposedConfiguration. :param allow_leading_wildcard_searches: The allow_leading_wildcard_searches of this ExposedConfiguration.
         :type: bool
         """
 
@@ -228,7 +226,7 @@ class ExposedConfiguration(object):
     @property
     def elasticsearch_shards(self):
         """
-        Gets the elasticsearch_shards of this ExposedConfiguration.        :return: The elasticsearch_shards of this ExposedConfiguration.
+        Gets the elasticsearch_shards of this ExposedConfiguration. :return: The elasticsearch_shards of this ExposedConfiguration.
         :rtype: int
         """
         return self._elasticsearch_shards
@@ -236,7 +234,7 @@ class ExposedConfiguration(object):
     @elasticsearch_shards.setter
     def elasticsearch_shards(self, elasticsearch_shards):
         """
-        Sets the elasticsearch_shards of this ExposedConfiguration.        :param elasticsearch_shards: The elasticsearch_shards of this ExposedConfiguration.
+        Sets the elasticsearch_shards of this ExposedConfiguration. :param elasticsearch_shards: The elasticsearch_shards of this ExposedConfiguration.
         :type: int
         """
 
@@ -245,7 +243,7 @@ class ExposedConfiguration(object):
     @property
     def elasticsearch_replicas(self):
         """
-        Gets the elasticsearch_replicas of this ExposedConfiguration.        :return: The elasticsearch_replicas of this ExposedConfiguration.
+        Gets the elasticsearch_replicas of this ExposedConfiguration. :return: The elasticsearch_replicas of this ExposedConfiguration.
         :rtype: int
         """
         return self._elasticsearch_replicas
@@ -253,7 +251,7 @@ class ExposedConfiguration(object):
     @elasticsearch_replicas.setter
     def elasticsearch_replicas(self, elasticsearch_replicas):
         """
-        Sets the elasticsearch_replicas of this ExposedConfiguration.        :param elasticsearch_replicas: The elasticsearch_replicas of this ExposedConfiguration.
+        Sets the elasticsearch_replicas of this ExposedConfiguration. :param elasticsearch_replicas: The elasticsearch_replicas of this ExposedConfiguration.
         :type: int
         """
 
@@ -262,7 +260,7 @@ class ExposedConfiguration(object):
     @property
     def stream_processing_timeout(self):
         """
-        Gets the stream_processing_timeout of this ExposedConfiguration.        :return: The stream_processing_timeout of this ExposedConfiguration.
+        Gets the stream_processing_timeout of this ExposedConfiguration. :return: The stream_processing_timeout of this ExposedConfiguration.
         :rtype: int
         """
         return self._stream_processing_timeout
@@ -270,7 +268,7 @@ class ExposedConfiguration(object):
     @stream_processing_timeout.setter
     def stream_processing_timeout(self, stream_processing_timeout):
         """
-        Sets the stream_processing_timeout of this ExposedConfiguration.        :param stream_processing_timeout: The stream_processing_timeout of this ExposedConfiguration.
+        Sets the stream_processing_timeout of this ExposedConfiguration. :param stream_processing_timeout: The stream_processing_timeout of this ExposedConfiguration.
         :type: int
         """
 
@@ -279,7 +277,7 @@ class ExposedConfiguration(object):
     @property
     def stream_processing_max_faults(self):
         """
-        Gets the stream_processing_max_faults of this ExposedConfiguration.        :return: The stream_processing_max_faults of this ExposedConfiguration.
+        Gets the stream_processing_max_faults of this ExposedConfiguration. :return: The stream_processing_max_faults of this ExposedConfiguration.
         :rtype: int
         """
         return self._stream_processing_max_faults
@@ -287,7 +285,7 @@ class ExposedConfiguration(object):
     @stream_processing_max_faults.setter
     def stream_processing_max_faults(self, stream_processing_max_faults):
         """
-        Sets the stream_processing_max_faults of this ExposedConfiguration.        :param stream_processing_max_faults: The stream_processing_max_faults of this ExposedConfiguration.
+        Sets the stream_processing_max_faults of this ExposedConfiguration. :param stream_processing_max_faults: The stream_processing_max_faults of this ExposedConfiguration.
         :type: int
         """
 
@@ -296,7 +294,7 @@ class ExposedConfiguration(object):
     @property
     def output_module_timeout(self):
         """
-        Gets the output_module_timeout of this ExposedConfiguration.        :return: The output_module_timeout of this ExposedConfiguration.
+        Gets the output_module_timeout of this ExposedConfiguration. :return: The output_module_timeout of this ExposedConfiguration.
         :rtype: int
         """
         return self._output_module_timeout
@@ -304,7 +302,7 @@ class ExposedConfiguration(object):
     @output_module_timeout.setter
     def output_module_timeout(self, output_module_timeout):
         """
-        Sets the output_module_timeout of this ExposedConfiguration.        :param output_module_timeout: The output_module_timeout of this ExposedConfiguration.
+        Sets the output_module_timeout of this ExposedConfiguration. :param output_module_timeout: The output_module_timeout of this ExposedConfiguration.
         :type: int
         """
 
@@ -313,7 +311,7 @@ class ExposedConfiguration(object):
     @property
     def stale_master_timeout(self):
         """
-        Gets the stale_master_timeout of this ExposedConfiguration.        :return: The stale_master_timeout of this ExposedConfiguration.
+        Gets the stale_master_timeout of this ExposedConfiguration. :return: The stale_master_timeout of this ExposedConfiguration.
         :rtype: int
         """
         return self._stale_master_timeout
@@ -321,7 +319,7 @@ class ExposedConfiguration(object):
     @stale_master_timeout.setter
     def stale_master_timeout(self, stale_master_timeout):
         """
-        Sets the stale_master_timeout of this ExposedConfiguration.        :param stale_master_timeout: The stale_master_timeout of this ExposedConfiguration.
+        Sets the stale_master_timeout of this ExposedConfiguration. :param stale_master_timeout: The stale_master_timeout of this ExposedConfiguration.
         :type: int
         """
 
@@ -330,7 +328,7 @@ class ExposedConfiguration(object):
     @property
     def disable_index_optimization(self):
         """
-        Gets the disable_index_optimization of this ExposedConfiguration.        :return: The disable_index_optimization of this ExposedConfiguration.
+        Gets the disable_index_optimization of this ExposedConfiguration. :return: The disable_index_optimization of this ExposedConfiguration.
         :rtype: bool
         """
         return self._disable_index_optimization
@@ -338,7 +336,7 @@ class ExposedConfiguration(object):
     @disable_index_optimization.setter
     def disable_index_optimization(self, disable_index_optimization):
         """
-        Sets the disable_index_optimization of this ExposedConfiguration.        :param disable_index_optimization: The disable_index_optimization of this ExposedConfiguration.
+        Sets the disable_index_optimization of this ExposedConfiguration. :param disable_index_optimization: The disable_index_optimization of this ExposedConfiguration.
         :type: bool
         """
 
@@ -347,7 +345,7 @@ class ExposedConfiguration(object):
     @property
     def index_optimization_max_num_segments(self):
         """
-        Gets the index_optimization_max_num_segments of this ExposedConfiguration.        :return: The index_optimization_max_num_segments of this ExposedConfiguration.
+        Gets the index_optimization_max_num_segments of this ExposedConfiguration. :return: The index_optimization_max_num_segments of this ExposedConfiguration.
         :rtype: int
         """
         return self._index_optimization_max_num_segments
@@ -355,7 +353,7 @@ class ExposedConfiguration(object):
     @index_optimization_max_num_segments.setter
     def index_optimization_max_num_segments(self, index_optimization_max_num_segments):
         """
-        Sets the index_optimization_max_num_segments of this ExposedConfiguration.        :param index_optimization_max_num_segments: The index_optimization_max_num_segments of this ExposedConfiguration.
+        Sets the index_optimization_max_num_segments of this ExposedConfiguration. :param index_optimization_max_num_segments: The index_optimization_max_num_segments of this ExposedConfiguration.
         :type: int
         """
 
@@ -364,7 +362,7 @@ class ExposedConfiguration(object):
     @property
     def gc_warning_threshold(self):
         """
-        Gets the gc_warning_threshold of this ExposedConfiguration.        :return: The gc_warning_threshold of this ExposedConfiguration.
+        Gets the gc_warning_threshold of this ExposedConfiguration. :return: The gc_warning_threshold of this ExposedConfiguration.
         :rtype: str
         """
         return self._gc_warning_threshold
@@ -372,7 +370,7 @@ class ExposedConfiguration(object):
     @gc_warning_threshold.setter
     def gc_warning_threshold(self, gc_warning_threshold):
         """
-        Sets the gc_warning_threshold of this ExposedConfiguration.        :param gc_warning_threshold: The gc_warning_threshold of this ExposedConfiguration.
+        Sets the gc_warning_threshold of this ExposedConfiguration. :param gc_warning_threshold: The gc_warning_threshold of this ExposedConfiguration.
         :type: str
         """
 

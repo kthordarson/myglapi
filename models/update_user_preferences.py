@@ -8,10 +8,8 @@ class UpdateUserPreferences(object):
         """
         UpdateUserPreferences - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'preferences': 'object'}
 
@@ -22,7 +20,7 @@ class UpdateUserPreferences(object):
     @property
     def preferences(self):
         """
-        Gets the preferences of this UpdateUserPreferences.        :return: The preferences of this UpdateUserPreferences.
+        Gets the preferences of this UpdateUserPreferences. :return: The preferences of this UpdateUserPreferences.
         :rtype: object
         """
         return self._preferences
@@ -30,7 +28,7 @@ class UpdateUserPreferences(object):
     @preferences.setter
     def preferences(self, preferences):
         """
-        Sets the preferences of this UpdateUserPreferences.        :param preferences: The preferences of this UpdateUserPreferences.
+        Sets the preferences of this UpdateUserPreferences. :param preferences: The preferences of this UpdateUserPreferences.
         :type: object
         """
 

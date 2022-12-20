@@ -8,10 +8,8 @@ class Output(object):
         """
         Output - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'type': 'str', 'title': 'str', 'configuration': 'object', 'creator_user_id': 'str', 'created_at': 'datetime', 'content_pack': 'str'}
 
@@ -28,7 +26,7 @@ class Output(object):
     @property
     def id(self):
         """
-        Gets the id of this Output.        :return: The id of this Output.
+        Gets the id of this Output. :return: The id of this Output.
         :rtype: str
         """
         return self._id
@@ -36,7 +34,7 @@ class Output(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this Output.        :param id: The id of this Output.
+        Sets the id of this Output. :param id: The id of this Output.
         :type: str
         """
 
@@ -45,7 +43,7 @@ class Output(object):
     @property
     def type(self):
         """
-        Gets the type of this Output.        :return: The type of this Output.
+        Gets the type of this Output. :return: The type of this Output.
         :rtype: str
         """
         return self._type
@@ -53,7 +51,7 @@ class Output(object):
     @type.setter
     def type(self, type):
         """
-        Sets the type of this Output.        :param type: The type of this Output.
+        Sets the type of this Output. :param type: The type of this Output.
         :type: str
         """
 
@@ -62,7 +60,7 @@ class Output(object):
     @property
     def title(self):
         """
-        Gets the title of this Output.        :return: The title of this Output.
+        Gets the title of this Output. :return: The title of this Output.
         :rtype: str
         """
         return self._title
@@ -70,7 +68,7 @@ class Output(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this Output.        :param title: The title of this Output.
+        Sets the title of this Output. :param title: The title of this Output.
         :type: str
         """
 
@@ -79,7 +77,7 @@ class Output(object):
     @property
     def configuration(self):
         """
-        Gets the configuration of this Output.        :return: The configuration of this Output.
+        Gets the configuration of this Output. :return: The configuration of this Output.
         :rtype: object
         """
         return self._configuration
@@ -87,7 +85,7 @@ class Output(object):
     @configuration.setter
     def configuration(self, configuration):
         """
-        Sets the configuration of this Output.        :param configuration: The configuration of this Output.
+        Sets the configuration of this Output. :param configuration: The configuration of this Output.
         :type: object
         """
 
@@ -96,7 +94,7 @@ class Output(object):
     @property
     def creator_user_id(self):
         """
-        Gets the creator_user_id of this Output.        :return: The creator_user_id of this Output.
+        Gets the creator_user_id of this Output. :return: The creator_user_id of this Output.
         :rtype: str
         """
         return self._creator_user_id
@@ -104,7 +102,7 @@ class Output(object):
     @creator_user_id.setter
     def creator_user_id(self, creator_user_id):
         """
-        Sets the creator_user_id of this Output.        :param creator_user_id: The creator_user_id of this Output.
+        Sets the creator_user_id of this Output. :param creator_user_id: The creator_user_id of this Output.
         :type: str
         """
 
@@ -113,7 +111,7 @@ class Output(object):
     @property
     def created_at(self):
         """
-        Gets the created_at of this Output.        :return: The created_at of this Output.
+        Gets the created_at of this Output. :return: The created_at of this Output.
         :rtype: datetime
         """
         return self._created_at
@@ -121,7 +119,7 @@ class Output(object):
     @created_at.setter
     def created_at(self, created_at):
         """
-        Sets the created_at of this Output.        :param created_at: The created_at of this Output.
+        Sets the created_at of this Output. :param created_at: The created_at of this Output.
         :type: datetime
         """
 
@@ -130,7 +128,7 @@ class Output(object):
     @property
     def content_pack(self):
         """
-        Gets the content_pack of this Output.        :return: The content_pack of this Output.
+        Gets the content_pack of this Output. :return: The content_pack of this Output.
         :rtype: str
         """
         return self._content_pack
@@ -138,7 +136,7 @@ class Output(object):
     @content_pack.setter
     def content_pack(self, content_pack):
         """
-        Sets the content_pack of this Output.        :param content_pack: The content_pack of this Output.
+        Sets the content_pack of this Output. :param content_pack: The content_pack of this Output.
         :type: str
         """
 

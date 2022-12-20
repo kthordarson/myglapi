@@ -6,10 +6,8 @@ class MessageTokens(object):
         """
         MessageTokens - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'tokens': 'list[str]'}
 
@@ -20,7 +18,7 @@ class MessageTokens(object):
     @property
     def tokens(self):
         """
-        Gets the tokens of this MessageTokens.        :return: The tokens of this MessageTokens.
+        Gets the tokens of this MessageTokens. :return: The tokens of this MessageTokens.
         :rtype: list[str]
         """
         return self._tokens
@@ -28,7 +26,7 @@ class MessageTokens(object):
     @tokens.setter
     def tokens(self, tokens):
         """
-        Sets the tokens of this MessageTokens.        :param tokens: The tokens of this MessageTokens.
+        Sets the tokens of this MessageTokens. :param tokens: The tokens of this MessageTokens.
         :type: list[str]
         """
 

@@ -8,10 +8,8 @@ class SystemOverviewResponse(object):
         """
         SystemOverviewResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'facility': 'str', 'codename': 'str', 'node_id': 'str', 'cluster_id': 'str', 'version': 'str', 'started_at': 'str', 'is_processing': 'bool', 'hostname': 'str', 'lifecycle': 'str', 'lb_status': 'str', 'timezone': 'str', 'operating_system': 'str'}
 
@@ -33,7 +31,7 @@ class SystemOverviewResponse(object):
     @property
     def facility(self):
         """
-        Gets the facility of this SystemOverviewResponse.        :return: The facility of this SystemOverviewResponse.
+        Gets the facility of this SystemOverviewResponse. :return: The facility of this SystemOverviewResponse.
         :rtype: str
         """
         return self._facility
@@ -41,7 +39,7 @@ class SystemOverviewResponse(object):
     @facility.setter
     def facility(self, facility):
         """
-        Sets the facility of this SystemOverviewResponse.        :param facility: The facility of this SystemOverviewResponse.
+        Sets the facility of this SystemOverviewResponse. :param facility: The facility of this SystemOverviewResponse.
         :type: str
         """
 
@@ -50,7 +48,7 @@ class SystemOverviewResponse(object):
     @property
     def codename(self):
         """
-        Gets the codename of this SystemOverviewResponse.        :return: The codename of this SystemOverviewResponse.
+        Gets the codename of this SystemOverviewResponse. :return: The codename of this SystemOverviewResponse.
         :rtype: str
         """
         return self._codename
@@ -58,7 +56,7 @@ class SystemOverviewResponse(object):
     @codename.setter
     def codename(self, codename):
         """
-        Sets the codename of this SystemOverviewResponse.        :param codename: The codename of this SystemOverviewResponse.
+        Sets the codename of this SystemOverviewResponse. :param codename: The codename of this SystemOverviewResponse.
         :type: str
         """
 
@@ -67,7 +65,7 @@ class SystemOverviewResponse(object):
     @property
     def node_id(self):
         """
-        Gets the node_id of this SystemOverviewResponse.        :return: The node_id of this SystemOverviewResponse.
+        Gets the node_id of this SystemOverviewResponse. :return: The node_id of this SystemOverviewResponse.
         :rtype: str
         """
         return self._node_id
@@ -75,7 +73,7 @@ class SystemOverviewResponse(object):
     @node_id.setter
     def node_id(self, node_id):
         """
-        Sets the node_id of this SystemOverviewResponse.        :param node_id: The node_id of this SystemOverviewResponse.
+        Sets the node_id of this SystemOverviewResponse. :param node_id: The node_id of this SystemOverviewResponse.
         :type: str
         """
 
@@ -84,7 +82,7 @@ class SystemOverviewResponse(object):
     @property
     def cluster_id(self):
         """
-        Gets the cluster_id of this SystemOverviewResponse.        :return: The cluster_id of this SystemOverviewResponse.
+        Gets the cluster_id of this SystemOverviewResponse. :return: The cluster_id of this SystemOverviewResponse.
         :rtype: str
         """
         return self._cluster_id
@@ -92,7 +90,7 @@ class SystemOverviewResponse(object):
     @cluster_id.setter
     def cluster_id(self, cluster_id):
         """
-        Sets the cluster_id of this SystemOverviewResponse.        :param cluster_id: The cluster_id of this SystemOverviewResponse.
+        Sets the cluster_id of this SystemOverviewResponse. :param cluster_id: The cluster_id of this SystemOverviewResponse.
         :type: str
         """
 
@@ -101,7 +99,7 @@ class SystemOverviewResponse(object):
     @property
     def version(self):
         """
-        Gets the version of this SystemOverviewResponse.        :return: The version of this SystemOverviewResponse.
+        Gets the version of this SystemOverviewResponse. :return: The version of this SystemOverviewResponse.
         :rtype: str
         """
         return self._version
@@ -109,7 +107,7 @@ class SystemOverviewResponse(object):
     @version.setter
     def version(self, version):
         """
-        Sets the version of this SystemOverviewResponse.        :param version: The version of this SystemOverviewResponse.
+        Sets the version of this SystemOverviewResponse. :param version: The version of this SystemOverviewResponse.
         :type: str
         """
 
@@ -118,7 +116,7 @@ class SystemOverviewResponse(object):
     @property
     def started_at(self):
         """
-        Gets the started_at of this SystemOverviewResponse.        :return: The started_at of this SystemOverviewResponse.
+        Gets the started_at of this SystemOverviewResponse. :return: The started_at of this SystemOverviewResponse.
         :rtype: str
         """
         return self._started_at
@@ -126,7 +124,7 @@ class SystemOverviewResponse(object):
     @started_at.setter
     def started_at(self, started_at):
         """
-        Sets the started_at of this SystemOverviewResponse.        :param started_at: The started_at of this SystemOverviewResponse.
+        Sets the started_at of this SystemOverviewResponse. :param started_at: The started_at of this SystemOverviewResponse.
         :type: str
         """
 
@@ -135,7 +133,7 @@ class SystemOverviewResponse(object):
     @property
     def is_processing(self):
         """
-        Gets the is_processing of this SystemOverviewResponse.        :return: The is_processing of this SystemOverviewResponse.
+        Gets the is_processing of this SystemOverviewResponse. :return: The is_processing of this SystemOverviewResponse.
         :rtype: bool
         """
         return self._is_processing
@@ -143,7 +141,7 @@ class SystemOverviewResponse(object):
     @is_processing.setter
     def is_processing(self, is_processing):
         """
-        Sets the is_processing of this SystemOverviewResponse.        :param is_processing: The is_processing of this SystemOverviewResponse.
+        Sets the is_processing of this SystemOverviewResponse. :param is_processing: The is_processing of this SystemOverviewResponse.
         :type: bool
         """
 
@@ -152,7 +150,7 @@ class SystemOverviewResponse(object):
     @property
     def hostname(self):
         """
-        Gets the hostname of this SystemOverviewResponse.        :return: The hostname of this SystemOverviewResponse.
+        Gets the hostname of this SystemOverviewResponse. :return: The hostname of this SystemOverviewResponse.
         :rtype: str
         """
         return self._hostname
@@ -160,7 +158,7 @@ class SystemOverviewResponse(object):
     @hostname.setter
     def hostname(self, hostname):
         """
-        Sets the hostname of this SystemOverviewResponse.        :param hostname: The hostname of this SystemOverviewResponse.
+        Sets the hostname of this SystemOverviewResponse. :param hostname: The hostname of this SystemOverviewResponse.
         :type: str
         """
 
@@ -169,7 +167,7 @@ class SystemOverviewResponse(object):
     @property
     def lifecycle(self):
         """
-        Gets the lifecycle of this SystemOverviewResponse.        :return: The lifecycle of this SystemOverviewResponse.
+        Gets the lifecycle of this SystemOverviewResponse. :return: The lifecycle of this SystemOverviewResponse.
         :rtype: str
         """
         return self._lifecycle
@@ -177,7 +175,7 @@ class SystemOverviewResponse(object):
     @lifecycle.setter
     def lifecycle(self, lifecycle):
         """
-        Sets the lifecycle of this SystemOverviewResponse.        :param lifecycle: The lifecycle of this SystemOverviewResponse.
+        Sets the lifecycle of this SystemOverviewResponse. :param lifecycle: The lifecycle of this SystemOverviewResponse.
         :type: str
         """
 
@@ -186,7 +184,7 @@ class SystemOverviewResponse(object):
     @property
     def lb_status(self):
         """
-        Gets the lb_status of this SystemOverviewResponse.        :return: The lb_status of this SystemOverviewResponse.
+        Gets the lb_status of this SystemOverviewResponse. :return: The lb_status of this SystemOverviewResponse.
         :rtype: str
         """
         return self._lb_status
@@ -194,7 +192,7 @@ class SystemOverviewResponse(object):
     @lb_status.setter
     def lb_status(self, lb_status):
         """
-        Sets the lb_status of this SystemOverviewResponse.        :param lb_status: The lb_status of this SystemOverviewResponse.
+        Sets the lb_status of this SystemOverviewResponse. :param lb_status: The lb_status of this SystemOverviewResponse.
         :type: str
         """
 
@@ -203,7 +201,7 @@ class SystemOverviewResponse(object):
     @property
     def timezone(self):
         """
-        Gets the timezone of this SystemOverviewResponse.        :return: The timezone of this SystemOverviewResponse.
+        Gets the timezone of this SystemOverviewResponse. :return: The timezone of this SystemOverviewResponse.
         :rtype: str
         """
         return self._timezone
@@ -211,7 +209,7 @@ class SystemOverviewResponse(object):
     @timezone.setter
     def timezone(self, timezone):
         """
-        Sets the timezone of this SystemOverviewResponse.        :param timezone: The timezone of this SystemOverviewResponse.
+        Sets the timezone of this SystemOverviewResponse. :param timezone: The timezone of this SystemOverviewResponse.
         :type: str
         """
 
@@ -220,7 +218,7 @@ class SystemOverviewResponse(object):
     @property
     def operating_system(self):
         """
-        Gets the operating_system of this SystemOverviewResponse.        :return: The operating_system of this SystemOverviewResponse.
+        Gets the operating_system of this SystemOverviewResponse. :return: The operating_system of this SystemOverviewResponse.
         :rtype: str
         """
         return self._operating_system
@@ -228,7 +226,7 @@ class SystemOverviewResponse(object):
     @operating_system.setter
     def operating_system(self, operating_system):
         """
-        Sets the operating_system of this SystemOverviewResponse.        :param operating_system: The operating_system of this SystemOverviewResponse.
+        Sets the operating_system of this SystemOverviewResponse. :param operating_system: The operating_system of this SystemOverviewResponse.
         :type: str
         """
 

@@ -8,10 +8,8 @@ class FieldStatsResult(object):
         """
         FieldStatsResult - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'sum_of_squares': 'float', 'count': 'int', 'min': 'float', 'max': 'float', 'time': 'int', 'sum': 'float', 'cardinality': 'int', 'mean': 'float', 'built_query': 'str', 'variance': 'float', 'std_deviation': 'float'}
 
@@ -32,7 +30,7 @@ class FieldStatsResult(object):
     @property
     def sum_of_squares(self):
         """
-        Gets the sum_of_squares of this FieldStatsResult.        :return: The sum_of_squares of this FieldStatsResult.
+        Gets the sum_of_squares of this FieldStatsResult. :return: The sum_of_squares of this FieldStatsResult.
         :rtype: float
         """
         return self._sum_of_squares
@@ -40,7 +38,7 @@ class FieldStatsResult(object):
     @sum_of_squares.setter
     def sum_of_squares(self, sum_of_squares):
         """
-        Sets the sum_of_squares of this FieldStatsResult.        :param sum_of_squares: The sum_of_squares of this FieldStatsResult.
+        Sets the sum_of_squares of this FieldStatsResult. :param sum_of_squares: The sum_of_squares of this FieldStatsResult.
         :type: float
         """
 
@@ -49,7 +47,7 @@ class FieldStatsResult(object):
     @property
     def count(self):
         """
-        Gets the count of this FieldStatsResult.        :return: The count of this FieldStatsResult.
+        Gets the count of this FieldStatsResult. :return: The count of this FieldStatsResult.
         :rtype: int
         """
         return self._count
@@ -57,7 +55,7 @@ class FieldStatsResult(object):
     @count.setter
     def count(self, count):
         """
-        Sets the count of this FieldStatsResult.        :param count: The count of this FieldStatsResult.
+        Sets the count of this FieldStatsResult. :param count: The count of this FieldStatsResult.
         :type: int
         """
 
@@ -66,7 +64,7 @@ class FieldStatsResult(object):
     @property
     def min(self):
         """
-        Gets the min of this FieldStatsResult.        :return: The min of this FieldStatsResult.
+        Gets the min of this FieldStatsResult. :return: The min of this FieldStatsResult.
         :rtype: float
         """
         return self._min
@@ -74,7 +72,7 @@ class FieldStatsResult(object):
     @min.setter
     def min(self, min):
         """
-        Sets the min of this FieldStatsResult.        :param min: The min of this FieldStatsResult.
+        Sets the min of this FieldStatsResult. :param min: The min of this FieldStatsResult.
         :type: float
         """
 
@@ -83,7 +81,7 @@ class FieldStatsResult(object):
     @property
     def max(self):
         """
-        Gets the max of this FieldStatsResult.        :return: The max of this FieldStatsResult.
+        Gets the max of this FieldStatsResult. :return: The max of this FieldStatsResult.
         :rtype: float
         """
         return self._max
@@ -91,7 +89,7 @@ class FieldStatsResult(object):
     @max.setter
     def max(self, max):
         """
-        Sets the max of this FieldStatsResult.        :param max: The max of this FieldStatsResult.
+        Sets the max of this FieldStatsResult. :param max: The max of this FieldStatsResult.
         :type: float
         """
 
@@ -100,7 +98,7 @@ class FieldStatsResult(object):
     @property
     def time(self):
         """
-        Gets the time of this FieldStatsResult.        :return: The time of this FieldStatsResult.
+        Gets the time of this FieldStatsResult. :return: The time of this FieldStatsResult.
         :rtype: int
         """
         return self._time
@@ -108,7 +106,7 @@ class FieldStatsResult(object):
     @time.setter
     def time(self, time):
         """
-        Sets the time of this FieldStatsResult.        :param time: The time of this FieldStatsResult.
+        Sets the time of this FieldStatsResult. :param time: The time of this FieldStatsResult.
         :type: int
         """
 
@@ -117,7 +115,7 @@ class FieldStatsResult(object):
     @property
     def sum(self):
         """
-        Gets the sum of this FieldStatsResult.        :return: The sum of this FieldStatsResult.
+        Gets the sum of this FieldStatsResult. :return: The sum of this FieldStatsResult.
         :rtype: float
         """
         return self._sum
@@ -125,7 +123,7 @@ class FieldStatsResult(object):
     @sum.setter
     def sum(self, sum):
         """
-        Sets the sum of this FieldStatsResult.        :param sum: The sum of this FieldStatsResult.
+        Sets the sum of this FieldStatsResult. :param sum: The sum of this FieldStatsResult.
         :type: float
         """
 
@@ -134,7 +132,7 @@ class FieldStatsResult(object):
     @property
     def cardinality(self):
         """
-        Gets the cardinality of this FieldStatsResult.        :return: The cardinality of this FieldStatsResult.
+        Gets the cardinality of this FieldStatsResult. :return: The cardinality of this FieldStatsResult.
         :rtype: int
         """
         return self._cardinality
@@ -142,7 +140,7 @@ class FieldStatsResult(object):
     @cardinality.setter
     def cardinality(self, cardinality):
         """
-        Sets the cardinality of this FieldStatsResult.        :param cardinality: The cardinality of this FieldStatsResult.
+        Sets the cardinality of this FieldStatsResult. :param cardinality: The cardinality of this FieldStatsResult.
         :type: int
         """
 
@@ -151,7 +149,7 @@ class FieldStatsResult(object):
     @property
     def mean(self):
         """
-        Gets the mean of this FieldStatsResult.        :return: The mean of this FieldStatsResult.
+        Gets the mean of this FieldStatsResult. :return: The mean of this FieldStatsResult.
         :rtype: float
         """
         return self._mean
@@ -159,7 +157,7 @@ class FieldStatsResult(object):
     @mean.setter
     def mean(self, mean):
         """
-        Sets the mean of this FieldStatsResult.        :param mean: The mean of this FieldStatsResult.
+        Sets the mean of this FieldStatsResult. :param mean: The mean of this FieldStatsResult.
         :type: float
         """
 
@@ -168,7 +166,7 @@ class FieldStatsResult(object):
     @property
     def built_query(self):
         """
-        Gets the built_query of this FieldStatsResult.        :return: The built_query of this FieldStatsResult.
+        Gets the built_query of this FieldStatsResult. :return: The built_query of this FieldStatsResult.
         :rtype: str
         """
         return self._built_query
@@ -176,7 +174,7 @@ class FieldStatsResult(object):
     @built_query.setter
     def built_query(self, built_query):
         """
-        Sets the built_query of this FieldStatsResult.        :param built_query: The built_query of this FieldStatsResult.
+        Sets the built_query of this FieldStatsResult. :param built_query: The built_query of this FieldStatsResult.
         :type: str
         """
 
@@ -185,7 +183,7 @@ class FieldStatsResult(object):
     @property
     def variance(self):
         """
-        Gets the variance of this FieldStatsResult.        :return: The variance of this FieldStatsResult.
+        Gets the variance of this FieldStatsResult. :return: The variance of this FieldStatsResult.
         :rtype: float
         """
         return self._variance
@@ -193,7 +191,7 @@ class FieldStatsResult(object):
     @variance.setter
     def variance(self, variance):
         """
-        Sets the variance of this FieldStatsResult.        :param variance: The variance of this FieldStatsResult.
+        Sets the variance of this FieldStatsResult. :param variance: The variance of this FieldStatsResult.
         :type: float
         """
 
@@ -202,7 +200,7 @@ class FieldStatsResult(object):
     @property
     def std_deviation(self):
         """
-        Gets the std_deviation of this FieldStatsResult.        :return: The std_deviation of this FieldStatsResult.
+        Gets the std_deviation of this FieldStatsResult. :return: The std_deviation of this FieldStatsResult.
         :rtype: float
         """
         return self._std_deviation
@@ -210,7 +208,7 @@ class FieldStatsResult(object):
     @std_deviation.setter
     def std_deviation(self, std_deviation):
         """
-        Sets the std_deviation of this FieldStatsResult.        :param std_deviation: The std_deviation of this FieldStatsResult.
+        Sets the std_deviation of this FieldStatsResult. :param std_deviation: The std_deviation of this FieldStatsResult.
         :type: float
         """
 

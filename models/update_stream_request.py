@@ -8,10 +8,8 @@ class UpdateStreamRequest(object):
         """
         UpdateStreamRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'title': 'str', 'description': 'str', 'matching_type': 'str'}
 
@@ -24,7 +22,7 @@ class UpdateStreamRequest(object):
     @property
     def title(self):
         """
-        Gets the title of this UpdateStreamRequest.        :return: The title of this UpdateStreamRequest.
+        Gets the title of this UpdateStreamRequest. :return: The title of this UpdateStreamRequest.
         :rtype: str
         """
         return self._title
@@ -32,7 +30,7 @@ class UpdateStreamRequest(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this UpdateStreamRequest.        :param title: The title of this UpdateStreamRequest.
+        Sets the title of this UpdateStreamRequest. :param title: The title of this UpdateStreamRequest.
         :type: str
         """
 
@@ -41,7 +39,7 @@ class UpdateStreamRequest(object):
     @property
     def description(self):
         """
-        Gets the description of this UpdateStreamRequest.        :return: The description of this UpdateStreamRequest.
+        Gets the description of this UpdateStreamRequest. :return: The description of this UpdateStreamRequest.
         :rtype: str
         """
         return self._description
@@ -49,7 +47,7 @@ class UpdateStreamRequest(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this UpdateStreamRequest.        :param description: The description of this UpdateStreamRequest.
+        Sets the description of this UpdateStreamRequest. :param description: The description of this UpdateStreamRequest.
         :type: str
         """
 
@@ -58,7 +56,7 @@ class UpdateStreamRequest(object):
     @property
     def matching_type(self):
         """
-        Gets the matching_type of this UpdateStreamRequest.        :return: The matching_type of this UpdateStreamRequest.
+        Gets the matching_type of this UpdateStreamRequest. :return: The matching_type of this UpdateStreamRequest.
         :rtype: str
         """
         return self._matching_type
@@ -66,7 +64,7 @@ class UpdateStreamRequest(object):
     @matching_type.setter
     def matching_type(self, matching_type):
         """
-        Sets the matching_type of this UpdateStreamRequest.        :param matching_type: The matching_type of this UpdateStreamRequest.
+        Sets the matching_type of this UpdateStreamRequest. :param matching_type: The matching_type of this UpdateStreamRequest.
         :type: str
         """
 

@@ -8,10 +8,8 @@ class SearchResponse(object):
         """
         SearchResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'to': 'datetime', 'fields': 'list[str]', '_from': 'datetime', 'time': 'int', 'query': 'str', 'messages': 'list[object]', 'built_query': 'str', 'decoration_stats': 'object', 'total_results': 'int', 'used_indices': 'list[object]'}
 
@@ -31,7 +29,7 @@ class SearchResponse(object):
     @property
     def to(self):
         """
-        Gets the to of this SearchResponse.        :return: The to of this SearchResponse.
+        Gets the to of this SearchResponse. :return: The to of this SearchResponse.
         :rtype: datetime
         """
         return self._to
@@ -39,7 +37,7 @@ class SearchResponse(object):
     @to.setter
     def to(self, to):
         """
-        Sets the to of this SearchResponse.        :param to: The to of this SearchResponse.
+        Sets the to of this SearchResponse. :param to: The to of this SearchResponse.
         :type: datetime
         """
 
@@ -48,7 +46,7 @@ class SearchResponse(object):
     @property
     def fields(self):
         """
-        Gets the fields of this SearchResponse.        :return: The fields of this SearchResponse.
+        Gets the fields of this SearchResponse. :return: The fields of this SearchResponse.
         :rtype: list[str]
         """
         return self._fields
@@ -56,7 +54,7 @@ class SearchResponse(object):
     @fields.setter
     def fields(self, fields):
         """
-        Sets the fields of this SearchResponse.        :param fields: The fields of this SearchResponse.
+        Sets the fields of this SearchResponse. :param fields: The fields of this SearchResponse.
         :type: list[str]
         """
 
@@ -65,7 +63,7 @@ class SearchResponse(object):
     @property
     def _from(self):
         """
-        Gets the _from of this SearchResponse.        :return: The _from of this SearchResponse.
+        Gets the _from of this SearchResponse. :return: The _from of this SearchResponse.
         :rtype: datetime
         """
         return self.__from
@@ -73,7 +71,7 @@ class SearchResponse(object):
     @_from.setter
     def _from(self, _from):
         """
-        Sets the _from of this SearchResponse.        :param _from: The _from of this SearchResponse.
+        Sets the _from of this SearchResponse. :param _from: The _from of this SearchResponse.
         :type: datetime
         """
 
@@ -82,7 +80,7 @@ class SearchResponse(object):
     @property
     def time(self):
         """
-        Gets the time of this SearchResponse.        :return: The time of this SearchResponse.
+        Gets the time of this SearchResponse. :return: The time of this SearchResponse.
         :rtype: int
         """
         return self._time
@@ -90,7 +88,7 @@ class SearchResponse(object):
     @time.setter
     def time(self, time):
         """
-        Sets the time of this SearchResponse.        :param time: The time of this SearchResponse.
+        Sets the time of this SearchResponse. :param time: The time of this SearchResponse.
         :type: int
         """
 
@@ -99,7 +97,7 @@ class SearchResponse(object):
     @property
     def query(self):
         """
-        Gets the query of this SearchResponse.        :return: The query of this SearchResponse.
+        Gets the query of this SearchResponse. :return: The query of this SearchResponse.
         :rtype: str
         """
         return self._query
@@ -107,7 +105,7 @@ class SearchResponse(object):
     @query.setter
     def query(self, query):
         """
-        Sets the query of this SearchResponse.        :param query: The query of this SearchResponse.
+        Sets the query of this SearchResponse. :param query: The query of this SearchResponse.
         :type: str
         """
 
@@ -116,7 +114,7 @@ class SearchResponse(object):
     @property
     def messages(self):
         """
-        Gets the messages of this SearchResponse.        :return: The messages of this SearchResponse.
+        Gets the messages of this SearchResponse. :return: The messages of this SearchResponse.
         :rtype: list[object]
         """
         return self._messages
@@ -124,7 +122,7 @@ class SearchResponse(object):
     @messages.setter
     def messages(self, messages):
         """
-        Sets the messages of this SearchResponse.        :param messages: The messages of this SearchResponse.
+        Sets the messages of this SearchResponse. :param messages: The messages of this SearchResponse.
         :type: list[object]
         """
 
@@ -133,7 +131,7 @@ class SearchResponse(object):
     @property
     def built_query(self):
         """
-        Gets the built_query of this SearchResponse.        :return: The built_query of this SearchResponse.
+        Gets the built_query of this SearchResponse. :return: The built_query of this SearchResponse.
         :rtype: str
         """
         return self._built_query
@@ -141,7 +139,7 @@ class SearchResponse(object):
     @built_query.setter
     def built_query(self, built_query):
         """
-        Sets the built_query of this SearchResponse.        :param built_query: The built_query of this SearchResponse.
+        Sets the built_query of this SearchResponse. :param built_query: The built_query of this SearchResponse.
         :type: str
         """
 
@@ -150,7 +148,7 @@ class SearchResponse(object):
     @property
     def decoration_stats(self):
         """
-        Gets the decoration_stats of this SearchResponse.        :return: The decoration_stats of this SearchResponse.
+        Gets the decoration_stats of this SearchResponse. :return: The decoration_stats of this SearchResponse.
         :rtype: object
         """
         return self._decoration_stats
@@ -158,7 +156,7 @@ class SearchResponse(object):
     @decoration_stats.setter
     def decoration_stats(self, decoration_stats):
         """
-        Sets the decoration_stats of this SearchResponse.        :param decoration_stats: The decoration_stats of this SearchResponse.
+        Sets the decoration_stats of this SearchResponse. :param decoration_stats: The decoration_stats of this SearchResponse.
         :type: object
         """
 
@@ -167,7 +165,7 @@ class SearchResponse(object):
     @property
     def total_results(self):
         """
-        Gets the total_results of this SearchResponse.        :return: The total_results of this SearchResponse.
+        Gets the total_results of this SearchResponse. :return: The total_results of this SearchResponse.
         :rtype: int
         """
         return self._total_results
@@ -175,7 +173,7 @@ class SearchResponse(object):
     @total_results.setter
     def total_results(self, total_results):
         """
-        Sets the total_results of this SearchResponse.        :param total_results: The total_results of this SearchResponse.
+        Sets the total_results of this SearchResponse. :param total_results: The total_results of this SearchResponse.
         :type: int
         """
 
@@ -184,7 +182,7 @@ class SearchResponse(object):
     @property
     def used_indices(self):
         """
-        Gets the used_indices of this SearchResponse.        :return: The used_indices of this SearchResponse.
+        Gets the used_indices of this SearchResponse. :return: The used_indices of this SearchResponse.
         :rtype: list[object]
         """
         return self._used_indices
@@ -192,7 +190,7 @@ class SearchResponse(object):
     @used_indices.setter
     def used_indices(self, used_indices):
         """
-        Sets the used_indices of this SearchResponse.        :param used_indices: The used_indices of this SearchResponse.
+        Sets the used_indices of this SearchResponse. :param used_indices: The used_indices of this SearchResponse.
         :type: list[object]
         """
 

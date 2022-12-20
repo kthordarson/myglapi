@@ -8,10 +8,8 @@ class PipelineSource(object):
         """
         PipelineSource - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'title': 'str', 'description': 'str', 'source': 'str', 'created_at': 'datetime', 'modified_at': 'datetime', 'errors': 'list[object]', 'stages': 'list[object]'}
 
@@ -29,7 +27,7 @@ class PipelineSource(object):
     @property
     def id(self):
         """
-        Gets the id of this PipelineSource.        :return: The id of this PipelineSource.
+        Gets the id of this PipelineSource. :return: The id of this PipelineSource.
         :rtype: str
         """
         return self._id
@@ -37,7 +35,7 @@ class PipelineSource(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this PipelineSource.        :param id: The id of this PipelineSource.
+        Sets the id of this PipelineSource. :param id: The id of this PipelineSource.
         :type: str
         """
 
@@ -46,7 +44,7 @@ class PipelineSource(object):
     @property
     def title(self):
         """
-        Gets the title of this PipelineSource.        :return: The title of this PipelineSource.
+        Gets the title of this PipelineSource. :return: The title of this PipelineSource.
         :rtype: str
         """
         return self._title
@@ -54,7 +52,7 @@ class PipelineSource(object):
     @title.setter
     def title(self, title):
         """
-        Sets the title of this PipelineSource.        :param title: The title of this PipelineSource.
+        Sets the title of this PipelineSource. :param title: The title of this PipelineSource.
         :type: str
         """
 
@@ -63,7 +61,7 @@ class PipelineSource(object):
     @property
     def description(self):
         """
-        Gets the description of this PipelineSource.        :return: The description of this PipelineSource.
+        Gets the description of this PipelineSource. :return: The description of this PipelineSource.
         :rtype: str
         """
         return self._description
@@ -71,7 +69,7 @@ class PipelineSource(object):
     @description.setter
     def description(self, description):
         """
-        Sets the description of this PipelineSource.        :param description: The description of this PipelineSource.
+        Sets the description of this PipelineSource. :param description: The description of this PipelineSource.
         :type: str
         """
 
@@ -80,7 +78,7 @@ class PipelineSource(object):
     @property
     def source(self):
         """
-        Gets the source of this PipelineSource.        :return: The source of this PipelineSource.
+        Gets the source of this PipelineSource. :return: The source of this PipelineSource.
         :rtype: str
         """
         return self._source
@@ -88,7 +86,7 @@ class PipelineSource(object):
     @source.setter
     def source(self, source):
         """
-        Sets the source of this PipelineSource.        :param source: The source of this PipelineSource.
+        Sets the source of this PipelineSource. :param source: The source of this PipelineSource.
         :type: str
         """
 
@@ -97,7 +95,7 @@ class PipelineSource(object):
     @property
     def created_at(self):
         """
-        Gets the created_at of this PipelineSource.        :return: The created_at of this PipelineSource.
+        Gets the created_at of this PipelineSource. :return: The created_at of this PipelineSource.
         :rtype: datetime
         """
         return self._created_at
@@ -105,7 +103,7 @@ class PipelineSource(object):
     @created_at.setter
     def created_at(self, created_at):
         """
-        Sets the created_at of this PipelineSource.        :param created_at: The created_at of this PipelineSource.
+        Sets the created_at of this PipelineSource. :param created_at: The created_at of this PipelineSource.
         :type: datetime
         """
 
@@ -114,7 +112,7 @@ class PipelineSource(object):
     @property
     def modified_at(self):
         """
-        Gets the modified_at of this PipelineSource.        :return: The modified_at of this PipelineSource.
+        Gets the modified_at of this PipelineSource. :return: The modified_at of this PipelineSource.
         :rtype: datetime
         """
         return self._modified_at
@@ -122,7 +120,7 @@ class PipelineSource(object):
     @modified_at.setter
     def modified_at(self, modified_at):
         """
-        Sets the modified_at of this PipelineSource.        :param modified_at: The modified_at of this PipelineSource.
+        Sets the modified_at of this PipelineSource. :param modified_at: The modified_at of this PipelineSource.
         :type: datetime
         """
 
@@ -131,7 +129,7 @@ class PipelineSource(object):
     @property
     def errors(self):
         """
-        Gets the errors of this PipelineSource.        :return: The errors of this PipelineSource.
+        Gets the errors of this PipelineSource. :return: The errors of this PipelineSource.
         :rtype: list[object]
         """
         return self._errors
@@ -139,7 +137,7 @@ class PipelineSource(object):
     @errors.setter
     def errors(self, errors):
         """
-        Sets the errors of this PipelineSource.        :param errors: The errors of this PipelineSource.
+        Sets the errors of this PipelineSource. :param errors: The errors of this PipelineSource.
         :type: list[object]
         """
 
@@ -148,7 +146,7 @@ class PipelineSource(object):
     @property
     def stages(self):
         """
-        Gets the stages of this PipelineSource.        :return: The stages of this PipelineSource.
+        Gets the stages of this PipelineSource. :return: The stages of this PipelineSource.
         :rtype: list[object]
         """
         return self._stages
@@ -156,7 +154,7 @@ class PipelineSource(object):
     @stages.setter
     def stages(self, stages):
         """
-        Sets the stages of this PipelineSource.        :param stages: The stages of this PipelineSource.
+        Sets the stages of this PipelineSource. :param stages: The stages of this PipelineSource.
         :type: list[object]
         """
 

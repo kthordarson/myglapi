@@ -8,10 +8,8 @@ class InputsList(object):
         """
         InputsList - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'inputs': 'list[object]', 'total': 'int'}
 
@@ -23,7 +21,7 @@ class InputsList(object):
     @property
     def inputs(self):
         """
-        Gets the inputs of this InputsList.        :return: The inputs of this InputsList.
+        Gets the inputs of this InputsList. :return: The inputs of this InputsList.
         :rtype: list[object]
         """
         return self._inputs
@@ -31,7 +29,7 @@ class InputsList(object):
     @inputs.setter
     def inputs(self, inputs):
         """
-        Sets the inputs of this InputsList.        :param inputs: The inputs of this InputsList.
+        Sets the inputs of this InputsList. :param inputs: The inputs of this InputsList.
         :type: list[object]
         """
 
@@ -40,7 +38,7 @@ class InputsList(object):
     @property
     def total(self):
         """
-        Gets the total of this InputsList.        :return: The total of this InputsList.
+        Gets the total of this InputsList. :return: The total of this InputsList.
         :rtype: int
         """
         return self._total
@@ -48,7 +46,7 @@ class InputsList(object):
     @total.setter
     def total(self, total):
         """
-        Sets the total of this InputsList.        :param total: The total of this InputsList.
+        Sets the total of this InputsList. :param total: The total of this InputsList.
         :type: int
         """
 

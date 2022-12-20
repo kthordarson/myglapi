@@ -8,10 +8,8 @@ class DisplayGettingStarted(object):
         """
         DisplayGettingStarted - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'show': 'bool'}
 
@@ -22,7 +20,7 @@ class DisplayGettingStarted(object):
     @property
     def show(self):
         """
-        Gets the show of this DisplayGettingStarted.        :return: The show of this DisplayGettingStarted.
+        Gets the show of this DisplayGettingStarted. :return: The show of this DisplayGettingStarted.
         :rtype: bool
         """
         return self._show
@@ -30,7 +28,7 @@ class DisplayGettingStarted(object):
     @show.setter
     def show(self, show):
         """
-        Sets the show of this DisplayGettingStarted.        :param show: The show of this DisplayGettingStarted.
+        Sets the show of this DisplayGettingStarted. :param show: The show of this DisplayGettingStarted.
         :type: bool
         """
 

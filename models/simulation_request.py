@@ -8,10 +8,8 @@ class SimulationRequest(object):
         """
         SimulationRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'stream_id': 'str', 'message': 'object', 'input_id': 'str'}
 
@@ -24,7 +22,7 @@ class SimulationRequest(object):
     @property
     def stream_id(self):
         """
-        Gets the stream_id of this SimulationRequest.        :return: The stream_id of this SimulationRequest.
+        Gets the stream_id of this SimulationRequest. :return: The stream_id of this SimulationRequest.
         :rtype: str
         """
         return self._stream_id
@@ -32,7 +30,7 @@ class SimulationRequest(object):
     @stream_id.setter
     def stream_id(self, stream_id):
         """
-        Sets the stream_id of this SimulationRequest.        :param stream_id: The stream_id of this SimulationRequest.
+        Sets the stream_id of this SimulationRequest. :param stream_id: The stream_id of this SimulationRequest.
         :type: str
         """
 
@@ -41,7 +39,7 @@ class SimulationRequest(object):
     @property
     def message(self):
         """
-        Gets the message of this SimulationRequest.        :return: The message of this SimulationRequest.
+        Gets the message of this SimulationRequest. :return: The message of this SimulationRequest.
         :rtype: object
         """
         return self._message
@@ -49,7 +47,7 @@ class SimulationRequest(object):
     @message.setter
     def message(self, message):
         """
-        Sets the message of this SimulationRequest.        :param message: The message of this SimulationRequest.
+        Sets the message of this SimulationRequest. :param message: The message of this SimulationRequest.
         :type: object
         """
 
@@ -58,7 +56,7 @@ class SimulationRequest(object):
     @property
     def input_id(self):
         """
-        Gets the input_id of this SimulationRequest.        :return: The input_id of this SimulationRequest.
+        Gets the input_id of this SimulationRequest. :return: The input_id of this SimulationRequest.
         :rtype: str
         """
         return self._input_id
@@ -66,7 +64,7 @@ class SimulationRequest(object):
     @input_id.setter
     def input_id(self, input_id):
         """
-        Sets the input_id of this SimulationRequest.        :param input_id: The input_id of this SimulationRequest.
+        Sets the input_id of this SimulationRequest. :param input_id: The input_id of this SimulationRequest.
         :type: str
         """
 

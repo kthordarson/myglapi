@@ -8,10 +8,8 @@ class CollectorSummary(object):
         """
         CollectorSummary - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'id': 'str', 'node_id': 'str', 'node_details': 'object', 'last_seen': 'datetime', 'collector_version': 'str', 'active': 'bool'}
 
@@ -27,7 +25,7 @@ class CollectorSummary(object):
     @property
     def id(self):
         """
-        Gets the id of this CollectorSummary.        :return: The id of this CollectorSummary.
+        Gets the id of this CollectorSummary. :return: The id of this CollectorSummary.
         :rtype: str
         """
         return self._id
@@ -35,7 +33,7 @@ class CollectorSummary(object):
     @id.setter
     def id(self, id):
         """
-        Sets the id of this CollectorSummary.        :param id: The id of this CollectorSummary.
+        Sets the id of this CollectorSummary. :param id: The id of this CollectorSummary.
         :type: str
         """
 
@@ -44,7 +42,7 @@ class CollectorSummary(object):
     @property
     def node_id(self):
         """
-        Gets the node_id of this CollectorSummary.        :return: The node_id of this CollectorSummary.
+        Gets the node_id of this CollectorSummary. :return: The node_id of this CollectorSummary.
         :rtype: str
         """
         return self._node_id
@@ -52,7 +50,7 @@ class CollectorSummary(object):
     @node_id.setter
     def node_id(self, node_id):
         """
-        Sets the node_id of this CollectorSummary.        :param node_id: The node_id of this CollectorSummary.
+        Sets the node_id of this CollectorSummary. :param node_id: The node_id of this CollectorSummary.
         :type: str
         """
 
@@ -61,7 +59,7 @@ class CollectorSummary(object):
     @property
     def node_details(self):
         """
-        Gets the node_details of this CollectorSummary.        :return: The node_details of this CollectorSummary.
+        Gets the node_details of this CollectorSummary. :return: The node_details of this CollectorSummary.
         :rtype: object
         """
         return self._node_details
@@ -69,7 +67,7 @@ class CollectorSummary(object):
     @node_details.setter
     def node_details(self, node_details):
         """
-        Sets the node_details of this CollectorSummary.        :param node_details: The node_details of this CollectorSummary.
+        Sets the node_details of this CollectorSummary. :param node_details: The node_details of this CollectorSummary.
         :type: object
         """
 
@@ -78,7 +76,7 @@ class CollectorSummary(object):
     @property
     def last_seen(self):
         """
-        Gets the last_seen of this CollectorSummary.        :return: The last_seen of this CollectorSummary.
+        Gets the last_seen of this CollectorSummary. :return: The last_seen of this CollectorSummary.
         :rtype: datetime
         """
         return self._last_seen
@@ -86,7 +84,7 @@ class CollectorSummary(object):
     @last_seen.setter
     def last_seen(self, last_seen):
         """
-        Sets the last_seen of this CollectorSummary.        :param last_seen: The last_seen of this CollectorSummary.
+        Sets the last_seen of this CollectorSummary. :param last_seen: The last_seen of this CollectorSummary.
         :type: datetime
         """
 
@@ -95,7 +93,7 @@ class CollectorSummary(object):
     @property
     def collector_version(self):
         """
-        Gets the collector_version of this CollectorSummary.        :return: The collector_version of this CollectorSummary.
+        Gets the collector_version of this CollectorSummary. :return: The collector_version of this CollectorSummary.
         :rtype: str
         """
         return self._collector_version
@@ -103,7 +101,7 @@ class CollectorSummary(object):
     @collector_version.setter
     def collector_version(self, collector_version):
         """
-        Sets the collector_version of this CollectorSummary.        :param collector_version: The collector_version of this CollectorSummary.
+        Sets the collector_version of this CollectorSummary. :param collector_version: The collector_version of this CollectorSummary.
         :type: str
         """
 
@@ -112,7 +110,7 @@ class CollectorSummary(object):
     @property
     def active(self):
         """
-        Gets the active of this CollectorSummary.        :return: The active of this CollectorSummary.
+        Gets the active of this CollectorSummary. :return: The active of this CollectorSummary.
         :rtype: bool
         """
         return self._active
@@ -120,7 +118,7 @@ class CollectorSummary(object):
     @active.setter
     def active(self, active):
         """
-        Sets the active of this CollectorSummary.        :param active: The active of this CollectorSummary.
+        Sets the active of this CollectorSummary. :param active: The active of this CollectorSummary.
         :type: bool
         """
 

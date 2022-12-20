@@ -8,10 +8,8 @@ class MapDataSearchRequest(object):
         """
         MapDataSearchRequest - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'query': 'str', 'timerange': 'object', 'limit': 'int', 'fields': 'list[str]', 'stream_id': 'str'}
 
@@ -26,7 +24,7 @@ class MapDataSearchRequest(object):
     @property
     def query(self):
         """
-        Gets the query of this MapDataSearchRequest.        :return: The query of this MapDataSearchRequest.
+        Gets the query of this MapDataSearchRequest. :return: The query of this MapDataSearchRequest.
         :rtype: str
         """
         return self._query
@@ -34,7 +32,7 @@ class MapDataSearchRequest(object):
     @query.setter
     def query(self, query):
         """
-        Sets the query of this MapDataSearchRequest.        :param query: The query of this MapDataSearchRequest.
+        Sets the query of this MapDataSearchRequest. :param query: The query of this MapDataSearchRequest.
         :type: str
         """
 
@@ -43,7 +41,7 @@ class MapDataSearchRequest(object):
     @property
     def timerange(self):
         """
-        Gets the timerange of this MapDataSearchRequest.        :return: The timerange of this MapDataSearchRequest.
+        Gets the timerange of this MapDataSearchRequest. :return: The timerange of this MapDataSearchRequest.
         :rtype: object
         """
         return self._timerange
@@ -51,7 +49,7 @@ class MapDataSearchRequest(object):
     @timerange.setter
     def timerange(self, timerange):
         """
-        Sets the timerange of this MapDataSearchRequest.        :param timerange: The timerange of this MapDataSearchRequest.
+        Sets the timerange of this MapDataSearchRequest. :param timerange: The timerange of this MapDataSearchRequest.
         :type: object
         """
 
@@ -60,7 +58,7 @@ class MapDataSearchRequest(object):
     @property
     def limit(self):
         """
-        Gets the limit of this MapDataSearchRequest.        :return: The limit of this MapDataSearchRequest.
+        Gets the limit of this MapDataSearchRequest. :return: The limit of this MapDataSearchRequest.
         :rtype: int
         """
         return self._limit
@@ -68,7 +66,7 @@ class MapDataSearchRequest(object):
     @limit.setter
     def limit(self, limit):
         """
-        Sets the limit of this MapDataSearchRequest.        :param limit: The limit of this MapDataSearchRequest.
+        Sets the limit of this MapDataSearchRequest. :param limit: The limit of this MapDataSearchRequest.
         :type: int
         """
 
@@ -77,7 +75,7 @@ class MapDataSearchRequest(object):
     @property
     def fields(self):
         """
-        Gets the fields of this MapDataSearchRequest.        :return: The fields of this MapDataSearchRequest.
+        Gets the fields of this MapDataSearchRequest. :return: The fields of this MapDataSearchRequest.
         :rtype: list[str]
         """
         return self._fields
@@ -85,7 +83,7 @@ class MapDataSearchRequest(object):
     @fields.setter
     def fields(self, fields):
         """
-        Sets the fields of this MapDataSearchRequest.        :param fields: The fields of this MapDataSearchRequest.
+        Sets the fields of this MapDataSearchRequest. :param fields: The fields of this MapDataSearchRequest.
         :type: list[str]
         """
 
@@ -94,7 +92,7 @@ class MapDataSearchRequest(object):
     @property
     def stream_id(self):
         """
-        Gets the stream_id of this MapDataSearchRequest.        :return: The stream_id of this MapDataSearchRequest.
+        Gets the stream_id of this MapDataSearchRequest. :return: The stream_id of this MapDataSearchRequest.
         :rtype: str
         """
         return self._stream_id
@@ -102,7 +100,7 @@ class MapDataSearchRequest(object):
     @stream_id.setter
     def stream_id(self, stream_id):
         """
-        Sets the stream_id of this MapDataSearchRequest.        :param stream_id: The stream_id of this MapDataSearchRequest.
+        Sets the stream_id of this MapDataSearchRequest. :param stream_id: The stream_id of this MapDataSearchRequest.
         :type: str
         """
 

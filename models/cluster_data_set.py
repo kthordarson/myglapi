@@ -8,10 +8,8 @@ class ClusterDataSet(object):
         """
         ClusterDataSet - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'timestamp': 'int', 'version': 'str', 'cluster_id': 'str', 'report_interval_ms': 'int', 'cluster_stats': 'object'}
 
@@ -26,7 +24,7 @@ class ClusterDataSet(object):
     @property
     def timestamp(self):
         """
-        Gets the timestamp of this ClusterDataSet.        :return: The timestamp of this ClusterDataSet.
+        Gets the timestamp of this ClusterDataSet. :return: The timestamp of this ClusterDataSet.
         :rtype: int
         """
         return self._timestamp
@@ -34,7 +32,7 @@ class ClusterDataSet(object):
     @timestamp.setter
     def timestamp(self, timestamp):
         """
-        Sets the timestamp of this ClusterDataSet.        :param timestamp: The timestamp of this ClusterDataSet.
+        Sets the timestamp of this ClusterDataSet. :param timestamp: The timestamp of this ClusterDataSet.
         :type: int
         """
 
@@ -43,7 +41,7 @@ class ClusterDataSet(object):
     @property
     def version(self):
         """
-        Gets the version of this ClusterDataSet.        :return: The version of this ClusterDataSet.
+        Gets the version of this ClusterDataSet. :return: The version of this ClusterDataSet.
         :rtype: str
         """
         return self._version
@@ -51,7 +49,7 @@ class ClusterDataSet(object):
     @version.setter
     def version(self, version):
         """
-        Sets the version of this ClusterDataSet.        :param version: The version of this ClusterDataSet.
+        Sets the version of this ClusterDataSet. :param version: The version of this ClusterDataSet.
         :type: str
         """
 
@@ -60,7 +58,7 @@ class ClusterDataSet(object):
     @property
     def cluster_id(self):
         """
-        Gets the cluster_id of this ClusterDataSet.        :return: The cluster_id of this ClusterDataSet.
+        Gets the cluster_id of this ClusterDataSet. :return: The cluster_id of this ClusterDataSet.
         :rtype: str
         """
         return self._cluster_id
@@ -68,7 +66,7 @@ class ClusterDataSet(object):
     @cluster_id.setter
     def cluster_id(self, cluster_id):
         """
-        Sets the cluster_id of this ClusterDataSet.        :param cluster_id: The cluster_id of this ClusterDataSet.
+        Sets the cluster_id of this ClusterDataSet. :param cluster_id: The cluster_id of this ClusterDataSet.
         :type: str
         """
 
@@ -77,7 +75,7 @@ class ClusterDataSet(object):
     @property
     def report_interval_ms(self):
         """
-        Gets the report_interval_ms of this ClusterDataSet.        :return: The report_interval_ms of this ClusterDataSet.
+        Gets the report_interval_ms of this ClusterDataSet. :return: The report_interval_ms of this ClusterDataSet.
         :rtype: int
         """
         return self._report_interval_ms
@@ -85,7 +83,7 @@ class ClusterDataSet(object):
     @report_interval_ms.setter
     def report_interval_ms(self, report_interval_ms):
         """
-        Sets the report_interval_ms of this ClusterDataSet.        :param report_interval_ms: The report_interval_ms of this ClusterDataSet.
+        Sets the report_interval_ms of this ClusterDataSet. :param report_interval_ms: The report_interval_ms of this ClusterDataSet.
         :type: int
         """
 
@@ -94,7 +92,7 @@ class ClusterDataSet(object):
     @property
     def cluster_stats(self):
         """
-        Gets the cluster_stats of this ClusterDataSet.        :return: The cluster_stats of this ClusterDataSet.
+        Gets the cluster_stats of this ClusterDataSet. :return: The cluster_stats of this ClusterDataSet.
         :rtype: object
         """
         return self._cluster_stats
@@ -102,7 +100,7 @@ class ClusterDataSet(object):
     @cluster_stats.setter
     def cluster_stats(self, cluster_stats):
         """
-        Sets the cluster_stats of this ClusterDataSet.        :param cluster_stats: The cluster_stats of this ClusterDataSet.
+        Sets the cluster_stats of this ClusterDataSet. :param cluster_stats: The cluster_stats of this ClusterDataSet.
         :type: object
         """
 

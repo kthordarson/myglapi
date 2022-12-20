@@ -8,10 +8,8 @@ class RoleMembershipResponse(object):
         """
         RoleMembershipResponse - a model defined in Swagger
 
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'role': 'str', 'users': 'list[object]'}
 
@@ -23,7 +21,7 @@ class RoleMembershipResponse(object):
     @property
     def role(self):
         """
-        Gets the role of this RoleMembershipResponse.        :return: The role of this RoleMembershipResponse.
+        Gets the role of this RoleMembershipResponse. :return: The role of this RoleMembershipResponse.
         :rtype: str
         """
         return self._role
@@ -31,7 +29,7 @@ class RoleMembershipResponse(object):
     @role.setter
     def role(self, role):
         """
-        Sets the role of this RoleMembershipResponse.        :param role: The role of this RoleMembershipResponse.
+        Sets the role of this RoleMembershipResponse. :param role: The role of this RoleMembershipResponse.
         :type: str
         """
 
@@ -40,7 +38,7 @@ class RoleMembershipResponse(object):
     @property
     def users(self):
         """
-        Gets the users of this RoleMembershipResponse.        :return: The users of this RoleMembershipResponse.
+        Gets the users of this RoleMembershipResponse. :return: The users of this RoleMembershipResponse.
         :rtype: list[object]
         """
         return self._users
@@ -48,7 +46,7 @@ class RoleMembershipResponse(object):
     @users.setter
     def users(self, users):
         """
-        Sets the users of this RoleMembershipResponse.        :param users: The users of this RoleMembershipResponse.
+        Sets the users of this RoleMembershipResponse. :param users: The users of this RoleMembershipResponse.
         :type: list[object]
         """
 
