@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class ClustersystemloggersApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,18 +21,10 @@ class ClustersystemloggersApi(object):
         List all loggers of all nodes and their current levels
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.loggers(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,18 +38,10 @@ class ClustersystemloggersApi(object):
         List all loggers of all nodes and their current levels
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.loggers_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -104,21 +91,13 @@ class ClustersystemloggersApi(object):
         Set the loglevel of a whole subsystem
         Provided level is falling back to DEBUG if it does not exist
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.set_subsystem_logger_level(node_id, subsystem, level, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id:  (required)
         :param Object subsystem:  (required)
         :param Object level:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -132,21 +111,13 @@ class ClustersystemloggersApi(object):
         Set the loglevel of a whole subsystem
         Provided level is falling back to DEBUG if it does not exist
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.set_subsystem_logger_level_with_http_info(node_id, subsystem, level, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id:  (required)
         :param Object subsystem:  (required)
         :param Object level:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['node_id', 'subsystem', 'level']
@@ -204,25 +175,23 @@ class ClustersystemloggersApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+        res = None
+        try:
+            res = self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+        except Exception as e:
+            logger.error(f'[err] {type(e)} {e}')
+        return res # self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+
 
     def subsystems(self, **kwargs):
         """
         List all logger subsystems and their current levels
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.subsystems(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -236,18 +205,10 @@ class ClustersystemloggersApi(object):
         List all logger subsystems and their current levels
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.subsystems_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

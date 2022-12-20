@@ -7,16 +7,11 @@ class MessageParseRequest(object):
     def __init__(self, message=None, codec=None, remote_address=None, configuration=None):
         """
         MessageParseRequest - a model defined in Swagger
-
-        :param dict swaggerTypes: The key is attribute name
-                                  and the value is attribute type.
-        :param dict attributeMap: The key is attribute name
-                                  and the value is json key in definition.
+        :param dict swaggerTypes: The key is attribute name and the value is attribute type.
+        :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {'message': 'str', 'codec': 'str', 'remote_address': 'str', 'configuration': 'object'}
-
         self.attribute_map = {'message': 'message', 'codec': 'codec', 'remote_address': 'remote_address', 'configuration': 'configuration'}
-
         self._message = message
         self._codec = codec
         self._remote_address = remote_address
@@ -111,25 +106,13 @@ class MessageParseRequest(object):
         return result
 
     def to_str(self):
-        """
-        Returns the string representation of the model
-        """
         return pformat(self.to_dict())
 
     def __repr__(self):
-        """
-        For `print` and `pprint`
-        """
         return self.to_str()
 
     def __eq__(self, other):
-        """
-        Returns true if both objects are equal
-        """
         return self.__dict__ == other.__dict__
 
     def __ne__(self, other):
-        """
-        Returns true if both objects are not equal
-        """
         return not self == other

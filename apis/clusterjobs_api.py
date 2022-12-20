@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class ClusterjobsApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,19 +21,11 @@ class ClusterjobsApi(object):
         Cancel job with the given ID
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.cancel_job(job_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object job_id:  (required)
-        :return: SystemJobSummary
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SystemJobSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -44,19 +39,11 @@ class ClusterjobsApi(object):
         Cancel job with the given ID
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.cancel_job_with_http_info(job_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object job_id:  (required)
-        :return: SystemJobSummary
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SystemJobSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['job_id']
@@ -111,19 +98,11 @@ class ClusterjobsApi(object):
         Get job with the given ID
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_job(job_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object job_id:  (required)
-        :return: SystemJobSummary
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SystemJobSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -137,19 +116,11 @@ class ClusterjobsApi(object):
         Get job with the given ID
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_job_with_http_info(job_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object job_id:  (required)
-        :return: SystemJobSummary
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SystemJobSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['job_id']
@@ -204,18 +175,10 @@ class ClusterjobsApi(object):
         List currently running jobs
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.list(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -229,18 +192,10 @@ class ClusterjobsApi(object):
         List currently running jobs
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.list_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

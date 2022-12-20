@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class SystemldapApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,18 +21,10 @@ class SystemldapApi(object):
         Remove the LDAP configuration
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.delete_ldap_settings(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,18 +38,10 @@ class SystemldapApi(object):
         Remove the LDAP configuration
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.delete_ldap_settings_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -104,18 +91,10 @@ class SystemldapApi(object):
         Get the LDAP configuration if it is configured
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_ldap_settings(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: LdapSettingsResponse
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s LdapSettingsResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -129,18 +108,10 @@ class SystemldapApi(object):
         Get the LDAP configuration if it is configured
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_ldap_settings_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: LdapSettingsResponse
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s LdapSettingsResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -190,18 +161,10 @@ class SystemldapApi(object):
         Get the LDAP group to Graylog role mapping
         The return value is a simple hash with keys being the LDAP group names and the values the corresponding Graylog role names.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.read_group_mapping(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -215,18 +178,10 @@ class SystemldapApi(object):
         Get the LDAP group to Graylog role mapping
         The return value is a simple hash with keys being the LDAP group names and the values the corresponding Graylog role names.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.read_group_mapping_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -276,18 +231,10 @@ class SystemldapApi(object):
         Get the available LDAP groups
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.read_groups(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Set
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Set If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -301,18 +248,10 @@ class SystemldapApi(object):
         Get the available LDAP groups
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.read_groups_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Set
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Set If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -362,19 +301,11 @@ class SystemldapApi(object):
         Test LDAP Configuration
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.test_ldap_configuration(configuration_to_test, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param LdapTestConfigRequest configuration_to_test:  (required)
-        :return: LdapTestConfigResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s LdapTestConfigResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -388,19 +319,11 @@ class SystemldapApi(object):
         Test LDAP Configuration
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.test_ldap_configuration_with_http_info(configuration_to_test, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param LdapTestConfigRequest configuration_to_test:  (required)
-        :return: LdapTestConfigResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s LdapTestConfigResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['configuration_to_test']
@@ -455,19 +378,11 @@ class SystemldapApi(object):
         Update the LDAP group to Graylog role mapping
         Corresponds directly to the output of GET /system/ldap/settings/groups
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.update_group_mapping_settings(json_body, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Map json_body: A hash in which the keys are the LDAP group names and values is the Graylog role name. (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -481,19 +396,11 @@ class SystemldapApi(object):
         Update the LDAP group to Graylog role mapping
         Corresponds directly to the output of GET /system/ldap/settings/groups
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.update_group_mapping_settings_with_http_info(json_body, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Map json_body: A hash in which the keys are the LDAP group names and values is the Graylog role name. (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -541,26 +448,24 @@ class SystemldapApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+        res = None
+        try:
+            res = self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+        except Exception as e:
+            logger.error(f'[err] {type(e)} {e}')
+        return res # self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+
 
     def update_ldap_settings(self, json_body, **kwargs):
         """
         Update the LDAP configuration
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.update_ldap_settings(json_body, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param LdapSettingsRequest json_body:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -574,19 +479,11 @@ class SystemldapApi(object):
         Update the LDAP configuration
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.update_ldap_settings_with_http_info(json_body, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param LdapSettingsRequest json_body:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -634,4 +531,10 @@ class SystemldapApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+        res = None
+        try:
+            res = self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+        except Exception as e:
+            logger.error(f'[err] {type(e)} {e}')
+        return res # self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+

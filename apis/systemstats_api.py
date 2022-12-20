@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class SystemstatsApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,18 +21,10 @@ class SystemstatsApi(object):
         Filesystem information about this node.
         This resource returns information about the filesystems of this node.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.fs_stats(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: FsStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s FsStats If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,18 +38,10 @@ class SystemstatsApi(object):
         Filesystem information about this node.
         This resource returns information about the filesystems of this node.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.fs_stats_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: FsStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s FsStats If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -104,18 +91,10 @@ class SystemstatsApi(object):
         JVM information about this node.
         This resource returns information about the Java Virtual Machine of this node.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.jvm_stats(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: JvmStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s JvmStats If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -129,18 +108,10 @@ class SystemstatsApi(object):
         JVM information about this node.
         This resource returns information about the Java Virtual Machine of this node.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.jvm_stats_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: JvmStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s JvmStats If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -190,18 +161,10 @@ class SystemstatsApi(object):
         Networking information about this node.
         This resource returns information about the networking system this node is running with.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.network_stats(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: NetworkStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s NetworkStats If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -215,18 +178,10 @@ class SystemstatsApi(object):
         Networking information about this node.
         This resource returns information about the networking system this node is running with.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.network_stats_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: NetworkStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s NetworkStats If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -276,18 +231,10 @@ class SystemstatsApi(object):
         OS information about this node.
         This resource returns information about the operating system this node is running on.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.os_stats(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: OsStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s OsStats If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -301,18 +248,10 @@ class SystemstatsApi(object):
         OS information about this node.
         This resource returns information about the operating system this node is running on.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.os_stats_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: OsStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s OsStats If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -362,18 +301,10 @@ class SystemstatsApi(object):
         Process information about this node.
         This resource returns information about the process this node is running as.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.process_stats(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: ProcessStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s ProcessStats If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -387,18 +318,10 @@ class SystemstatsApi(object):
         Process information about this node.
         This resource returns information about the process this node is running as.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.process_stats_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: ProcessStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s ProcessStats If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -448,18 +371,10 @@ class SystemstatsApi(object):
         System information about this node.
         This resource returns information about the system this node is running on.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.system_stats(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: SystemStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s SystemStats If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -473,18 +388,10 @@ class SystemstatsApi(object):
         System information about this node.
         This resource returns information about the system this node is running on.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.system_stats_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: SystemStats
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s SystemStats If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

@@ -4,6 +4,9 @@ import re
 from loguru import logger
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class SysteminputsApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -19,19 +22,11 @@ class SysteminputsApi(object):
         Launch input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.create(json_body, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param InputCreateRequest json_body:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -45,19 +40,11 @@ class SysteminputsApi(object):
         Launch input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.create_with_http_info(json_body, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param InputCreateRequest json_body:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -111,19 +98,11 @@ class SysteminputsApi(object):
         Get information of a single input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get(input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object input_id:  (required)
-        :return: InputSummary
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s InputSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -137,19 +116,11 @@ class SysteminputsApi(object):
         Get information of a single input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_with_http_info(input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object input_id:  (required)
-        :return: InputSummary
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s InputSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['input_id']
@@ -203,18 +174,10 @@ class SysteminputsApi(object):
         Get all inputs
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.list(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: InputsList
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s InputsList If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -228,18 +191,10 @@ class SysteminputsApi(object):
         Get all inputs
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.list_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: InputsList
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s InputsList If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -286,19 +241,11 @@ class SysteminputsApi(object):
         Terminate input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terminate(input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object input_id:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -312,19 +259,11 @@ class SysteminputsApi(object):
         Terminate input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terminate_with_http_info(input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object input_id:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['input_id']
@@ -378,20 +317,12 @@ class SysteminputsApi(object):
         Update input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.update(json_body, input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param InputCreateRequest json_body:  (required)
         :param Object input_id:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -405,20 +336,12 @@ class SysteminputsApi(object):
         Update input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.update_with_http_info(json_body, input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param InputCreateRequest json_body:  (required)
         :param Object input_id:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body', 'input_id']
@@ -470,4 +393,10 @@ class SysteminputsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+        res = None
+        try:
+            res = self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+        except Exception as e:
+            logger.error(f'[err] {type(e)} {e}')
+        return res # self.api_client.call_api(resource_path, 'PUT', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+

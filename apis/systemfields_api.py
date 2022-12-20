@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class SystemfieldsApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,19 +21,11 @@ class SystemfieldsApi(object):
         Get list of message fields that exist
         This operation is comparably fast because it reads directly from the indexer mapping.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.fields(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object limit: Maximum number of fields to return. Set to 0 for all fields.
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -44,19 +39,11 @@ class SystemfieldsApi(object):
         Get list of message fields that exist
         This operation is comparably fast because it reads directly from the indexer mapping.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.fields_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object limit: Maximum number of fields to return. Set to 0 for all fields.
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['limit']

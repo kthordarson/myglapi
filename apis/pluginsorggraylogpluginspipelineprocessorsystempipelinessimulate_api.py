@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class PluginsorggraylogpluginspipelineprocessorsystempipelinessimulateApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,19 +21,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinessimulateApi(object
         Simulate the execution of the pipeline message processor
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.simulate(simulation, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param SimulationRequest simulation:  (required)
-        :return: SimulationResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SimulationResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -44,19 +39,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinessimulateApi(object
         Simulate the execution of the pipeline message processor
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.simulate_with_http_info(simulation, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param SimulationRequest simulation:  (required)
-        :return: SimulationResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SimulationResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['simulation']

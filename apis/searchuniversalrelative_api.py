@@ -3,6 +3,10 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
+
 class SearchuniversalrelativeApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,24 +22,16 @@ class SearchuniversalrelativeApi(object):
         Export message search with relative timerange.
         Search for messages in a relative timerange, specified as seconds from now. Example: 300 means search from 5 minutes ago to now.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.export_search_relative_chunked(query, range, fields, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object range: Relative timeframe to search in. See method description. (required)
         :param Object fields: Comma separated list of fields to return (required)
         :param Object limit: Maximum number of messages to return.
         :param Object offset: Offset
         :param Object filter: Filter
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -49,24 +45,16 @@ class SearchuniversalrelativeApi(object):
         Export message search with relative timerange.
         Search for messages in a relative timerange, specified as seconds from now. Example: 300 means search from 5 minutes ago to now.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.export_search_relative_chunked_with_http_info(query, range, fields, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object range: Relative timeframe to search in. See method description. (required)
         :param Object fields: Comma separated list of fields to return (required)
         :param Object limit: Maximum number of messages to return.
         :param Object offset: Offset
         :param Object filter: Filter
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'range', 'fields', 'limit', 'offset', 'filter']
@@ -137,24 +125,16 @@ class SearchuniversalrelativeApi(object):
         Field value histogram of a query using a relative timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.field_histogram_relative(query, field, interval, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object field: Field of whose values to get the histogram of (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
         :param Object range: Relative timeframe to search in. See search method description. (required)
         :param Object filter: Filter
         :param Object cardinality: Calculate the cardinality of the field as well
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -168,24 +148,16 @@ class SearchuniversalrelativeApi(object):
         Field value histogram of a query using a relative timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.field_histogram_relative_with_http_info(query, field, interval, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object field: Field of whose values to get the histogram of (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
         :param Object range: Relative timeframe to search in. See search method description. (required)
         :param Object filter: Filter
         :param Object cardinality: Calculate the cardinality of the field as well
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'field', 'interval', 'range', 'filter', 'cardinality']
@@ -259,22 +231,14 @@ class SearchuniversalrelativeApi(object):
         Datetime histogram of a query using a relative timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.histogram_relative(query, interval, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
         :param Object range: Relative timeframe to search in. See search method description. (required)
         :param Object filter: Filter
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -288,22 +252,14 @@ class SearchuniversalrelativeApi(object):
         Datetime histogram of a query using a relative timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.histogram_relative_with_http_info(query, interval, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
         :param Object range: Relative timeframe to search in. See search method description. (required)
         :param Object filter: Filter
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'interval', 'range', 'filter']
@@ -370,16 +326,9 @@ class SearchuniversalrelativeApi(object):
         Message search with relative timerange.
         Search for messages in a relative timerange, specified as seconds from now. Example: 300 means search from 5 minutes ago to now.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.search_relative(query, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object range: Relative timeframe to search in. See method description. (required)
         :param Object limit: Maximum number of messages to return.
@@ -388,8 +337,7 @@ class SearchuniversalrelativeApi(object):
         :param Object fields: Comma separated list of fields to return
         :param Object sort: Sorting (field:asc / field:desc)
         :param Object decorate: Run decorators on search result
-        :return: SearchResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SearchResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -403,16 +351,9 @@ class SearchuniversalrelativeApi(object):
         Message search with relative timerange.
         Search for messages in a relative timerange, specified as seconds from now. Example: 300 means search from 5 minutes ago to now.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.search_relative_with_http_info(query, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object range: Relative timeframe to search in. See method description. (required)
         :param Object limit: Maximum number of messages to return.
@@ -421,8 +362,7 @@ class SearchuniversalrelativeApi(object):
         :param Object fields: Comma separated list of fields to return
         :param Object sort: Sorting (field:asc / field:desc)
         :param Object decorate: Run decorators on search result
-        :return: SearchResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SearchResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'range', 'limit', 'offset', 'filter', 'fields', 'sort', 'decorate']
@@ -494,22 +434,14 @@ class SearchuniversalrelativeApi(object):
         Field statistics for a query using a relative timerange.
         Returns statistics like min/max or standard deviation of numeric fields over the whole query result set.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.stats_relative(field, query, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of numeric type to return statistics for (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object range: Relative timeframe to search in. See search method description. (required)
         :param Object filter: Filter
-        :return: FieldStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s FieldStatsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -523,22 +455,14 @@ class SearchuniversalrelativeApi(object):
         Field statistics for a query using a relative timerange.
         Returns statistics like min/max or standard deviation of numeric fields over the whole query result set.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.stats_relative_with_http_info(field, query, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of numeric type to return statistics for (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object range: Relative timeframe to search in. See search method description. (required)
         :param Object filter: Filter
-        :return: FieldStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s FieldStatsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['field', 'query', 'range', 'filter']
@@ -605,23 +529,15 @@ class SearchuniversalrelativeApi(object):
         Most common field terms of a query using a relative timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_relative(field, query, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of to return terms of (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object range: Relative timeframe to search in. See search method description. (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -635,23 +551,15 @@ class SearchuniversalrelativeApi(object):
         Most common field terms of a query using a relative timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_relative_with_http_info(field, query, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of to return terms of (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object range: Relative timeframe to search in. See search method description. (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['field', 'query', 'range', 'size', 'filter']
@@ -720,16 +628,9 @@ class SearchuniversalrelativeApi(object):
         Ordered field terms of a query computed on another field using a relative timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_stats_relative(key_field, value_field, order, query, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object key_field: Message field of to return terms of (required)
         :param Object value_field: Value field used for computation (required)
         :param Object order: What to order on (Allowed values: TERM, REVERSE_TERM, COUNT, REVERSE_COUNT, TOTAL, REVERSE_TOTAL, MIN, REVERSE_MIN, MAX, REVERSE_MAX, MEAN, REVERSE_MEAN) (required)
@@ -737,8 +638,7 @@ class SearchuniversalrelativeApi(object):
         :param Object range: Relative timeframe to search in. See search method description. (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsStatsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -752,16 +652,9 @@ class SearchuniversalrelativeApi(object):
         Ordered field terms of a query computed on another field using a relative timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_stats_relative_with_http_info(key_field, value_field, order, query, range, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object key_field: Message field of to return terms of (required)
         :param Object value_field: Value field used for computation (required)
         :param Object order: What to order on (Allowed values: TERM, REVERSE_TERM, COUNT, REVERSE_COUNT, TOTAL, REVERSE_TOTAL, MIN, REVERSE_MIN, MAX, REVERSE_MAX, MEAN, REVERSE_MEAN) (required)
@@ -769,8 +662,7 @@ class SearchuniversalrelativeApi(object):
         :param Object range: Relative timeframe to search in. See search method description. (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsStatsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['key_field', 'value_field', 'order', 'query', 'range', 'size', 'filter']

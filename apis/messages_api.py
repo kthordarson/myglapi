@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class MessagesApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,20 +21,12 @@ class MessagesApi(object):
         Analyze a message string
         Returns what tokens/terms a message string (message or full_message) is split to.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.analyze(index, string, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The index the message containing the string is stored in. (required)
         :param Object string: The string to analyze. (required)
-        :return: MessageTokens
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s MessageTokens If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -45,20 +40,12 @@ class MessagesApi(object):
         Analyze a message string
         Returns what tokens/terms a message string (message or full_message) is split to.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.analyze_with_http_info(index, string, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The index the message containing the string is stored in. (required)
         :param Object string: The string to analyze. (required)
-        :return: MessageTokens
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s MessageTokens If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['index', 'string']
@@ -118,19 +105,11 @@ class MessagesApi(object):
         Parse a raw message
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.parse(json_body, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param MessageParseRequest json_body:  (required)
-        :return: ResultMessage
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s ResultMessage If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -144,19 +123,11 @@ class MessagesApi(object):
         Parse a raw message
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.parse_with_http_info(json_body, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param MessageParseRequest json_body:  (required)
-        :return: ResultMessage
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s ResultMessage If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -211,20 +182,12 @@ class MessagesApi(object):
         Get a single message.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.search(index, message_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The index this message is stored in. (required)
         :param Object message_id:  (required)
-        :return: ResultMessage
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s ResultMessage If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -238,20 +201,12 @@ class MessagesApi(object):
         Get a single message.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.search_with_http_info(index, message_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The index this message is stored in. (required)
         :param Object message_id:  (required)
-        :return: ResultMessage
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s ResultMessage If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['index', 'message_id']

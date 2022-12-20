@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class SystemindexerfailuresApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,19 +21,11 @@ class SystemindexerfailuresApi(object):
         Total count of failed index operations since the given date.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.count(since, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object since: ISO8601 date (required)
-        :return: FailureCount
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s FailureCount If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -44,19 +39,11 @@ class SystemindexerfailuresApi(object):
         Total count of failed index operations since the given date.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.count_with_http_info(since, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object since: ISO8601 date (required)
-        :return: FailureCount
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s FailureCount If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['since']
@@ -111,20 +98,12 @@ class SystemindexerfailuresApi(object):
         Get a list of failed index operations.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.single(limit, offset, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object limit: Limit (required)
         :param Object offset: Offset (required)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -138,20 +117,12 @@ class SystemindexerfailuresApi(object):
         Get a list of failed index operations.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.single_with_http_info(limit, offset, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object limit: Limit (required)
         :param Object offset: Offset (required)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['limit', 'offset']

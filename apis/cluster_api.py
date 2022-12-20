@@ -5,6 +5,9 @@ import re
 sys.path.append('/home/kth/development2/graylogstuff/myglapi')
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class ClusterApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -20,18 +23,10 @@ class ClusterApi(object):
         Get system overview of all Graylog nodes
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -45,18 +40,10 @@ class ClusterApi(object):
         Get system overview of all Graylog nodes
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -106,19 +93,11 @@ class ClusterApi(object):
         Get JVM information of the given node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.jvm(node_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id: The id of the node where processing will be paused. (required)
-        :return: SystemJVMResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SystemJVMResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -132,19 +111,11 @@ class ClusterApi(object):
         Get JVM information of the given node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.jvm_with_http_info(node_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id: The id of the node where processing will be paused. (required)
-        :return: SystemJVMResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SystemJVMResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['node_id']
@@ -199,19 +170,11 @@ class ClusterApi(object):
         Get a thread dump of the given node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.thread_dump(node_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id: The id of the node where processing will be paused. (required)
-        :return: SystemThreadDumpResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SystemThreadDumpResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -225,19 +188,11 @@ class ClusterApi(object):
         Get a thread dump of the given node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.thread_dump_with_http_info(node_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id: The id of the node where processing will be paused. (required)
-        :return: SystemThreadDumpResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SystemThreadDumpResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['node_id']

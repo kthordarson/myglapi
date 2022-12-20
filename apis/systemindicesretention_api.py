@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 
 class SystemindicesretentionApi(object):
     def __init__(self, api_client=None):
@@ -19,18 +22,10 @@ class SystemindicesretentionApi(object):
         Configuration of the current retention strategy
         This resource returns the configuration of the currently used retention strategy.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.config(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: RetentionStrategySummary
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s RetentionStrategySummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -44,18 +39,10 @@ class SystemindicesretentionApi(object):
         Configuration of the current retention strategy
         This resource returns the configuration of the currently used retention strategy.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.config_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: RetentionStrategySummary
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s RetentionStrategySummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -105,19 +92,11 @@ class SystemindicesretentionApi(object):
         Configuration of the current retention strategy
         This resource stores the configuration of the currently used retention strategy.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.config_0(, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param RetentionStrategySummary : The description of the retention strategy and its configuration (required)
-        :return: RetentionStrategySummary
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RetentionStrategySummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -131,19 +110,11 @@ class SystemindicesretentionApi(object):
         Configuration of the current retention strategy
         This resource stores the configuration of the currently used retention strategy.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.config_0_with_http_info(, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param RetentionStrategySummary : The description of the retention strategy and its configuration (required)
-        :return: RetentionStrategySummary
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RetentionStrategySummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['']
@@ -198,19 +169,11 @@ class SystemindicesretentionApi(object):
         Show JSON schema for configuration of given retention strategies
         This resource returns a JSON schema for the configuration of the given retention strategy.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.config_schema(strategy, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object strategy: The name of the retention strategy (required)
-        :return: RetentionStrategyDescription
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RetentionStrategyDescription If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -224,19 +187,11 @@ class SystemindicesretentionApi(object):
         Show JSON schema for configuration of given retention strategies
         This resource returns a JSON schema for the configuration of the given retention strategy.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.config_schema_with_http_info(strategy, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object strategy: The name of the retention strategy (required)
-        :return: RetentionStrategyDescription
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RetentionStrategyDescription If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['strategy']
@@ -291,18 +246,10 @@ class SystemindicesretentionApi(object):
         List available retention strategies
         This resource returns a list of all available retention strategies on this Graylog node.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.list(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: RetentionStrategies
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s RetentionStrategies If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -316,18 +263,10 @@ class SystemindicesretentionApi(object):
         List available retention strategies
         This resource returns a list of all available retention strategies on this Graylog node.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.list_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: RetentionStrategies
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s RetentionStrategies If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

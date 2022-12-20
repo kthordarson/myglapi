@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class ClustermetricsApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,19 +21,11 @@ class ClustermetricsApi(object):
         Get all metrics of all nodes in the cluster
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.multiple_metrics_all_nodes(requested_metrics, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param MetricsReadRequest requested_metrics:  (required)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -44,19 +39,11 @@ class ClustermetricsApi(object):
         Get all metrics of all nodes in the cluster
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.multiple_metrics_all_nodes_with_http_info(requested_metrics, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param MetricsReadRequest requested_metrics:  (required)
-        :return: Map
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['requested_metrics']

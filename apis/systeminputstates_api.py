@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class SysteminputstatesApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,19 +21,11 @@ class SysteminputstatesApi(object):
         Get input state for specified input id on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get(input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object input_id:  (required)
-        :return: InputStateSummary
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s InputStateSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -44,19 +39,11 @@ class SysteminputstatesApi(object):
         Get input state for specified input id on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_with_http_info(input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object input_id:  (required)
-        :return: InputStateSummary
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s InputStateSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['input_id']
@@ -111,18 +98,10 @@ class SysteminputstatesApi(object):
         Get all input states of this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.list(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: InputStatesList
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s InputStatesList If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -136,18 +115,10 @@ class SysteminputstatesApi(object):
         Get all input states of this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.list_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: InputStatesList
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s InputStatesList If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -197,19 +168,11 @@ class SysteminputstatesApi(object):
         (Re-)Start specified input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.start(input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object input_id:  (required)
-        :return: InputCreated
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s InputCreated If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -223,19 +186,11 @@ class SysteminputstatesApi(object):
         (Re-)Start specified input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.start_with_http_info(input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object input_id:  (required)
-        :return: InputCreated
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s InputCreated If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['input_id']
@@ -290,19 +245,11 @@ class SysteminputstatesApi(object):
         Stop specified input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.stop(input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object input_id:  (required)
-        :return: InputDeleted
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s InputDeleted If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -316,19 +263,11 @@ class SysteminputstatesApi(object):
         Stop specified input on this node
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.stop_with_http_info(input_id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object input_id:  (required)
-        :return: InputDeleted
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s InputDeleted If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['input_id']

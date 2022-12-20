@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class PluginsorggraylogpluginsmapmapdataApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,19 +21,11 @@ class PluginsorggraylogpluginsmapmapdataApi(object):
         Get map data
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.map_data(json_body, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param MapDataSearchRequest json_body:  (required)
-        :return: MapDataSearchResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s MapDataSearchResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -44,19 +39,11 @@ class PluginsorggraylogpluginsmapmapdataApi(object):
         Get map data
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.map_data_with_http_info(json_body, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param MapDataSearchRequest json_body:  (required)
-        :return: MapDataSearchResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s MapDataSearchResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']

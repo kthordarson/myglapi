@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class SearchuniversalkeywordApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,24 +21,16 @@ class SearchuniversalkeywordApi(object):
         Export message search with keyword as timerange.
         Search for messages in a timerange defined by a keyword like \"yesterday\" or \"2 weeks ago to wednesday\".
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.export_search_keyword_chunked(query, keyword, fields, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object keyword: Range keyword (required)
         :param Object fields: Comma separated list of fields to return (required)
         :param Object limit: Maximum number of messages to return.
         :param Object offset: Offset
         :param Object filter: Filter
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -49,24 +44,16 @@ class SearchuniversalkeywordApi(object):
         Export message search with keyword as timerange.
         Search for messages in a timerange defined by a keyword like \"yesterday\" or \"2 weeks ago to wednesday\".
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.export_search_keyword_chunked_with_http_info(query, keyword, fields, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object keyword: Range keyword (required)
         :param Object fields: Comma separated list of fields to return (required)
         :param Object limit: Maximum number of messages to return.
         :param Object offset: Offset
         :param Object filter: Filter
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'keyword', 'fields', 'limit', 'offset', 'filter']
@@ -137,24 +124,16 @@ class SearchuniversalkeywordApi(object):
         Datetime histogram of a query using keyword timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.field_histogram_keyword(query, field, interval, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object field: Field of whose values to get the histogram of (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
         :param Object keyword: Range keyword (required)
         :param Object filter: Filter
         :param Object cardinality: Calculate the cardinality of the field as well
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -168,24 +147,16 @@ class SearchuniversalkeywordApi(object):
         Datetime histogram of a query using keyword timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.field_histogram_keyword_with_http_info(query, field, interval, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object field: Field of whose values to get the histogram of (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
         :param Object keyword: Range keyword (required)
         :param Object filter: Filter
         :param Object cardinality: Calculate the cardinality of the field as well
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'field', 'interval', 'keyword', 'filter', 'cardinality']
@@ -259,22 +230,14 @@ class SearchuniversalkeywordApi(object):
         Datetime histogram of a query using keyword timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.histogram_keyword(query, interval, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
         :param Object keyword: Range keyword (required)
         :param Object filter: Filter
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -288,22 +251,14 @@ class SearchuniversalkeywordApi(object):
         Datetime histogram of a query using keyword timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.histogram_keyword_with_http_info(query, interval, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
         :param Object keyword: Range keyword (required)
         :param Object filter: Filter
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'interval', 'keyword', 'filter']
@@ -370,16 +325,9 @@ class SearchuniversalkeywordApi(object):
         Message search with keyword as timerange.
         Search for messages in a timerange defined by a keyword like \"yesterday\" or \"2 weeks ago to wednesday\".
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.search_keyword(query, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object keyword: Range keyword (required)
         :param Object limit: Maximum number of messages to return.
@@ -388,8 +336,7 @@ class SearchuniversalkeywordApi(object):
         :param Object fields: Comma separated list of fields to return
         :param Object sort: Sorting (field:asc / field:desc)
         :param Object decorate: Run decorators on search result
-        :return: SearchResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SearchResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -403,16 +350,9 @@ class SearchuniversalkeywordApi(object):
         Message search with keyword as timerange.
         Search for messages in a timerange defined by a keyword like \"yesterday\" or \"2 weeks ago to wednesday\".
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.search_keyword_with_http_info(query, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object keyword: Range keyword (required)
         :param Object limit: Maximum number of messages to return.
@@ -421,8 +361,7 @@ class SearchuniversalkeywordApi(object):
         :param Object fields: Comma separated list of fields to return
         :param Object sort: Sorting (field:asc / field:desc)
         :param Object decorate: Run decorators on search result
-        :return: SearchResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SearchResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'keyword', 'limit', 'offset', 'filter', 'fields', 'sort', 'decorate']
@@ -494,22 +433,14 @@ class SearchuniversalkeywordApi(object):
         Field statistics for a query using a keyword timerange.
         Returns statistics like min/max or standard deviation of numeric fields over the whole query result set.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.stats_keyword(field, query, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of numeric type to return statistics for (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object keyword: Range keyword (required)
         :param Object filter: Filter
-        :return: FieldStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s FieldStatsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -523,22 +454,14 @@ class SearchuniversalkeywordApi(object):
         Field statistics for a query using a keyword timerange.
         Returns statistics like min/max or standard deviation of numeric fields over the whole query result set.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.stats_keyword_with_http_info(field, query, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of numeric type to return statistics for (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object keyword: Range keyword (required)
         :param Object filter: Filter
-        :return: FieldStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s FieldStatsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['field', 'query', 'keyword', 'filter']
@@ -605,23 +528,15 @@ class SearchuniversalkeywordApi(object):
         Most common field terms of a query using a keyword timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_keyword(field, query, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of to return terms of (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object keyword: Range keyword (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -635,23 +550,15 @@ class SearchuniversalkeywordApi(object):
         Most common field terms of a query using a keyword timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_keyword_with_http_info(field, query, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of to return terms of (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object keyword: Range keyword (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['field', 'query', 'keyword', 'size', 'filter']
@@ -720,16 +627,9 @@ class SearchuniversalkeywordApi(object):
         Ordered field terms of a query computed on another field using a keyword timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_stats_relative(key_field, value_field, order, query, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object key_field: Message field of to return terms of (required)
         :param Object value_field: Value field used for computation (required)
         :param Object order: What to order on (Allowed values: TERM, REVERSE_TERM, COUNT, REVERSE_COUNT, TOTAL, REVERSE_TOTAL, MIN, REVERSE_MIN, MAX, REVERSE_MAX, MEAN, REVERSE_MEAN) (required)
@@ -737,8 +637,7 @@ class SearchuniversalkeywordApi(object):
         :param Object keyword: Keyword timeframe (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsStatsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -752,16 +651,9 @@ class SearchuniversalkeywordApi(object):
         Ordered field terms of a query computed on another field using a keyword timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_stats_relative_with_http_info(key_field, value_field, order, query, keyword, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object key_field: Message field of to return terms of (required)
         :param Object value_field: Value field used for computation (required)
         :param Object order: What to order on (Allowed values: TERM, REVERSE_TERM, COUNT, REVERSE_COUNT, TOTAL, REVERSE_TOTAL, MIN, REVERSE_MIN, MAX, REVERSE_MAX, MEAN, REVERSE_MEAN) (required)
@@ -769,8 +661,7 @@ class SearchuniversalkeywordApi(object):
         :param Object keyword: Keyword timeframe (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsStatsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['key_field', 'value_field', 'order', 'query', 'keyword', 'size', 'filter']

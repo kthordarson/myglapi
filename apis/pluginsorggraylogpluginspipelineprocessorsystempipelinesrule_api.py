@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,19 +21,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Create a processing rule from source
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.create_from_parser(rule, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param RuleSource rule:  (required)
-        :return: RuleSource
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RuleSource If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -44,19 +39,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Create a processing rule from source
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.create_from_parser_with_http_info(rule, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param RuleSource rule:  (required)
-        :return: RuleSource
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RuleSource If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['rule']
@@ -111,19 +98,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Delete a processing rule
         It can take up to a second until the change is applied
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.delete(id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -137,19 +116,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Delete a processing rule
         It can take up to a second until the change is applied
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.delete_with_http_info(id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -204,18 +175,10 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Get function descriptors
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.function_descriptors(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Collection
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Collection If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -229,18 +192,10 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Get function descriptors
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.function_descriptors_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Collection
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Collection If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -290,19 +245,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Get a processing rule
         It can take up to a second until the change is applied
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get(id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return: RuleSource
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RuleSource If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -316,19 +263,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Get a processing rule
         It can take up to a second until the change is applied
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_with_http_info(id, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return: RuleSource
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RuleSource If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -383,18 +322,10 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Get all processing rules
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_all(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Collection
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Collection If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -408,18 +339,10 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Get all processing rules
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_all_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: Collection
-                 If the method is called asynchronously, returns the request thread.
+        :param callback function: The callback function for asynchronous request. (optional)
+        :return:\s Collection If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -469,19 +392,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Retrieve the named processing rules in bulk
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_bulk(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param BulkRuleRequest : rules
-        :return: Collection
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s Collection If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -495,19 +410,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Retrieve the named processing rules in bulk
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.get_bulk_with_http_info(callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param BulkRuleRequest : rules
-        :return: Collection
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s Collection If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['']
@@ -559,19 +466,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Parse a processing rule without saving it
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.parse(rule, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param RuleSource rule:  (required)
-        :return: RuleSource
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RuleSource If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -585,19 +484,11 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Parse a processing rule without saving it
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.parse_with_http_info(rule, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param RuleSource rule:  (required)
-        :return: RuleSource
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RuleSource If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['rule']
@@ -652,20 +543,12 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Modify a processing rule
         It can take up to a second until the change is applied
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.update(id, rule, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param RuleSource rule:  (required)
-        :return: RuleSource
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RuleSource If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -679,20 +562,12 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinesruleApi(object):
         Modify a processing rule
         It can take up to a second until the change is applied
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.update_with_http_info(id, rule, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param RuleSource rule:  (required)
-        :return: RuleSource
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s RuleSource If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id', 'rule']

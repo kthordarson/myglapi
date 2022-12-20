@@ -3,6 +3,9 @@ import os
 import re
 from configuration import Configuration
 from api_client import ApiClient
+from loguru import logger
+
+
 class SearchuniversalabsoluteApi(object):
     def __init__(self, api_client=None):
         config = Configuration()
@@ -18,16 +21,9 @@ class SearchuniversalabsoluteApi(object):
         Export message search with absolute timerange.
         Search for messages using an absolute timerange, specified as from/to with format yyyy-MM-ddTHH:mm:ss.SSSZ (e.g. 2014-01-23T15:34:49.000Z) or yyyy-MM-dd HH:mm:ss.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.export_search_absolute_chunked(query, _from, to, fields, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object _from: Timerange start. See description for date format (required)
         :param Object to: Timerange end. See description for date format (required)
@@ -35,8 +31,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object limit: Maximum number of messages to return.
         :param Object offset: Offset
         :param Object filter: Filter
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -50,16 +45,9 @@ class SearchuniversalabsoluteApi(object):
         Export message search with absolute timerange.
         Search for messages using an absolute timerange, specified as from/to with format yyyy-MM-ddTHH:mm:ss.SSSZ (e.g. 2014-01-23T15:34:49.000Z) or yyyy-MM-dd HH:mm:ss.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.export_search_absolute_chunked_with_http_info(query, _from, to, fields, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object _from: Timerange start. See description for date format (required)
         :param Object to: Timerange end. See description for date format (required)
@@ -67,8 +55,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object limit: Maximum number of messages to return.
         :param Object offset: Offset
         :param Object filter: Filter
-        :return: None
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', '_from', 'to', 'fields', 'limit', 'offset', 'filter']
@@ -144,16 +131,9 @@ class SearchuniversalabsoluteApi(object):
         Field value histogram of a query using an absolute timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.field_histogram_absolute(query, field, interval, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object field: Field of whose values to get the histogram of (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
@@ -161,8 +141,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
         :param Object cardinality: Calculate the cardinality of the field as well
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -176,16 +155,9 @@ class SearchuniversalabsoluteApi(object):
         Field value histogram of a query using an absolute timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.field_histogram_absolute_with_http_info(query, field, interval, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object field: Field of whose values to get the histogram of (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
@@ -193,8 +165,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
         :param Object cardinality: Calculate the cardinality of the field as well
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'field', 'interval', '_from', 'to', 'filter', 'cardinality']
@@ -273,23 +244,15 @@ class SearchuniversalabsoluteApi(object):
         Datetime histogram of a query using an absolute timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.histogram_absolute(query, interval, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
         :param Object _from: Timerange start. See search method description for date format (required)
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -303,23 +266,15 @@ class SearchuniversalabsoluteApi(object):
         Datetime histogram of a query using an absolute timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.histogram_absolute_with_http_info(query, interval, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object interval: Histogram interval / bucket size. (year, quarter, month, week, day, hour or minute) (required)
         :param Object _from: Timerange start. See search method description for date format (required)
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
-        :return: HistogramResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'interval', '_from', 'to', 'filter']
@@ -391,16 +346,9 @@ class SearchuniversalabsoluteApi(object):
         Message search with absolute timerange.
         Search for messages using an absolute timerange, specified as from/to with format yyyy-MM-ddTHH:mm:ss.SSSZ (e.g. 2014-01-23T15:34:49.000Z) or yyyy-MM-dd HH:mm:ss.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.search_absolute(query, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object _from: Timerange start. See description for date format (required)
         :param Object to: Timerange end. See description for date format (required)
@@ -410,8 +358,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object fields: Comma separated list of fields to return
         :param Object sort: Sorting (field:asc / field:desc)
         :param Object decorate: Run decorators on search result
-        :return: SearchResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SearchResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -425,16 +372,9 @@ class SearchuniversalabsoluteApi(object):
         Message search with absolute timerange.
         Search for messages using an absolute timerange, specified as from/to with format yyyy-MM-ddTHH:mm:ss.SSSZ (e.g. 2014-01-23T15:34:49.000Z) or yyyy-MM-dd HH:mm:ss.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.search_absolute_with_http_info(query, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object query: Query (Lucene syntax) (required)
         :param Object _from: Timerange start. See description for date format (required)
         :param Object to: Timerange end. See description for date format (required)
@@ -444,8 +384,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object fields: Comma separated list of fields to return
         :param Object sort: Sorting (field:asc / field:desc)
         :param Object decorate: Run decorators on search result
-        :return: SearchResponse
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s SearchResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', '_from', 'to', 'limit', 'offset', 'filter', 'fields', 'sort', 'decorate']
@@ -522,23 +461,15 @@ class SearchuniversalabsoluteApi(object):
         Field statistics for a query using an absolute timerange.
         Returns statistics like min/max or standard deviation of numeric fields over the whole query result set.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.stats_absolute(field, query, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of numeric type to return statistics for (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object _from: Timerange start. See search method description for date format (required)
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
-        :return: FieldStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s FieldStatsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -552,23 +483,15 @@ class SearchuniversalabsoluteApi(object):
         Field statistics for a query using an absolute timerange.
         Returns statistics like min/max or standard deviation of numeric fields over the whole query result set.
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.stats_absolute_with_http_info(field, query, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of numeric type to return statistics for (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object _from: Timerange start. See search method description for date format (required)
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
-        :return: FieldStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s FieldStatsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['field', 'query', '_from', 'to', 'filter']
@@ -640,24 +563,16 @@ class SearchuniversalabsoluteApi(object):
         Most common field terms of a query using an absolute timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_absolute(field, query, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of to return terms of (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object _from: Timerange start. See search method description for date format (required)
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -671,24 +586,16 @@ class SearchuniversalabsoluteApi(object):
         Most common field terms of a query using an absolute timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_absolute_with_http_info(field, query, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object field: Message field of to return terms of (required)
         :param Object query: Query (Lucene syntax) (required)
         :param Object _from: Timerange start. See search method description for date format (required)
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['field', 'query', '_from', 'to', 'size', 'filter']
@@ -762,16 +669,9 @@ class SearchuniversalabsoluteApi(object):
         Ordered field terms of a query computed on another field using an absolute timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_stats_absolute(key_field, value_field, order, query, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object key_field: Message field of to return terms of (required)
         :param Object value_field: Value field used for computation (required)
         :param Object order: What to order on (Allowed values: TERM, REVERSE_TERM, COUNT, REVERSE_COUNT, TOTAL, REVERSE_TOTAL, MIN, REVERSE_MIN, MAX, REVERSE_MAX, MEAN, REVERSE_MEAN) (required)
@@ -780,8 +680,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsStatsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -795,16 +694,9 @@ class SearchuniversalabsoluteApi(object):
         Ordered field terms of a query computed on another field using an absolute timerange.
         
 
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
         >>> thread = api.terms_stats_absolute_with_http_info(key_field, value_field, order, query, _from, to, callback=callback_function)
 
-        :param callback function: The callback function
-            for asynchronous request. (optional)
+        :param callback function: The callback function for asynchronous request. (optional)
         :param Object key_field: Message field of to return terms of (required)
         :param Object value_field: Value field used for computation (required)
         :param Object order: What to order on (Allowed values: TERM, REVERSE_TERM, COUNT, REVERSE_COUNT, TOTAL, REVERSE_TOTAL, MIN, REVERSE_MIN, MAX, REVERSE_MAX, MEAN, REVERSE_MEAN) (required)
@@ -813,8 +705,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return: TermsStatsResult
-                 If the method is called asynchronously, returns the request thread.
+        :return:\s TermsStatsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['key_field', 'value_field', 'order', 'query', '_from', 'to', 'size', 'filter']
