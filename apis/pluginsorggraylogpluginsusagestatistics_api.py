@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
         >>> thread = api.show_cluster_data_set(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ClusterDataSet If the method is called asynchronously, returns the request thread.
+        :return: ClusterDataSet If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
         >>> thread = api.show_cluster_data_set_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ClusterDataSet If the method is called asynchronously, returns the request thread.
+        :return: ClusterDataSet If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -89,7 +89,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
         >>> thread = api.show_config(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s UsageStatsConfigurationResponse If the method is called asynchronously, returns the request thread.
+        :return: UsageStatsConfigurationResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -106,7 +106,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
         >>> thread = api.show_config_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s UsageStatsConfigurationResponse If the method is called asynchronously, returns the request thread.
+        :return: UsageStatsConfigurationResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -154,7 +154,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
         >>> thread = api.show_node_data_set(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s NodeDataSet If the method is called asynchronously, returns the request thread.
+        :return: NodeDataSet If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -171,7 +171,7 @@ class PluginsorggraylogpluginsusagestatisticsApi(object):
         >>> thread = api.show_node_data_set_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s NodeDataSet If the method is called asynchronously, returns the request thread.
+        :return: NodeDataSet If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

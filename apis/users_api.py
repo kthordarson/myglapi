@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class UsersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user whose password to change. (required)
         :param ChangePasswordRequest json_body: The old and new passwords. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class UsersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user whose password to change. (required)
         :param ChangePasswordRequest json_body: The old and new passwords. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['username', 'json_body']
@@ -105,7 +105,7 @@ class UsersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user to modify. (required)
         :param ChangeUserRequest json_body: Updated user information. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -122,7 +122,7 @@ class UsersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user to modify. (required)
         :param ChangeUserRequest json_body: Updated user information. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['username', 'json_body']
@@ -185,7 +185,7 @@ class UsersApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CreateUserRequest json_body: Must contain username, full_name, email, password and a list of permissions. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -201,7 +201,7 @@ class UsersApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CreateUserRequest json_body: Must contain username, full_name, email, password and a list of permissions. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -253,7 +253,7 @@ class UsersApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user to modify. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -269,7 +269,7 @@ class UsersApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user to modify. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['username']
@@ -321,7 +321,7 @@ class UsersApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user to delete. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -337,7 +337,7 @@ class UsersApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user to delete. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['username']
@@ -390,7 +390,7 @@ class UsersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user to modify. (required)
         :param PermissionEditRequest json_body: The list of permissions to assign to the user. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -407,7 +407,7 @@ class UsersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user to modify. (required)
         :param PermissionEditRequest json_body: The list of permissions to assign to the user. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['username', 'json_body']
@@ -474,7 +474,7 @@ class UsersApi(object):
         :param Object username:  (required)
         :param Object name: Descriptive name for this token (e.g. 'cronjob')  (required)
         :param String json_body: Placeholder because POST requests should have a body. Set to '{}', the content will be ignored.
-        :return:\s Token If the method is called asynchronously, returns the request thread.
+        :return: Token If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -494,7 +494,7 @@ class UsersApi(object):
         :param Object username:  (required)
         :param Object name: Descriptive name for this token (e.g. 'cronjob')  (required)
         :param String json_body: Placeholder because POST requests should have a body. Set to '{}', the content will be ignored.
-        :return:\s Token If the method is called asynchronously, returns the request thread.
+        :return: Token If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['username', 'name', 'json_body']
@@ -555,7 +555,7 @@ class UsersApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The username to return information for. (required)
-        :return:\s UserSummary If the method is called asynchronously, returns the request thread.
+        :return: UserSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -573,7 +573,7 @@ class UsersApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The username to return information for. (required)
-        :return:\s UserSummary If the method is called asynchronously, returns the request thread.
+        :return: UserSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['username']
@@ -627,7 +627,7 @@ class UsersApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username:  (required)
-        :return:\s TokenList If the method is called asynchronously, returns the request thread.
+        :return: TokenList If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -645,7 +645,7 @@ class UsersApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username:  (required)
-        :return:\s TokenList If the method is called asynchronously, returns the request thread.
+        :return: TokenList If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['username']
@@ -698,7 +698,7 @@ class UsersApi(object):
         >>> thread = api.list_users(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s UserList If the method is called asynchronously, returns the request thread.
+        :return: UserList If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -715,7 +715,7 @@ class UsersApi(object):
         >>> thread = api.list_users_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s UserList If the method is called asynchronously, returns the request thread.
+        :return: UserList If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -765,7 +765,7 @@ class UsersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username:  (required)
         :param Object token:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -784,7 +784,7 @@ class UsersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username:  (required)
         :param Object token:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['username', 'token']
@@ -842,7 +842,7 @@ class UsersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user to modify. (required)
         :param UpdateUserPreferences json_body: The map of preferences to assign to the user. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -859,7 +859,7 @@ class UsersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object username: The name of the user to modify. (required)
         :param UpdateUserPreferences json_body: The map of preferences to assign to the user. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['username', 'json_body']

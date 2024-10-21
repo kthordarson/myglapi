@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class SystemApi(object):
         >>> thread = api.jvm(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s SystemJVMResponse If the method is called asynchronously, returns the request thread.
+        :return: SystemJVMResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class SystemApi(object):
         >>> thread = api.jvm_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s SystemJVMResponse If the method is called asynchronously, returns the request thread.
+        :return: SystemJVMResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -87,7 +87,7 @@ class SystemApi(object):
         >>> thread = api.system(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s SystemOverviewResponse If the method is called asynchronously, returns the request thread.
+        :return: SystemOverviewResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -104,7 +104,7 @@ class SystemApi(object):
         >>> thread = api.system_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s SystemOverviewResponse If the method is called asynchronously, returns the request thread.
+        :return: SystemOverviewResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -152,7 +152,7 @@ class SystemApi(object):
         >>> thread = api.threaddump(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s SystemThreadDumpResponse If the method is called asynchronously, returns the request thread.
+        :return: SystemThreadDumpResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -169,7 +169,7 @@ class SystemApi(object):
         >>> thread = api.threaddump_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s SystemThreadDumpResponse If the method is called asynchronously, returns the request thread.
+        :return: SystemThreadDumpResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

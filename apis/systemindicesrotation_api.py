@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class SystemindicesrotationApi(object):
         >>> thread = api.config(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s RotationStrategySummary If the method is called asynchronously, returns the request thread.
+        :return: RotationStrategySummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class SystemindicesrotationApi(object):
         >>> thread = api.config_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s RotationStrategySummary If the method is called asynchronously, returns the request thread.
+        :return: RotationStrategySummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -90,7 +90,7 @@ class SystemindicesrotationApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param RotationStrategySummary : The description of the rotation strategy and its configuration (required)
-        :return:\s RotationStrategySummary If the method is called asynchronously, returns the request thread.
+        :return: RotationStrategySummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -108,7 +108,7 @@ class SystemindicesrotationApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param RotationStrategySummary : The description of the rotation strategy and its configuration (required)
-        :return:\s RotationStrategySummary If the method is called asynchronously, returns the request thread.
+        :return: RotationStrategySummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['']
@@ -162,7 +162,7 @@ class SystemindicesrotationApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object strategy: The name of the rotation strategy (required)
-        :return:\s RotationStrategyDescription If the method is called asynchronously, returns the request thread.
+        :return: RotationStrategyDescription If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -180,7 +180,7 @@ class SystemindicesrotationApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object strategy: The name of the rotation strategy (required)
-        :return:\s RotationStrategyDescription If the method is called asynchronously, returns the request thread.
+        :return: RotationStrategyDescription If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['strategy']
@@ -233,7 +233,7 @@ class SystemindicesrotationApi(object):
         >>> thread = api.list(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s RotationStrategies If the method is called asynchronously, returns the request thread.
+        :return: RotationStrategies If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -250,7 +250,7 @@ class SystemindicesrotationApi(object):
         >>> thread = api.list_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s RotationStrategies If the method is called asynchronously, returns the request thread.
+        :return: RotationStrategies If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

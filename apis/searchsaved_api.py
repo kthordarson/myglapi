@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -25,7 +25,7 @@ class SearchsavedApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CreateSavedSearchRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,7 +43,7 @@ class SearchsavedApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CreateSavedSearchRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -97,7 +97,7 @@ class SearchsavedApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object search_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -115,7 +115,7 @@ class SearchsavedApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object search_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['search_id']
@@ -169,7 +169,7 @@ class SearchsavedApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object search_id:  (required)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -187,7 +187,7 @@ class SearchsavedApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object search_id:  (required)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['search_id']
@@ -240,7 +240,7 @@ class SearchsavedApi(object):
         >>> thread = api.list(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -257,7 +257,7 @@ class SearchsavedApi(object):
         >>> thread = api.list_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -307,7 +307,7 @@ class SearchsavedApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object search_id:  (required)
         :param CreateSavedSearchRequest json_body:  (required)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -326,7 +326,7 @@ class SearchsavedApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object search_id:  (required)
         :param CreateSavedSearchRequest json_body:  (required)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['search_id', 'json_body']

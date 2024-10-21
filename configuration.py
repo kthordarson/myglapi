@@ -21,7 +21,7 @@ class Configuration(object):
         Constructor
         """
         # Default Base url
-        self.host = os.getenv("GRAYLOG_HOST")
+        self.host = os.getenv("GRAYLOGAPIURL")
         # Default api client
         self.api_client = None
         # Temp file folder for downloading files
@@ -29,7 +29,7 @@ class Configuration(object):
 
         # Authentication Settings
         # dict to store API key(s)
-        self.api_key = {os.getenv("GRAYLOG_APIKEY")}
+        self.api_key = os.environ.get('GRAYLOGAPIKEY')
         # dict to store API prefix (e.g. Bearer)
         self.api_key_prefix = {}
         # Username for HTTP basic authentication
@@ -97,11 +97,13 @@ class Configuration(object):
             return self.api_key[identifier]
 
     def get_basic_auth_token(self):
+        # logger.info(f'{self} {self.username} requesting get_basic_auth_token')
         token = None
         try:
             token = urllib3.util.make_headers(basic_auth=self.username + ':' + self.password).get('authorization')
         except TypeError as e:
             logger.error(e)
+        # logger.info(f'get_basic_auth_token: {token}')
         return token
 
     def auth_settings(self):

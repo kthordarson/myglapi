@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -27,7 +27,7 @@ class RolesApi(object):
         :param Object rolename:  (required)
         :param Object username:  (required)
         :param String json_body: Placeholder because PUT requests should have a body. Set to '{}', the content will be ignored.
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -47,7 +47,7 @@ class RolesApi(object):
         :param Object rolename:  (required)
         :param Object username:  (required)
         :param String json_body: Placeholder because PUT requests should have a body. Set to '{}', the content will be ignored.
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['rolename', 'username', 'json_body']
@@ -114,7 +114,7 @@ class RolesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param RoleResponse json_body: The new role to create (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -132,7 +132,7 @@ class RolesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param RoleResponse json_body: The new role to create (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -186,7 +186,7 @@ class RolesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object rolename:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -204,7 +204,7 @@ class RolesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object rolename:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['rolename']
@@ -258,7 +258,7 @@ class RolesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object rolename:  (required)
-        :return:\s RoleMembershipResponse If the method is called asynchronously, returns the request thread.
+        :return: RoleMembershipResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -276,7 +276,7 @@ class RolesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object rolename:  (required)
-        :return:\s RoleMembershipResponse If the method is called asynchronously, returns the request thread.
+        :return: RoleMembershipResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['rolename']
@@ -329,7 +329,7 @@ class RolesApi(object):
         >>> thread = api.list_all(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s RolesResponse If the method is called asynchronously, returns the request thread.
+        :return: RolesResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -346,7 +346,7 @@ class RolesApi(object):
         >>> thread = api.list_all_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s RolesResponse If the method is called asynchronously, returns the request thread.
+        :return: RolesResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -395,7 +395,7 @@ class RolesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object rolename:  (required)
-        :return:\s RoleResponse If the method is called asynchronously, returns the request thread.
+        :return: RoleResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -413,7 +413,7 @@ class RolesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object rolename:  (required)
-        :return:\s RoleResponse If the method is called asynchronously, returns the request thread.
+        :return: RoleResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['rolename']
@@ -468,7 +468,7 @@ class RolesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object rolename:  (required)
         :param Object username:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -487,7 +487,7 @@ class RolesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object rolename:  (required)
         :param Object username:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['rolename', 'username']
@@ -547,7 +547,7 @@ class RolesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object rolename:  (required)
         :param RoleResponse json_body: The new representation of the role (required)
-        :return:\s RoleResponse If the method is called asynchronously, returns the request thread.
+        :return: RoleResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -566,7 +566,7 @@ class RolesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object rolename:  (required)
         :param RoleResponse json_body: The new representation of the role (required)
-        :return:\s RoleResponse If the method is called asynchronously, returns the request thread.
+        :return: RoleResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['rolename', 'json_body']

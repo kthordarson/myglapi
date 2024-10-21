@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -23,7 +23,7 @@ class SystemlbstatusApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object status:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -39,7 +39,7 @@ class SystemlbstatusApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object status:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['status']
@@ -96,7 +96,7 @@ class SystemlbstatusApi(object):
         >>> thread = api.status(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -111,7 +111,7 @@ class SystemlbstatusApi(object):
         >>> thread = api.status_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

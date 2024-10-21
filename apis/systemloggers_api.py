@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -25,7 +25,7 @@ class SystemloggersApi(object):
         >>> thread = api.loggers(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s LoggersSummary If the method is called asynchronously, returns the request thread.
+        :return: LoggersSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -42,7 +42,7 @@ class SystemloggersApi(object):
         >>> thread = api.loggers_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s LoggersSummary If the method is called asynchronously, returns the request thread.
+        :return: LoggersSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -92,7 +92,7 @@ class SystemloggersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object limit: How many log messages should be returned
         :param Object level: Which log level (or higher) should the messages have
-        :return:\s LogMessagesSummary If the method is called asynchronously, returns the request thread.
+        :return: LogMessagesSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -111,7 +111,7 @@ class SystemloggersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object limit: How many log messages should be returned
         :param Object level: Which log level (or higher) should the messages have
-        :return:\s LogMessagesSummary If the method is called asynchronously, returns the request thread.
+        :return: LogMessagesSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['limit', 'level']
@@ -165,7 +165,7 @@ class SystemloggersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object logger_name:  (required)
         :param Object level:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -184,7 +184,7 @@ class SystemloggersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object logger_name:  (required)
         :param Object level:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['logger_name', 'level']
@@ -250,7 +250,7 @@ class SystemloggersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object subsystem:  (required)
         :param Object level:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -269,7 +269,7 @@ class SystemloggersApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object subsystem:  (required)
         :param Object level:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['subsystem', 'level']
@@ -333,7 +333,7 @@ class SystemloggersApi(object):
         >>> thread = api.subsystems(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s SubsystemSummary If the method is called asynchronously, returns the request thread.
+        :return: SubsystemSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -350,7 +350,7 @@ class SystemloggersApi(object):
         >>> thread = api.subsystems_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s SubsystemSummary If the method is called asynchronously, returns the request thread.
+        :return: SubsystemSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

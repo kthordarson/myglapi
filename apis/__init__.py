@@ -1,7 +1,7 @@
 
 
 # import apis into api package
-from .apidocs_api import ApidocsApi
+from myglapi.apis.apidocs_api import ApidocsApi
 from .cluster_api import ClusterApi
 from .clusterdeflector_api import ClusterdeflectorApi
 from .clusterinputstates_api import ClusterinputstatesApi

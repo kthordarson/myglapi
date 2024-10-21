@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class SystemconfigurationApi(object):
         >>> thread = api.get_relevant(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ExposedConfiguration If the method is called asynchronously, returns the request thread.
+        :return: ExposedConfiguration If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class SystemconfigurationApi(object):
         >>> thread = api.get_relevant_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ExposedConfiguration If the method is called asynchronously, returns the request thread.
+        :return: ExposedConfiguration If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

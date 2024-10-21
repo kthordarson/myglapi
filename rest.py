@@ -5,7 +5,7 @@ import ssl
 import certifi
 import logging
 import re
-from configuration import Configuration
+from myglapi.configuration import Configuration
 
 import urllib3
 from urllib.parse import urlencode

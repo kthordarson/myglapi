@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class SystemldapApi(object):
         >>> thread = api.delete_ldap_settings(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class SystemldapApi(object):
         >>> thread = api.delete_ldap_settings_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -89,7 +89,7 @@ class SystemldapApi(object):
         >>> thread = api.get_ldap_settings(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s LdapSettingsResponse If the method is called asynchronously, returns the request thread.
+        :return: LdapSettingsResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -106,7 +106,7 @@ class SystemldapApi(object):
         >>> thread = api.get_ldap_settings_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s LdapSettingsResponse If the method is called asynchronously, returns the request thread.
+        :return: LdapSettingsResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -154,7 +154,7 @@ class SystemldapApi(object):
         >>> thread = api.read_group_mapping(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -171,7 +171,7 @@ class SystemldapApi(object):
         >>> thread = api.read_group_mapping_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -219,7 +219,7 @@ class SystemldapApi(object):
         >>> thread = api.read_groups(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Set If the method is called asynchronously, returns the request thread.
+        :return: Set If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -236,7 +236,7 @@ class SystemldapApi(object):
         >>> thread = api.read_groups_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Set If the method is called asynchronously, returns the request thread.
+        :return: Set If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -285,7 +285,7 @@ class SystemldapApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param LdapTestConfigRequest configuration_to_test:  (required)
-        :return:\s LdapTestConfigResponse If the method is called asynchronously, returns the request thread.
+        :return: LdapTestConfigResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -303,7 +303,7 @@ class SystemldapApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param LdapTestConfigRequest configuration_to_test:  (required)
-        :return:\s LdapTestConfigResponse If the method is called asynchronously, returns the request thread.
+        :return: LdapTestConfigResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['configuration_to_test']
@@ -357,7 +357,7 @@ class SystemldapApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Map json_body: A hash in which the keys are the LDAP group names and values is the Graylog role name. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -375,7 +375,7 @@ class SystemldapApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Map json_body: A hash in which the keys are the LDAP group names and values is the Graylog role name. (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -435,7 +435,7 @@ class SystemldapApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param LdapSettingsRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -453,7 +453,7 @@ class SystemldapApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param LdapSettingsRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']

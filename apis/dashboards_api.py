@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -23,7 +23,7 @@ class DashboardsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CreateDashboardRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -39,7 +39,7 @@ class DashboardsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CreateDashboardRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -93,7 +93,7 @@ class DashboardsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object dashboard_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -111,7 +111,7 @@ class DashboardsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object dashboard_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['dashboard_id']
@@ -163,7 +163,7 @@ class DashboardsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object dashboard_id:  (required)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -179,7 +179,7 @@ class DashboardsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object dashboard_id:  (required)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['dashboard_id']
@@ -230,7 +230,7 @@ class DashboardsApi(object):
         >>> thread = api.list(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s DashboardList If the method is called asynchronously, returns the request thread.
+        :return: DashboardList If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -245,7 +245,7 @@ class DashboardsApi(object):
         >>> thread = api.list_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s DashboardList If the method is called asynchronously, returns the request thread.
+        :return: DashboardList If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -293,7 +293,7 @@ class DashboardsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object dashboard_id:  (required)
         :param WidgetPositionsRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -310,7 +310,7 @@ class DashboardsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object dashboard_id:  (required)
         :param WidgetPositionsRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['dashboard_id', 'json_body']
@@ -374,7 +374,7 @@ class DashboardsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object dashboard_id:  (required)
         :param UpdateDashboardRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -391,7 +391,7 @@ class DashboardsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object dashboard_id:  (required)
         :param UpdateDashboardRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['dashboard_id', 'json_body']

@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class SystemoutputsApi(object):
         >>> thread = api.available(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class SystemoutputsApi(object):
         >>> thread = api.available_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -90,7 +90,7 @@ class SystemoutputsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CreateOutputRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -108,7 +108,7 @@ class SystemoutputsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CreateOutputRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -162,7 +162,7 @@ class SystemoutputsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object output_id: The id of the output that should be deleted (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -180,7 +180,7 @@ class SystemoutputsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object output_id: The id of the output that should be deleted (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['output_id']
@@ -233,7 +233,7 @@ class SystemoutputsApi(object):
         >>> thread = api.get(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s OutputListResponse If the method is called asynchronously, returns the request thread.
+        :return: OutputListResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -250,7 +250,7 @@ class SystemoutputsApi(object):
         >>> thread = api.get_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s OutputListResponse If the method is called asynchronously, returns the request thread.
+        :return: OutputListResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -299,7 +299,7 @@ class SystemoutputsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object output_id: The id of the output we want. (required)
-        :return:\s OutputSummary If the method is called asynchronously, returns the request thread.
+        :return: OutputSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -317,7 +317,7 @@ class SystemoutputsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object output_id: The id of the output we want. (required)
-        :return:\s OutputSummary If the method is called asynchronously, returns the request thread.
+        :return: OutputSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['output_id']
@@ -372,7 +372,7 @@ class SystemoutputsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object output_id: The id of the output that should be deleted (required)
         :param Map json_body:  (required)
-        :return:\s Output If the method is called asynchronously, returns the request thread.
+        :return: Output If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -391,7 +391,7 @@ class SystemoutputsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object output_id: The id of the output that should be deleted (required)
         :param Map json_body:  (required)
-        :return:\s Output If the method is called asynchronously, returns the request thread.
+        :return: Output If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['output_id', 'json_body']

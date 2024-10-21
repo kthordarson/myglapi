@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -22,7 +22,7 @@ class SystemindexerindicesApi(object):
         >>> thread = api.all(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s AllIndices If the method is called asynchronously, returns the request thread.
+        :return: AllIndices If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -37,7 +37,7 @@ class SystemindexerindicesApi(object):
         >>> thread = api.all_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s AllIndices If the method is called asynchronously, returns the request thread.
+        :return: AllIndices If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -84,7 +84,7 @@ class SystemindexerindicesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -100,7 +100,7 @@ class SystemindexerindicesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['index']
@@ -151,7 +151,7 @@ class SystemindexerindicesApi(object):
         >>> thread = api.closed(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ClosedIndices If the method is called asynchronously, returns the request thread.
+        :return: ClosedIndices If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -166,7 +166,7 @@ class SystemindexerindicesApi(object):
         >>> thread = api.closed_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ClosedIndices If the method is called asynchronously, returns the request thread.
+        :return: ClosedIndices If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -213,7 +213,7 @@ class SystemindexerindicesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -229,7 +229,7 @@ class SystemindexerindicesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['index']
@@ -281,7 +281,7 @@ class SystemindexerindicesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param IndicesReadRequest requested_indices:  (required)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -297,7 +297,7 @@ class SystemindexerindicesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param IndicesReadRequest requested_indices:  (required)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['requested_indices']
@@ -348,7 +348,7 @@ class SystemindexerindicesApi(object):
         >>> thread = api.open(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s OpenIndicesInfo If the method is called asynchronously, returns the request thread.
+        :return: OpenIndicesInfo If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -363,7 +363,7 @@ class SystemindexerindicesApi(object):
         >>> thread = api.open_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s OpenIndicesInfo If the method is called asynchronously, returns the request thread.
+        :return: OpenIndicesInfo If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -410,7 +410,7 @@ class SystemindexerindicesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -426,7 +426,7 @@ class SystemindexerindicesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['index']
@@ -479,7 +479,7 @@ class SystemindexerindicesApi(object):
         >>> thread = api.reopened(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ClosedIndices If the method is called asynchronously, returns the request thread.
+        :return: ClosedIndices If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -496,7 +496,7 @@ class SystemindexerindicesApi(object):
         >>> thread = api.reopened_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ClosedIndices If the method is called asynchronously, returns the request thread.
+        :return: ClosedIndices If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -543,7 +543,7 @@ class SystemindexerindicesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index:  (required)
-        :return:\s IndexInfo If the method is called asynchronously, returns the request thread.
+        :return: IndexInfo If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -559,7 +559,7 @@ class SystemindexerindicesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index:  (required)
-        :return:\s IndexInfo If the method is called asynchronously, returns the request thread.
+        :return: IndexInfo If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['index']

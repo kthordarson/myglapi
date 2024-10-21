@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -26,7 +26,7 @@ class MessagesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The index the message containing the string is stored in. (required)
         :param Object string: The string to analyze. (required)
-        :return:\s MessageTokens If the method is called asynchronously, returns the request thread.
+        :return: MessageTokens If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -45,7 +45,7 @@ class MessagesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The index the message containing the string is stored in. (required)
         :param Object string: The string to analyze. (required)
-        :return:\s MessageTokens If the method is called asynchronously, returns the request thread.
+        :return: MessageTokens If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['index', 'string']
@@ -104,7 +104,7 @@ class MessagesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param MessageParseRequest json_body:  (required)
-        :return:\s ResultMessage If the method is called asynchronously, returns the request thread.
+        :return: ResultMessage If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -122,7 +122,7 @@ class MessagesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param MessageParseRequest json_body:  (required)
-        :return:\s ResultMessage If the method is called asynchronously, returns the request thread.
+        :return: ResultMessage If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -175,7 +175,7 @@ class MessagesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The index this message is stored in. (required)
         :param Object message_id:  (required)
-        :return:\s ResultMessage If the method is called asynchronously, returns the request thread.
+        :return: ResultMessage If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -192,7 +192,7 @@ class MessagesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The index this message is stored in. (required)
         :param Object message_id:  (required)
-        :return:\s ResultMessage If the method is called asynchronously, returns the request thread.
+        :return: ResultMessage If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['index', 'message_id']

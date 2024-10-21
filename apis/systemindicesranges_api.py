@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class SystemindicesrangesApi(object):
         >>> thread = api.list(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s IndexRangesResponse If the method is called asynchronously, returns the request thread.
+        :return: IndexRangesResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class SystemindicesrangesApi(object):
         >>> thread = api.list_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s IndexRangesResponse If the method is called asynchronously, returns the request thread.
+        :return: IndexRangesResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -89,7 +89,7 @@ class SystemindicesrangesApi(object):
         >>> thread = api.rebuild(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -106,7 +106,7 @@ class SystemindicesrangesApi(object):
         >>> thread = api.rebuild_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -155,7 +155,7 @@ class SystemindicesrangesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The name of the Graylog-managed Elasticsearch index (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -173,7 +173,7 @@ class SystemindicesrangesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The name of the Graylog-managed Elasticsearch index (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['index']
@@ -227,7 +227,7 @@ class SystemindicesrangesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The name of the Graylog-managed Elasticsearch index (required)
-        :return:\s IndexRangeSummary If the method is called asynchronously, returns the request thread.
+        :return: IndexRangeSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -245,7 +245,7 @@ class SystemindicesrangesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object index: The name of the Graylog-managed Elasticsearch index (required)
-        :return:\s IndexRangeSummary If the method is called asynchronously, returns the request thread.
+        :return: IndexRangeSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['index']

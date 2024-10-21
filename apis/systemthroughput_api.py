@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class SystemthroughputApi(object):
         >>> thread = api.total(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Throughput If the method is called asynchronously, returns the request thread.
+        :return: Throughput If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -39,7 +39,7 @@ class SystemthroughputApi(object):
         >>> thread = api.total_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Throughput If the method is called asynchronously, returns the request thread.
+        :return: Throughput If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

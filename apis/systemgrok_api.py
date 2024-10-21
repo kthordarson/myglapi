@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -26,7 +26,7 @@ class SystemgrokApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param GrokPatternList patterns:  (required)
         :param Object replace: Replace all patterns with the new ones.
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -45,7 +45,7 @@ class SystemgrokApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param GrokPatternList patterns:  (required)
         :param Object replace: Replace all patterns with the new ones.
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['patterns', 'replace']
@@ -107,7 +107,7 @@ class SystemgrokApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param GrokPatternSummary pattern:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -125,7 +125,7 @@ class SystemgrokApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param GrokPatternSummary pattern:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['pattern']
@@ -178,7 +178,7 @@ class SystemgrokApi(object):
         >>> thread = api.list_grok_patterns(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s GrokPatternList If the method is called asynchronously, returns the request thread.
+        :return: GrokPatternList If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -195,7 +195,7 @@ class SystemgrokApi(object):
         >>> thread = api.list_grok_patterns_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s GrokPatternList If the method is called asynchronously, returns the request thread.
+        :return: GrokPatternList If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -244,7 +244,7 @@ class SystemgrokApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object pattern_id:  (required)
-        :return:\s GrokPattern If the method is called asynchronously, returns the request thread.
+        :return: GrokPattern If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -262,7 +262,7 @@ class SystemgrokApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object pattern_id:  (required)
-        :return:\s GrokPattern If the method is called asynchronously, returns the request thread.
+        :return: GrokPattern If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['pattern_id']
@@ -315,7 +315,7 @@ class SystemgrokApi(object):
         >>> thread = api.remove_pattern(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -332,7 +332,7 @@ class SystemgrokApi(object):
         >>> thread = api.remove_pattern_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -382,7 +382,7 @@ class SystemgrokApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object pattern_id:  (required)
         :param GrokPatternSummary pattern:  (required)
-        :return:\s GrokPattern If the method is called asynchronously, returns the request thread.
+        :return: GrokPattern If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -401,7 +401,7 @@ class SystemgrokApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object pattern_id:  (required)
         :param GrokPatternSummary pattern:  (required)
-        :return:\s GrokPattern If the method is called asynchronously, returns the request thread.
+        :return: GrokPattern If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['pattern_id', 'pattern']

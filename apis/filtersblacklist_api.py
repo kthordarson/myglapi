@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -25,7 +25,7 @@ class FiltersblacklistApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param FilterDescription filter_entry:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,7 +43,7 @@ class FiltersblacklistApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param FilterDescription filter_entry:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['filter_entry']
@@ -97,7 +97,7 @@ class FiltersblacklistApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object filter_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -115,7 +115,7 @@ class FiltersblacklistApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object filter_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['filter_id']
@@ -169,7 +169,7 @@ class FiltersblacklistApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object filter_id:  (required)
-        :return:\s FilterDescription If the method is called asynchronously, returns the request thread.
+        :return: FilterDescription If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -187,7 +187,7 @@ class FiltersblacklistApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object filter_id:  (required)
-        :return:\s FilterDescription If the method is called asynchronously, returns the request thread.
+        :return: FilterDescription If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['filter_id']
@@ -240,7 +240,7 @@ class FiltersblacklistApi(object):
         >>> thread = api.get_all(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Set If the method is called asynchronously, returns the request thread.
+        :return: Set If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -257,7 +257,7 @@ class FiltersblacklistApi(object):
         >>> thread = api.get_all_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Set If the method is called asynchronously, returns the request thread.
+        :return: Set If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -307,7 +307,7 @@ class FiltersblacklistApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object filter_id:  (required)
         :param FilterDescription filter_entry:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -326,7 +326,7 @@ class FiltersblacklistApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object filter_id:  (required)
         :param FilterDescription filter_entry:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['filter_id', 'filter_entry']

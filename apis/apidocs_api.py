@@ -2,149 +2,127 @@ from loguru import logger
 import sys
 import os
 import re
-sys.path.append('/home/kth/development2/graylogstuff/myglapi')
-from configuration import Configuration
-from api_client import ApiClient
+
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
 class ApidocsApi(object):
-    def __init__(self, api_client=None):
-        config = Configuration()
-        if api_client:
-            self.api_client = api_client
-        else:
-            if not config.api_client:
-                config.api_client = ApiClient()
-            self.api_client = config.api_client
+	def __init__(self, api_client=None):
+		config = Configuration()
+		if api_client:
+			self.api_client = api_client
+		else:
+			if not config.api_client:
+				config.api_client = ApiClient()
+			self.api_client = config.api_client
 
-    def overview(self, **kwargs):
-        """
-        Get API documentation
-        >>> thread = api.overview(callback=callback_function)
-        :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s None If the method is called asynchronously, returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('callback'):
-            return self.overview_with_http_info(**kwargs)
-        else:
-            (data) = self.overview_with_http_info(**kwargs)
-            return data
+	def overview(self, **kwargs):
+		kwargs['_return_http_data_only'] = True
+		if kwargs.get('callback'):
+			return self.overview_with_http_info(**kwargs)
+		else:
+			(data) = self.overview_with_http_info(**kwargs)
+			return data
 
-    def overview_with_http_info(self, **kwargs):
-        """
-        Get API documentation
-        >>> thread = api.overview_with_http_info(callback=callback_function)
-        :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s None If the method is called asynchronously, returns the request thread.
-        """
+	def overview_with_http_info(self, **kwargs):
 
-        all_params = []
-        all_params.append('callback')
-        all_params.append('_return_http_data_only')
+		all_params = []
+		all_params.append('callback')
+		all_params.append('_return_http_data_only')
 
-        params = locals()
-        for key in params['kwargs']:
-            val = params['kwargs'][key]
-            if key not in all_params:
-                raise TypeError(f"Got an unexpected keyword argument {key}")
-            params[key] = val
-        del params['kwargs']
+		params = locals()
+		for key in params['kwargs']:
+			val = params['kwargs'][key]
+			if key not in all_params:
+				raise TypeError(f"Got an unexpected keyword argument {key}")
+			params[key] = val
+		del params['kwargs']
 
-        resource_path = '/api-docs'.replace('{format}', 'json')
-        path_params = {}
+		resource_path = '/api-docs'.replace('{format}', 'json')
+		path_params = {}
 
-        query_params = {}
+		query_params = {}
 
-        header_params = {}
+		header_params = {}
 
-        form_params = []
-        local_var_files = {}
+		form_params = []
+		local_var_files = {}
 
-        body_params = None
+		body_params = None
 
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
+		# HTTP header `Accept`
+		header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
+		if not header_params['Accept']:
+			del header_params['Accept']
 
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type([])
+		# HTTP header `Content-Type`
+		header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
-        # Authentication setting
-        auth_settings = []
+		# Authentication setting
+		auth_settings = []
 
-        return self.api_client.call_api(resource_path, 'GET', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+		return self.api_client.call_api(resource_path, 'GET', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
 
-    def route(self, route, **kwargs):
-        """
-        Get detailed API documentation of a single resource
+	def route(self, route, **kwargs):
+		kwargs['_return_http_data_only'] = True
+		if kwargs.get('callback'):
+			return self.route_with_http_info(route, **kwargs)
+		else:
+			(data) = self.route_with_http_info(route, **kwargs)
+			return data
+
+	def route_with_http_info(self, route, **kwargs):
+		"""
+		Get detailed API documentation of a single resource
 
 
-        >>> thread = api.route(route, callback=callback_function)
+		>>> thread = api.route_with_http_info(route, callback=callback_function)
 
-        :param callback function: The callback function for asynchronous request. (optional)
-        :param Object route: Route to fetch. For example /system (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('callback'):
-            return self.route_with_http_info(route, **kwargs)
-        else:
-            (data) = self.route_with_http_info(route, **kwargs)
-            return data
+		:param callback function: The callback function for asynchronous request. (optional)
+		:param Object route: Route to fetch. For example /system (required)
+		:return: None If the method is called asynchronously, returns the request thread.
+		"""
 
-    def route_with_http_info(self, route, **kwargs):
-        """
-        Get detailed API documentation of a single resource
+		all_params = ['route']
+		all_params.append('callback')
+		all_params.append('_return_http_data_only')
 
+		params = locals()
+		for key in params['kwargs']:
+			val = params['kwargs'][key]
+			if key not in all_params:
+				raise TypeError(f"Got an unexpected keyword argument {key}")
+			params[key] = val
+		del params['kwargs']
+		# verify the required parameter 'route' is set
+		if ('route' not in params) or (params['route'] is None):
+			raise ValueError("Missing the required parameter `route` when calling `route`")
 
-        >>> thread = api.route_with_http_info(route, callback=callback_function)
+		resource_path = '/api-docs/{route: .+}'.replace('{format}', 'json')
+		path_params = {}
+		if 'route' in params:
+			path_params['route'] = params['route']
 
-        :param callback function: The callback function for asynchronous request. (optional)
-        :param Object route: Route to fetch. For example /system (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
-        """
+		query_params = {}
 
-        all_params = ['route']
-        all_params.append('callback')
-        all_params.append('_return_http_data_only')
+		header_params = {}
 
-        params = locals()
-        for key in params['kwargs']:
-            val = params['kwargs'][key]
-            if key not in all_params:
-                raise TypeError(f"Got an unexpected keyword argument {key}")
-            params[key] = val
-        del params['kwargs']
-        # verify the required parameter 'route' is set
-        if ('route' not in params) or (params['route'] is None):
-            raise ValueError("Missing the required parameter `route` when calling `route`")
+		form_params = []
+		local_var_files = {}
 
-        resource_path = '/api-docs/{route: .+}'.replace('{format}', 'json')
-        path_params = {}
-        if 'route' in params:
-            path_params['route'] = params['route']
+		body_params = None
 
-        query_params = {}
+		# HTTP header `Accept`
+		header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
+		if not header_params['Accept']:
+			del header_params['Accept']
 
-        header_params = {}
+		# HTTP header `Content-Type`
+		header_params['Content-Type'] = self.api_client.select_header_content_type([])
 
-        form_params = []
-        local_var_files = {}
+		# Authentication setting
+		auth_settings = []
 
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type([])
-
-        # Authentication setting
-        auth_settings = []
-
-        return self.api_client.call_api(resource_path, 'GET', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))
+		return self.api_client.call_api(resource_path, 'GET', path_params, query_params, header_params, body=body_params, post_params=form_params, files=local_var_files, response_type=None, auth_settings=auth_settings, callback=params.get('callback'), _return_http_data_only=params.get('_return_http_data_only'))

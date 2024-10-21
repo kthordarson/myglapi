@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class SystemclusterstatsApi(object):
         >>> thread = api.elasticsearch_stats(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ElasticsearchStats If the method is called asynchronously, returns the request thread.
+        :return: ElasticsearchStats If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class SystemclusterstatsApi(object):
         >>> thread = api.elasticsearch_stats_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ElasticsearchStats If the method is called asynchronously, returns the request thread.
+        :return: ElasticsearchStats If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -89,7 +89,7 @@ class SystemclusterstatsApi(object):
         >>> thread = api.mongo_stats(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s MongoStats If the method is called asynchronously, returns the request thread.
+        :return: MongoStats If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -106,7 +106,7 @@ class SystemclusterstatsApi(object):
         >>> thread = api.mongo_stats_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s MongoStats If the method is called asynchronously, returns the request thread.
+        :return: MongoStats If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -154,7 +154,7 @@ class SystemclusterstatsApi(object):
         >>> thread = api.system_stats(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ClusterStats If the method is called asynchronously, returns the request thread.
+        :return: ClusterStats If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -171,7 +171,7 @@ class SystemclusterstatsApi(object):
         >>> thread = api.system_stats_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ClusterStats If the method is called asynchronously, returns the request thread.
+        :return: ClusterStats If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

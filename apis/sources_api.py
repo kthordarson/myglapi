@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -26,7 +26,7 @@ class SourcesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object range: Relative timeframe to search in. See method description. (required)
         :param Object size: Maximum size of the result set.
-        :return:\s SourcesList If the method is called asynchronously, returns the request thread.
+        :return: SourcesList If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -45,7 +45,7 @@ class SourcesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object range: Relative timeframe to search in. See method description. (required)
         :param Object size: Maximum size of the result set.
-        :return:\s SourcesList If the method is called asynchronously, returns the request thread.
+        :return: SourcesList If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['range', 'size']

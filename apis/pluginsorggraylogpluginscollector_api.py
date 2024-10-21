@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -25,7 +25,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,7 +43,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -97,7 +97,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -115,7 +115,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -169,7 +169,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -187,7 +187,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -241,7 +241,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -259,7 +259,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -312,7 +312,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param CollectorConfiguration json_body:  (required)
         :param Object create_defaults:
-        :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
+        :return: CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -331,7 +331,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param CollectorConfiguration json_body:  (required)
         :param Object create_defaults:
-        :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
+        :return: CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body', 'create_defaults']
@@ -388,7 +388,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param CollectorInput json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -407,7 +407,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param CollectorInput json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id', 'json_body']
@@ -467,7 +467,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param CollectorOutput json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -486,7 +486,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param CollectorOutput json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id', 'json_body']
@@ -546,7 +546,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param CollectorConfigurationSnippet json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -565,7 +565,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param CollectorConfigurationSnippet json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id', 'json_body']
@@ -624,7 +624,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -642,7 +642,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -696,7 +696,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -714,7 +714,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -768,7 +768,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -786,7 +786,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -840,7 +840,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -858,7 +858,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -913,7 +913,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object collector_id:  (required)
         :param Object tags:
-        :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
+        :return: CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -932,7 +932,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object collector_id:  (required)
         :param Object tags:
-        :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
+        :return: CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['collector_id', 'tags']
@@ -988,7 +988,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
+        :return: CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -1006,7 +1006,7 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
+        :return: CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -1059,7 +1059,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         >>> thread = api.get_tags(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s List If the method is called asynchronously, returns the request thread.
+        :return: List If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -1076,7 +1076,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         >>> thread = api.get_tags_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s List If the method is called asynchronously, returns the request thread.
+        :return: List If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -1124,7 +1124,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         >>> thread = api.list_configurations(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s CollectorConfigurationListResponse If the method is called asynchronously, returns the request thread.
+        :return: CollectorConfigurationListResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -1141,7 +1141,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         >>> thread = api.list_configurations_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s CollectorConfigurationListResponse If the method is called asynchronously, returns the request thread.
+        :return: CollectorConfigurationListResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -1158,14 +1158,10 @@ class PluginsorggraylogpluginscollectorApi(object):
 
         resource_path = '/plugins/org.graylog.plugins.collector/configurations'.replace('{format}', 'json')
         path_params = {}
-
         query_params = {}
-
         header_params = {}
-
         form_params = []
         local_var_files = {}
-
         body_params = None
 
         # HTTP header `Accept`
@@ -1184,14 +1180,12 @@ class PluginsorggraylogpluginscollectorApi(object):
     def update_configuration_name(self, id, json_body, **kwargs):
         """
         Updates a collector configuration name
-
-
         >>> thread = api.update_configuration_name(id, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param CollectorConfiguration json_body:  (required)
-        :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
+        :return: CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -1203,14 +1197,12 @@ class PluginsorggraylogpluginscollectorApi(object):
     def update_configuration_name_with_http_info(self, id, json_body, **kwargs):
         """
         Updates a collector configuration name
-
-
         >>> thread = api.update_configuration_name_with_http_info(id, json_body, callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param CollectorConfiguration json_body:  (required)
-        :return:\s CollectorConfiguration If the method is called asynchronously, returns the request thread.
+        :return: CollectorConfiguration If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id', 'json_body']
@@ -1271,7 +1263,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param Object id:  (required)
         :param Object input_id:  (required)
         :param CollectorInput json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -1291,7 +1283,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param Object id:  (required)
         :param Object input_id:  (required)
         :param CollectorInput json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id', 'input_id', 'json_body']
@@ -1363,7 +1355,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param Object id:  (required)
         :param Object output_id:  (required)
         :param CollectorOutput json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -1383,7 +1375,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param Object id:  (required)
         :param Object output_id:  (required)
         :param CollectorOutput json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id', 'output_id', 'json_body']
@@ -1455,7 +1447,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param Object id:  (required)
         :param Object snippet_id:  (required)
         :param CollectorConfigurationSnippet json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -1475,7 +1467,7 @@ class PluginsorggraylogpluginscollectorApi(object):
         :param Object id:  (required)
         :param Object snippet_id:  (required)
         :param CollectorConfigurationSnippet json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id', 'snippet_id', 'json_body']

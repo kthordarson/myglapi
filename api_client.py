@@ -1,7 +1,7 @@
 from loguru import logger
-import models
-from rest import RESTClientObject
-from rest import ApiException
+from myglapi import models
+from myglapi.rest import RESTClientObject
+from myglapi.rest import ApiException
 
 import os
 import re
@@ -18,7 +18,7 @@ from datetime import date
 from urllib.parse import quote
 long = int
 
-from configuration import Configuration
+from myglapi.configuration import Configuration
 
 class ApiClient(object):
     def __init__(self, host=None, header_name=None, header_value=None, cookie=None):
@@ -224,7 +224,7 @@ class ApiClient(object):
             # for model types
             else:
                 klass = eval('models.' + klass)
-                logger.debug(f'[api] klass={klass}')
+                # logger.debug(f'[api] klass={klass}')
 
         if klass in [int, int, float, str, bool]:
             return self.__deserialize_primitive(data, klass)

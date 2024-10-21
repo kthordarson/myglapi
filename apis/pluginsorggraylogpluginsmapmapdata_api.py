@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -25,7 +25,7 @@ class PluginsorggraylogpluginsmapmapdataApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param MapDataSearchRequest json_body:  (required)
-        :return:\s MapDataSearchResult If the method is called asynchronously, returns the request thread.
+        :return: MapDataSearchResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,7 +43,7 @@ class PluginsorggraylogpluginsmapmapdataApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param MapDataSearchRequest json_body:  (required)
-        :return:\s MapDataSearchResult If the method is called asynchronously, returns the request thread.
+        :return: MapDataSearchResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']

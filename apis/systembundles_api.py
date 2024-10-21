@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -25,7 +25,7 @@ class SystembundlesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object bundle_id: Content pack ID (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,7 +43,7 @@ class SystembundlesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object bundle_id: Content pack ID (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['bundle_id']
@@ -97,7 +97,7 @@ class SystembundlesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param ConfigurationBundle request_body: Content pack (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -115,7 +115,7 @@ class SystembundlesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param ConfigurationBundle request_body: Content pack (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['request_body']
@@ -169,7 +169,7 @@ class SystembundlesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object bundle_id: Content pack ID (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -187,7 +187,7 @@ class SystembundlesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object bundle_id: Content pack ID (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['bundle_id']
@@ -241,7 +241,7 @@ class SystembundlesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param ExportBundle export_bundle: Export content pack (required)
-        :return:\s ConfigurationBundle If the method is called asynchronously, returns the request thread.
+        :return: ConfigurationBundle If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -259,7 +259,7 @@ class SystembundlesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param ExportBundle export_bundle: Export content pack (required)
-        :return:\s ConfigurationBundle If the method is called asynchronously, returns the request thread.
+        :return: ConfigurationBundle If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['export_bundle']
@@ -312,7 +312,7 @@ class SystembundlesApi(object):
         >>> thread = api.list_bundles(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Multimap If the method is called asynchronously, returns the request thread.
+        :return: Multimap If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -329,7 +329,7 @@ class SystembundlesApi(object):
         >>> thread = api.list_bundles_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Multimap If the method is called asynchronously, returns the request thread.
+        :return: Multimap If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -378,7 +378,7 @@ class SystembundlesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object bundle_id: Content pack ID (required)
-        :return:\s ConfigurationBundle If the method is called asynchronously, returns the request thread.
+        :return: ConfigurationBundle If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -396,7 +396,7 @@ class SystembundlesApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object bundle_id: Content pack ID (required)
-        :return:\s ConfigurationBundle If the method is called asynchronously, returns the request thread.
+        :return: ConfigurationBundle If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['bundle_id']
@@ -451,7 +451,7 @@ class SystembundlesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object bundle_id: Content pack ID (required)
         :param ConfigurationBundle request_body: Content pack (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -470,7 +470,7 @@ class SystembundlesApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object bundle_id: Content pack ID (required)
         :param ConfigurationBundle request_body: Content pack (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['bundle_id', 'request_body']

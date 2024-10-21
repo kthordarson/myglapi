@@ -2,9 +2,9 @@ from loguru import logger
 import sys
 import os
 import re
-sys.path.append('/home/kth/development2/graylogstuff/myglapi')
-from configuration import Configuration
-from api_client import ApiClient
+
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class ClusterApi(object):
         >>> thread = api.get(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class ClusterApi(object):
         >>> thread = api.get_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Map If the method is called asynchronously, returns the request thread.
+        :return: Map If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -90,7 +90,7 @@ class ClusterApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id: The id of the node where processing will be paused. (required)
-        :return:\s SystemJVMResponse If the method is called asynchronously, returns the request thread.
+        :return: SystemJVMResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -108,7 +108,7 @@ class ClusterApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id: The id of the node where processing will be paused. (required)
-        :return:\s SystemJVMResponse If the method is called asynchronously, returns the request thread.
+        :return: SystemJVMResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['node_id']
@@ -162,7 +162,7 @@ class ClusterApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id: The id of the node where processing will be paused. (required)
-        :return:\s SystemThreadDumpResponse If the method is called asynchronously, returns the request thread.
+        :return: SystemThreadDumpResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -180,7 +180,7 @@ class ClusterApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id: The id of the node where processing will be paused. (required)
-        :return:\s SystemThreadDumpResponse If the method is called asynchronously, returns the request thread.
+        :return: SystemThreadDumpResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['node_id']

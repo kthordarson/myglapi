@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -25,7 +25,7 @@ class SystemindicesretentionApi(object):
         >>> thread = api.config(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s RetentionStrategySummary If the method is called asynchronously, returns the request thread.
+        :return: RetentionStrategySummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -42,7 +42,7 @@ class SystemindicesretentionApi(object):
         >>> thread = api.config_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s RetentionStrategySummary If the method is called asynchronously, returns the request thread.
+        :return: RetentionStrategySummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -91,7 +91,7 @@ class SystemindicesretentionApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param RetentionStrategySummary : The description of the retention strategy and its configuration (required)
-        :return:\s RetentionStrategySummary If the method is called asynchronously, returns the request thread.
+        :return: RetentionStrategySummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -109,7 +109,7 @@ class SystemindicesretentionApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param RetentionStrategySummary : The description of the retention strategy and its configuration (required)
-        :return:\s RetentionStrategySummary If the method is called asynchronously, returns the request thread.
+        :return: RetentionStrategySummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['']
@@ -163,7 +163,7 @@ class SystemindicesretentionApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object strategy: The name of the retention strategy (required)
-        :return:\s RetentionStrategyDescription If the method is called asynchronously, returns the request thread.
+        :return: RetentionStrategyDescription If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -181,7 +181,7 @@ class SystemindicesretentionApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object strategy: The name of the retention strategy (required)
-        :return:\s RetentionStrategyDescription If the method is called asynchronously, returns the request thread.
+        :return: RetentionStrategyDescription If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['strategy']
@@ -234,7 +234,7 @@ class SystemindicesretentionApi(object):
         >>> thread = api.list(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s RetentionStrategies If the method is called asynchronously, returns the request thread.
+        :return: RetentionStrategies If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -251,7 +251,7 @@ class SystemindicesretentionApi(object):
         >>> thread = api.list_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s RetentionStrategies If the method is called asynchronously, returns the request thread.
+        :return: RetentionStrategies If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -31,7 +31,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object limit: Maximum number of messages to return.
         :param Object offset: Offset
         :param Object filter: Filter
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -55,7 +55,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object limit: Maximum number of messages to return.
         :param Object offset: Offset
         :param Object filter: Filter
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', '_from', 'to', 'fields', 'limit', 'offset', 'filter']
@@ -134,7 +134,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
         :param Object cardinality: Calculate the cardinality of the field as well
-        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
+        :return: HistogramResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -156,7 +156,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
         :param Object cardinality: Calculate the cardinality of the field as well
-        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
+        :return: HistogramResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'field', 'interval', '_from', 'to', 'filter', 'cardinality']
@@ -236,7 +236,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object _from: Timerange start. See search method description for date format (required)
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
-        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
+        :return: HistogramResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -256,7 +256,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object _from: Timerange start. See search method description for date format (required)
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
-        :return:\s HistogramResult If the method is called asynchronously, returns the request thread.
+        :return: HistogramResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', 'interval', '_from', 'to', 'filter']
@@ -335,7 +335,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object fields: Comma separated list of fields to return
         :param Object sort: Sorting (field:asc / field:desc)
         :param Object decorate: Run decorators on search result
-        :return:\s SearchResponse If the method is called asynchronously, returns the request thread.
+        :return: SearchResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -361,7 +361,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object fields: Comma separated list of fields to return
         :param Object sort: Sorting (field:asc / field:desc)
         :param Object decorate: Run decorators on search result
-        :return:\s SearchResponse If the method is called asynchronously, returns the request thread.
+        :return: SearchResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['query', '_from', 'to', 'limit', 'offset', 'filter', 'fields', 'sort', 'decorate']
@@ -441,7 +441,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object _from: Timerange start. See search method description for date format (required)
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
-        :return:\s FieldStatsResult If the method is called asynchronously, returns the request thread.
+        :return: FieldStatsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -463,7 +463,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object _from: Timerange start. See search method description for date format (required)
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object filter: Filter
-        :return:\s FieldStatsResult If the method is called asynchronously, returns the request thread.
+        :return: FieldStatsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['field', 'query', '_from', 'to', 'filter']
@@ -537,7 +537,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return:\s TermsResult If the method is called asynchronously, returns the request thread.
+        :return: TermsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -558,7 +558,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return:\s TermsResult If the method is called asynchronously, returns the request thread.
+        :return: TermsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['field', 'query', '_from', 'to', 'size', 'filter']
@@ -636,7 +636,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return:\s TermsStatsResult If the method is called asynchronously, returns the request thread.
+        :return: TermsStatsResult If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -659,7 +659,7 @@ class SearchuniversalabsoluteApi(object):
         :param Object to: Timerange end. See search method description for date format (required)
         :param Object size: Maximum number of terms to return
         :param Object filter: Filter
-        :return:\s TermsStatsResult If the method is called asynchronously, returns the request thread.
+        :return: TermsStatsResult If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['key_field', 'value_field', 'order', 'query', '_from', 'to', 'size', 'filter']

@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -23,7 +23,7 @@ class SystemdebugeventsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param String text:
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -39,7 +39,7 @@ class SystemdebugeventsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param String text:
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['text']
@@ -88,7 +88,7 @@ class SystemdebugeventsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param String text:
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -104,7 +104,7 @@ class SystemdebugeventsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param String text:
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['text']
@@ -152,7 +152,7 @@ class SystemdebugeventsApi(object):
         >>> thread = api.show_last_cluster_debug_event(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s DebugEvent If the method is called asynchronously, returns the request thread.
+        :return: DebugEvent If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -167,7 +167,7 @@ class SystemdebugeventsApi(object):
         >>> thread = api.show_last_cluster_debug_event_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s DebugEvent If the method is called asynchronously, returns the request thread.
+        :return: DebugEvent If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -213,7 +213,7 @@ class SystemdebugeventsApi(object):
         >>> thread = api.show_last_debug_event(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s DebugEvent If the method is called asynchronously, returns the request thread.
+        :return: DebugEvent If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -228,7 +228,7 @@ class SystemdebugeventsApi(object):
         >>> thread = api.show_last_debug_event_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s DebugEvent If the method is called asynchronously, returns the request thread.
+        :return: DebugEvent If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

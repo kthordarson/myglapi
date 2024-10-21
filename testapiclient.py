@@ -18,10 +18,10 @@ def search(q, range):
 	# q='RemoteMGNT'
 	# range=(86400)
 	res = search.search_relative(q, range)
-	logger.info(f'[s] searchres: {res.total_results}')
+	logger.info(f'[s] searchres: {res.total_results} q={q}')
 	return res
 
 if __name__ == '__main__':
 	streams = StreamsApi()
-	sres = search('RemoteMGNT', 86400)
+	sres = search('action:ssl\-login\-fail', 86400)
 	print(sres)

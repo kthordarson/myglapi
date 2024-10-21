@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -25,7 +25,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param PipelineSource pipeline:  (required)
-        :return:\s PipelineSource If the method is called asynchronously, returns the request thread.
+        :return: PipelineSource If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,7 +43,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param PipelineSource pipeline:  (required)
-        :return:\s PipelineSource If the method is called asynchronously, returns the request thread.
+        :return: PipelineSource If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['pipeline']
@@ -97,7 +97,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -115,7 +115,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -169,7 +169,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s PipelineSource If the method is called asynchronously, returns the request thread.
+        :return: PipelineSource If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -187,7 +187,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
-        :return:\s PipelineSource If the method is called asynchronously, returns the request thread.
+        :return: PipelineSource If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id']
@@ -240,7 +240,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
         >>> thread = api.get_all(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Collection If the method is called asynchronously, returns the request thread.
+        :return: Collection If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -257,7 +257,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
         >>> thread = api.get_all_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s Collection If the method is called asynchronously, returns the request thread.
+        :return: Collection If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -306,7 +306,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param PipelineSource pipeline:  (required)
-        :return:\s PipelineSource If the method is called asynchronously, returns the request thread.
+        :return: PipelineSource If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -324,7 +324,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param PipelineSource pipeline:  (required)
-        :return:\s PipelineSource If the method is called asynchronously, returns the request thread.
+        :return: PipelineSource If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['pipeline']
@@ -379,7 +379,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param PipelineSource pipeline:  (required)
-        :return:\s PipelineSource If the method is called asynchronously, returns the request thread.
+        :return: PipelineSource If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -398,7 +398,7 @@ class PluginsorggraylogpluginspipelineprocessorsystempipelinespipelineApi(object
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object id:  (required)
         :param PipelineSource pipeline:  (required)
-        :return:\s PipelineSource If the method is called asynchronously, returns the request thread.
+        :return: PipelineSource If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['id', 'pipeline']

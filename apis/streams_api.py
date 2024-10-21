@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -27,7 +27,7 @@ class StreamsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
         :param CloneStreamRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -46,7 +46,7 @@ class StreamsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
         :param CloneStreamRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['stream_id', 'json_body']
@@ -105,7 +105,7 @@ class StreamsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CreateStreamRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -123,7 +123,7 @@ class StreamsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param CreateStreamRequest json_body:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['json_body']
@@ -177,7 +177,7 @@ class StreamsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -195,7 +195,7 @@ class StreamsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['stream_id']
@@ -248,7 +248,7 @@ class StreamsApi(object):
         >>> thread = api.get(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s StreamListResponse If the method is called asynchronously, returns the request thread.
+        :return: StreamListResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -265,7 +265,7 @@ class StreamsApi(object):
         >>> thread = api.get_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s StreamListResponse If the method is called asynchronously, returns the request thread.
+        :return: StreamListResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -314,7 +314,7 @@ class StreamsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
-        :return:\s StreamResponse If the method is called asynchronously, returns the request thread.
+        :return: StreamResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -332,7 +332,7 @@ class StreamsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
-        :return:\s StreamResponse If the method is called asynchronously, returns the request thread.
+        :return: StreamResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['stream_id']
@@ -385,7 +385,7 @@ class StreamsApi(object):
         >>> thread = api.get_enabled(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s StreamListResponse If the method is called asynchronously, returns the request thread.
+        :return: StreamListResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -402,7 +402,7 @@ class StreamsApi(object):
         >>> thread = api.get_enabled_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s StreamListResponse If the method is called asynchronously, returns the request thread.
+        :return: StreamListResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -451,7 +451,7 @@ class StreamsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -469,7 +469,7 @@ class StreamsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['stream_id']
@@ -523,7 +523,7 @@ class StreamsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -541,7 +541,7 @@ class StreamsApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['stream_id']
@@ -596,7 +596,7 @@ class StreamsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
         :param Map json_body:  (required)
-        :return:\s TestMatchResponse If the method is called asynchronously, returns the request thread.
+        :return: TestMatchResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -615,7 +615,7 @@ class StreamsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
         :param Map json_body:  (required)
-        :return:\s TestMatchResponse If the method is called asynchronously, returns the request thread.
+        :return: TestMatchResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['stream_id', 'json_body']
@@ -675,7 +675,7 @@ class StreamsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
         :param UpdateStreamRequest json_body:  (required)
-        :return:\s StreamResponse If the method is called asynchronously, returns the request thread.
+        :return: StreamResponse If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -694,7 +694,7 @@ class StreamsApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object stream_id:  (required)
         :param UpdateStreamRequest json_body:  (required)
-        :return:\s StreamResponse If the method is called asynchronously, returns the request thread.
+        :return: StreamResponse If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['stream_id', 'json_body']

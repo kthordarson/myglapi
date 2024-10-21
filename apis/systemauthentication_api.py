@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -25,7 +25,7 @@ class SystemauthenticationApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param AuthenticationConfig config:  (required)
-        :return:\s AuthenticationConfig If the method is called asynchronously, returns the request thread.
+        :return: AuthenticationConfig If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,7 +43,7 @@ class SystemauthenticationApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param AuthenticationConfig config:  (required)
-        :return:\s AuthenticationConfig If the method is called asynchronously, returns the request thread.
+        :return: AuthenticationConfig If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['config']
@@ -96,7 +96,7 @@ class SystemauthenticationApi(object):
         >>> thread = api.get_authenticators(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s AuthenticationConfig If the method is called asynchronously, returns the request thread.
+        :return: AuthenticationConfig If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -113,7 +113,7 @@ class SystemauthenticationApi(object):
         >>> thread = api.get_authenticators_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s AuthenticationConfig If the method is called asynchronously, returns the request thread.
+        :return: AuthenticationConfig If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []

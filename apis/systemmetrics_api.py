@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -28,7 +28,7 @@ class SystemmetricsApi(object):
 		:param callback function: The callback function
 			for asynchronous request. (optional)
 		:param Object namespace:  (required)
-		:return:\s MetricsSummaryResponse If the method is called asynchronously, returns the request thread.
+		:return: MetricsSummaryResponse If the method is called asynchronously, returns the request thread.
 		"""
 		kwargs['_return_http_data_only'] = True
 		if kwargs.get('callback'):
@@ -48,7 +48,7 @@ class SystemmetricsApi(object):
 		:param callback function: The callback function
 			for asynchronous request. (optional)
 		:param Object namespace:  (required)
-		:return:\s MetricsSummaryResponse If the method is called asynchronously, returns the request thread.
+		:return: MetricsSummaryResponse If the method is called asynchronously, returns the request thread.
 		"""
 
 		all_params = ['namespace']
@@ -103,7 +103,7 @@ class SystemmetricsApi(object):
 
 		:param callback function: The callback function
 			for asynchronous request. (optional)
-		:return:\s MetricNamesResponse If the method is called asynchronously, returns the request thread.
+		:return: MetricNamesResponse If the method is called asynchronously, returns the request thread.
 		"""
 		kwargs['_return_http_data_only'] = True
 		if kwargs.get('callback'):
@@ -124,7 +124,7 @@ class SystemmetricsApi(object):
 
 		:param callback function: The callback function
 			for asynchronous request. (optional)
-		:return:\s MetricNamesResponse If the method is called asynchronously, returns the request thread.
+		:return: MetricNamesResponse If the method is called asynchronously, returns the request thread.
 		"""
 
 		all_params = []
@@ -176,7 +176,7 @@ class SystemmetricsApi(object):
 
 		:param callback function: The callback function
 			for asynchronous request. (optional)
-		:return:\s MetricRegistry If the method is called asynchronously, returns the request thread.
+		:return: MetricRegistry If the method is called asynchronously, returns the request thread.
 		"""
 		kwargs['_return_http_data_only'] = True
 		if kwargs.get('callback'):
@@ -197,7 +197,7 @@ class SystemmetricsApi(object):
 
 		:param callback function: The callback function
 			for asynchronous request. (optional)
-		:return:\s MetricRegistry If the method is called asynchronously, returns the request thread.
+		:return: MetricRegistry If the method is called asynchronously, returns the request thread.
 		"""
 
 		all_params = []
@@ -248,7 +248,7 @@ class SystemmetricsApi(object):
 		:param callback function: The callback function
 			for asynchronous request. (optional)
 		:param MetricsReadRequest requested_metrics:  (required)
-		:return:\s MetricsSummaryResponse If the method is called asynchronously, returns the request thread.
+		:return: MetricsSummaryResponse If the method is called asynchronously, returns the request thread.
 		"""
 		kwargs['_return_http_data_only'] = True
 		if kwargs.get('callback'):
@@ -270,7 +270,7 @@ class SystemmetricsApi(object):
 		:param callback function: The callback function
 			for asynchronous request. (optional)
 		:param MetricsReadRequest requested_metrics:  (required)
-		:return:\s MetricsSummaryResponse If the method is called asynchronously, returns the request thread.
+		:return: MetricsSummaryResponse If the method is called asynchronously, returns the request thread.
 		"""
 
 		all_params = ['requested_metrics']
@@ -328,7 +328,7 @@ class SystemmetricsApi(object):
 		:param callback function: The callback function
 			for asynchronous request. (optional)
 		:param Object metric_name:  (required)
-		:return:\s Metric If the method is called asynchronously, returns the request thread.
+		:return: Metric If the method is called asynchronously, returns the request thread.
 		"""
 		kwargs['_return_http_data_only'] = True
 		if kwargs.get('callback'):
@@ -350,7 +350,7 @@ class SystemmetricsApi(object):
 		:param callback function: The callback function
 			for asynchronous request. (optional)
 		:param Object metric_name:  (required)
-		:return:\s Metric If the method is called asynchronously, returns the request thread.
+		:return: Metric If the method is called asynchronously, returns the request thread.
 		"""
 
 		all_params = ['metric_name']

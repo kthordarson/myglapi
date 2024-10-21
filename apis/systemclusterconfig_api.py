@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -25,7 +25,7 @@ class SystemclusterconfigApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object config_class: The name of the cluster configuration class (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -43,7 +43,7 @@ class SystemclusterconfigApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object config_class: The name of the cluster configuration class (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['config_class']
@@ -96,7 +96,7 @@ class SystemclusterconfigApi(object):
         >>> thread = api.list(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ClusterConfigList If the method is called asynchronously, returns the request thread.
+        :return: ClusterConfigList If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -113,7 +113,7 @@ class SystemclusterconfigApi(object):
         >>> thread = api.list_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s ClusterConfigList If the method is called asynchronously, returns the request thread.
+        :return: ClusterConfigList If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -162,7 +162,7 @@ class SystemclusterconfigApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object config_class: The name of the cluster configuration class (required)
-        :return:\s JsonSchema If the method is called asynchronously, returns the request thread.
+        :return: JsonSchema If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -180,7 +180,7 @@ class SystemclusterconfigApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object config_class: The name of the cluster configuration class (required)
-        :return:\s JsonSchema If the method is called asynchronously, returns the request thread.
+        :return: JsonSchema If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['config_class']
@@ -235,7 +235,7 @@ class SystemclusterconfigApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object config_class: The name of the cluster configuration class (required)
         :param InputStream body: The payload of the cluster configuration (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -254,7 +254,7 @@ class SystemclusterconfigApi(object):
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object config_class: The name of the cluster configuration class (required)
         :param InputStream body: The payload of the cluster configuration (required)
-        :return:\s None If the method is called asynchronously, returns the request thread.
+        :return: None If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['config_class', 'body']

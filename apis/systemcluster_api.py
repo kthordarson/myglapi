@@ -1,8 +1,8 @@
 import sys
 import os
 import re
-from configuration import Configuration
-from api_client import ApiClient
+from myglapi.configuration import Configuration
+from myglapi.api_client import ApiClient
 from loguru import logger
 
 
@@ -24,7 +24,7 @@ class SystemclusterApi(object):
         >>> thread = api.node(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s NodeSummary If the method is called asynchronously, returns the request thread.
+        :return: NodeSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -41,7 +41,7 @@ class SystemclusterApi(object):
         >>> thread = api.node_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s NodeSummary If the method is called asynchronously, returns the request thread.
+        :return: NodeSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
@@ -90,7 +90,7 @@ class SystemclusterApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id:  (required)
-        :return:\s NodeSummary If the method is called asynchronously, returns the request thread.
+        :return: NodeSummary If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -108,7 +108,7 @@ class SystemclusterApi(object):
 
         :param callback function: The callback function for asynchronous request. (optional)
         :param Object node_id:  (required)
-        :return:\s NodeSummary If the method is called asynchronously, returns the request thread.
+        :return: NodeSummary If the method is called asynchronously, returns the request thread.
         """
 
         all_params = ['node_id']
@@ -159,7 +159,7 @@ class SystemclusterApi(object):
         >>> thread = api.nodes(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s NodeSummaryList If the method is called asynchronously, returns the request thread.
+        :return: NodeSummaryList If the method is called asynchronously, returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('callback'):
@@ -174,7 +174,7 @@ class SystemclusterApi(object):
         >>> thread = api.nodes_with_http_info(callback=callback_function)
 
         :param callback function: The callback function for asynchronous request. (optional)
-        :return:\s NodeSummaryList If the method is called asynchronously, returns the request thread.
+        :return: NodeSummaryList If the method is called asynchronously, returns the request thread.
         """
 
         all_params = []
